@@ -5,7 +5,12 @@
 # without the coverage overstates what was measured.
 task: ifeval_uz
 dataset: ifeval_uz.json
-max_tokens: 2048
+# 2560. The longest remaining length constraint asks for 701 words, roughly
+# 1750 tokens of Uzbek, so this leaves headroom without inviting a model to
+# ramble. Six prompts asking for 800 to 1200 words were moved to
+# data/ifeval_uz_longform.json: they needed more than 3000 tokens each and are
+# kept for a separate long-form evaluation rather than scored here.
+max_tokens: 2560
 options:
   score_recalibrated: true
   # Measure on parallel uz-en text and set this before publishing: Uzbek is

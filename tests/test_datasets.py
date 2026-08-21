@@ -199,5 +199,8 @@ def test_ifeval_coverage_does_not_regress():
             if checker.disposition is Disposition.NEEDS_LOCALE and not uz[i]:
                 continue
             scored += 1
-    assert total == 834
+    # 822 after six long-form prompts moved to data/ifeval_uz_longform.json.
+    # Pinning the total means a dataset change has to be deliberate: the count
+    # moving on its own would mean rows appeared or vanished unnoticed.
+    assert total == 822
     assert scored / total >= 0.736, f"coverage regressed to {scored / total:.1%}"

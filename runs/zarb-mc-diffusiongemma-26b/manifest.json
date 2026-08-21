@@ -1,0 +1,219 @@
+{
+  "run_id": "zarb-mc-diffusiongemma-26b",
+  "model": "DiffusionGemma 26B-A4B",
+  "provider": "openai",
+  "model_revision": "",
+  "quantization": "bf16",
+  "organization": "Google",
+  "license": "apache-2.0",
+  "weights_url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+  "temperature": 0.0,
+  "top_p": null,
+  "seed": 0,
+  "max_tokens": {
+    "zarbulmasal_mc": 256
+  },
+  "reasoning": "default",
+  "chat_template": true,
+  "harness_version": "2.0.0",
+  "harness_git_sha": "unknown",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1016-gcp-x86_64-with-glibc2.39",
+  "package_versions": {},
+  "started_at": "2026-08-21T18:40:09+00:00",
+  "finished_at": "2026-08-21T18:44:12+00:00",
+  "tasks": {
+    "zarbulmasal_mc": {
+      "task_version": "1.0",
+      "dataset": "zarbulmasal.json",
+      "dataset_sha256": "dc5cdb83b8b04adf26ac2343e4bc292b6be94a06a50cd9185349da773910a0a5",
+      "max_tokens": 256,
+      "reasoning": "default",
+      "concurrency": 1,
+      "timeout": 300,
+      "options": {},
+      "n_items": 331,
+      "n_scored": 331,
+      "metrics": {
+        "primary": 60.73,
+        "accuracy": 60.73,
+        "ci_low": 55.37,
+        "ci_high": 65.83,
+        "n": 331
+      },
+      "diagnostics": {
+        "n_items": 331,
+        "n_scored": 331,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "bare-letter": 331
+        },
+        "chance_level": 0.25,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "theme": {
+          "hasharotlar": {
+            "accuracy": 75.0,
+            "ci_low": 46.77,
+            "ci_high": 91.11,
+            "n": 12,
+            "n_items": 12,
+            "coverage": 1.0
+          },
+          "hayvonlar": {
+            "accuracy": 59.38,
+            "ci_low": 42.26,
+            "ci_high": 74.48,
+            "n": 32,
+            "n_items": 32,
+            "coverage": 1.0
+          },
+          "kasb-hunar": {
+            "accuracy": 53.33,
+            "ci_low": 30.12,
+            "ci_high": 75.19,
+            "n": 15,
+            "n_items": 15,
+            "coverage": 1.0
+          },
+          "kiyim-kechak": {
+            "accuracy": 45.45,
+            "ci_low": 21.27,
+            "ci_high": 71.99,
+            "n": 11,
+            "n_items": 11,
+            "coverage": 1.0
+          },
+          "maktab": {
+            "accuracy": 60.0,
+            "ci_low": 31.27,
+            "ci_high": 83.18,
+            "n": 10,
+            "n_items": 10,
+            "coverage": 1.0
+          },
+          "mevalar": {
+            "accuracy": 38.46,
+            "ci_low": 17.71,
+            "ci_high": 64.48,
+            "n": 13,
+            "n_items": 13,
+            "coverage": 1.0
+          },
+          "osmon": {
+            "accuracy": 89.47,
+            "ci_low": 68.61,
+            "ci_high": 97.06,
+            "n": 19,
+            "n_items": 19,
+            "coverage": 1.0
+          },
+          "oziq-ovqat": {
+            "accuracy": 64.29,
+            "ci_low": 38.76,
+            "ci_high": 83.66,
+            "n": 14,
+            "n_items": 14,
+            "coverage": 1.0
+          },
+          "oʻsimliklar": {
+            "accuracy": 50.0,
+            "ci_low": 29.03,
+            "ci_high": 70.97,
+            "n": 18,
+            "n_items": 18,
+            "coverage": 1.0
+          },
+          "qushlar": {
+            "accuracy": 53.85,
+            "ci_low": 29.14,
+            "ci_high": 76.79,
+            "n": 13,
+            "n_items": 13,
+            "coverage": 1.0
+          },
+          "sabzavotlar": {
+            "accuracy": 50.0,
+            "ci_low": 29.93,
+            "ci_high": 70.07,
+            "n": 20,
+            "n_items": 20,
+            "coverage": 1.0
+          },
+          "tabiat": {
+            "accuracy": 70.83,
+            "ci_low": 56.82,
+            "ci_high": 81.76,
+            "n": 48,
+            "n_items": 48,
+            "coverage": 1.0
+          },
+          "tana aʼzolari": {
+            "accuracy": 63.64,
+            "ci_low": 42.95,
+            "ci_high": 80.27,
+            "n": 22,
+            "n_items": 22,
+            "coverage": 1.0
+          },
+          "texnika": {
+            "accuracy": 54.55,
+            "ci_low": 28.01,
+            "ci_high": 78.73,
+            "n": 11,
+            "n_items": 11,
+            "coverage": 1.0
+          },
+          "uy-roʻzgʻor": {
+            "accuracy": 58.73,
+            "ci_low": 46.42,
+            "ci_high": 70.04,
+            "n": 63,
+            "n_items": 63,
+            "coverage": 1.0
+          },
+          "vaqt": {
+            "accuracy": 60.0,
+            "ci_low": 31.27,
+            "ci_high": 83.18,
+            "n": 10,
+            "n_items": 10,
+            "coverage": 1.0
+          }
+        },
+        "difficulty": {
+          "oson": {
+            "accuracy": 83.33,
+            "ci_low": 73.54,
+            "ci_high": 89.99,
+            "n": 78,
+            "n_items": 78,
+            "coverage": 1.0
+          },
+          "oʻrtacha": {
+            "accuracy": 55.06,
+            "ci_low": 47.72,
+            "ci_high": 62.18,
+            "n": 178,
+            "n_items": 178,
+            "coverage": 1.0
+          },
+          "qiyin": {
+            "accuracy": 50.67,
+            "ci_low": 39.6,
+            "ci_high": 61.67,
+            "n": 75,
+            "n_items": 75,
+            "coverage": 1.0
+          }
+        }
+      }
+    }
+  },
+  "notes": ""
+}

@@ -1,6 +1,7 @@
 # Qwen3.6 27B
 model: qwen3.6:27b
 provider: ollama
+base_url: http://127.0.0.1:11502   # tuned bench daemon, see tools/bench_ollama.sh
 name: Qwen3.6 27B
 organization: Alibaba
 license: apache-2.0

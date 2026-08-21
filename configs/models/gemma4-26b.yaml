@@ -1,6 +1,7 @@
 # Gemma 4 26B
 model: gemma4:26b
 provider: ollama
+base_url: http://127.0.0.1:11502   # tuned bench daemon, see tools/bench_ollama.sh
 name: Gemma 4 26B
 organization: Google
 license: gemma

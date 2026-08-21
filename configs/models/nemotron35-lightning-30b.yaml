@@ -1,6 +1,7 @@
 # Nemotron 3.5 Lightning 30B
 model: nemotron-3.5-lightning:30b
 provider: ollama
+base_url: http://127.0.0.1:11502   # tuned bench daemon, see tools/bench_ollama.sh
 name: Nemotron 3.5 Lightning 30B
 organization: NVIDIA
 license: nvidia-open-model

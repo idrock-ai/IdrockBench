@@ -28,7 +28,7 @@ idrockbench run --model gpt-4o --tasks dtm_2020
 `validate` runs the task's declared invariants against the rows. For a
 multiple-choice task that means: options parse, options are distinct and
 non-empty, an answer key exists, and the key points at an option the model will
-actually be shown. **Fix what it reports before running anything** — a run
+actually be shown. **Fix what it reports before running anything** - a run
 against an invalid dataset produces numbers that look fine and mean nothing.
 
 Supported formats: `.json` (array or `{"data": [...]}`), `.jsonl`, `.csv`,
@@ -62,7 +62,7 @@ change, and moves anything unscoreable to `data/quarantine/<dataset>.json` with
 a reason.
 
 Quarantine rather than delete. An item with a missing answer key needs a
-subject expert, not a guess — and the previous runner's habit of defaulting a
+subject expert, not a guess - and the previous runner's habit of defaulting a
 missing key to option A put eight items of pure noise into every published DTM
 score.
 
@@ -86,6 +86,6 @@ def load_parquet(path: Path) -> list[dict]:
 
 Every dataset in `data/` needs a card in `docs/data-cards/`. Copy an existing
 one. It must state provenance, licence, what redistribution the licence allows,
-known defects, and contamination exposure — whether the data is public enough
+known defects, and contamination exposure - whether the data is public enough
 that models may have trained on it. A benchmark whose provenance is
 undocumented cannot be cited, and cannot be defended.

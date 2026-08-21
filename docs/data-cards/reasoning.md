@@ -1,8 +1,8 @@
-# Dataset card — Reasoning (LiveBench-derived)
+# Dataset card - Reasoning (LiveBench-derived)
 
 | | |
 |---|---|
-| **File** | `data/reasoning_uz.json` (100 rows; all scored) |
+| **File** | `data/reasoning_uz.json` (100 rows. All scored) |
 | **Language** | Uzbek (Latin), translated from English |
 | **Tasks** | zebra_puzzle, spatial, web_of_lies_v2 |
 | **Upstream** | [LiveBench](https://github.com/LiveBench/LiveBench) reasoning split |
@@ -13,13 +13,13 @@
 LiveBench reasoning items translated into Uzbek. LiveBench derives web-of-lies
 from BIG-Bench Hard, so the chain is Apache → Apache. The datasheet states
 "there are no copyrights on the data" and "no fees or restrictions". Note the
-HuggingFace cards carry no `license:` field; the datasheet is the authoritative
+HuggingFace cards carry no `license:` field. The datasheet is the authoritative
 statement.
 
 ## Retired items were removed from the file
 
 The source release carried 200 items, 100 of which LiveBench had formally
-retired — zebra_puzzle withdrawn 2024-11-25, web_of_lies_v2 withdrawn
+retired - zebra_puzzle withdrawn 2024-11-25, web_of_lies_v2 withdrawn
 2025-04-02. LiveBench retires items once they have been public long enough to be
 plausibly in the training data of newer models.
 
@@ -28,10 +28,10 @@ Those 100 rows, and the `livebench_release_date`, `livebench_removal_date` and
 holds only the 100 current items, every one of which is scored.
 
 The trade-off, recorded plainly: the track is fixed at **n = 100**, which gives
-confidence intervals roughly ±10 points wide. Models within that margin — Gemma
-4 12B at 46.1 and Qwen3.5 9B at 42.4 — cannot be ranked against each other on
+confidence intervals roughly ±10 points wide. Models within that margin - Gemma
+4 12B at 46.1 and Qwen3.5 9B at 42.4 - cannot be ranked against each other on
 this track, and the published table should say so rather than implying an order.
-Restoring the retired half would need the upstream LiveBench release again; no
+Restoring the retired half would need the upstream LiveBench release again. No
 local copy remains.
 
 ## Known issues

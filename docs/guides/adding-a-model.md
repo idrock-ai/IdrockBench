@@ -61,9 +61,9 @@ Ten items, a few seconds. Look at the diagnostics line:
 dtm: 60.0  [31.27, 83.18]  n=10/10  unparsed=0.0% truncated=0.0% errors=0.0%
 ```
 
-- `errors > 0` — endpoint, key or network. Check `runs/<id>/dtm.jsonl` for the message.
-- `truncated > 0` — raise `max_tokens` in the task config; a reasoning model needs room to finish.
-- `unparsed > 0` — the model is not answering in a recognised format. Read a few responses before assuming the model is weak; a high unparsed rate is usually the harness's problem, not the model's.
+- `errors > 0` - endpoint, key or network. Check `runs/<id>/dtm.jsonl` for the message.
+- `truncated > 0` - raise `max_tokens` in the task config. A reasoning model needs room to finish.
+- `unparsed > 0` - the model is not answering in a recognised format. Read a few responses before assuming the model is weak. A high unparsed rate is usually the harness's problem, not the model's.
 
 ## 3. Run the suite
 
@@ -98,7 +98,7 @@ Before believing any of it, check three things:
 
 1. **Coverage.** `n=989/989` means everything scored. `n=450/989` means over half the responses could not be parsed, and the number is about extraction, not knowledge.
 2. **The chance level.** A DTM score near 25% is a coin flip. The runner prints a warning when a score sits at or below chance.
-3. **The quantisation.** `Q4_K_M` is a 4-bit build, not the model its name suggests. It is resolved automatically for Ollama and recorded — publish it.
+3. **The quantisation.** `Q4_K_M` is a 4-bit build, not the model its name suggests. It is resolved automatically for Ollama and recorded - publish it.
 
 ## 5. Publish
 
@@ -106,6 +106,6 @@ Before believing any of it, check three things:
 idrockbench report --suite core
 ```
 
-Rebuilds `site/results.json` from `runs/` entirely. A cell no run produced cannot appear, and deleting a run removes it from the board. Never edit `results.json` by hand — the previous leaderboard was maintained that way and 20 of its 50 cells had no source run.
+Rebuilds `site/results.json` from `runs/` entirely. A cell no run produced cannot appear, and deleting a run removes it from the board. Never edit `results.json` by hand - the previous leaderboard was maintained that way and 20 of its 50 cells had no source run.
 
 A model missing any suite task gets its per-task cells and **no composite score**. That is deliberate: a mean over three tasks and a mean over five are not comparable numbers.

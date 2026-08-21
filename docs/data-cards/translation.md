@@ -1,10 +1,10 @@
-# Dataset card — Translation (FLORES-200)
+# Dataset card - Translation (FLORES-200)
 
 | | |
 |---|---|
 | **File** | `data/translation_flores_devtest.json` (200 segments) |
 | **Languages** | Uzbek (Latin), English, Russian |
-| **Directions scored** | uz→en, en→uz, uz→ru, ru→uz — 800 pairs |
+| **Directions scored** | uz→en, en→uz, uz→ru, ru→uz - 800 pairs |
 | **Upstream** | [facebook/flores](https://huggingface.co/datasets/facebook/flores), devtest split |
 | **Licence** | **CC BY-SA 4.0**, plus upstream gate terms |
 
@@ -17,9 +17,9 @@ of ≥90/100 Translation Quality Score before release.
 Applied here: text normalised to the canonical Uzbek apostrophe. The upstream
 Uzbek references use ASCII `'` (480 occurrences against a single U+02BB), so
 without normalisation a model writing orthographically correct Uzbek is scored
-against typos — worth roughly 66 BLEU on affected segments.
+against typos - worth roughly 66 BLEU on affected segments.
 
-## Licence — this one has real constraints
+## Licence - this one has real constraints
 
 **CC BY-SA 4.0 is viral.** Any adaptation must be licensed under CC BY-SA 4.0 or
 a compatible licence. The FLORES-derived portion of this benchmark therefore
@@ -27,7 +27,7 @@ a compatible licence. The FLORES-derived portion of this benchmark therefore
 
 **The upstream repo is now gated**, with three mandatory acceptance terms:
 
-1. Evaluation only — the data and its derivatives may not be used to train
+1. Evaluation only - the data and its derivatives may not be used to train
    machine-learning models.
 2. Derivatives may only be distributed via a private or crawl-protected
    mechanism that requires accepting these terms.
@@ -43,7 +43,7 @@ Consequences:
 
 There is a genuine tension between CC BY-SA §2(a)(5)(B), which forbids imposing
 additional restrictions, and Meta's gate terms, which do. This cannot be
-resolved by the lab; the risk-minimising posture is to comply with both.
+resolved by the lab. The risk-minimising posture is to comply with both.
 
 Required attribution (TASL plus a modification notice):
 
@@ -60,8 +60,8 @@ Required attribution (TASL plus a modification notice):
 evaluation sets in existence and appears in many training corpora. Treat these
 scores as an upper bound and label them accordingly.
 
-A fresh, never-published uz↔en↔ru test set — news or government text from after
-the current model generation's cutoff — would be substantially more informative,
+A fresh, never-published uz↔en↔ru test set - news or government text from after
+the current model generation's cutoff - would be substantially more informative,
 and is the single highest-value addition to this track.
 
 ## Known limitations
@@ -69,7 +69,7 @@ and is the single highest-value addition to this track.
 - Reference quality for Uzbek has not been independently audited. An audit of
   FLORES for four African languages found correction rates from 6.1% to 63.4%,
   so the ≥90 TQS gate is not a guarantee.
-- 200 segments per direction is small. The reported bootstrap interval is wide;
+- 200 segments per direction is small. The reported bootstrap interval is wide.
   read it rather than the point estimate.
 - COMET and other neural metrics have encoders that saw Uzbek pretraining text
   but were never trained or meta-evaluated on Uzbek human judgements. If added,

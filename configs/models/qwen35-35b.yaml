@@ -16,3 +16,15 @@ quantization: ""
 reasoning: "off"
 
 concurrency: 4
+
+# Cap the context window. Ollama otherwise loads this model at its full 262,144
+# token context, which inflates it from 17 GB to 40 GB and pushes 45% of the
+# weights onto CPU on an 80 GB card. Measured effect: GPU utilisation 5%, 3.7
+# minutes per reasoning item, and a stall after eight items.
+#
+# Nothing here needs that much room. The longest task is reasoning at
+# max_tokens 8192 on prompts of a few hundred tokens, so 16384 is roughly double
+# what any item can use and the model never sees a truncated context.
+extra_body:
+  options:
+    num_ctx: 16384

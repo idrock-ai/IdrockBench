@@ -227,8 +227,25 @@ def cmd_rescore(args: argparse.Namespace) -> int:
     """Recompute metrics from stored responses, with no model calls."""
     run_dir = Path(args.run_dir)
     manifest = json.loads((run_dir / "manifest.json").read_text(encoding="utf-8"))
+    manifest.setdefault("tasks", {})
     failed = False
-    for name in list(manifest.get("tasks", {})):
+
+    # Rescore every task that has per-item records, not only those the manifest
+    # lists. The JSONL is the record and the manifest is an index of it, so when
+    # they disagree the records win.
+    #
+    # They disagree more easily than they should: re-running one task with
+    # --tasks writes a fresh manifest and drops the entries for tasks it did not
+    # run. qwen35-2b and qwen35-0.8b each kept 2062 dtm rows and 800 translation
+    # rows on disk while their manifests listed only reasoning_uz, so both showed
+    # as unmeasured on two tracks they had in fact completed.
+    recorded = {f.stem for f in run_dir.glob("*.jsonl")}
+    known = set(list_configs("tasks"))
+    for orphan in sorted(recorded - known):
+        print(f"{orphan}: per-item records with no task config, skipped",
+              file=sys.stderr)
+
+    for name in sorted((recorded & known) | set(manifest["tasks"])):
         jsonl = run_dir / f"{name}.jsonl"
         if not jsonl.exists():
             print(f"{name}: no per-item records at {jsonl.name} — cannot rescore",
@@ -241,8 +258,15 @@ def cmd_rescore(args: argparse.Namespace) -> int:
         items = task.prepare(ds.rows)
         result = rescore_task(task, items, jsonl,
                               dataset_id=cfg.dataset, dataset_sha256=ds.sha256)
-        before = manifest["tasks"][name].get("metrics", {}).get("primary")
-        manifest["tasks"][name].update({
+        entry = manifest["tasks"].setdefault(name, {})
+        restored = "  (entry restored)" if not entry else ""
+        before = entry.get("metrics", {}).get("primary")
+        entry.setdefault("dataset", cfg.dataset)
+        entry.setdefault("max_tokens", cfg.max_tokens or task.default_max_tokens)
+        entry.setdefault("options", dict(cfg.options))
+        entry.update({
+            "n_items": result.n_items,
+            "n_scored": result.n_scored,
             "task_version": task.version,
             "metrics": result.metrics,
             "diagnostics": result.diagnostics,
@@ -255,7 +279,8 @@ def cmd_rescore(args: argparse.Namespace) -> int:
             "dataset_sha256": ds.sha256,
             "rescored_at": datetime.now(UTC).isoformat(timespec="seconds"),
         })
-        print(f"{name}: {before} -> {result.primary}  (task version {task.version})")
+        print(f"{name}: {before} -> {result.primary}  "
+              f"(task version {task.version}){restored}")
     (run_dir / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     return 1 if failed else 0

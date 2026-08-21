@@ -80,8 +80,207 @@
           }
         }
       },
-      "rescored_at": "2026-08-20T12:36:52+00:00",
+      "rescored_at": "2026-08-21T14:09:58+00:00",
       "dataset_id": "reasoning_uz.json"
+    },
+    "dtm": {
+      "dataset": "dtm_public.json",
+      "max_tokens": 1024,
+      "options": {
+        "shuffle_options": true,
+        "answer_only": true
+      },
+      "n_items": 2062,
+      "n_scored": 2062,
+      "task_version": "2.1",
+      "metrics": {
+        "primary": 25.8,
+        "accuracy": 25.8,
+        "ci_low": 23.96,
+        "ci_high": 27.73,
+        "n": 2062
+      },
+      "diagnostics": {
+        "n_items": 2062,
+        "n_scored": 2062,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "bare-letter": 2062
+        },
+        "chance_level": 0.25,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "subject": {
+          "fizika": {
+            "accuracy": 27.54,
+            "ci_low": 23.41,
+            "ci_high": 32.1,
+            "n": 403,
+            "n_items": 403,
+            "coverage": 1.0
+          },
+          "matematika": {
+            "accuracy": 25.03,
+            "ci_low": 22.02,
+            "ci_high": 28.31,
+            "n": 727,
+            "n_items": 727,
+            "coverage": 1.0
+          },
+          "ona_tili": {
+            "accuracy": 26.24,
+            "ci_low": 22.28,
+            "ci_high": 30.63,
+            "n": 423,
+            "n_items": 423,
+            "coverage": 1.0
+          },
+          "tarix": {
+            "accuracy": 25.15,
+            "ci_low": 21.57,
+            "ci_high": 29.09,
+            "n": 509,
+            "n_items": 509,
+            "coverage": 1.0
+          }
+        }
+      },
+      "dataset_id": "dtm_public.json",
+      "dataset_sha256": "6cca87ac3457631c0e33ac770cdb19f774f9c403b8fca2ac65001dc109b50eed",
+      "rescored_at": "2026-08-21T14:09:58+00:00"
+    },
+    "translation_uz": {
+      "dataset": "translation_flores_devtest.json",
+      "max_tokens": 1024,
+      "options": {
+        "directions": [
+          "uz_en",
+          "en_uz",
+          "uz_ru",
+          "ru_uz"
+        ],
+        "eval_splits": [
+          "devtest"
+        ]
+      },
+      "n_items": 800,
+      "n_scored": 800,
+      "task_version": "2.0",
+      "metrics": {
+        "primary": 30.07,
+        "n_segments": 800,
+        "chrf2pp": 30.07,
+        "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+        "bleu": 8.49,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+        "spbleu": null,
+        "cyrillic_output_rate": 0.3513,
+        "normalization": "NFC; apostrophes folded to U+02BB",
+        "ci_low": 28.81,
+        "ci_high": 31.19,
+        "ci_method": "segment bootstrap, 500 resamples",
+        "n": 800,
+        "by_direction": {
+          "en_uz": {
+            "n_segments": 200,
+            "chrf2pp": 30.73,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 4.36,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "ru_uz": {
+            "n_segments": 200,
+            "chrf2pp": 17.19,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 2.21,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.455,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_en": {
+            "n_segments": 200,
+            "chrf2pp": 44.69,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 17.92,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_ru": {
+            "n_segments": 200,
+            "chrf2pp": 28.89,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 7.46,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.95,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          }
+        },
+        "chrf2pp_macro": 30.38
+      },
+      "diagnostics": {
+        "n_items": 800,
+        "n_scored": 800,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "last-line": 800
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {
+        "direction": {
+          "en_uz": {
+            "accuracy": 30.34,
+            "ci_low": 24.39,
+            "ci_high": 37.04,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "ru_uz": {
+            "accuracy": 17.02,
+            "ci_low": 12.45,
+            "ci_high": 22.84,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_en": {
+            "accuracy": 44.19,
+            "ci_low": 37.48,
+            "ci_high": 51.12,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_ru": {
+            "accuracy": 28.72,
+            "ci_low": 22.9,
+            "ci_high": 35.35,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          }
+        }
+      },
+      "dataset_id": "translation_flores_devtest.json",
+      "dataset_sha256": "fba5fb626edbbd793b19c97b5f7c6e4ca336a548f5908eba4de123d1ceb5ca54",
+      "rescored_at": "2026-08-21T14:11:16+00:00"
     }
   },
   "notes": ""

@@ -23,13 +23,13 @@ and twenty of its fifty cells had no source run.
 ## What the page renders
 
 The table follows the data. Columns come from `tasks` in `results.json`, so a
-task added to the suite appears without touching the HTML — and a task removed
+task added to the suite appears without touching the HTML - and a task removed
 from the suite disappears rather than lingering as an empty column.
 
 Each cell shows the score, its 95% interval and its sample size. Two flags:
 
-- `⚠` — at or below the task's random baseline. Usually a broken extractor.
-- `◐` — under 80% of items were scorable. The number reflects response format
+- `⚠` - at or below the task's random baseline. Usually a broken extractor.
+- `◐` - under 80% of items were scorable. The number reflects response format
   as much as model quality.
 
 Ranks are read from the file, never recomputed when a reader sorts a column.

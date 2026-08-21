@@ -1,7 +1,7 @@
 # Add a benchmark
 
 A task is five methods. The runner handles concurrency, retries, checkpointing,
-per-item records and diagnostics — a task only says *what to ask* and *how to
+per-item records and diagnostics - a task only says *what to ask* and *how to
 score it*.
 
 ## Worked example
@@ -82,7 +82,7 @@ class ReadingTask(Task):
 ```
 
 That is the whole task. `aggregate()` is inherited and gives mean accuracy with
-a Wilson interval; override it only for corpus-level metrics (see
+a Wilson interval. Override it only for corpus-level metrics (see
 `translation_uz.py`) or a multi-metric grid (see `ifeval_uz.py`).
 
 ## Wire it up
@@ -99,7 +99,7 @@ idrockbench validate reading_uz
 idrockbench run --model stub --tasks reading_uz --limit 5
 ```
 
-No registration list to edit — `@register_task` plus a module in
+No registration list to edit - `@register_task` plus a module in
 `src/idrockbench/tasks/` is enough.
 
 ## Before it joins the published suite
@@ -108,8 +108,8 @@ Add it to `configs/suites/core.yaml` only when all of these hold:
 
 1. **`idrockbench validate` is clean.**
 2. **Golden tests exist** in `tests/`, covering: a correct answer in every
-   apostrophe variant; a reasoning-model response with a `<think>` block;
-   a truncated response; an empty response; a refusal. Each must assert the
+   apostrophe variant. A reasoning-model response with a `<think>` block.
+   a truncated response. An empty response. A refusal. Each must assert the
    *status*, not only the score.
 3. **`chance_level` is right.** It sets the below-chance warning and the
    normalisation used by the composite. Multiple choice: `1 / n_options`.
@@ -141,12 +141,12 @@ class MyMCQ(MultipleChoiceTask):
 ```
 
 Returning `None` from `extract_gold_index` drops the row and reports it. Never
-default to index 0 — that converts an annotation gap into silent noise that
+default to index 0 - that converts an annotation gap into silent noise that
 still counts in the denominator.
 
 ## Versioning
 
-`version` is not decoration. Bump it whenever a change can move a score —
+`version` is not decoration. Bump it whenever a change can move a score -
 prompt wording, extraction rules, scoring, the default dataset. Published
 numbers name their task version, and numbers from different versions are never
 sorted together. When you bump it, re-score the affected runs:

@@ -1,4 +1,4 @@
-# Dataset card — MMLU-Pro-uz
+# Dataset card - MMLU-Pro-uz
 
 | | |
 |---|---|
@@ -30,7 +30,7 @@ B) $62,900' '$48,700' '$52,600
 
 Result: **147 of 200 items (73.5%) had the correct answer outside what the model
 was shown.** Maximum achievable accuracy was about 26%, and published scores of
-6.5–15.5% were noise around the 10% random baseline — not a hard benchmark, a
+6.5–15.5% were noise around the 10% random baseline - not a hard benchmark, a
 broken one.
 
 Now stored as JSON arrays and parsed by quoted span. Zero items have an
@@ -40,7 +40,7 @@ out-of-range key, and `idrockbench validate` fails the dataset if any appear.
 
 - Options re-serialised as JSON arrays.
 - **25 items quarantined for failed machine translation.** Examples: item 263's
-  options are `'A q s.' 'O b h.' 'P m d.' 'P d k.'`; item 259's Uzbek question
+  options are `'A q s.' 'O b h.' 'P m d.' 'P d k.'`. Item 259's Uzbek question
   is `"Bu nima"` (7 characters) against a 324-character English original.
 - 1 item quarantined for mismatched English/Uzbek option counts, which would
   have shifted the answer key.
@@ -52,7 +52,7 @@ See `data/quarantine/mmlu_pro_uz.json`.
 
 - Machine-translated with no human validation. The field has converged on
   native authorship as the credibility standard, and translated benchmarks are
-  expected to justify their validity — post-editing, back-translation, or
+  expected to justify their validity - post-editing, back-translation, or
   native-speaker QA with a reported agreement statistic.
 - 174 items gives a ±7pp interval at best. Too small for confident ranking.
 

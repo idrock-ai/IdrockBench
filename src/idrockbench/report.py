@@ -55,9 +55,16 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
     """Rebuild the leaderboard from scratch and write it."""
     runs = load_runs(runs_dir)
 
-    # Most recent run per model wins; earlier ones stay on disk as history.
+    # Most recent run per model wins, but only among runs that measured this
+    # suite. A run scoped to other tasks must not shadow one that measured these:
+    # pulling 28 `zarb-*` riddle runs into runs/ made every model on the core
+    # leaderboard read as incomplete, because those runs are newer and carry no
+    # dtm, reasoning or translation cells at all.
+    wanted = set(suite.tasks)
     latest: dict[str, dict] = {}
     for run in runs:
+        if not wanted & set((run.get("tasks") or {})):
+            continue
         latest.setdefault(run.get("model", "unknown"), run)
 
     chance = {}

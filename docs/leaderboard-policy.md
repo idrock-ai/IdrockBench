@@ -9,7 +9,7 @@ every time. There is no merge step and no hand-editing.
 
 - A cell no run produced cannot appear.
 - Deleting a run removes it from the board.
-- The newest run per model wins; earlier runs stay on disk as history.
+- The newest run per model wins. Earlier runs stay on disk as history.
 
 The previous leaderboard was maintained by hand. Twenty of its fifty cells had
 no source run, one cell held a different metric pasted from the wrong column,
@@ -47,7 +47,7 @@ any deviation is published as an explicit vector.
 ## Intervals and ties
 
 Every cell shows a 95% interval and its n. Models whose intervals overlap on
-every shared task are marked tied. A rank is an estimate, not a fact — awarding
+every shared task are marked tied. A rank is an estimate, not a fact - awarding
 a medal for a gap inside the noise floor asserts something the data does not
 support.
 
@@ -58,9 +58,9 @@ They are never recomputed from whatever column the reader last clicked.
 
 Two flags, both published:
 
-- **`provisional`** — under 80% of items were scorable. The number says more
+- **`provisional`** - under 80% of items were scorable. The number says more
   about extraction than about the model.
-- **`at_or_below_chance`** — the score is at or below the random baseline. In
+- **`at_or_below_chance`** - the score is at or below the random baseline. In
   practice this nearly always means a broken extractor, not a weak model, and
   it should be investigated before publication rather than after.
 
@@ -69,7 +69,7 @@ Two flags, both published:
 | Badge | Meaning |
 |---|---|
 | `organiser-run` | We executed it, on our infrastructure, on held-out data |
-| `verified` | Submitter ran it; we reproduced a random subset within tolerance |
+| `verified` | Submitter ran it. We reproduced a random subset within tolerance |
 | `self-reported` | Submitter's number, artefacts attached, not reproduced |
 
 Self-reported rows are visually distinct, excluded from the default sort, and
@@ -81,8 +81,8 @@ Every published score names its task version and harness commit. Scores from
 different task versions are never sorted together.
 
 **A change to a task's scoring means re-scoring every model.** That costs
-seconds — `idrockbench rescore runs/<id>` recomputes from stored responses with
-no model calls — which is the reason per-item records are kept. A partially
+seconds - `idrockbench rescore runs/<id>` recomputes from stored responses with
+no model calls - which is the reason per-item records are kept. A partially
 re-scored board is a corrupt board.
 
 Changes go in a dated changelog. Corrections are made in public: a corrected

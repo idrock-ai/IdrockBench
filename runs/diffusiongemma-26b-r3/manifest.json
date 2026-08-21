@@ -1,0 +1,286 @@
+{
+  "run_id": "diffusiongemma-26b-r3",
+  "model": "DiffusionGemma 26B-A4B",
+  "provider": "openai",
+  "model_revision": "",
+  "quantization": "bf16",
+  "organization": "Google",
+  "license": "apache-2.0",
+  "weights_url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+  "temperature": 0.0,
+  "top_p": null,
+  "seed": 0,
+  "max_tokens": {
+    "dtm": 1024,
+    "reasoning_uz": 8192,
+    "translation_uz": 1024
+  },
+  "reasoning": "default",
+  "chat_template": true,
+  "harness_version": "2.0.0",
+  "harness_git_sha": "unknown",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1016-gcp-x86_64-with-glibc2.39",
+  "package_versions": {},
+  "started_at": "2026-08-21T10:11:06+00:00",
+  "finished_at": "2026-08-21T11:41:02+00:00",
+  "tasks": {
+    "dtm": {
+      "task_version": "2.1",
+      "dataset": "dtm_public.json",
+      "dataset_sha256": "6cca87ac3457631c0e33ac770cdb19f774f9c403b8fca2ac65001dc109b50eed",
+      "max_tokens": 1024,
+      "reasoning": "default",
+      "concurrency": 1,
+      "timeout": 300,
+      "options": {
+        "shuffle_options": true,
+        "answer_only": true
+      },
+      "n_items": 2062,
+      "n_scored": 2061,
+      "metrics": {
+        "primary": 44.4,
+        "accuracy": 44.4,
+        "ci_low": 42.26,
+        "ci_high": 46.55,
+        "n": 2061
+      },
+      "diagnostics": {
+        "n_items": 2062,
+        "n_scored": 2061,
+        "unparsed_rate": 0.0005,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.9995,
+        "strategies": {
+          "bare-letter": 2061,
+          "no-match": 1
+        },
+        "chance_level": 0.25,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "subject": {
+          "fizika": {
+            "accuracy": 40.94,
+            "ci_low": 36.25,
+            "ci_high": 45.81,
+            "n": 403,
+            "n_items": 403,
+            "coverage": 1.0
+          },
+          "matematika": {
+            "accuracy": 44.43,
+            "ci_low": 40.86,
+            "ci_high": 48.06,
+            "n": 727,
+            "n_items": 727,
+            "coverage": 1.0
+          },
+          "ona_tili": {
+            "accuracy": 34.28,
+            "ci_low": 29.92,
+            "ci_high": 38.93,
+            "n": 423,
+            "n_items": 423,
+            "coverage": 1.0
+          },
+          "tarix": {
+            "accuracy": 55.51,
+            "ci_low": 51.17,
+            "ci_high": 59.78,
+            "n": 508,
+            "n_items": 509,
+            "coverage": 0.998
+          }
+        }
+      }
+    },
+    "reasoning_uz": {
+      "task_version": "2.0",
+      "dataset": "reasoning_uz.json",
+      "dataset_sha256": "8070ec68a5d921a06775498584a5bda92ffb773f60b0d41fb1c47d98ba3908d4",
+      "max_tokens": 8192,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 1200,
+      "options": {},
+      "n_items": 100,
+      "n_scored": 100,
+      "metrics": {
+        "primary": 45.62,
+        "accuracy": 45.62,
+        "ci_low": 36.21,
+        "ci_high": 55.37,
+        "n": 100
+      },
+      "diagnostics": {
+        "n_items": 100,
+        "n_scored": 100,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "<solution>": 50,
+          "bold": 50
+        },
+        "chance_level": 0.156,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "task": {
+          "spatial": {
+            "accuracy": 48.0,
+            "ci_low": 34.8,
+            "ci_high": 61.49,
+            "n": 50,
+            "n_items": 50,
+            "coverage": 1.0
+          },
+          "zebra_puzzle": {
+            "accuracy": 43.25,
+            "ci_low": 30.49,
+            "ci_high": 56.97,
+            "n": 50,
+            "n_items": 50,
+            "coverage": 1.0
+          }
+        }
+      }
+    },
+    "translation_uz": {
+      "task_version": "2.0",
+      "dataset": "translation_flores_devtest.json",
+      "dataset_sha256": "fba5fb626edbbd793b19c97b5f7c6e4ca336a548f5908eba4de123d1ceb5ca54",
+      "max_tokens": 1024,
+      "reasoning": "default",
+      "concurrency": 1,
+      "timeout": 300,
+      "options": {
+        "directions": [
+          "uz_en",
+          "en_uz",
+          "uz_ru",
+          "ru_uz"
+        ],
+        "eval_splits": [
+          "devtest"
+        ]
+      },
+      "n_items": 800,
+      "n_scored": 800,
+      "metrics": {
+        "primary": 49.68,
+        "n_segments": 800,
+        "chrf2pp": 49.68,
+        "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+        "bleu": 19.7,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+        "spbleu": null,
+        "cyrillic_output_rate": 0.25,
+        "normalization": "NFC; apostrophes folded to U+02BB",
+        "ci_low": 48.87,
+        "ci_high": 50.51,
+        "ci_method": "segment bootstrap, 500 resamples",
+        "n": 800,
+        "by_direction": {
+          "en_uz": {
+            "n_segments": 200,
+            "chrf2pp": 49.11,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 13.91,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "ru_uz": {
+            "n_segments": 200,
+            "chrf2pp": 44.14,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 10.03,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_en": {
+            "n_segments": 200,
+            "chrf2pp": 58.78,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 31.79,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_ru": {
+            "n_segments": 200,
+            "chrf2pp": 46.77,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 19.15,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 1.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          }
+        },
+        "chrf2pp_macro": 49.7
+      },
+      "diagnostics": {
+        "n_items": 800,
+        "n_scored": 800,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "last-line": 800
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {
+        "direction": {
+          "en_uz": {
+            "accuracy": 48.6,
+            "ci_low": 41.77,
+            "ci_high": 55.49,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "ru_uz": {
+            "accuracy": 43.93,
+            "ci_low": 37.23,
+            "ci_high": 50.86,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_en": {
+            "accuracy": 58.51,
+            "ci_low": 51.58,
+            "ci_high": 65.11,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_ru": {
+            "accuracy": 46.81,
+            "ci_low": 40.02,
+            "ci_high": 53.72,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          }
+        }
+      }
+    }
+  },
+  "notes": ""
+}

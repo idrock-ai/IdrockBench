@@ -80,8 +80,212 @@
           }
         }
       },
-      "rescored_at": "2026-08-20T12:36:52+00:00",
+      "rescored_at": "2026-08-21T14:12:11+00:00",
       "dataset_id": "reasoning_uz.json"
+    },
+    "dtm": {
+      "dataset": "dtm_public.json",
+      "max_tokens": 1024,
+      "options": {
+        "shuffle_options": true,
+        "answer_only": true
+      },
+      "n_items": 2062,
+      "n_scored": 1852,
+      "task_version": "2.1",
+      "metrics": {
+        "primary": 25.86,
+        "accuracy": 25.86,
+        "ci_low": 23.92,
+        "ci_high": 27.91,
+        "n": 1852
+      },
+      "diagnostics": {
+        "n_items": 2062,
+        "n_scored": 1852,
+        "unparsed_rate": 0.1018,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.8982,
+        "strategies": {
+          "answer-cue": 1307,
+          "bold": 291,
+          "no-match": 210,
+          "bare-letter": 124,
+          "option-label": 93,
+          "line-tail": 37
+        },
+        "chance_level": 0.25,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "subject": {
+          "fizika": {
+            "accuracy": 34.02,
+            "ci_low": 29.18,
+            "ci_high": 39.23,
+            "n": 338,
+            "n_items": 403,
+            "coverage": 0.8387
+          },
+          "matematika": {
+            "accuracy": 24.92,
+            "ci_low": 21.68,
+            "ci_high": 28.47,
+            "n": 622,
+            "n_items": 727,
+            "coverage": 0.8556
+          },
+          "ona_tili": {
+            "accuracy": 22.22,
+            "ci_low": 18.44,
+            "ci_high": 26.52,
+            "n": 405,
+            "n_items": 423,
+            "coverage": 0.9574
+          },
+          "tarix": {
+            "accuracy": 24.44,
+            "ci_low": 20.83,
+            "ci_high": 28.44,
+            "n": 487,
+            "n_items": 509,
+            "coverage": 0.9568
+          }
+        }
+      },
+      "dataset_id": "dtm_public.json",
+      "dataset_sha256": "6cca87ac3457631c0e33ac770cdb19f774f9c403b8fca2ac65001dc109b50eed",
+      "rescored_at": "2026-08-21T14:12:11+00:00"
+    },
+    "translation_uz": {
+      "dataset": "translation_flores_devtest.json",
+      "max_tokens": 1024,
+      "options": {
+        "directions": [
+          "uz_en",
+          "en_uz",
+          "uz_ru",
+          "ru_uz"
+        ],
+        "eval_splits": [
+          "devtest"
+        ]
+      },
+      "n_items": 800,
+      "n_scored": 797,
+      "task_version": "2.0",
+      "metrics": {
+        "primary": 14.92,
+        "n_segments": 797,
+        "chrf2pp": 14.92,
+        "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+        "bleu": 1.24,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+        "spbleu": null,
+        "cyrillic_output_rate": 0.3827,
+        "normalization": "NFC; apostrophes folded to U+02BB",
+        "ci_low": 14.09,
+        "ci_high": 15.87,
+        "ci_method": "segment bootstrap, 500 resamples",
+        "n": 797,
+        "by_direction": {
+          "en_uz": {
+            "n_segments": 198,
+            "chrf2pp": 18.95,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 0.64,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "ru_uz": {
+            "n_segments": 199,
+            "chrf2pp": 6.6,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 0.4,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.7588,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_en": {
+            "n_segments": 200,
+            "chrf2pp": 22.81,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 3.45,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_ru": {
+            "n_segments": 200,
+            "chrf2pp": 12.25,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 1.04,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.77,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          }
+        },
+        "chrf2pp_macro": 15.15
+      },
+      "diagnostics": {
+        "n_items": 800,
+        "n_scored": 797,
+        "unparsed_rate": 0.0037,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.9962,
+        "strategies": {
+          "last-line": 800
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {
+        "direction": {
+          "en_uz": {
+            "accuracy": 20.49,
+            "ci_low": 15.46,
+            "ci_high": 26.65,
+            "n": 198,
+            "n_items": 200,
+            "coverage": 0.99
+          },
+          "ru_uz": {
+            "accuracy": 6.77,
+            "ci_low": 4.04,
+            "ci_high": 11.14,
+            "n": 199,
+            "n_items": 200,
+            "coverage": 0.995
+          },
+          "uz_en": {
+            "accuracy": 21.87,
+            "ci_low": 16.7,
+            "ci_high": 28.1,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_ru": {
+            "accuracy": 12.16,
+            "ci_low": 8.33,
+            "ci_high": 17.41,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          }
+        }
+      },
+      "dataset_id": "translation_flores_devtest.json",
+      "dataset_sha256": "fba5fb626edbbd793b19c97b5f7c6e4ca336a548f5908eba4de123d1ceb5ca54",
+      "rescored_at": "2026-08-21T14:13:39+00:00"
     }
   },
   "notes": ""

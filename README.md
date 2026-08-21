@@ -22,7 +22,7 @@ Most evaluation harnesses can tell you a model scored 43%. Far fewer can tell yo
 
 **A parse failure is not a wrong answer.** When a response cannot be scored - no answer found, cut off by the token limit, request failed - the item is excluded from the denominator and reported in its own rate. Collapsing those into "0" makes a broken extractor indistinguishable from a weak model. Every cell publishes `unparsed_rate`, `truncated_rate` and `error_rate` beside the score.
 
-**Correct Uzbek is never penalised.** Uzbek Latin writes `oʻ` and `gʻ` with U+02BB, a letter; models routinely type an ASCII `'` or a curly `'`, which are punctuation. Any comparison that skips normalisation scores the same correct answer at 100 or at 20 depending on which key the model happened to press. Everything - extraction, keyword matching, translation references, gold strings - goes through [`text/normalize.py`](src/idrockbench/text/normalize.py) first.
+**Correct Uzbek is never penalised.** Uzbek Latin writes `oʻ` and `gʻ` with U+02BB, a letter. Models routinely type an ASCII `'` or a curly `'`, which are punctuation. Any comparison that skips normalisation scores the same correct answer at 100 or at 20 depending on which key the model happened to press. Everything - extraction, keyword matching, translation references, gold strings - goes through [`text/normalize.py`](src/idrockbench/text/normalize.py) first.
 
 **Every score is bound to its inputs.** Each run writes a manifest with the dataset content hash, task version, harness commit, quantisation, temperature, seed and token budget - and a JSONL row per item holding the prompt, the raw response, the extraction and the score. Published numbers are recomputable from those rows alone, so correcting a scoring rule costs a re-score, not a re-run.
 
@@ -86,4 +86,4 @@ The underlying DTM dataset is published separately: [IEEE DataPort, DOI 10.21227
 
 ## Licence
 
-Code is MIT. Datasets carry their own licences and constraints - see [`docs/data-cards/`](docs/data-cards/) before redistributing anything. The FLORES-derived translation set is CC BY-SA 4.0 and gated upstream; it cannot be relicensed.
+Code is MIT. Datasets carry their own licences and constraints - see [`docs/data-cards/`](docs/data-cards/) before redistributing anything. The FLORES-derived translation set is CC BY-SA 4.0 and gated upstream. It cannot be relicensed.

@@ -28,8 +28,11 @@ def load_runs(runs_dir: Path) -> list[dict[str, Any]]:
 def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[str, Any]:
     runs = load_runs(runs_dir)
 
+    wanted = set(suite.tasks)
     latest: dict[str, dict] = {}
     for run in runs:
+        if not wanted & set((run.get("tasks") or {})):
+            continue
         latest.setdefault(run.get("model", "unknown"), run)
 
     chance = {}

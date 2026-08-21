@@ -10,3 +10,7 @@ quantization: ""
 reasoning: "off"
 
 concurrency: 4
+
+extra_body:
+  options:
+    num_ctx: 16384

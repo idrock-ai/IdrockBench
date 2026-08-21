@@ -1,0 +1,9 @@
+name: core
+description: >
+  Tracks whose numbers are considered publishable. A task joins this suite only
+  once its dataset validates clean and its scoring has golden tests.
+tasks:
+  - dtm
+  - reasoning_uz
+  - translation_uz
+require_complete: true

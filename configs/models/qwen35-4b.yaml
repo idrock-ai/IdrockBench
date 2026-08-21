@@ -1,0 +1,13 @@
+model: qwen3.5:4b
+provider: ollama
+base_url: http://127.0.0.1:11500
+name: Qwen3.5 4B
+organization: Alibaba
+license: apache-2.0
+weights_url: https://huggingface.co/Qwen
+params_b: 4
+quantization: ""
+
+reasoning: "off"
+
+concurrency: 16

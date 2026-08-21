@@ -1,0 +1,13 @@
+model: gemma4:e2b
+provider: ollama
+base_url: http://127.0.0.1:11500
+name: Gemma 4 E2B
+organization: Google
+license: gemma
+weights_url: https://huggingface.co/google
+params_b: 2
+quantization: ""
+
+reasoning: "off"
+
+concurrency: 16

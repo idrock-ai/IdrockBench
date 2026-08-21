@@ -1,0 +1,18 @@
+model: diffusiongemma-26b-a4b-it
+provider: openai
+base_url: http://127.0.0.1:8077/v1
+name: DiffusionGemma 26B-A4B
+organization: Google
+license: apache-2.0
+weights_url: https://huggingface.co/google/diffusiongemma-26B-A4B-it
+params_b: 25.2
+
+quantization: bf16
+
+temperature: 0.0
+
+reasoning: "default"
+
+concurrency: 1
+
+timeout: 300

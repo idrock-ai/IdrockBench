@@ -1,0 +1,12 @@
+model: qwen3.5:35b
+provider: ollama
+name: Qwen3.5 35B
+organization: Alibaba
+license: apache-2.0
+weights_url: https://huggingface.co/Qwen
+params_b: 35
+quantization: ""
+
+reasoning: "off"
+
+concurrency: 4

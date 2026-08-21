@@ -1,0 +1,9 @@
+name: knowledge
+description: >
+  Knowledge and translation tracks, for a fast pass over many models. Rows
+  scored under this suite carry no reasoning cell and are reported as
+  incomplete on the core leaderboard until that cell is filled.
+tasks:
+  - dtm
+  - translation_uz
+require_complete: true

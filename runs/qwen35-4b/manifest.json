@@ -1,0 +1,295 @@
+{
+  "run_id": "qwen35-4b",
+  "model": "Qwen3.5 4B",
+  "provider": "ollama",
+  "model_revision": "",
+  "quantization": "Q4_K_M",
+  "organization": "Alibaba",
+  "license": "apache-2.0",
+  "weights_url": "https://huggingface.co/Qwen",
+  "temperature": 0.0,
+  "top_p": null,
+  "seed": 0,
+  "max_tokens": {
+    "dtm": 1024,
+    "reasoning_uz": 8192,
+    "translation_uz": 1024
+  },
+  "reasoning": "off",
+  "chat_template": true,
+  "harness_version": "2.0.0",
+  "harness_git_sha": "unknown",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1016-gcp-x86_64-with-glibc2.39",
+  "package_versions": {},
+  "started_at": "2026-08-19T20:24:03+00:00",
+  "finished_at": "2026-08-19T22:16:04+00:00",
+  "tasks": {
+    "dtm": {
+      "task_version": "2.1",
+      "dataset": "dtm_public.json",
+      "dataset_sha256": "6cca87ac3457631c0e33ac770cdb19f774f9c403b8fca2ac65001dc109b50eed",
+      "max_tokens": 1024,
+      "reasoning": "off",
+      "concurrency": 16,
+      "timeout": 300,
+      "options": {
+        "shuffle_options": true,
+        "answer_only": true
+      },
+      "n_items": 2062,
+      "n_scored": 2062,
+      "metrics": {
+        "primary": 32.2,
+        "accuracy": 32.2,
+        "ci_low": 30.22,
+        "ci_high": 34.25,
+        "n": 2062
+      },
+      "diagnostics": {
+        "n_items": 2062,
+        "n_scored": 2062,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "bare-letter": 2062
+        },
+        "chance_level": 0.25,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "subject": {
+          "fizika": {
+            "accuracy": 31.51,
+            "ci_low": 27.17,
+            "ci_high": 36.21,
+            "n": 403,
+            "n_items": 403,
+            "coverage": 1.0
+          },
+          "matematika": {
+            "accuracy": 31.09,
+            "ci_low": 27.83,
+            "ci_high": 34.54,
+            "n": 727,
+            "n_items": 727,
+            "coverage": 1.0
+          },
+          "ona_tili": {
+            "accuracy": 26.95,
+            "ci_low": 22.94,
+            "ci_high": 31.37,
+            "n": 423,
+            "n_items": 423,
+            "coverage": 1.0
+          },
+          "tarix": {
+            "accuracy": 38.7,
+            "ci_low": 34.57,
+            "ci_high": 43.0,
+            "n": 509,
+            "n_items": 509,
+            "coverage": 1.0
+          }
+        }
+      },
+      "rescored_at": "2026-08-20T12:36:53+00:00",
+      "dataset_id": "dtm_public.json"
+    },
+    "reasoning_uz": {
+      "task_version": "2.0",
+      "dataset": "reasoning_uz.jsonl",
+      "dataset_sha256": "8070ec68a5d921a06775498584a5bda92ffb773f60b0d41fb1c47d98ba3908d4",
+      "max_tokens": 8192,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 1200,
+      "options": {
+        "include_retired": false
+      },
+      "n_items": 100,
+      "n_scored": 68,
+      "metrics": {
+        "primary": 26.29,
+        "accuracy": 26.29,
+        "ci_low": 17.3,
+        "ci_high": 37.81,
+        "n": 68
+      },
+      "diagnostics": {
+        "n_items": 100,
+        "n_scored": 68,
+        "unparsed_rate": 0.32,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.68,
+        "strategies": {
+          "bold": 47,
+          "no-match": 32,
+          "<solution>": 17,
+          "last-line": 4
+        },
+        "chance_level": 0.156,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "task": {
+          "spatial": {
+            "accuracy": 18.37,
+            "ci_low": 9.98,
+            "ci_high": 31.36,
+            "n": 49,
+            "n_items": 50,
+            "coverage": 0.98
+          },
+          "zebra_puzzle": {
+            "accuracy": 46.71,
+            "ci_low": 26.8,
+            "ci_high": 67.73,
+            "n": 19,
+            "n_items": 50,
+            "coverage": 0.38
+          }
+        }
+      },
+      "rescored_at": "2026-08-20T12:36:53+00:00",
+      "dataset_id": "reasoning_uz.json"
+    },
+    "translation_uz": {
+      "task_version": "2.0",
+      "dataset": "translation_flores_devtest.json",
+      "dataset_sha256": "fba5fb626edbbd793b19c97b5f7c6e4ca336a548f5908eba4de123d1ceb5ca54",
+      "max_tokens": 1024,
+      "reasoning": "off",
+      "concurrency": 16,
+      "timeout": 300,
+      "options": {
+        "directions": [
+          "uz_en",
+          "en_uz",
+          "uz_ru",
+          "ru_uz"
+        ],
+        "eval_splits": [
+          "devtest"
+        ]
+      },
+      "n_items": 800,
+      "n_scored": 800,
+      "metrics": {
+        "primary": 41.66,
+        "n_segments": 800,
+        "chrf2pp": 41.66,
+        "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+        "bleu": 14.7,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+        "spbleu": null,
+        "cyrillic_output_rate": 0.3038,
+        "normalization": "NFC; apostrophes folded to U+02BB",
+        "ci_low": 40.45,
+        "ci_high": 42.89,
+        "ci_method": "segment bootstrap, 500 resamples",
+        "n": 800,
+        "by_direction": {
+          "en_uz": {
+            "n_segments": 200,
+            "chrf2pp": 41.26,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 8.23,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "ru_uz": {
+            "n_segments": 200,
+            "chrf2pp": 29.82,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 5.23,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.215,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_en": {
+            "n_segments": 200,
+            "chrf2pp": 53.64,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 26.33,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_ru": {
+            "n_segments": 200,
+            "chrf2pp": 42.51,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 15.45,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 1.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          }
+        },
+        "chrf2pp_macro": 41.81
+      },
+      "diagnostics": {
+        "n_items": 800,
+        "n_scored": 800,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "last-line": 800
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {
+        "direction": {
+          "en_uz": {
+            "accuracy": 40.8,
+            "ci_low": 34.23,
+            "ci_high": 47.72,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "ru_uz": {
+            "accuracy": 30.32,
+            "ci_low": 24.37,
+            "ci_high": 37.01,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_en": {
+            "accuracy": 53.35,
+            "ci_low": 46.43,
+            "ci_high": 60.13,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_ru": {
+            "accuracy": 42.47,
+            "ci_low": 35.82,
+            "ci_high": 49.39,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          }
+        }
+      },
+      "rescored_at": "2026-08-20T12:38:13+00:00",
+      "dataset_id": "translation_flores_devtest.json"
+    }
+  },
+  "notes": ""
+}

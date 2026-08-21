@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "IdrockBench: An Evaluation Suite for Uzbek Large Language Models"
+message: "If you use this benchmark, please cite it."
+type: software
+authors:
+  - name: "IDROCK AI Excellence Center, New Uzbekistan University"
+    city: Tashkent
+    country: UZ
+    website: "https://idrock.uz"
+    email: idrock@newuu.uz
+repository-code: "https://github.com/idrock-ai/IdrockBench"
+url: "https://eval.idrock.uz"
+license: MIT
+version: 2.0.0
+date-released: "2026-08-19"
+keywords:
+  - uzbek
+  - large language models
+  - benchmark
+  - evaluation
+  - low-resource languages
+references:
+  - type: data
+    title: "Uzbek Multiple-Choice Question Dataset for Large Language Model Evaluation"
+    doi: "10.21227/e4h4-kp42"
+    year: 2026
+    publisher:
+      name: "IEEE DataPort"
+    authors:
+      - family-names: Hazratov
+        given-names: Mardon
+      - family-names: Toshnazarov
+        given-names: Qobiljon
+      - family-names: Qayumov
+        given-names: Abduaziz
+      - family-names: Mansuraliyev
+        given-names: Husanboy
+      - family-names: Asadov
+        given-names: Dovud

@@ -1,0 +1,12 @@
+model: gemma4:31b
+provider: ollama
+name: Gemma 4 31B
+organization: Google
+license: gemma
+weights_url: https://huggingface.co/google
+params_b: 31
+quantization: ""
+
+reasoning: "off"
+
+concurrency: 4

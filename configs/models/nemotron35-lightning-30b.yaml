@@ -1,0 +1,12 @@
+model: nemotron-3.5-lightning:30b
+provider: ollama
+name: Nemotron 3.5 Lightning 30B
+organization: NVIDIA
+license: nvidia-open-model
+weights_url: https://huggingface.co/nvidia
+params_b: 30
+quantization: ""
+
+reasoning: "off"
+
+concurrency: 4

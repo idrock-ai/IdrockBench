@@ -1,0 +1,284 @@
+{
+  "run_id": "gemma-4-26b-20260819T145922Z",
+  "model": "Gemma 4 26B",
+  "provider": "ollama",
+  "model_revision": "",
+  "quantization": "Q4_K_M",
+  "organization": "Google",
+  "license": "gemma",
+  "weights_url": "https://huggingface.co/google",
+  "temperature": 0.0,
+  "top_p": null,
+  "seed": 0,
+  "max_tokens": {
+    "dtm": 1024,
+    "reasoning_uz": 4096,
+    "translation_uz": 1024
+  },
+  "reasoning": "off",
+  "chat_template": true,
+  "harness_version": "2.0.0",
+  "harness_git_sha": "unknown",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1029-nvidia-aarch64-with-glibc2.39",
+  "package_versions": {},
+  "started_at": "2026-08-19T14:59:22+00:00",
+  "finished_at": "2026-08-19T16:14:57+00:00",
+  "tasks": {
+    "dtm": {
+      "task_version": "2.1",
+      "dataset": "dtm_public.json",
+      "dataset_sha256": "3b116873889877339dd294d08010547a82ec1c9032d5254d1d5b6eeb36a90707",
+      "max_tokens": 1024,
+      "reasoning": "off",
+      "options": {
+        "shuffle_options": true,
+        "answer_only": true
+      },
+      "n_items": 2062,
+      "n_scored": 2060,
+      "metrics": {
+        "primary": 48.54,
+        "accuracy": 48.54,
+        "ci_low": 46.39,
+        "ci_high": 50.7,
+        "n": 2060
+      },
+      "diagnostics": {
+        "n_items": 2062,
+        "n_scored": 2060,
+        "unparsed_rate": 0.001,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.999,
+        "strategies": {
+          "bare-letter": 2058,
+          "answer-cue": 2,
+          "no-match": 2
+        },
+        "chance_level": 0.25,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "subject": {
+          "fizika": {
+            "accuracy": 50.37,
+            "ci_low": 45.51,
+            "ci_high": 55.23,
+            "n": 403,
+            "n_items": 403,
+            "coverage": 1.0
+          },
+          "matematika": {
+            "accuracy": 47.04,
+            "ci_low": 43.44,
+            "ci_high": 50.68,
+            "n": 727,
+            "n_items": 727,
+            "coverage": 1.0
+          },
+          "ona_tili": {
+            "accuracy": 38.77,
+            "ci_low": 34.25,
+            "ci_high": 43.5,
+            "n": 423,
+            "n_items": 423,
+            "coverage": 1.0
+          },
+          "tarix": {
+            "accuracy": 57.4,
+            "ci_low": 53.05,
+            "ci_high": 61.63,
+            "n": 507,
+            "n_items": 509,
+            "coverage": 0.9961
+          }
+        }
+      }
+    },
+    "reasoning_uz": {
+      "task_version": "2.0",
+      "dataset": "reasoning_uz.jsonl",
+      "dataset_sha256": "6d061236b05712a097d6121751ea4e000aa2140cbec7ed57e1065ffd3b9372f7",
+      "max_tokens": 4096,
+      "reasoning": "default",
+      "options": {
+        "include_retired": false
+      },
+      "n_items": 100,
+      "n_scored": 7,
+      "metrics": {
+        "primary": 85.71,
+        "accuracy": 85.71,
+        "ci_low": 48.69,
+        "ci_high": 97.43,
+        "n": 7
+      },
+      "diagnostics": {
+        "n_items": 100,
+        "n_scored": 7,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.93,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.07,
+        "strategies": {
+          "no-match": 93,
+          "bold": 6,
+          "<solution>": 1
+        },
+        "chance_level": 0.156,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "task": {
+          "spatial": {
+            "accuracy": 83.33,
+            "ci_low": 43.65,
+            "ci_high": 96.99,
+            "n": 6,
+            "n_items": 50,
+            "coverage": 0.12
+          },
+          "zebra_puzzle": {
+            "accuracy": 100.0,
+            "ci_low": 20.65,
+            "ci_high": 100.0,
+            "n": 1,
+            "n_items": 50,
+            "coverage": 0.02
+          }
+        }
+      }
+    },
+    "translation_uz": {
+      "task_version": "2.0",
+      "dataset": "translation_flores_devtest.json",
+      "dataset_sha256": "15238ac010fc9c6051b00d4663a6e30d5ed018d124f81810b3e2a40166fb0408",
+      "max_tokens": 1024,
+      "reasoning": "off",
+      "options": {
+        "directions": [
+          "uz_en",
+          "en_uz",
+          "uz_ru",
+          "ru_uz"
+        ],
+        "eval_splits": [
+          "devtest"
+        ]
+      },
+      "n_items": 800,
+      "n_scored": 800,
+      "metrics": {
+        "primary": 53.32,
+        "n_segments": 800,
+        "chrf2pp": 53.32,
+        "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+        "bleu": 22.87,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+        "spbleu": null,
+        "cyrillic_output_rate": 0.2512,
+        "normalization": "NFC; apostrophes folded to U+02BB",
+        "ci_low": 52.47,
+        "ci_high": 54.13,
+        "ci_method": "segment bootstrap, 500 resamples",
+        "n": 800,
+        "by_direction": {
+          "en_uz": {
+            "n_segments": 200,
+            "chrf2pp": 54.93,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 19.28,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "ru_uz": {
+            "n_segments": 200,
+            "chrf2pp": 48.93,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 13.03,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.005,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_en": {
+            "n_segments": 200,
+            "chrf2pp": 60.16,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 33.8,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_ru": {
+            "n_segments": 200,
+            "chrf2pp": 49.19,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 22.34,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 1.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          }
+        },
+        "chrf2pp_macro": 53.3
+      },
+      "diagnostics": {
+        "n_items": 800,
+        "n_scored": 800,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "last-line": 800
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {
+        "direction": {
+          "en_uz": {
+            "accuracy": 54.96,
+            "ci_low": 48.04,
+            "ci_high": 61.7,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "ru_uz": {
+            "accuracy": 48.85,
+            "ci_low": 42.01,
+            "ci_high": 55.73,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_en": {
+            "accuracy": 59.64,
+            "ci_low": 52.72,
+            "ci_high": 66.19,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_ru": {
+            "accuracy": 49.28,
+            "ci_low": 42.43,
+            "ci_high": 56.16,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          }
+        }
+      }
+    }
+  },
+  "notes": ""
+}

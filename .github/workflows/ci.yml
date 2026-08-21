@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+
+      - name: Lint
+        run: ruff check src tests tools
+
+      - name: Tests
+        run: pytest -v
+
+      - name: Validate datasets
+        run: idrockbench validate
+
+      - name: Pipeline smoke test
+        run: |
+          idrockbench run --model stub --suite all --limit 5 --run-id ci --no-resume
+          idrockbench report --suite all --output /tmp/results.json
+          python -c "
+          import json, sys
+          board = json.load(open('/tmp/results.json'))
+          assert board['models'], 'report produced no rows'
+          for m in board['models']:
+              for task, cell in m['scores'].items():
+                  assert cell['n'] is not None, f'{task}: no sample size'
+                  assert 'coverage' in cell, f'{task}: no coverage'
+          print('pipeline ok:', len(board['models']), 'model(s)')
+          "
+
+      - name: Datasets are reproducible from the builder
+        run: |
+          python tools/build_datasets.py
+          git diff --exit-code -- data/ || {
+            echo "::error::data/ differs from tools/build_datasets.py output."
+            echo "Datasets are built, not hand-edited: change the builder and re-run."
+            exit 1
+          }

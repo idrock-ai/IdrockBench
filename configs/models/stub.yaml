@@ -1,0 +1,6 @@
+model: stub-model
+provider: stub
+name: Stub (pipeline test)
+organization: IdrockBench
+license: unknown
+concurrency: 8

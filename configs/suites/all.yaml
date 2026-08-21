@@ -1,0 +1,4 @@
+name: all
+description: All implemented tasks. Not a publishable ranking.
+tasks: [dtm, business_uz, ifeval_uz, reasoning_uz, translation_uz]
+require_complete: false

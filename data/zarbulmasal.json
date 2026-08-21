@@ -1,0 +1,5482 @@
+[
+ {
+  "id": 1,
+  "riddle": "Uzoq togʻda oʻt yonar.",
+  "answer": "quyosh",
+  "accepted": [
+   "quyosh",
+   "oftob",
+   "kun"
+  ],
+  "distractors": [
+   "oy",
+   "kamalak",
+   "bulut"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Ilmlar.uz — Qiziqarli topishmoqlar toʻplami javoblari bilan — https://ilmlar.uz/tabiat-hodisasi-haqida-topishmoqlar-toplami/"
+ },
+ {
+  "id": 2,
+  "riddle": "Kichkinadir oʻzi,\nYiltir-yiltir koʻzi.",
+  "answer": "yulduz",
+  "accepted": [
+   "yulduz",
+   "yulduzlar"
+  ],
+  "distractors": [
+   "quyosh",
+   "oy",
+   "kamalak"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Ilmlar.uz — Qiziqarli topishmoqlar toʻplami javoblari bilan — https://ilmlar.uz/tabiat-hodisasi-haqida-topishmoqlar-toplami/"
+ },
+ {
+  "id": 3,
+  "riddle": "Zar gilam, zar-zar gilam,\nKoʻtaray desam, ogʻir gilam.",
+  "answer": "yer",
+  "accepted": [
+   "yer",
+   "zamin",
+   "tuproq"
+  ],
+  "distractors": [
+   "osmon",
+   "dengiz",
+   "bulut"
+  ],
+  "theme": "tabiat",
+  "difficulty": "qiyin",
+  "source": "Ilmlar.uz — Qiziqarli topishmoqlar toʻplami javoblari bilan — https://ilmlar.uz/tabiat-hodisasi-haqida-topishmoqlar-toplami/"
+ },
+ {
+  "id": 4,
+  "riddle": "Qozonda emas, qaynaydi,\nQishin-yozin tinmaydi.",
+  "answer": "buloq",
+  "accepted": [
+   "buloq",
+   "chashma"
+  ],
+  "distractors": [
+   "koʻl",
+   "quduq",
+   "ariq"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Qiziqarli topishmoqlar toʻplami javoblari bilan — https://ilmlar.uz/tabiat-hodisasi-haqida-topishmoqlar-toplami/"
+ },
+ {
+  "id": 5,
+  "riddle": "Novcha yigit tom teshar.",
+  "answer": "yomgʻir",
+  "accepted": [
+   "yomgʻir",
+   "yomgʻir tomchisi"
+  ],
+  "distractors": [
+   "shamol",
+   "tuman",
+   "shudring"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/tabiat-hodisalari"
+ },
+ {
+  "id": 6,
+  "riddle": "Oppoqqina dasturxon,\nYer yuzini qoplagan.",
+  "answer": "qor",
+  "accepted": [
+   "qor"
+  ],
+  "distractors": [
+   "yomgʻir",
+   "shamol",
+   "yashin"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/tabiat-hodisalari"
+ },
+ {
+  "id": 7,
+  "riddle": "Ariqdan oyna oldim.",
+  "answer": "muz",
+  "accepted": [
+   "muz"
+  ],
+  "distractors": [
+   "qor",
+   "doʻl",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/tabiat-hodisalari"
+ },
+ {
+  "id": 8,
+  "riddle": "Qoʻlsiz, oyoqsiz eshik ochar.",
+  "answer": "shamol",
+  "accepted": [
+   "shamol",
+   "yel",
+   "shabada"
+  ],
+  "distractors": [
+   "yomgʻir",
+   "qor",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/tabiat-hodisalari"
+ },
+ {
+  "id": 9,
+  "riddle": "Oyogʻi popik,\nOgʻzi koʻpik.",
+  "answer": "tuya",
+  "accepted": [
+   "tuya"
+  ],
+  "distractors": [
+   "eshak",
+   "sigir",
+   "echki"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Qiziqarli topishmoqlar toʻplami javoblari bilan — https://ilmlar.uz/hayvonlar-haqida-topishmoqlar-toplami-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 10,
+  "riddle": "Soqoli bor,\nMoʻylovi yoʻq.",
+  "answer": "echki",
+  "accepted": [
+   "echki",
+   "taka"
+  ],
+  "distractors": [
+   "qoʻy",
+   "sigir",
+   "eshak"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Qiziqarli topishmoqlar toʻplami javoblari bilan — https://ilmlar.uz/hayvonlar-haqida-topishmoqlar-toplami-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 11,
+  "riddle": "Kichkinagina qumgʻon,\nOʻtirib koʻzini yumgʻon.",
+  "answer": "mushuk",
+  "accepted": [
+   "mushuk",
+   "pishak"
+  ],
+  "distractors": [
+   "it",
+   "quyon",
+   "sichqon"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Qiziqarli topishmoqlar toʻplami javoblari bilan — https://ilmlar.uz/hayvonlar-haqida-topishmoqlar-toplami-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 12,
+  "riddle": "Yoʻl-yoʻl toʻni bor,\nOdam qoʻrqar turqi bor.",
+  "answer": "yoʻlbars",
+  "accepted": [
+   "yoʻlbars"
+  ],
+  "distractors": [
+   "sher",
+   "boʻri",
+   "ayiq"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hayvonot-dunyosi"
+ },
+ {
+  "id": 13,
+  "riddle": "El yotsa ham,\nShalpangquloq yotmaydi.",
+  "answer": "it",
+  "accepted": [
+   "it",
+   "kuchuk"
+  ],
+  "distractors": [
+   "eshak",
+   "qoʻy",
+   "sigir"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hayvonot-dunyosi"
+ },
+ {
+  "id": 14,
+  "riddle": "Oʻzi yoʻrtiq,\nLabi tirtiq.",
+  "answer": "quyon",
+  "accepted": [
+   "quyon"
+  ],
+  "distractors": [
+   "sichqon",
+   "tulki",
+   "olmaxon"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hayvonot-dunyosi"
+ },
+ {
+  "id": 15,
+  "riddle": "Yer tagida qubba igna.",
+  "answer": "tipratikan",
+  "accepted": [
+   "tipratikan",
+   "kirpi"
+  ],
+  "distractors": [
+   "sichqon",
+   "koʻrsichqon",
+   "ilon"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "qiyin",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hayvonot-dunyosi"
+ },
+ {
+  "id": 16,
+  "riddle": "Qanoti bor uchmaydi,\nQuruqlikda yurmaydi.",
+  "answer": "baliq",
+  "accepted": [
+   "baliq"
+  ],
+  "distractors": [
+   "baqa",
+   "toshbaqa",
+   "qisqichbaqa"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hayvonot-dunyosi"
+ },
+ {
+  "id": 17,
+  "riddle": "Osti tosh, usti tosh,\nOʻrtasida chandir bosh.",
+  "answer": "toshbaqa",
+  "accepted": [
+   "toshbaqa"
+  ],
+  "distractors": [
+   "baqa",
+   "ilon",
+   "kaltakesak"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hayvonot-dunyosi"
+ },
+ {
+  "id": 18,
+  "riddle": "Sassiq koʻlda it hurar.",
+  "answer": "baqa",
+  "accepted": [
+   "baqa",
+   "qurbaqa"
+  ],
+  "distractors": [
+   "baliq",
+   "ilon",
+   "toshbaqa"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hayvonot-dunyosi"
+ },
+ {
+  "id": 19,
+  "riddle": "Boshi taroq,\nDumi oʻroq.",
+  "answer": "xoʻroz",
+  "accepted": [
+   "xoʻroz"
+  ],
+  "distractors": [
+   "oʻrdak",
+   "gʻoz",
+   "kaptar"
+  ],
+  "theme": "qushlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Parranda va qushlar — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/parranda-va-qushlar"
+ },
+ {
+  "id": 20,
+  "riddle": "Kasbi doim taqir-tuqur,\nQayda ilon koʻrsa choʻqir.",
+  "answer": "laylak",
+  "accepted": [
+   "laylak"
+  ],
+  "distractors": [
+   "kaptar",
+   "chumchuq",
+   "bulbul"
+  ],
+  "theme": "qushlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/parranda-va-qushlar"
+ },
+ {
+  "id": 21,
+  "riddle": "Gul ustida olifta ashulachi.",
+  "answer": "bulbul",
+  "accepted": [
+   "bulbul"
+  ],
+  "distractors": [
+   "qargʻa",
+   "chumchuq",
+   "kaptar"
+  ],
+  "theme": "qushlar",
+  "difficulty": "oson",
+  "source": "MyFarzand.uz — Topishmoqlar toʻplami bolalar uchun (javobi bilan) — https://myfarzand.uz/bolalar-uchun-topishmoqlar.html"
+ },
+ {
+  "id": 22,
+  "riddle": "Atlas koʻylak qanoti,\nXush xabarchi odati.",
+  "answer": "zagʻizgʻon",
+  "accepted": [
+   "zagʻizgʻon",
+   "hakka",
+   "sagʻizgʻon"
+  ],
+  "distractors": [
+   "qargʻa",
+   "chumchuq",
+   "boyoʻgʻli"
+  ],
+  "theme": "qushlar",
+  "difficulty": "qiyin",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/parranda-va-qushlar"
+ },
+ {
+  "id": 23,
+  "riddle": "Zuv-zuv boragʻay,\nTomdan qaragʻay.\nChoʻp, loy choʻqigʻay,\nSavat toʻqigʻay.",
+  "answer": "qaldirgʻoch",
+  "accepted": [
+   "qaldirgʻoch"
+  ],
+  "distractors": [
+   "kaptar",
+   "qargʻa",
+   "boyoʻgʻli"
+  ],
+  "theme": "qushlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/parranda-va-qushlar"
+ },
+ {
+  "id": 24,
+  "riddle": "Pishirsa osh boʻlur,\nPishirmasa qush boʻlur.",
+  "answer": "tuxum",
+  "accepted": [
+   "tuxum"
+  ],
+  "distractors": [
+   "sut",
+   "non",
+   "guruch"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/parranda-va-qushlar"
+ },
+ {
+  "id": 25,
+  "riddle": "Chiy tagida chinni kosa.",
+  "answer": "qush uyasi",
+  "accepted": [
+   "qush uyasi",
+   "uya"
+  ],
+  "distractors": [
+   "tuxum",
+   "asalari uyasi",
+   "chumoli uyasi"
+  ],
+  "theme": "qushlar",
+  "difficulty": "qiyin",
+  "source": "Topishmoq.uz — Oʻzbek xalq topishmoqlari, javoblar bilan — https://topishmoq.uz/posts/chiy-tagida-chinni-kosa/"
+ },
+ {
+  "id": 26,
+  "riddle": "Beli qilday,\nBoshi xumday.",
+  "answer": "chumoli",
+  "accepted": [
+   "chumoli"
+  ],
+  "distractors": [
+   "kapalak",
+   "chigirtka",
+   "chivin"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hasharotlar"
+ },
+ {
+  "id": 27,
+  "riddle": "U yoqqa boradi,\nBu yoqqa boradi,\nBoʻz toʻqiydi.",
+  "answer": "oʻrgimchak",
+  "accepted": [
+   "oʻrgimchak"
+  ],
+  "distractors": [
+   "chumoli",
+   "asalari",
+   "chigirtka"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hasharotlar"
+ },
+ {
+  "id": 28,
+  "riddle": "Oʻzi koʻm-koʻk,\nYuzi qip-qizil.",
+  "answer": "olma",
+  "accepted": [
+   "olma"
+  ],
+  "distractors": [
+   "uzum",
+   "anor",
+   "behi"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/o-simliklar-dunyosi"
+ },
+ {
+  "id": 29,
+  "riddle": "Qirq hujrada qizil qizlar.",
+  "answer": "anor",
+  "accepted": [
+   "anor"
+  ],
+  "distractors": [
+   "olma",
+   "shaftoli",
+   "behi"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/o-simliklar-dunyosi"
+ },
+ {
+  "id": 30,
+  "riddle": "Bir qop un,\nIchida ustun.",
+  "answer": "jiyda",
+  "accepted": [
+   "jiyda"
+  ],
+  "distractors": [
+   "tut",
+   "anjir",
+   "uzum"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "qiyin",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/o-simliklar-dunyosi"
+ },
+ {
+  "id": 31,
+  "riddle": "Gulsiz boʻlar mevasi,\nShirin-shirin donasi.",
+  "answer": "anjir",
+  "accepted": [
+   "anjir"
+  ],
+  "distractors": [
+   "olma",
+   "oʻrik",
+   "shaftoli"
+  ],
+  "theme": "mevalar",
+  "difficulty": "qiyin",
+  "source": "MyFarzand.uz — Topishmoqlar toʻplami bolalar uchun (javobi bilan) — https://myfarzand.uz/bolalar-uchun-topishmoqlar.html"
+ },
+ {
+  "id": 32,
+  "riddle": "Qorday oppoq,\nYungday yumshoq.",
+  "answer": "paxta",
+  "accepted": [
+   "paxta"
+  ],
+  "distractors": [
+   "bugʻdoy",
+   "makkajoʻxori",
+   "sholi"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/ekin-va-o-simliklar"
+ },
+ {
+  "id": 33,
+  "riddle": "Kunga qarab tolmaydi,\nKundan koʻzni olmaydi.",
+  "answer": "kungaboqar",
+  "accepted": [
+   "kungaboqar",
+   "oftobparast"
+  ],
+  "distractors": [
+   "makkajoʻxori",
+   "paxta",
+   "lola"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/ekin-va-o-simliklar"
+ },
+ {
+  "id": 34,
+  "riddle": "Qirq koʻylagi bor,\nBir tugmasi yoʻq.",
+  "answer": "piyoz",
+  "accepted": [
+   "piyoz"
+  ],
+  "distractors": [
+   "sabzi",
+   "bodring",
+   "qalampir"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/poliz-ekinlari-va-sabzavot"
+ },
+ {
+  "id": 35,
+  "riddle": "Yer tagida oltin qoziq.",
+  "answer": "sabzi",
+  "accepted": [
+   "sabzi"
+  ],
+  "distractors": [
+   "piyoz",
+   "bodring",
+   "karam"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/poliz-ekinlari-va-sabzavot"
+ },
+ {
+  "id": 36,
+  "riddle": "Qat-qat toʻnli,\nQarich boʻyli.",
+  "answer": "karam",
+  "accepted": [
+   "karam"
+  ],
+  "distractors": [
+   "sabzi",
+   "bodring",
+   "qalampir"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/poliz-ekinlari-va-sabzavot"
+ },
+ {
+  "id": 37,
+  "riddle": "Pishmaganda mazali,\nPishganda mazasiz.",
+  "answer": "bodring",
+  "accepted": [
+   "bodring",
+   "xiyor"
+  ],
+  "distractors": [
+   "qovun",
+   "tarvuz",
+   "sabzi"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/poliz-ekinlari-va-sabzavot"
+ },
+ {
+  "id": 38,
+  "riddle": "Oppoq, semiz, moyi yoʻq,\nTerisi qalin, juni yoʻq.",
+  "answer": "oshqovoq",
+  "accepted": [
+   "oshqovoq",
+   "qovoq"
+  ],
+  "distractors": [
+   "qovun",
+   "bodring",
+   "sabzi"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/poliz-ekinlari-va-sabzavot"
+ },
+ {
+  "id": 39,
+  "riddle": "Yumalatsam joni yoʻq,\nYulib olsam qoni yoʻq.",
+  "answer": "xamir",
+  "accepted": [
+   "xamir"
+  ],
+  "distractors": [
+   "non",
+   "guruch",
+   "sut"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/oziq-ovqatlar"
+ },
+ {
+  "id": 40,
+  "riddle": "Oq otdim,\nQizil oldim.",
+  "answer": "non",
+  "accepted": [
+   "non",
+   "yopgan non",
+   "patir"
+  ],
+  "distractors": [
+   "sut",
+   "guruch",
+   "tuxum"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/oziq-ovqatlar"
+ },
+ {
+  "id": 41,
+  "riddle": "Suv emas, suyuq,\nQor emas, oq.",
+  "answer": "sut",
+  "accepted": [
+   "sut"
+  ],
+  "distractors": [
+   "shakar",
+   "un",
+   "asal"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/oziq-ovqatlar"
+ },
+ {
+  "id": 42,
+  "riddle": "Ogʻzi doʻppidek,\nIchi qizil, xumdek.",
+  "answer": "tandir",
+  "accepted": [
+   "tandir"
+  ],
+  "distractors": [
+   "qozon",
+   "choynak",
+   "kosa"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 43,
+  "riddle": "Oʻzi katta,\nKichikka egiladi.",
+  "answer": "choynak",
+  "accepted": [
+   "choynak"
+  ],
+  "distractors": [
+   "qozon",
+   "kosa",
+   "lagan"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 44,
+  "riddle": "Bir oʻzi,\nMing koʻzi.",
+  "answer": "elak",
+  "accepted": [
+   "elak",
+   "gʻalvir"
+  ],
+  "distractors": [
+   "qozon",
+   "kosa",
+   "supurgi"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 45,
+  "riddle": "Ishini bitirdi,\nEshik tagiga oʻtirdi.",
+  "answer": "supurgi",
+  "accepted": [
+   "supurgi"
+  ],
+  "distractors": [
+   "elak",
+   "qozon",
+   "choynak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 46,
+  "riddle": "Kichkina mitti,\nEchkini yiqitdi.",
+  "answer": "pichoq",
+  "accepted": [
+   "pichoq"
+  ],
+  "distractors": [
+   "qoshiq",
+   "igna",
+   "supurgi"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 47,
+  "riddle": "Kunduzi yigʻiladi,\nKechasi yoyiladi.",
+  "answer": "koʻrpa",
+  "accepted": [
+   "koʻrpa",
+   "toʻshak"
+  ],
+  "distractors": [
+   "gilam",
+   "dasturxon",
+   "yostiq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-joy-va-unga-tegishli-jihozlar"
+ },
+ {
+  "id": 48,
+  "riddle": "Ikki ogʻa-inini bir ustunga bogʻladim.",
+  "answer": "tarozi",
+  "accepted": [
+   "tarozi"
+  ],
+  "distractors": [
+   "chelak",
+   "qozon",
+   "elak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 49,
+  "riddle": "Kichkina itcha hurmaydi,\nTishlamaydi, uyga qoʻymaydi.",
+  "answer": "qulf",
+  "accepted": [
+   "qulf",
+   "qulf-kalit"
+  ],
+  "distractors": [
+   "qoʻngʻiroq",
+   "ilgak",
+   "dastak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-joy-va-unga-tegishli-jihozlar"
+ },
+ {
+  "id": 50,
+  "riddle": "Gʻishim yoʻlda yoʻrgʻalar,\nYurgan yoʻli oqarar.",
+  "answer": "sovun",
+  "accepted": [
+   "sovun"
+  ],
+  "distractors": [
+   "taroq",
+   "sochiq",
+   "supurgi"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "M. Abdurahimov (tuzuvchi). Oʻzbek xalq topishmoqlari — ziyouz.com kutubxonasi — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1810:m-abdurahimov-tuzuvchi-o-zbek-topishmoqlari"
+ },
+ {
+  "id": 51,
+  "riddle": "Bosh ustida chambarak,\nChambarakda kapalak.",
+  "answer": "doʻppi",
+  "accepted": [
+   "doʻppi"
+  ],
+  "distractors": [
+   "paypoq",
+   "belbogʻ",
+   "koʻylak"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "oʻrtacha",
+  "source": "Topishmoq.uz — Oʻzbek xalq topishmoqlari, javoblar bilan — https://topishmoq.uz/posts/bosh-ustida-chambarak-chambarakda-kapalak/"
+ },
+ {
+  "id": 52,
+  "riddle": "Erta turdi,\nIkki ayri yoʻlga tushdi.",
+  "answer": "shim",
+  "accepted": [
+   "shim",
+   "ishton"
+  ],
+  "distractors": [
+   "koʻylak",
+   "doʻppi",
+   "belbogʻ"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/kiyim-kechak-bezak-va-tikuvchilik-asboblari"
+ },
+ {
+  "id": 53,
+  "riddle": "Besh ogʻayni, qoʻrasi bor,\nXonasi boshqa.",
+  "answer": "qoʻlqop",
+  "accepted": [
+   "qoʻlqop"
+  ],
+  "distractors": [
+   "paypoq",
+   "doʻppi",
+   "etik"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/kiyim-kechak-bezak-va-tikuvchilik-asboblari"
+ },
+ {
+  "id": 54,
+  "riddle": "Ikki botir qilichlashar.",
+  "answer": "qaychi",
+  "accepted": [
+   "qaychi"
+  ],
+  "distractors": [
+   "pichoq",
+   "bolta",
+   "arra"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/kiyim-kechak-bezak-va-tikuvchilik-asboblari"
+ },
+ {
+  "id": 55,
+  "riddle": "Bir koʻzli kampir,\nKoʻylakka gul tikar.",
+  "answer": "igna",
+  "accepted": [
+   "igna"
+  ],
+  "distractors": [
+   "qaychi",
+   "angishvona",
+   "urchuq"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/kiyim-kechak-bezak-va-tikuvchilik-asboblari"
+ },
+ {
+  "id": 56,
+  "riddle": "Ikki ogʻayni bir-birini koʻrmaydi.",
+  "answer": "koʻz",
+  "accepted": [
+   "koʻz",
+   "koʻzlar"
+  ],
+  "distractors": [
+   "burun",
+   "til",
+   "tish"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/odam-va-uning-a-zolari"
+ },
+ {
+  "id": 57,
+  "riddle": "Temir qoʻrgʻon ichida,\nQizil toychoq oʻynaydi.",
+  "answer": "til",
+  "accepted": [
+   "til",
+   "tish va til",
+   "ogʻiz va til"
+  ],
+  "distractors": [
+   "burun",
+   "quloq",
+   "tomoq"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/odam-va-uning-a-zolari"
+ },
+ {
+  "id": 58,
+  "riddle": "Sandiq toʻla oq sadaf.",
+  "answer": "tish",
+  "accepted": [
+   "tish",
+   "tishlar",
+   "ogʻiz, tish",
+   "ogʻiz va tish"
+  ],
+  "distractors": [
+   "soch",
+   "tirnoq",
+   "quloq"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/odam-va-uning-a-zolari"
+ },
+ {
+  "id": 59,
+  "riddle": "Besh ogʻayni yosh edi,\nIchida biri bosh edi.",
+  "answer": "barmoqlar",
+  "accepted": [
+   "barmoqlar",
+   "barmoq",
+   "qoʻl barmoqlari"
+  ],
+  "distractors": [
+   "kipriklar",
+   "quloqlar",
+   "tishlar"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/odam-va-uning-a-zolari"
+ },
+ {
+  "id": 60,
+  "riddle": "Kelib ogʻzini ochar,\nTishlab olib qochar.",
+  "answer": "ombur",
+  "accepted": [
+   "ombur",
+   "qisqich"
+  ],
+  "distractors": [
+   "bolgʻa",
+   "arra",
+   "randa"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/mehnat-ish-qurollari"
+ },
+ {
+  "id": 61,
+  "riddle": "Koʻp yeydi, tez yeydi,\nMayda chaynaydi.\nOʻzi yuta olmaydi,\nOʻzgalarni toʻydiradi.",
+  "answer": "tegirmon",
+  "accepted": [
+   "tegirmon"
+  ],
+  "distractors": [
+   "ketmon",
+   "oʻroq",
+   "bolgʻa"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/mehnat-ish-qurollari"
+ },
+ {
+  "id": 62,
+  "riddle": "Bir savat anor,\nHadding boʻlsa ol.",
+  "answer": "choʻgʻ",
+  "accepted": [
+   "choʻgʻ",
+   "koʻmir",
+   "olov"
+  ],
+  "distractors": [
+   "kul",
+   "tutun",
+   "sham"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/olov-tutun-chiroq"
+ },
+ {
+  "id": 63,
+  "riddle": "Oʻzining badanini oʻzi yeydi.",
+  "answer": "sham",
+  "accepted": [
+   "sham",
+   "shamchiroq"
+  ],
+  "distractors": [
+   "tutun",
+   "kul",
+   "uchqun"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/olov-tutun-chiroq"
+ },
+ {
+  "id": 64,
+  "riddle": "Koʻk otim koʻkka qarab yoʻrgʻalaydi.",
+  "answer": "tutun",
+  "accepted": [
+   "tutun"
+  ],
+  "distractors": [
+   "kul",
+   "choʻgʻ",
+   "gugurt"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/olov-tutun-chiroq"
+ },
+ {
+  "id": 65,
+  "riddle": "Ustida qopqoq,\nTagida qopqoq,\nIchinda yaproq.",
+  "answer": "kitob",
+  "accepted": [
+   "kitob"
+  ],
+  "distractors": [
+   "qalam",
+   "oʻchirgʻich",
+   "chizgʻich"
+  ],
+  "theme": "maktab",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/kitob-va-yozuv"
+ },
+ {
+  "id": 66,
+  "riddle": "Sirti tayoq,\nIchi boʻyoq.",
+  "answer": "qalam",
+  "accepted": [
+   "qalam"
+  ],
+  "distractors": [
+   "daftar",
+   "kitob",
+   "chizgʻich"
+  ],
+  "theme": "maktab",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/kitob-va-yozuv"
+ },
+ {
+  "id": 67,
+  "riddle": "Osmonda oq eshak,\nNoʻxtasi qoʻlimda.",
+  "answer": "varrak",
+  "accepted": [
+   "varrak"
+  ],
+  "distractors": [
+   "koptok",
+   "chillak",
+   "qoʻgʻirchoq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/o-yinlar-va-o-yinchoqlar"
+ },
+ {
+  "id": 68,
+  "riddle": "Tap-tap etadi,\nUrsam uchib ketadi.",
+  "answer": "koptok",
+  "accepted": [
+   "koptok",
+   "toʻp"
+  ],
+  "distractors": [
+   "varrak",
+   "qoʻgʻirchoq",
+   "arqon"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "Oʻzbek xalq topishmoqlari — Ziyouz (Ziyo istagan qalblar uchun) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/o-yinlar-va-o-yinchoqlar"
+ },
+ {
+  "id": 69,
+  "riddle": "Oq yer ochdim,\nQora bugʻdoy sochdim.",
+  "answer": "qogʻoz",
+  "accepted": [
+   "qogʻoz",
+   "yozuv",
+   "qogʻoz va yozuv"
+  ],
+  "distractors": [
+   "qalam",
+   "oʻchirgʻich",
+   "chizgʻich"
+  ],
+  "theme": "maktab",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 70,
+  "riddle": "Oʻzi qora, qanotli,\nShoxlari bor, tirnoqli.",
+  "answer": "qoʻngʻiz",
+  "accepted": [
+   "qoʻngʻiz"
+  ],
+  "distractors": [
+   "chumoli",
+   "asalari",
+   "kapalak"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 71,
+  "riddle": "Kecha tomda bir patir koʻrdim,\nErta qarasam — yoʻq.",
+  "answer": "oy",
+  "accepted": [
+   "oy"
+  ],
+  "distractors": [
+   "quyosh",
+   "yulduz",
+   "bulut"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 72,
+  "riddle": "Mildir-mildir munchoq,\nErta tursam biri yoʻq.",
+  "answer": "yulduzlar",
+  "accepted": [
+   "yulduzlar",
+   "yulduz",
+   "osmon va yulduzlar"
+  ],
+  "distractors": [
+   "oy",
+   "quyosh",
+   "kamalak"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 73,
+  "riddle": "Qora uyda ming chiroq,\nUyni yoritmas.",
+  "answer": "yulduzlar",
+  "accepted": [
+   "yulduzlar",
+   "yulduz",
+   "osmon va yulduzlar"
+  ],
+  "distractors": [
+   "oy",
+   "bulut",
+   "quyosh"
+  ],
+  "theme": "osmon",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 74,
+  "riddle": "Oʻyib oldim,\nIzi yoʻq.",
+  "answer": "suv",
+  "accepted": [
+   "suv"
+  ],
+  "distractors": [
+   "tosh",
+   "qum",
+   "muz"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 75,
+  "riddle": "Qora biyam qalt etdi,\nQovurgʻasi yalt etdi.",
+  "answer": "yashin",
+  "accepted": [
+   "yashin",
+   "chaqmoq",
+   "bulut va yashin"
+  ],
+  "distractors": [
+   "yomgʻir",
+   "shamol",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "qiyin",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 76,
+  "riddle": "Qora tuyam qochyapti,\nQumalogʻin sochyapti.",
+  "answer": "doʻl",
+  "accepted": [
+   "doʻl",
+   "bulut va doʻl",
+   "qora bulut va doʻl"
+  ],
+  "distractors": [
+   "shamol",
+   "tuman",
+   "shudring"
+  ],
+  "theme": "tabiat",
+  "difficulty": "qiyin",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 77,
+  "riddle": "Oq tovuq,\nKatagi sovuq.",
+  "answer": "qor",
+  "accepted": [
+   "qor"
+  ],
+  "distractors": [
+   "yomgʻir",
+   "shamol",
+   "kamalak"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 78,
+  "riddle": "Tumshuqsiz chumchuq muz teshar.",
+  "answer": "tomchi",
+  "accepted": [
+   "tomchi",
+   "suv tomchisi"
+  ],
+  "distractors": [
+   "shudring",
+   "qirov",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "qiyin",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 79,
+  "riddle": "Toʻrt oy, yigirma toʻrt yulduz.",
+  "answer": "taqa",
+  "accepted": [
+   "taqa",
+   "otning taqasi",
+   "taqa va mix"
+  ],
+  "distractors": [
+   "egar",
+   "jilov",
+   "qamchi"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "qiyin",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 80,
+  "riddle": "Bir qoʻyim bor,\nTurib semirar.",
+  "answer": "xamir",
+  "accepted": [
+   "xamir"
+  ],
+  "distractors": [
+   "non",
+   "sut",
+   "guruch"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 81,
+  "riddle": "Yesam tishimga kiradi,\nYemasam tushimga kiradi.",
+  "answer": "goʻsht",
+  "accepted": [
+   "goʻsht"
+  ],
+  "distractors": [
+   "non",
+   "asal",
+   "qaymoq"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 82,
+  "riddle": "Hamrohim bor befoyda,\nQoʻymas yolgʻiz yer, soyda.\nQuvalasam, ketmaydi,\nSavalasam, oʻtmaydi.",
+  "answer": "soya",
+  "accepted": [
+   "soya"
+  ],
+  "distractors": [
+   "shamol",
+   "tuman",
+   "bulut"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 83,
+  "riddle": "Ikki boshli, toʻrt oyoqli,\nIkki oyoqli, toʻrt quloqli,\nOrqasida bir dumi bor.",
+  "answer": "otliq",
+  "accepted": [
+   "otliq",
+   "ot va otliq",
+   "ot va odam",
+   "otga mingan odam"
+  ],
+  "distractors": [
+   "tuya",
+   "eshak",
+   "hoʻkiz"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "qiyin",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 84,
+  "riddle": "Buxorodan kelgan fil,\nOrqasidan tasma til.",
+  "answer": "qovun",
+  "accepted": [
+   "qovun"
+  ],
+  "distractors": [
+   "qovoq",
+   "bodring",
+   "piyoz"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "qiyin",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 85,
+  "riddle": "Sari bobom ichkari,\nSoqollari tashqari.",
+  "answer": "sabzi",
+  "accepted": [
+   "sabzi",
+   "makkajoʻxori"
+  ],
+  "distractors": [
+   "kartoshka",
+   "karam",
+   "bodring"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 86,
+  "riddle": "Qizilgina koʻzachak,\nIchi toʻla zirachak.",
+  "answer": "garmdori",
+  "accepted": [
+   "garmdori",
+   "qalampir",
+   "achchiq qalampir"
+  ],
+  "distractors": [
+   "sabzi",
+   "lavlagi",
+   "bodring"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 87,
+  "riddle": "Bir uy bor:\nKoʻr boʻlib kirasan,\nKoʻzli boʻlib chiqasan.",
+  "answer": "maktab",
+  "accepted": [
+   "maktab",
+   "oʻquv yurti"
+  ],
+  "distractors": [
+   "kasalxona",
+   "doʻkon",
+   "hammom"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 88,
+  "riddle": "Suv ostida turar poylab,\nOʻljaga nayzasin shaylab.",
+  "answer": "qarmoq",
+  "accepted": [
+   "qarmoq"
+  ],
+  "distractors": [
+   "ketmon",
+   "oʻroq",
+   "bolta"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Mbaza.uz — Topishmoqlar javoblari bilan — https://mbaza.uz/foydali/topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 89,
+  "riddle": "Teg desam, tegmaydi,\nTegma desam, tegadi.",
+  "answer": "lab",
+  "accepted": [
+   "lab",
+   "lablar"
+  ],
+  "distractors": [
+   "burun",
+   "quloq",
+   "peshona"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "qiyin",
+  "source": "MyFarzand.uz — Topishmoqlar toʻplami bolalar uchun (javobi bilan) — https://myfarzand.uz/bolalar-uchun-topishmoqlar.html"
+ },
+ {
+  "id": 90,
+  "riddle": "Ikki otim bor,\nBir-biridan chopogʻon.",
+  "answer": "oyoq",
+  "accepted": [
+   "oyoq",
+   "oyoqlar"
+  ],
+  "distractors": [
+   "qoʻl",
+   "quloq",
+   "koʻz"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "MyFarzand.uz — Topishmoqlar toʻplami bolalar uchun (javobi bilan) — https://myfarzand.uz/bolalar-uchun-topishmoqlar.html"
+ },
+ {
+  "id": 91,
+  "riddle": "Kichkina dekcha,\nIchi toʻla mixcha.",
+  "answer": "anor",
+  "accepted": [
+   "anor"
+  ],
+  "distractors": [
+   "olma",
+   "uzum",
+   "oʻrik"
+  ],
+  "theme": "mevalar",
+  "difficulty": "oʻrtacha",
+  "source": "MyFarzand.uz — Topishmoqlar toʻplami bolalar uchun (javobi bilan) — https://myfarzand.uz/bolalar-uchun-topishmoqlar.html"
+ },
+ {
+  "id": 92,
+  "riddle": "Tashi qizil anorday,\nIchi oq — unday,\nOʻtirishi gulday.",
+  "answer": "jiyda",
+  "accepted": [
+   "jiyda"
+  ],
+  "distractors": [
+   "uzum",
+   "oʻrik",
+   "shaftoli"
+  ],
+  "theme": "mevalar",
+  "difficulty": "qiyin",
+  "source": "MyFarzand.uz — Topishmoqlar toʻplami bolalar uchun (javobi bilan) — https://myfarzand.uz/bolalar-uchun-topishmoqlar.html"
+ },
+ {
+  "id": 93,
+  "riddle": "Qat-qat quloq,\nDum-dumaloq.",
+  "answer": "karam",
+  "accepted": [
+   "karam",
+   "boshkaram"
+  ],
+  "distractors": [
+   "kartoshka",
+   "sabzi",
+   "bodring"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "MyFarzand.uz — Topishmoqlar toʻplami bolalar uchun (javobi bilan) — https://myfarzand.uz/bolalar-uchun-topishmoqlar.html"
+ },
+ {
+  "id": 94,
+  "riddle": "Posbonidir u uyning,\nKoʻzi, tili yoʻq uning.",
+  "answer": "qulf",
+  "accepted": [
+   "qulf",
+   "qulf-kalit"
+  ],
+  "distractors": [
+   "supurgi",
+   "chelak",
+   "sandiq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Qogʻozcha.uz — Uy-joy buyumlari haqida topishmoqlar — https://qogozcha.uz/topishmoqlar/uy-joy"
+ },
+ {
+  "id": 95,
+  "riddle": "Katta koʻlning oʻrtasida\nOʻt yonar.",
+  "answer": "samovar",
+  "accepted": [
+   "samovar"
+  ],
+  "distractors": [
+   "choynak",
+   "qozon",
+   "piyola"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Qogʻozcha.uz — Uy-joy buyumlari haqida topishmoqlar — https://qogozcha.uz/topishmoqlar/uy-joy"
+ },
+ {
+  "id": 96,
+  "riddle": "Kosaga shoʻngʻib qaytadi,\nOgʻizga borib yetadi.",
+  "answer": "qoshiq",
+  "accepted": [
+   "qoshiq"
+  ],
+  "distractors": [
+   "pichoq",
+   "likopcha",
+   "choynak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "UzBaza.uz — Qiziqarli topishmoqlar toʻplami javobi bilan — https://uzbaza.uz/topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 97,
+  "riddle": "Hammomi bor oʻrtasida,\nBurnida bir teshikcha.",
+  "answer": "choynak",
+  "accepted": [
+   "choynak"
+  ],
+  "distractors": [
+   "qozon",
+   "piyola",
+   "likopcha"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Qogʻozcha.uz — Uy-joy buyumlari haqida topishmoqlar — https://qogozcha.uz/topishmoqlar/uy-joy"
+ },
+ {
+  "id": 98,
+  "riddle": "Oz qoʻysangiz: «Sol» deydi,\nKoʻp qoʻysangiz: «Ol!» deydi.",
+  "answer": "tarozi",
+  "accepted": [
+   "tarozi"
+  ],
+  "distractors": [
+   "soat",
+   "elak",
+   "chelak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Qogʻozcha.uz — Uy-joy buyumlari haqida topishmoqlar — https://qogozcha.uz/topishmoqlar/uy-joy"
+ },
+ {
+  "id": 99,
+  "riddle": "Tom ustida qoʻsh chiroq.",
+  "answer": "koʻz",
+  "accepted": [
+   "koʻz",
+   "koʻzlar"
+  ],
+  "distractors": [
+   "burun",
+   "ogʻiz",
+   "soch"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Odam va uning aʼzolari haqida topishmoqlar toʻplami — https://ilmlar.uz/odam-va-uning-azolari-haqida-topishmoqlar-toplami/"
+ },
+ {
+  "id": 100,
+  "riddle": "Bir otadan besh oʻgʻil.",
+  "answer": "barmoqlar",
+  "accepted": [
+   "barmoqlar",
+   "barmoq",
+   "qoʻl barmoqlari"
+  ],
+  "distractors": [
+   "koʻzlar",
+   "tishlar",
+   "sochlar"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "M. Abdurahimov (tuzuvchi). Oʻzbek xalq topishmoqlari — ziyouz.com kutubxonasi — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1810:m-abdurahimov-tuzuvchi-o-zbek-topishmoqlari"
+ },
+ {
+  "id": 101,
+  "riddle": "Toʻr bilan oʻrab olgan,\nPashshaga zanjir solgan.",
+  "answer": "oʻrgimchak",
+  "accepted": [
+   "oʻrgimchak"
+  ],
+  "distractors": [
+   "chumoli",
+   "asalari",
+   "kapalak"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "oson",
+  "source": "Ilmlar.uz — Hasharotlar haqida topishmoqlar — https://ilmlar.uz/hasharotlar-haqida-topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 102,
+  "riddle": "Osmondan tushdi bir tugun,\nUsti baxmal, ichi un.",
+  "answer": "jiyda",
+  "accepted": [
+   "jiyda"
+  ],
+  "distractors": [
+   "olma",
+   "anor",
+   "uzum"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "qiyin",
+  "source": "M. Abdurahimov (tuzuvchi). Oʻzbek xalq topishmoqlari — ziyouz.com kutubxonasi — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1810:m-abdurahimov-tuzuvchi-o-zbek-topishmoqlari"
+ },
+ {
+  "id": 103,
+  "riddle": "Qulogʻi qornida,\nBoshi yoʻq.",
+  "answer": "qozon",
+  "accepted": [
+   "qozon"
+  ],
+  "distractors": [
+   "kosa",
+   "piyola",
+   "tovoq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "M. Abdurahimov (tuzuvchi). Oʻzbek xalq topishmoqlari — ziyouz.com kutubxonasi — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1810:m-abdurahimov-tuzuvchi-o-zbek-topishmoqlari"
+ },
+ {
+  "id": 104,
+  "riddle": "Miltillaydi koʻzlari,\nMoʻltillaydi yoshlari.",
+  "answer": "sham",
+  "accepted": [
+   "sham"
+  ],
+  "distractors": [
+   "chiroq",
+   "gugurt",
+   "fonus"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "M. Abdurahimov (tuzuvchi). Oʻzbek xalq topishmoqlari — ziyouz.com kutubxonasi — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1810:m-abdurahimov-tuzuvchi-o-zbek-topishmoqlari"
+ },
+ {
+  "id": 105,
+  "riddle": "Oʻzi bir qarich,\nQuyrugʻi oʻn bir qarich.",
+  "answer": "igna",
+  "accepted": [
+   "igna",
+   "igna va ip"
+  ],
+  "distractors": [
+   "qaychi",
+   "bigiz",
+   "angishvona"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oʻrtacha",
+  "source": "M. Abdurahimov (tuzuvchi). Oʻzbek xalq topishmoqlari — ziyouz.com kutubxonasi — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1810:m-abdurahimov-tuzuvchi-o-zbek-topishmoqlari"
+ },
+ {
+  "id": 106,
+  "riddle": "Daraxt emas, yaproqli,\nKoʻylak emas, etakli,\nOdam emas soʻzlaydi,\nTurli kuylar kuylaydi.",
+  "answer": "kitob",
+  "accepted": [
+   "kitob"
+  ],
+  "distractors": [
+   "qalam",
+   "chizgʻich",
+   "oʻchirgʻich"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oʻrtacha",
+  "source": "M. Abdurahimov (tuzuvchi). Oʻzbek xalq topishmoqlari — ziyouz.com kutubxonasi — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=1810:m-abdurahimov-tuzuvchi-o-zbek-topishmoqlari"
+ },
+ {
+  "id": 107,
+  "riddle": "Tap-tap etadi,\nTagidan karvon oʻtadi.",
+  "answer": "elak",
+  "accepted": [
+   "elak",
+   "gʻalvir"
+  ],
+  "distractors": [
+   "supurgi",
+   "hovoncha",
+   "chelak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 108,
+  "riddle": "Fotima-Zuhra uchrashar,\nMerosini boʻlishar.",
+  "answer": "qaychi",
+  "accepted": [
+   "qaychi"
+  ],
+  "distractors": [
+   "pichoq",
+   "igna",
+   "bolgʻa"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 109,
+  "riddle": "Ogʻzi qora, alomat,\nIchi qizil, qiyomat.\nXom ovqating pishirar,\nQirgʻogʻini shishirar.",
+  "answer": "tandir",
+  "accepted": [
+   "tandir"
+  ],
+  "distractors": [
+   "qozon",
+   "samovar",
+   "elak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 110,
+  "riddle": "Tol tagida tiniq suv,\nSuvga sir aytar suluv.",
+  "answer": "koʻzgu",
+  "accepted": [
+   "koʻzgu",
+   "oyna"
+  ],
+  "distractors": [
+   "taroq",
+   "sovun",
+   "sochiq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 111,
+  "riddle": "Biz — biz edik, biz edik,\nOʻttiz ikki qiz edik.\nIkki safga tizildik,\nBirin-ketin uzildik.",
+  "answer": "tish",
+  "accepted": [
+   "tish",
+   "tishlar"
+  ],
+  "distractors": [
+   "barmoq",
+   "soch",
+   "tirnoq"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oson",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 112,
+  "riddle": "Hasan daroz,\nBaland ovoz.",
+  "answer": "karnay",
+  "accepted": [
+   "karnay"
+  ],
+  "distractors": [
+   "doira",
+   "nogʻora",
+   "dutor"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oʻrtacha",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 113,
+  "riddle": "Osmondan un elandi,\nBorliq oqqa belandi.",
+  "answer": "qor",
+  "accepted": [
+   "qor"
+  ],
+  "distractors": [
+   "yomgʻir",
+   "shudring",
+   "shamol"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 114,
+  "riddle": "Qish buva novvot sotdi,\nOlgandim, qoʻlim qotdi.",
+  "answer": "muz",
+  "accepted": [
+   "muz"
+  ],
+  "distractors": [
+   "qirov",
+   "tuman",
+   "shamol"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 115,
+  "riddle": "U yogʻi togʻ,\nBu yogʻi togʻ,\nOʻrtasida\nSarigʻ yogʻ.",
+  "answer": "yongʻoq",
+  "accepted": [
+   "yongʻoq"
+  ],
+  "distractors": [
+   "pista",
+   "olcha",
+   "anjir"
+  ],
+  "theme": "mevalar",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz (Зубайда Ҳусаинова тўплами асосида) — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/usimliklar-dunyosi/"
+ },
+ {
+  "id": 116,
+  "riddle": "Boshida bor kokili,\nBelidadir hosili.",
+  "answer": "makkajoʻxori",
+  "accepted": [
+   "makkajoʻxori",
+   "makka"
+  ],
+  "distractors": [
+   "bugʻdoy",
+   "kungaboqar",
+   "sholi"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oʻrtacha",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 117,
+  "riddle": "Moʻylovi yoʻq, soqoli bor,\nU haqda el maqoli bor.",
+  "answer": "echki",
+  "accepted": [
+   "echki",
+   "taka"
+  ],
+  "distractors": [
+   "qoʻy",
+   "sigir",
+   "tuya"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oson",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 118,
+  "riddle": "Kalta argʻamchi,\nDastasiz qamchi.",
+  "answer": "ilon",
+  "accepted": [
+   "ilon"
+  ],
+  "distractors": [
+   "kaltakesak",
+   "qurbaqa",
+   "chayon"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 119,
+  "riddle": "Oq qogʻozim uchib ketdi,\nIchagini choʻzib ketdi.",
+  "answer": "varrak",
+  "accepted": [
+   "varrak"
+  ],
+  "distractors": [
+   "koptok",
+   "chillak",
+   "oshiq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Chittigul (aytishuv, hazillar, oʻyinlar, topishmoqlar) — Yoʻldosh Sultonov, Nasimxon Rahmonov, Shomirza Turdimov; Toshkent «Oʻqituvchi», 1992 (ziyouz.com kutubxonasi) — https://n.ziyouz.com/kutubxona/category/38-o-zbek-xalq-og-zaki-ijodi?download=10799:chittigul-aytishuv-hazillar-o-yinlar-topishmoqlar"
+ },
+ {
+  "id": 120,
+  "riddle": "Bir nafasda olamni kezar.",
+  "answer": "fikr",
+  "accepted": [
+   "fikr",
+   "xayol",
+   "oʻy"
+  ],
+  "distractors": [
+   "ovoz",
+   "yurak",
+   "til"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "qiyin",
+  "source": "Baxtiyor.uz — Topishmoqlar javobi bilan, eng sara va qiziqarlilari — https://baxtiyor.uz/topishmoqlar-javobi-bilan-eng-sara-va-qiziqarlilari/"
+ },
+ {
+  "id": 121,
+  "riddle": "Is biladi it emas,\nIn izlaydi tulki emas.\nQanoti bor uchadi,\nAmmo oʻzi qush emas.",
+  "answer": "qoʻngʻiz",
+  "accepted": [
+   "qoʻngʻiz"
+  ],
+  "distractors": [
+   "kapalak",
+   "chigirtka",
+   "ninachi"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "qiyin",
+  "source": "Baxtiyor.uz — Topishmoqlar javobi bilan, eng sara va qiziqarlilari — https://baxtiyor.uz/topishmoqlar-javobi-bilan-eng-sara-va-qiziqarlilari/"
+ },
+ {
+  "id": 122,
+  "riddle": "Birlashtirib kiyimni,\nIssiq tutadi bizni.",
+  "answer": "tugma",
+  "accepted": [
+   "tugma"
+  ],
+  "distractors": [
+   "kamar",
+   "yoqa",
+   "choʻntak"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "oson",
+  "source": "UzBaza.uz — Qiziqarli topishmoqlar toʻplami javobi bilan — https://uzbaza.uz/topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 123,
+  "riddle": "Koʻkda qilich yarqiraydi,\nSuvda aksi yaltiraydi.",
+  "answer": "oy",
+  "accepted": [
+   "oy",
+   "hilol",
+   "yangi oy"
+  ],
+  "distractors": [
+   "quyosh",
+   "yulduz",
+   "bulut"
+  ],
+  "theme": "osmon",
+  "difficulty": "oʻrtacha",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 124,
+  "riddle": "Qip-qizilu, anormas,\nChoʻgʻga oʻxshar, yonolmas.\nMoʻralaydi egatdan,\nJoy oladi savatdan.",
+  "answer": "qulupnay",
+  "accepted": [
+   "qulupnay",
+   "yer tuti"
+  ],
+  "distractors": [
+   "olcha",
+   "anor",
+   "uzum"
+  ],
+  "theme": "mevalar",
+  "difficulty": "oʻrtacha",
+  "source": "UzBaza.uz — Qiziqarli topishmoqlar toʻplami javobi bilan — https://uzbaza.uz/topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 125,
+  "riddle": "Toʻni silliq, tuki yoʻq,\nIchi qizil, koʻki yoʻq,\nUni choʻqolmas chumchuq.",
+  "answer": "tarvuz",
+  "accepted": [
+   "tarvuz"
+  ],
+  "distractors": [
+   "qovun",
+   "qovoq",
+   "handalak"
+  ],
+  "theme": "mevalar",
+  "difficulty": "oson",
+  "source": "UzBaza.uz — Qiziqarli topishmoqlar toʻplami javobi bilan — https://uzbaza.uz/topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 126,
+  "riddle": "Qizil rangda tuguncha,\nIchi toʻla kulchacha.",
+  "answer": "pomidor",
+  "accepted": [
+   "pomidor"
+  ],
+  "distractors": [
+   "bodring",
+   "sabzi",
+   "karam"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "UzBaza.uz — Qiziqarli topishmoqlar toʻplami javobi bilan — https://uzbaza.uz/topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 127,
+  "riddle": "Ahil boʻlib yashar doim yetmish mard,\nTani yonib, elga qiladi xizmat.",
+  "answer": "gugurt",
+  "accepted": [
+   "gugurt",
+   "gugurt qutisi"
+  ],
+  "distractors": [
+   "sham",
+   "chiroq",
+   "oʻchoq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "UzBaza.uz — Qiziqarli topishmoqlar toʻplami javobi bilan — https://uzbaza.uz/topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 128,
+  "riddle": "Borishda qorni och,\nQoʻshiq aytar.\nKelishda qorni toʻq,\nYigʻlab qaytar.",
+  "answer": "paqir",
+  "accepted": [
+   "paqir",
+   "chelak"
+  ],
+  "distractors": [
+   "qozon",
+   "supurgi",
+   "elak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "UzBaza.uz — Qiziqarli topishmoqlar toʻplami javobi bilan — https://uzbaza.uz/topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 129,
+  "riddle": "Kelib ketar bir yilda,\nToʻrt ogʻayni har xilda.",
+  "answer": "toʻrt fasl",
+  "accepted": [
+   "toʻrt fasl",
+   "fasllar"
+  ],
+  "distractors": [
+   "oʻn ikki oy",
+   "hafta kunlari",
+   "kecha va kunduz"
+  ],
+  "theme": "vaqt",
+  "difficulty": "oson",
+  "source": "UzBaza.uz — Qiziqarli topishmoqlar toʻplami javobi bilan — https://uzbaza.uz/topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 130,
+  "riddle": "Tim qora kichkina xol,\nToʻxtatar yoʻlda darhol.",
+  "answer": "nuqta",
+  "accepted": [
+   "nuqta"
+  ],
+  "distractors": [
+   "vergul",
+   "harf",
+   "chiziqcha"
+  ],
+  "theme": "maktab",
+  "difficulty": "oʻrtacha",
+  "source": "UzBaza.uz — Qiziqarli topishmoqlar toʻplami javobi bilan — https://uzbaza.uz/topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 131,
+  "riddle": "Kechqurun tomga gʻoʻza yoysam,\nErtalabgacha bitta ham qolmabdi.",
+  "answer": "yulduz",
+  "accepted": [
+   "yulduz",
+   "yulduzlar"
+  ],
+  "distractors": [
+   "oy",
+   "quyosh",
+   "kamalak"
+  ],
+  "theme": "osmon",
+  "difficulty": "oʻrtacha",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 132,
+  "riddle": "Oyogʻi yoʻq, qoʻli yoʻq,\nShoshib chopib chiqar u.\nUlkan zamin bagʻridan,\nSalom olib chiqar u.",
+  "answer": "buloq",
+  "accepted": [
+   "buloq",
+   "chashma"
+  ],
+  "distractors": [
+   "quduq",
+   "koʻl",
+   "ariq"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 133,
+  "riddle": "Oppoq sochli boshlari,\nDaryo boʻlar yoshlari.",
+  "answer": "qorli togʻ",
+  "accepted": [
+   "qorli togʻ",
+   "togʻ",
+   "muzlik"
+  ],
+  "distractors": [
+   "choʻl",
+   "oʻrmon",
+   "dengiz"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 134,
+  "riddle": "Bola kelar, bola kelar,\nIlk mehr ola kelar,\nSilab-siylab daraxtlarga,\nGuldan marjon taqa kelar.",
+  "answer": "bahor",
+  "accepted": [
+   "bahor",
+   "koʻklam"
+  ],
+  "distractors": [
+   "qish",
+   "yoz",
+   "kuz"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 135,
+  "riddle": "Qishda oq gul,\nBahorda suv sochadi.\nYel esganda,\nTumtaraqay qochadi.",
+  "answer": "bulut",
+  "accepted": [
+   "bulut",
+   "bulutlar"
+  ],
+  "distractors": [
+   "tuman",
+   "shamol",
+   "kamalak"
+  ],
+  "theme": "tabiat",
+  "difficulty": "qiyin",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 136,
+  "riddle": "Osmon chirogʻi\nYondi-yu oʻchdi.",
+  "answer": "chaqmoq",
+  "accepted": [
+   "chaqmoq",
+   "yashin"
+  ],
+  "distractors": [
+   "yulduz",
+   "kamalak",
+   "momaqaldiroq"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 137,
+  "riddle": "Yerga tushsa loy qilar,\nDehqonlarni boy qilar.",
+  "answer": "yomgʻir",
+  "accepted": [
+   "yomgʻir",
+   "yogʻin"
+  ],
+  "distractors": [
+   "shamol",
+   "doʻl",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 138,
+  "riddle": "Yozib kumush poyondoz,\nSovuqda elar shakar.\nSharbatsiz yasar novvot,\nToping siz bermay shahar.",
+  "answer": "qor",
+  "accepted": [
+   "qor"
+  ],
+  "distractors": [
+   "yomgʻir",
+   "shamol",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "qiyin",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 139,
+  "riddle": "Sandiq toʻla pista-bodom,\nOchib koʻr, boʻlsang odam.\nXosiyati koʻp, olam-olam,\nTerib ol uni har dam.",
+  "answer": "kitob",
+  "accepted": [
+   "kitob"
+  ],
+  "distractors": [
+   "daftar",
+   "qalam",
+   "boʻr"
+  ],
+  "theme": "maktab",
+  "difficulty": "oʻrtacha",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 140,
+  "riddle": "Qoʻl bilan ekiladi,\nKoʻz bilan teriladi,\nOgʻiz bilan oʻriladi.",
+  "answer": "yozuv",
+  "accepted": [
+   "yozuv",
+   "xat",
+   "daftar"
+  ],
+  "distractors": [
+   "qalam",
+   "siyoh",
+   "boʻr"
+  ],
+  "theme": "maktab",
+  "difficulty": "qiyin",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 141,
+  "riddle": "Suv emas, simda oqar,\nOʻt emas, chiroq yoqar.",
+  "answer": "elektr toki",
+  "accepted": [
+   "elektr toki",
+   "tok",
+   "elektr"
+  ],
+  "distractors": [
+   "telefon",
+   "radio",
+   "televizor"
+  ],
+  "theme": "texnika",
+  "difficulty": "oson",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 142,
+  "riddle": "Tarvuzim bor urugʻsiz,\nPichoq bilan kesilmas.\nKesganingda ham uni\nMaza qilib yeb boʻlmas.",
+  "answer": "koptok",
+  "accepted": [
+   "koptok",
+   "toʻp"
+  ],
+  "distractors": [
+   "qoʻgʻirchoq",
+   "varrak",
+   "hushtak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ertak.uz — Topishmoqlar — https://ertak.uz/puzz/68"
+ },
+ {
+  "id": 143,
+  "riddle": "Yer tagida yogʻli qamchi.",
+  "answer": "ilon",
+  "accepted": [
+   "ilon"
+  ],
+  "distractors": [
+   "kalamush",
+   "kaltakesak",
+   "toshbaqa"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Hayvonot dunyosi — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hayvonot-dunyosi"
+ },
+ {
+  "id": 144,
+  "riddle": "Bir kulrang buzogʻim bor,\nUydagilar undan bezor,\nBozorga olib borsam,\nTopilmaydi xaridor.",
+  "answer": "sichqon",
+  "accepted": [
+   "sichqon"
+  ],
+  "distractors": [
+   "mushuk",
+   "kuchuk",
+   "tovuq"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Hayvonot dunyosi — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/hayvonot-dunyosi"
+ },
+ {
+  "id": 145,
+  "riddle": "Bir uyda ikki oʻrtoq,\nBiri sariq, biri oq.",
+  "answer": "tuxum",
+  "accepted": [
+   "tuxum"
+  ],
+  "distractors": [
+   "non",
+   "sut",
+   "asal"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oson",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Parranda va qushlar — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/parranda-va-qushlar"
+ },
+ {
+  "id": 146,
+  "riddle": "Bir barmoqcha boʻyi bor,\nQizil baxmal toʻni bor.",
+  "answer": "garmdori",
+  "accepted": [
+   "garmdori",
+   "qalampir",
+   "qizil qalampir"
+  ],
+  "distractors": [
+   "bodring",
+   "karam",
+   "piyoz"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz (Зубайда Ҳусаинова тўплами асосида) — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/poliz-ekinlari-va-sabzavot/"
+ },
+ {
+  "id": 147,
+  "riddle": "Mening oʻrkachlarim bor,\nUlar goʻyoki ombor.\nBir haftaga yetgulik\nBordur unda yegulik.",
+  "answer": "tuya",
+  "accepted": [
+   "tuya"
+  ],
+  "distractors": [
+   "ot",
+   "eshak",
+   "sigir"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oson",
+  "source": "Audiobook.uz — Hayvonlar haqida topishmoqlar (javobi bilan) — https://audiobook.uz/blogs/news/hayvonlar-haqida-topishmoqlar"
+ },
+ {
+  "id": 148,
+  "riddle": "Buqa emas shoxi bor,\nChol emas soqoli bor.\nSut beradi sigirmas,\nU ham topilmay qolmas.",
+  "answer": "echki",
+  "accepted": [
+   "echki",
+   "qora echki"
+  ],
+  "distractors": [
+   "qoʻy",
+   "eshak",
+   "ot"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Audiobook.uz — Hayvonlar haqida topishmoqlar (javobi bilan) — https://audiobook.uz/blogs/news/hayvonlar-haqida-topishmoqlar"
+ },
+ {
+  "id": 149,
+  "riddle": "Boʻridan u qochadi,\nJuda ham tez chopadi.\nQuloqlari uzunroq,\nOʻzi juda ham qoʻrqoq.",
+  "answer": "quyon",
+  "accepted": [
+   "quyon"
+  ],
+  "distractors": [
+   "tulki",
+   "olmaxon",
+   "tipratikan"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oson",
+  "source": "Audiobook.uz — Hayvonlar haqida topishmoqlar (javobi bilan) — https://audiobook.uz/blogs/news/hayvonlar-haqida-topishmoqlar"
+ },
+ {
+  "id": 150,
+  "riddle": "Asalni xush koʻradi,\nQishda tushlar koʻradi.\nBahorgacha uxlaydi,\nBarmoqlarin soʻradi.",
+  "answer": "ayiq",
+  "accepted": [
+   "ayiq"
+  ],
+  "distractors": [
+   "boʻri",
+   "tulki",
+   "yoʻlbars"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oson",
+  "source": "Audiobook.uz — Hayvonlar haqida topishmoqlar (javobi bilan) — https://audiobook.uz/blogs/news/hayvonlar-haqida-topishmoqlar"
+ },
+ {
+  "id": 151,
+  "riddle": "Bu hayvonning ajoyib\nShoxlari bor gʻaroyib.\nJuda katta bahaybat,\nKoʻrsangiz deysiz daraxt.",
+  "answer": "bugʻu",
+  "accepted": [
+   "bugʻu",
+   "kiyik"
+  ],
+  "distractors": [
+   "tuya",
+   "ayiq",
+   "yoʻlbars"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Audiobook.uz — Hayvonlar haqida topishmoqlar (javobi bilan) — https://audiobook.uz/blogs/news/hayvonlar-haqida-topishmoqlar"
+ },
+ {
+  "id": 152,
+  "riddle": "Uzun quloq quyonmas,\nRangi kulrang boʻrimas.\nTuyogʻi bor ot emas,\nUni topish qiyinmas.",
+  "answer": "eshak",
+  "accepted": [
+   "eshak",
+   "xoʻtik"
+  ],
+  "distractors": [
+   "quyon",
+   "boʻri",
+   "ot"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oson",
+  "source": "Audiobook.uz — Hayvonlar haqida topishmoqlar (javobi bilan) — https://audiobook.uz/blogs/news/hayvonlar-haqida-topishmoqlar"
+ },
+ {
+  "id": 153,
+  "riddle": "Hayvonlarning ichida\nEng sodiq doʻst odamga.\nErta-yu kech poylaydi,\nQorovuldir uyimga.",
+  "answer": "it",
+  "accepted": [
+   "it",
+   "kuchuk"
+  ],
+  "distractors": [
+   "mushuk",
+   "sigir",
+   "ot"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oson",
+  "source": "Audiobook.uz — Hayvonlar haqida topishmoqlar (javobi bilan) — https://audiobook.uz/blogs/news/hayvonlar-haqida-topishmoqlar"
+ },
+ {
+  "id": 154,
+  "riddle": "Uning bordur xartumi,\nQuloqlari va dumi.\nKoʻrinishi bahaybat,\nUni ham toping albat.",
+  "answer": "fil",
+  "accepted": [
+   "fil"
+  ],
+  "distractors": [
+   "tuya",
+   "karkidon",
+   "yoʻlbars"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oson",
+  "source": "Audiobook.uz — Hayvonlar haqida topishmoqlar (javobi bilan) — https://audiobook.uz/blogs/news/hayvonlar-haqida-topishmoqlar"
+ },
+ {
+  "id": 155,
+  "riddle": "Polizda koptok boʻlib,\nDumalab yotar, toʻpmas.\nDehqon bobom avaylab,\nOziq, suv berar termas.",
+  "answer": "tarvuz",
+  "accepted": [
+   "tarvuz"
+  ],
+  "distractors": [
+   "bodring",
+   "sabzi",
+   "piyoz"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 156,
+  "riddle": "Singlimga oʻxshar oʻzi,\nAslo yumilmas koʻzi.",
+  "answer": "qoʻgʻirchoq",
+  "accepted": [
+   "qoʻgʻirchoq"
+  ],
+  "distractors": [
+   "koptok",
+   "hushtak",
+   "chana"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 157,
+  "riddle": "Ertak, sheʼr-u matnlar\nYashar bir mamlakatda.\nDunyoni oʻrganishda\nUning xizmati katta.",
+  "answer": "kitob",
+  "accepted": [
+   "kitob"
+  ],
+  "distractors": [
+   "daftar",
+   "qalam",
+   "chizgʻich"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 158,
+  "riddle": "Suv ostida makoni,\nChuvalchang uning joni.\nQoʻlda turmaydi, silliq,\nTanga toʻnli u…",
+  "answer": "baliq",
+  "accepted": [
+   "baliq"
+  ],
+  "distractors": [
+   "qurbaqa",
+   "toshbaqa",
+   "qisqichbaqa"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oson",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 159,
+  "riddle": "Onam, singlim, opamning\nQoʻllarida oʻynaydi,\nHovli-uyni har kuni\nTozalaydi, toʻymaydi.",
+  "answer": "supurgi",
+  "accepted": [
+   "supurgi"
+  ],
+  "distractors": [
+   "chelak",
+   "dazmol",
+   "qozon"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 160,
+  "riddle": "Dum-dumaloq oq uydan\nJajji qush uchib chiqar,\n“Chiy-chiy”lar murgʻak dili,\nOlamni quchib chiqar.",
+  "answer": "joʻja",
+  "accepted": [
+   "joʻja",
+   "polapon"
+  ],
+  "distractors": [
+   "burgut",
+   "laylak",
+   "qarga"
+  ],
+  "theme": "qushlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 161,
+  "riddle": "Dov-daraxtda zar chakmon,\nTugmalari oq guldan,\nQirlarda koʻk dasturxon,\nBahra olishar nurdan.\nMohir chevar kim ekan?",
+  "answer": "bahor",
+  "accepted": [
+   "bahor"
+  ],
+  "distractors": [
+   "qish",
+   "kuz",
+   "yoz"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 162,
+  "riddle": "Koʻp qirrali toʻrtburchak,\nKerak boʻlar uy qursak.",
+  "answer": "gʻisht",
+  "accepted": [
+   "gʻisht"
+  ],
+  "distractors": [
+   "mix",
+   "qum",
+   "ohak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 163,
+  "riddle": "Tunlari osmonga boq,\nMingta koʻz bari uygʻoq.",
+  "answer": "yulduzlar",
+  "accepted": [
+   "yulduzlar",
+   "yulduz"
+  ],
+  "distractors": [
+   "oy",
+   "quyosh",
+   "bulut"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 164,
+  "riddle": "Kelar baland togʻlardan,\nJuda ham yiroqlardan.\nGiyoh bitmas bepayon\nSahrolarga berar jon.",
+  "answer": "suv",
+  "accepted": [
+   "suv",
+   "daryo"
+  ],
+  "distractors": [
+   "shamol",
+   "tuman",
+   "bulut"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 165,
+  "riddle": "Tepdim, tepdim,\nTerakka chiqdim.",
+  "answer": "narvon",
+  "accepted": [
+   "narvon",
+   "shoti"
+  ],
+  "distractors": [
+   "bolta",
+   "arra",
+   "belkurak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Ilmlar.uz — Topishmoqlar javobi bilan — https://ilmlar.uz/topishmoqlar-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 166,
+  "riddle": "Toʻrtida tariqday,\nOʻttizda ayiqday,\nToʻqsonida tovuqday.",
+  "answer": "odam",
+  "accepted": [
+   "odam",
+   "inson"
+  ],
+  "distractors": [
+   "ayiq",
+   "tovuq",
+   "quyon"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "qiyin",
+  "source": "Ilmlar.uz — Odam va uning aʼzolari haqida topishmoqlar toʻplami — https://ilmlar.uz/odam-va-uning-azolari-haqida-topishmoqlar-toplami/"
+ },
+ {
+  "id": 167,
+  "riddle": "Qorni qopday,\nBoʻyni ipday.",
+  "answer": "xum",
+  "accepted": [
+   "xum",
+   "koʻza",
+   "kup"
+  ],
+  "distractors": [
+   "qozon",
+   "tovoq",
+   "chelak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Uy xoʻjalik asboblari haqida topishmoqlar toʻplami — https://ilmlar.uz/uy-xojalik-asboblari-haqida-topishmoqlar-toplami/"
+ },
+ {
+  "id": 168,
+  "riddle": "Usti zahar, ichi tosh,\nToshning ichi asal.",
+  "answer": "yongʻoq",
+  "accepted": [
+   "yongʻoq"
+  ],
+  "distractors": [
+   "olma",
+   "anor",
+   "behi"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oʻrtacha",
+  "source": "Ilmlar.uz — Oʻsimliklar dunyosi topishmoqlar toʻplami — https://ilmlar.uz/osimliklar-dunyosi-topishmoqlar-toplami/"
+ },
+ {
+  "id": 169,
+  "riddle": "Ichi un-un,\nTashi gulgun.",
+  "answer": "jiyda",
+  "accepted": [
+   "jiyda"
+  ],
+  "distractors": [
+   "olcha",
+   "shaftoli",
+   "anjir"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "qiyin",
+  "source": "Ilmlar.uz — Oʻsimliklar dunyosi topishmoqlar toʻplami — https://ilmlar.uz/osimliklar-dunyosi-topishmoqlar-toplami/"
+ },
+ {
+  "id": 170,
+  "riddle": "Chaynaladi, chaynaladi, yutilmaydi.",
+  "answer": "saqich",
+  "accepted": [
+   "saqich"
+  ],
+  "distractors": [
+   "non",
+   "qand",
+   "goʻsht"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oson",
+  "source": "Ilmlar.uz — Oziq-ovqatlar haqida topishmoqlar toʻplami — https://ilmlar.uz/oziq-ovqatlar-haqida-topishmoqlar-toplami-topishmoqlar-javoblari-bilan/"
+ },
+ {
+  "id": 171,
+  "riddle": "Bir lochin oʻn ikki tuxum tugʻdi.",
+  "answer": "yil",
+  "accepted": [
+   "yil",
+   "yil va oʻn ikki oy",
+   "oʻn ikki oy"
+  ],
+  "distractors": [
+   "hafta",
+   "kun",
+   "asr"
+  ],
+  "theme": "vaqt",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/tabiat-odisalari/"
+ },
+ {
+  "id": 172,
+  "riddle": "Besh otim,\nBeshovi ham qashqa otim.",
+  "answer": "barmoqlar",
+  "accepted": [
+   "barmoqlar",
+   "barmoq",
+   "qoʻl barmoqlari"
+  ],
+  "distractors": [
+   "tishlar",
+   "koʻzlar",
+   "quloqlar"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/odam-va-uning-azolari/"
+ },
+ {
+  "id": 173,
+  "riddle": "Otamdan bir meros oldim,\nYerga koʻmsam chirimas.",
+  "answer": "ism",
+  "accepted": [
+   "ism",
+   "nom",
+   "ot"
+  ],
+  "distractors": [
+   "uy",
+   "bogʻ",
+   "kitob"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "qiyin",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/odam-va-uning-azolari/"
+ },
+ {
+  "id": 174,
+  "riddle": "Asaldan shirin,\nZahardan achchiq.",
+  "answer": "soʻz",
+  "accepted": [
+   "soʻz",
+   "gap",
+   "til"
+  ],
+  "distractors": [
+   "orzu",
+   "uyqu",
+   "kulgi"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/odam-va-uning-azolari/"
+ },
+ {
+  "id": 175,
+  "riddle": "Togʻ ustida oʻrmon bor.",
+  "answer": "soch",
+  "accepted": [
+   "soch",
+   "sochlar"
+  ],
+  "distractors": [
+   "qosh",
+   "tish",
+   "quloq"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oson",
+  "source": "Ўзбек халқ оғзаки ижоди — ТОПИШМОҚЛАР боби (e-adabiyot.uz) — https://e-adabiyot.uz/maqola/867"
+ },
+ {
+  "id": 176,
+  "riddle": "Qoʻshnimning arqoni devoldan oshib tushdi.",
+  "answer": "oshqovoq",
+  "accepted": [
+   "oshqovoq",
+   "qovoq"
+  ],
+  "distractors": [
+   "sabzi",
+   "piyoz",
+   "karam"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/poliz-ekinlari-va-sabzavot/"
+ },
+ {
+  "id": 177,
+  "riddle": "Yer ustida mushtday quyruq.",
+  "answer": "qoʻziqorin",
+  "accepted": [
+   "qoʻziqorin",
+   "zamburugʻ"
+  ],
+  "distractors": [
+   "sholgʻom",
+   "turp",
+   "sabzi"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/poliz-ekinlari-va-sabzavot/"
+ },
+ {
+  "id": 178,
+  "riddle": "Lip etadi kirib ketadi,\nChiqazolmay esing ketadi.",
+  "answer": "tikan",
+  "accepted": [
+   "tikan",
+   "tikon"
+  ],
+  "distractors": [
+   "barg",
+   "shox",
+   "ildiz"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "ЎЗБЕК ХАЛҚ ОҒЗАКИ ИЖОДИ — ТОПИШМОҚЛАР (adabiyot.islamonline.uz) — https://adabiyot.islamonline.uz/kitoblar/qollanmalar/867-uzbek-xalq-ogzakiijodi.html?start=8"
+ },
+ {
+  "id": 179,
+  "riddle": "Soyada yotar,\nMing qoʻy boqar.",
+  "answer": "it",
+  "accepted": [
+   "it",
+   "choʻpon iti"
+  ],
+  "distractors": [
+   "boʻri",
+   "mushuk",
+   "eshak"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/ajvonot-dunyosi/"
+ },
+ {
+  "id": 180,
+  "riddle": "Bir otim bor ajabgina,\nDumlari bor gajakkina,\nHali kelsa koʻrarsiz,\nQoʻrqa-qoʻrqa oʻlarsiz.",
+  "answer": "chayon",
+  "accepted": [
+   "chayon"
+  ],
+  "distractors": [
+   "chumoli",
+   "kapalak",
+   "chigirtka"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "qiyin",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/asharotlar/"
+ },
+ {
+  "id": 181,
+  "riddle": "Osti imorat,\nUsti imorat,\nOʻrtasi otashxona.",
+  "answer": "samovar",
+  "accepted": [
+   "samovar",
+   "samovarcha"
+  ],
+  "distractors": [
+   "choynak",
+   "qozon",
+   "piyola"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/uj-huzhalik-asboblari/"
+ },
+ {
+  "id": 182,
+  "riddle": "Ikki singil,\nOgʻir — yengil.",
+  "answer": "tarozi",
+  "accepted": [
+   "tarozi"
+  ],
+  "distractors": [
+   "qaychi",
+   "koʻzoynak",
+   "chelak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Топишмоқлар — Ўзбек афсона ва асотирлари (turizm.kasaba.uz) — http://turizm.kasaba.uz/uz/uzbek_legends_and_mythes/topishmoqlar"
+ },
+ {
+  "id": 183,
+  "riddle": "Kunduzi yuradi-yuradi,\nOqshom tik turadi.",
+  "answer": "hassa",
+  "accepted": [
+   "hassa",
+   "tayoq"
+  ],
+  "distractors": [
+   "soat",
+   "chelak",
+   "gilam"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/uj-huzhalik-asboblari/"
+ },
+ {
+  "id": 184,
+  "riddle": "Yerda chirimaydi,\nElda yoʻqolmaydi.",
+  "answer": "oltin",
+  "accepted": [
+   "oltin",
+   "zar"
+  ],
+  "distractors": [
+   "temir",
+   "mis",
+   "qogʻoz"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/uj-huzhalik-asboblari/"
+ },
+ {
+  "id": 185,
+  "riddle": "Kichkinagina sandiqcha,\nIchi toʻla mixcha.",
+  "answer": "gugurt",
+  "accepted": [
+   "gugurt",
+   "gugurt qutisi"
+  ],
+  "distractors": [
+   "tugma",
+   "sovun",
+   "taroq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/olov-tutun-chiro/"
+ },
+ {
+  "id": 186,
+  "riddle": "Nur buva,\nUsti boshi kir buva.",
+  "answer": "chiroq",
+  "accepted": [
+   "chiroq",
+   "fonus"
+  ],
+  "distractors": [
+   "quyosh",
+   "oy",
+   "yulduz"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/olov-tutun-chiro/"
+ },
+ {
+  "id": 187,
+  "riddle": "Koʻl emas, daryo emas,\nIchida muzlaydi suv.\nJazirama yozda ham,\nIssiq oʻtkazmaydi u.\nUsti boshi temirdan,\nShundan joyi toʻrdan.",
+  "answer": "muzlatgich",
+  "accepted": [
+   "muzlatgich",
+   "sovitgich"
+  ],
+  "distractors": [
+   "dazmol",
+   "changyutgich",
+   "tandir"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "ЎЗБЕК ХАЛҚ ОҒЗАКИ ИЖОДИ — ТОПИШМОҚЛАР (adabiyot.islamonline.uz) — https://adabiyot.islamonline.uz/kitoblar/qollanmalar/867-uzbek-xalq-ogzakiijodi.html?start=8"
+ },
+ {
+  "id": 188,
+  "riddle": "Tom ustida bir palak,\nUnda oʻn ikki handalak,\nOʻn birini yesa boʻlar,\nBirini yemay, boʻlar halak.",
+  "answer": "yil",
+  "accepted": [
+   "yil",
+   "oʻn ikki oy"
+  ],
+  "distractors": [
+   "hafta",
+   "fasl",
+   "asr"
+  ],
+  "theme": "vaqt",
+  "difficulty": "qiyin",
+  "source": "ЎЗБЕК ХАЛҚ ОҒЗАКИ ИЖОДИ — ТОПИШМОҚЛАР (adabiyot.islamonline.uz) — https://adabiyot.islamonline.uz/kitoblar/qollanmalar/867-uzbek-xalq-ogzakiijodi.html?start=8"
+ },
+ {
+  "id": 189,
+  "riddle": "Ustidagi koʻylagi,\nXuddi qogʻozga oʻxshar.\nToʻgʻrasang, jahli chiqib,\nKoʻzingni darrov yoshlar.",
+  "answer": "piyoz",
+  "accepted": [
+   "piyoz"
+  ],
+  "distractors": [
+   "sabzi",
+   "karam",
+   "bodring"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oson",
+  "source": "ЎЗБЕК ХАЛҚ ОҒЗАКИ ИЖОДИ — ТОПИШМОҚЛАР (adabiyot.islamonline.uz) — https://adabiyot.islamonline.uz/kitoblar/qollanmalar/867-uzbek-xalq-ogzakiijodi.html?start=8"
+ },
+ {
+  "id": 190,
+  "riddle": "Gʻoq-gʻoq-gʻoq,\nDumogʻim choq,\nSuvda suzib yuraman,\nKoʻp kayflar suraman.",
+  "answer": "gʻoz",
+  "accepted": [
+   "gʻoz"
+  ],
+  "distractors": [
+   "tovuq",
+   "xoʻroz",
+   "kurka"
+  ],
+  "theme": "qushlar",
+  "difficulty": "oson",
+  "source": "Топишмоқлар — Ўзбек афсона ва асотирлари (turizm.kasaba.uz) — http://turizm.kasaba.uz/uz/uzbek_legends_and_mythes/topishmoqlar"
+ },
+ {
+  "id": 191,
+  "riddle": "Qopcha,\nQopcha ichida uncha,\nUncha ichida ustuncha.",
+  "answer": "jiyda",
+  "accepted": [
+   "jiyda"
+  ],
+  "distractors": [
+   "olma",
+   "anor",
+   "uzum"
+  ],
+  "theme": "mevalar",
+  "difficulty": "qiyin",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz (Зубайда Ҳусаинова тўплами асосида) — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/usimliklar-dunyosi/"
+ },
+ {
+  "id": 192,
+  "riddle": "Oyoqsiz, qoʻlsiz tomga chiqadi.",
+  "answer": "tutun",
+  "accepted": [
+   "tutun"
+  ],
+  "distractors": [
+   "kul",
+   "choʻgʻ",
+   "koʻmir"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz (Зубайда Ҳусаинова тўплами асосида) — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/olov-tutun-chiro/"
+ },
+ {
+  "id": 193,
+  "riddle": "Oʻzi uzun, oriq,\nSallasi sariq.",
+  "answer": "gugurt",
+  "accepted": [
+   "gugurt"
+  ],
+  "distractors": [
+   "chiroq",
+   "koʻmir",
+   "kul"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz (Зубайда Ҳусаинова тўплами асосида) — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/olov-tutun-chiro/"
+ },
+ {
+  "id": 194,
+  "riddle": "Quda buvam quduqqa tushdi,\nQuloqlari shalpillab tushdi.",
+  "answer": "chuchvara",
+  "accepted": [
+   "chuchvara"
+  ],
+  "distractors": [
+   "somsa",
+   "non",
+   "chalpak"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "qiyin",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz (Зубайда Ҳусаинова тўплами асосида) — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/ozi-ov-atlar/"
+ },
+ {
+  "id": 195,
+  "riddle": "Oltin kelganda, kumush ketar,\nKumush kelganda, oltin ketar.",
+  "answer": "quyosh va oy",
+  "accepted": [
+   "quyosh va oy",
+   "oy va quyosh",
+   "quyosh bilan oy"
+  ],
+  "distractors": [
+   "yer va osmon",
+   "yulduz va bulut",
+   "chaqmoq va momaqaldiroq"
+  ],
+  "theme": "osmon",
+  "difficulty": "qiyin",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/tabiat-odisalari/"
+ },
+ {
+  "id": 196,
+  "riddle": "Bir palosim bor,\nHech yigʻolmayman.",
+  "answer": "yer",
+  "accepted": [
+   "yer",
+   "zamin"
+  ],
+  "distractors": [
+   "osmon",
+   "dengiz",
+   "choʻl"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/tabiat-odisalari/"
+ },
+ {
+  "id": 197,
+  "riddle": "Meni soʻraydilar,\nKoʻrinsam qochadilar.",
+  "answer": "yomgʻir",
+  "accepted": [
+   "yomgʻir"
+  ],
+  "distractors": [
+   "qor",
+   "shamol",
+   "bulut"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "savol-javob.com — Topishmoqlar — https://www.savol-javob.com/tabiat-va-fasllar-haqida-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 198,
+  "riddle": "Uzun-uzun iz ketdi,\nUzun boʻyli qiz ketdi.\nToqqa borib taq etdi,\nSirgʻalari yarq etdi.",
+  "answer": "yashin",
+  "accepted": [
+   "yashin",
+   "chaqmoq"
+  ],
+  "distractors": [
+   "momaqaldiroq",
+   "kamalak",
+   "quyun"
+  ],
+  "theme": "tabiat",
+  "difficulty": "qiyin",
+  "source": "savol-javob.com — Topishmoqlar — https://www.savol-javob.com/tabiat-va-fasllar-haqida-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 199,
+  "riddle": "U yoqqa oʻtdim, bildingmi?\nBu yoqqa oʻtdim, bildingmi?\nOq quvrayning boshini,\nChertib oʻtdim, bildingmi?",
+  "answer": "shamol",
+  "accepted": [
+   "shamol",
+   "yel"
+  ],
+  "distractors": [
+   "yomgʻir",
+   "tuman",
+   "bulut"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/tabiat-odisalari/"
+ },
+ {
+  "id": 200,
+  "riddle": "Bir shahar, shaharda oʻn ikki minora,\nMinorada oʻttiz deraza,\nHar derazadan yigirma toʻrt oʻq uziladi.",
+  "answer": "yil",
+  "accepted": [
+   "yil",
+   "bir yil"
+  ],
+  "distractors": [
+   "oy",
+   "hafta",
+   "asr"
+  ],
+  "theme": "vaqt",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Yangi topishmoqlar (Oʻzbek xalq topishmoqlari) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 201,
+  "riddle": "Dalama-dala qidiradi,\nQoʻy bilan echki oh uradi.",
+  "answer": "boʻri",
+  "accepted": [
+   "boʻri",
+   "qashqir"
+  ],
+  "distractors": [
+   "tulki",
+   "ayiq",
+   "sirtlon"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "sirlar.uz — Hayvonlar haqida topishmoqlar — https://sirlar.uz/hayvonlar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 202,
+  "riddle": "Boshi boru sochi yoʻq,\nKoʻzi boru qoshi yoʻq.\nTangasi bor, puli yoʻq,\nQanoti bor, uchuvi yoʻq.",
+  "answer": "baliq",
+  "accepted": [
+   "baliq"
+  ],
+  "distractors": [
+   "ilon",
+   "qurbaqa",
+   "toshbaqa"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "Bilimlar.uz — Topishmoqlar — https://bilimlar.uz/hayvonlar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 203,
+  "riddle": "Ikki toboq,\nOrasida qashqaldoq.",
+  "answer": "toshbaqa",
+  "accepted": [
+   "toshbaqa"
+  ],
+  "distractors": [
+   "qisqichbaqa",
+   "kirpi",
+   "shilliqqurt"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "qiyin",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/ajvonot-dunyosi/"
+ },
+ {
+  "id": 204,
+  "riddle": "Uzun ichak,\nUchi tugunchak.\nTanasi chipor,\nOʻrmondan chiqar.",
+  "answer": "ilon",
+  "accepted": [
+   "ilon"
+  ],
+  "distractors": [
+   "kaltakesak",
+   "chuvalchang",
+   "chayon"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "bilimlar.uz — https://bilimlar.uz/hayvonlar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 205,
+  "riddle": "Ovozasi azonda,\nMazaligi qozonda.",
+  "answer": "xoʻroz",
+  "accepted": [
+   "xoʻroz"
+  ],
+  "distractors": [
+   "tovuq",
+   "gʻoz",
+   "kaptar"
+  ],
+  "theme": "qushlar",
+  "difficulty": "oʻrtacha",
+  "source": "Tarbiyachi.uz — Topishmoqlar — https://tarbiyachi.uz/qushlar-va-parrandalar-haqida-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 206,
+  "riddle": "Tomda turgan pishagim,\nBoʻyni uzun eshagim.",
+  "answer": "laylak",
+  "accepted": [
+   "laylak"
+  ],
+  "distractors": [
+   "turna",
+   "qargʻa",
+   "kaptar"
+  ],
+  "theme": "qushlar",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/parranda-va-qushlar"
+ },
+ {
+  "id": 207,
+  "riddle": "Mening bir oʻtovim bor,\nOynasi, eshigi yoʻq.",
+  "answer": "tuxum",
+  "accepted": [
+   "tuxum"
+  ],
+  "distractors": [
+   "yongʻoq",
+   "tarvuz",
+   "qovun"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oʻrtacha",
+  "source": "Tarbiyachi.uz — Topishmoqlar — https://tarbiyachi.uz/qushlar-va-parrandalar-haqida-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 208,
+  "riddle": "Ikki yaproq bir tanda,\nKezar yozda chamanda.",
+  "answer": "kapalak",
+  "accepted": [
+   "kapalak"
+  ],
+  "distractors": [
+   "ninachi",
+   "asalari",
+   "chigirtka"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 209,
+  "riddle": "Hamma yogʻi qiltiq,\nHamma unga intiq.",
+  "answer": "bugʻdoy",
+  "accepted": [
+   "bugʻdoy"
+  ],
+  "distractors": [
+   "arpa",
+   "guruch",
+   "paxta"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oʻrtacha",
+  "source": "Bilimlar.uz — Topishmoqlar — https://bilimlar.uz/ekin-va-osimliklar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 210,
+  "riddle": "Uzun-uzun koʻchalar,\nIchi toʻla bachchalar.",
+  "answer": "loviya",
+  "accepted": [
+   "loviya"
+  ],
+  "distractors": [
+   "noʻxat",
+   "qalampir",
+   "bodring"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "qiyin",
+  "source": "bilimlar.uz — https://bilimlar.uz/ekin-va-osimliklar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 211,
+  "riddle": "Bir onadan yuz bola,\nYuzovi ham boʻz bola.",
+  "answer": "uzum",
+  "accepted": [
+   "uzum",
+   "tok"
+  ],
+  "distractors": [
+   "anor",
+   "olma",
+   "tut"
+  ],
+  "theme": "mevalar",
+  "difficulty": "oʻrtacha",
+  "source": "sherlari.uz — Mevalar nomi bilan bogʻliq topishmoqlar — https://sherlari.uz/mevalar-haqida-topishmoqlar-javobi/"
+ },
+ {
+  "id": 212,
+  "riddle": "Yoʻrgaklangan malikam,\nTilla sochi bir tutam.",
+  "answer": "makkajoʻxori",
+  "accepted": [
+   "makkajoʻxori",
+   "makka"
+  ],
+  "distractors": [
+   "kungaboqar",
+   "sholi",
+   "arpa"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/yangi-topishmo-lar/"
+ },
+ {
+  "id": 213,
+  "riddle": "Onasidan kiyim-boshim,\nBolasidan yogʻli oshim.",
+  "answer": "paxta",
+  "accepted": [
+   "paxta"
+  ],
+  "distractors": [
+   "kungaboqar",
+   "zigʻir",
+   "bugʻdoy"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "qiyin",
+  "source": "abituriyentlar.uz — https://abituriyentlar.uz/topishmoqlar/qiziqarli-topishmoqlar-toplami/"
+ },
+ {
+  "id": 214,
+  "riddle": "Cheti gulli patir non,\nIchi toʻla gʻij-gʻij don.",
+  "answer": "kungaboqar",
+  "accepted": [
+   "kungaboqar"
+  ],
+  "distractors": [
+   "makkajoʻxori",
+   "anor",
+   "qovoq"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 215,
+  "riddle": "Oʻzi pillaga oʻxshar,\nIchi tillaga oʻxshar.",
+  "answer": "yeryongʻoq",
+  "accepted": [
+   "yeryongʻoq",
+   "yer yongʻoq"
+  ],
+  "distractors": [
+   "bodom",
+   "pista",
+   "kunjut"
+  ],
+  "theme": "mevalar",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/yangi-topishmo-lar/"
+ },
+ {
+  "id": 216,
+  "riddle": "Atrofi chakalakzor,\nOʻrtasi yorugʻ yulduz.",
+  "answer": "koʻz",
+  "accepted": [
+   "koʻz",
+   "koʻz va kiprik"
+  ],
+  "distractors": [
+   "quloq",
+   "burun",
+   "ogʻiz"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/odam-va-uning-azolari/"
+ },
+ {
+  "id": 217,
+  "riddle": "Hamma vaqt ogʻzimda,\nHech yuta olmayman.",
+  "answer": "til",
+  "accepted": [
+   "til"
+  ],
+  "distractors": [
+   "tish",
+   "tomoq",
+   "lab"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oson",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Odam va uning aʼzolari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/odam-va-uning-a-zolari"
+ },
+ {
+  "id": 218,
+  "riddle": "Boshingdagi boshpana,\nQish-qirovda gulxona.",
+  "answer": "telpak",
+  "accepted": [
+   "telpak",
+   "boʻrk"
+  ],
+  "distractors": [
+   "qoʻlqop",
+   "belbogʻ",
+   "paypoq"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "oson",
+  "source": "sirlar.uz — Kiyim-kechak haqida topishmoqlar — https://sirlar.uz/kiyim-kechak-haqida-topishmoqlar/"
+ },
+ {
+  "id": 219,
+  "riddle": "Bir tugʻishgan ikki doʻst,\nBoʻylari tizdan.\nQolmaydi bizdan,\nSaqlaydi qor, muzdan.",
+  "answer": "etik",
+  "accepted": [
+   "etik",
+   "etiklar"
+  ],
+  "distractors": [
+   "qoʻlqop",
+   "paypoq",
+   "kavush"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/kijim-kechak-bezak-va-tikuvchilik-asbob/"
+ },
+ {
+  "id": 220,
+  "riddle": "Chakka tomadi,\nYerga tushmaydi.",
+  "answer": "zirak",
+  "accepted": [
+   "zirak",
+   "sirgʻa",
+   "isirgʻa"
+  ],
+  "distractors": [
+   "uzuk",
+   "bilaguzuk",
+   "marjon"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Kiyim-kechak, bezak va tikuvchilik asboblari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/kiyim-kechak-bezak-va-tikuvchilik-asboblari"
+ },
+ {
+  "id": 221,
+  "riddle": "Otasi ogʻzin ochar,\nBolasi urib qochar.",
+  "answer": "keli",
+  "accepted": [
+   "keli",
+   "oʻgʻir",
+   "keli va kelisop",
+   "hovoncha"
+  ],
+  "distractors": [
+   "tegirmon",
+   "qozon",
+   "elak"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 222,
+  "riddle": "Kunu tun yuradi,\nDoim bir joyda turadi.",
+  "answer": "soat",
+  "accepted": [
+   "soat"
+  ],
+  "distractors": [
+   "beshik",
+   "eshik",
+   "chiroq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/uj-zhoj-va-unga-tegishli-zhi-ozlar/"
+ },
+ {
+  "id": 223,
+  "riddle": "Bir doʻstim bor ajoyib,\nAgar kim unga boqsa,\nKulib boqar iljayib.",
+  "answer": "oyna",
+  "accepted": [
+   "oyna",
+   "koʻzgu"
+  ],
+  "distractors": [
+   "deraza",
+   "surat",
+   "soya"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Uy-joy va unga tegishli jihozlar — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-joy-va-unga-tegishli-jihozlar"
+ },
+ {
+  "id": 224,
+  "riddle": "Akasini ukasi qitiqlaydi.",
+  "answer": "qulf va kalit",
+  "accepted": [
+   "qulf va kalit",
+   "kalit va qulf"
+  ],
+  "distractors": [
+   "igna va ip",
+   "qozon va qopqoq",
+   "bolgʻa va mix"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/uj-zhoj-va-unga-tegishli-zhi-ozlar/"
+ },
+ {
+  "id": 225,
+  "riddle": "Qizil sigir qora sigirning qornini yalaydi.",
+  "answer": "olov va qozon",
+  "accepted": [
+   "olov va qozon",
+   "qozon va olov"
+  ],
+  "distractors": [
+   "tandir va non",
+   "choynak va suv",
+   "oʻtin va bolta"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/olov-tutun-chiro/"
+ },
+ {
+  "id": 226,
+  "riddle": "Ogʻzi yoʻgʻu tishi bor,\nBoshimizda ishi bor.",
+  "answer": "taroq",
+  "accepted": [
+   "taroq"
+  ],
+  "distractors": [
+   "arra",
+   "qaychi",
+   "ustara"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Abituriyentlar.uz — Topishmoqlar — https://abituriyentlar.uz/topishmoqlar/qiziqarli-topishmoqlar-toplami/"
+ },
+ {
+  "id": 227,
+  "riddle": "Qumdan yasalgan muzim,\nUyimni issiq tutar.",
+  "answer": "deraza oynasi",
+  "accepted": [
+   "deraza oynasi",
+   "oyna",
+   "deraza"
+  ],
+  "distractors": [
+   "eshik",
+   "devor",
+   "tom"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 228,
+  "riddle": "Gʻuv-gʻuv etar,\nQorni toʻysa yumalab ketar.",
+  "answer": "urchuq",
+  "accepted": [
+   "urchuq"
+  ],
+  "distractors": [
+   "moki",
+   "igna",
+   "bolgʻa"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "qiyin",
+  "source": "Ўзбек халқ топишмоқлари — ziyouz.uz — https://ziyouz.uz/ozbek-xalq-ogzaki-ijodi/ozbek-xalq-topishmoqlari/me-nat-ish-urollari/"
+ },
+ {
+  "id": 229,
+  "riddle": "Ikki oʻrim sochi bor,\nQotma, qingʻir qanoti.\nYukni yengil qilar,\nYelka minish odati.",
+  "answer": "obkash",
+  "accepted": [
+   "obkash"
+  ],
+  "distractors": [
+   "arava",
+   "chelak",
+   "xurjun"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Yangi topishmoqlar (Oʻzbek xalq topishmoqlari) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 230,
+  "riddle": "Gʻit-gʻit deydi, ishlaydi,\nYerga kukun tashlaydi.",
+  "answer": "arra",
+  "accepted": [
+   "arra"
+  ],
+  "distractors": [
+   "bolta",
+   "randa",
+   "bolgʻa"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oʻrtacha",
+  "source": "Topishmoqlar arxivi — SAVOL-JAVOB.COM — https://www.savol-javob.com/mehnat-va-ish-quroli-haqida-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 231,
+  "riddle": "Katta quti, koʻzi bor,\nKoʻp tomosha, soʻzi bor.",
+  "answer": "televizor",
+  "accepted": [
+   "televizor"
+  ],
+  "distractors": [
+   "radio",
+   "muzlatgich",
+   "telefon"
+  ],
+  "theme": "texnika",
+  "difficulty": "oson",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 232,
+  "riddle": "Sen ichida tursang tikka,\nOlib chiqar yuksaklikka.",
+  "answer": "lift",
+  "accepted": [
+   "lift"
+  ],
+  "distractors": [
+   "zina",
+   "koʻprik",
+   "narvon"
+  ],
+  "theme": "texnika",
+  "difficulty": "oson",
+  "source": "Abituriyentlar.uz — Topishmoqlar — https://abituriyentlar.uz/topishmoqlar/qiziqarli-topishmoqlar-toplami/"
+ },
+ {
+  "id": 233,
+  "riddle": "Yer tagida yoʻli bor,\nUstida poʻlat toʻni bor,\nShamoldan tez yeladi,\nBuxorodan keladi.",
+  "answer": "gaz",
+  "accepted": [
+   "gaz",
+   "tabiiy gaz"
+  ],
+  "distractors": [
+   "suv",
+   "neft",
+   "koʻmir"
+  ],
+  "theme": "texnika",
+  "difficulty": "qiyin",
+  "source": "abituriyentlar.uz — https://abituriyentlar.uz/topishmoqlar/qiziqarli-topishmoqlar-toplami/"
+ },
+ {
+  "id": 234,
+  "riddle": "Bir kosa sut,\nOlamga dud.",
+  "answer": "tuman",
+  "accepted": [
+   "tuman"
+  ],
+  "distractors": [
+   "bulut",
+   "tutun",
+   "shudring"
+  ],
+  "theme": "tabiat",
+  "difficulty": "qiyin",
+  "source": "savol-javob.com — Topishmoqlar — https://www.savol-javob.com/tabiat-va-fasllar-haqida-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 235,
+  "riddle": "Beqasamdan yoʻli bor,\nOsmon-falakda chiqar.",
+  "answer": "kamalak",
+  "accepted": [
+   "kamalak"
+  ],
+  "distractors": [
+   "shafaq",
+   "yashin",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 236,
+  "riddle": "Kunduz kuni oʻchirib,\nTunda yoqa olmaysan.",
+  "answer": "quyosh",
+  "accepted": [
+   "quyosh",
+   "oftob"
+  ],
+  "distractors": [
+   "oy",
+   "yulduz",
+   "chiroq"
+  ],
+  "theme": "osmon",
+  "difficulty": "oʻrtacha",
+  "source": "Abituriyentlar.uz — Topishmoqlar — https://abituriyentlar.uz/topishmoqlar/qiziqarli-topishmoqlar-toplami/"
+ },
+ {
+  "id": 237,
+  "riddle": "Bir tol oʻsdi to koʻkka qadar,\nBu tolning oʻn ikki shoxi bor.\nHar shoxida toʻrttadan uya bor,\nHar uyada yettitadan tuxum bor,\nHar tuxumning yarmi qoradir koʻrsang,\nYarmi oppoqdir, topgan boʻlsang.",
+  "answer": "yil",
+  "accepted": [
+   "yil"
+  ],
+  "distractors": [
+   "oy",
+   "kun",
+   "fasl"
+  ],
+  "theme": "vaqt",
+  "difficulty": "qiyin",
+  "source": "savol-javob.com — Topishmoqlar — https://www.savol-javob.com/tabiat-va-fasllar-haqida-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 238,
+  "riddle": "Oyogʻi yoʻq, yuradi,\nOgʻzi yoʻq, gapiradi.",
+  "answer": "soat",
+  "accepted": [
+   "soat"
+  ],
+  "distractors": [
+   "daryo",
+   "kitob",
+   "radio"
+  ],
+  "theme": "vaqt",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-joy-va-unga-tegishli-jihozlar"
+ },
+ {
+  "id": 239,
+  "riddle": "Bir qoʻshnim bor avval boshdan,\nSoqoli uning qizil goʻshdan.\nSahar turib shovqin solar,\nXabari yoʻq hech bir ishdan.",
+  "answer": "xoʻroz",
+  "accepted": [
+   "xoʻroz"
+  ],
+  "distractors": [
+   "tovuq",
+   "kurka",
+   "oʻrdak"
+  ],
+  "theme": "qushlar",
+  "difficulty": "oʻrtacha",
+  "source": "Tarbiyachi.uz — Topishmoqlar — https://tarbiyachi.uz/qushlar-va-parrandalar-haqida-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 240,
+  "riddle": "Tutdan bizga koʻylak toʻqir.",
+  "answer": "ipak qurti",
+  "accepted": [
+   "ipak qurti",
+   "pilla qurti"
+  ],
+  "distractors": [
+   "oʻrgimchak",
+   "asalari",
+   "chigirtka"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Bilimlar.uz — Topishmoqlar — https://bilimlar.uz/hasharotlar-haqida-eng-sara-topishmoqlar/"
+ },
+ {
+  "id": 241,
+  "riddle": "Hasan aka tikka turadi,\nBolalari chapak chaladi.",
+  "answer": "terak",
+  "accepted": [
+   "terak"
+  ],
+  "distractors": [
+   "tol",
+   "chinor",
+   "tut"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/o-simliklar-dunyosi"
+ },
+ {
+  "id": 242,
+  "riddle": "Yerdan chiqar taranib,\nZarrin dastor oʻranib.",
+  "answer": "makkajoʻxori",
+  "accepted": [
+   "makkajoʻxori",
+   "makka"
+  ],
+  "distractors": [
+   "bugʻdoy",
+   "piyoz",
+   "sholgʻom"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oʻrtacha",
+  "source": "sirlar.uz — Ekin va oʻsimliklar haqida topishmoqlar — https://sirlar.uz/ekin-va-osimliklar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 243,
+  "riddle": "Oʻzi shirin, tukligina,\nMazasi bor, totligina.",
+  "answer": "shaftoli",
+  "accepted": [
+   "shaftoli"
+  ],
+  "distractors": [
+   "oʻrik",
+   "olma",
+   "anjir"
+  ],
+  "theme": "mevalar",
+  "difficulty": "oson",
+  "source": "bilimlar.uz — https://bilimlar.uz/mevalar-haqida-eng-sara-topishmoqlar/"
+ },
+ {
+  "id": 244,
+  "riddle": "Mallagina toʻni bor,\nNordongina taʼmi bor.",
+  "answer": "behi",
+  "accepted": [
+   "behi"
+  ],
+  "distractors": [
+   "nok",
+   "olma",
+   "uzum"
+  ],
+  "theme": "mevalar",
+  "difficulty": "oʻrtacha",
+  "source": "savol-javob.com — Topishmoqlar — https://www.savol-javob.com/ozbekcha-topishmoqlar-mevalar-haqida/"
+ },
+ {
+  "id": 245,
+  "riddle": "Boʻgʻun-boʻgʻun, boʻgʻunchoq,\nTugun-tugun, tugunchak,\nYetmish qizning onasi\nHali ham boʻlsa kelinchak.",
+  "answer": "uzum",
+  "accepted": [
+   "uzum",
+   "tok"
+  ],
+  "distractors": [
+   "anor",
+   "behi",
+   "shaftoli"
+  ],
+  "theme": "mevalar",
+  "difficulty": "qiyin",
+  "source": "bilimlar.uz — https://bilimlar.uz/mevalar-haqida-eng-sara-topishmoqlar/"
+ },
+ {
+  "id": 246,
+  "riddle": "Urmasdan yigʻlatar.",
+  "answer": "piyoz",
+  "accepted": [
+   "piyoz"
+  ],
+  "distractors": [
+   "sarimsoq",
+   "qalampir",
+   "turp"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oson",
+  "source": "Bilimlar.uz — Topishmoqlar — https://bilimlar.uz/poliz-ekinlari-va-sabzavotlar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 247,
+  "riddle": "Bir nechtadan koʻzi bor,\nOlma kabi yuzi bor.",
+  "answer": "kartoshka",
+  "accepted": [
+   "kartoshka"
+  ],
+  "distractors": [
+   "sabzi",
+   "lavlagi",
+   "bodring"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 248,
+  "riddle": "Vaqti bilan soch tishlar,\nOynaga qarab ishlar.",
+  "answer": "taroq",
+  "accepted": [
+   "taroq"
+  ],
+  "distractors": [
+   "qaychi",
+   "ustara",
+   "sochiq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 249,
+  "riddle": "Ikki qoʻshni, ikki doʻst,\nYonma-yon turishadi.\nYigʻlashsa birga yigʻlab,\nBaravar kulishadi.",
+  "answer": "koʻz",
+  "accepted": [
+   "koʻz",
+   "koʻzlar"
+  ],
+  "distractors": [
+   "quloq",
+   "qosh",
+   "qoʻl"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 250,
+  "riddle": "Charchamas kampir koʻrdim, yolgʻiz oyoq,\nOgʻziga tashlab olgan choʻpdan tayoq.\nYurgan sari belbogʻini qavatlaydi,\nBeribdi unga goʻzallikni ayamayoq.",
+  "answer": "urchuq",
+  "accepted": [
+   "urchuq"
+  ],
+  "distractors": [
+   "moki",
+   "dastgoh",
+   "igna"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "qiyin",
+  "source": "savol-javob.com — Topishmoqlar — https://www.savol-javob.com/mehnat-va-ish-quroli-haqida-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 251,
+  "riddle": "Urdim, gup etdi,\nYer tagiga kirib ketdi.",
+  "answer": "ketmon",
+  "accepted": [
+   "ketmon"
+  ],
+  "distractors": [
+   "belkurak",
+   "oʻroq",
+   "bolta"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oʻrtacha",
+  "source": "savol-javob.com — Topishmoqlar — https://www.savol-javob.com/mehnat-va-ish-quroli-haqida-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 252,
+  "riddle": "Uradi oʻrogʻi yoʻq,\nYigʻadi tirnogʻi yoʻq.\nDoni boʻlar qop-qop,\nYanchadi, toʻqmogʻi yoʻq.",
+  "answer": "kombayn",
+  "accepted": [
+   "kombayn"
+  ],
+  "distractors": [
+   "traktor",
+   "ekskavator",
+   "tegirmon"
+  ],
+  "theme": "texnika",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 253,
+  "riddle": "Qish chogʻi misli qushcha,\nUchib yurar falakda,\nQiziq, yoʻqolib qolar,\nYerga qoʻngan onda.",
+  "answer": "qorparcha",
+  "accepted": [
+   "qorparcha",
+   "qor parchasi"
+  ],
+  "distractors": [
+   "doʻl",
+   "qirov",
+   "yomgʻir"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Irodabonu Avvalboyeva (toʻplovchi). Bolalar uchun topishmoqlar (Toshkent: Yurist-media markazi, 2018) — https://zakm.uz/media/books/Bolalar_uchun_topishmoqlar.pdf"
+ },
+ {
+  "id": 254,
+  "riddle": "Dunyoni qoplaydi,\nDengizni qoplay olmaydi.",
+  "answer": "qor",
+  "accepted": [
+   "qor"
+  ],
+  "distractors": [
+   "tuman",
+   "yomgʻir",
+   "chang"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Irodabonu Avvalboyeva (toʻplovchi). Bolalar uchun topishmoqlar (Toshkent: Yurist-media markazi, 2018) — https://zakm.uz/media/books/Bolalar_uchun_topishmoqlar.pdf"
+ },
+ {
+  "id": 255,
+  "riddle": "Sochlaringni silaydi,\nKoʻrolmaysan qoʻlini.\nQulogʻingga shivirlar,\nTushunmaysan tilini.",
+  "answer": "shamol",
+  "accepted": [
+   "shamol",
+   "yel"
+  ],
+  "distractors": [
+   "yomgʻir",
+   "tuman",
+   "bulut"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Irodabonu Avvalboyeva (toʻplovchi). Bolalar uchun topishmoqlar (Toshkent: Yurist-media markazi, 2018) — https://zakm.uz/media/books/Bolalar_uchun_topishmoqlar.pdf"
+ },
+ {
+  "id": 256,
+  "riddle": "U tushganda, dala, qir\nKuladi «qiqir-qiqir».\nChirmandasi — osmonda,\nRaqsi — yerda, har yonda.",
+  "answer": "yomgʻir",
+  "accepted": [
+   "yomgʻir"
+  ],
+  "distractors": [
+   "qor",
+   "doʻl",
+   "shudring"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Tarbiyachi.uz — Topishmoqlar — https://tarbiyachi.uz/topishmoq-javoblari-bilan-bolala-uchun/"
+ },
+ {
+  "id": 257,
+  "riddle": "Qorga oʻxshar, emas qor,\nQor kabi sovugʻi bor.\nQuyosh chiqqan zamoni,\nYoʻqolar oʻshal oni.",
+  "answer": "qirov",
+  "accepted": [
+   "qirov"
+  ],
+  "distractors": [
+   "shudring",
+   "muz",
+   "doʻl"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Tarbiyachi.uz — Topishmoqlar — https://tarbiyachi.uz/topishmoq-javoblari-bilan-bolala-uchun/"
+ },
+ {
+  "id": 258,
+  "riddle": "Chiziladi koʻkda qalamsiz,\nHar xil boʻyoq, rassomsiz.",
+  "answer": "kamalak",
+  "accepted": [
+   "kamalak"
+  ],
+  "distractors": [
+   "chaqmoq",
+   "bulut",
+   "shafaq"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Irodabonu Avvalboyeva (toʻplovchi). Bolalar uchun topishmoqlar (Toshkent: Yurist-media markazi, 2018) — https://zakm.uz/media/books/Bolalar_uchun_topishmoqlar.pdf"
+ },
+ {
+  "id": 259,
+  "riddle": "Goh sopi yoʻq oʻroqday,\nGoh boʻladi doira.\nAtrofga nur sochsa ham,\nHarorat bermas sira.",
+  "answer": "oy",
+  "accepted": [
+   "oy"
+  ],
+  "distractors": [
+   "quyosh",
+   "yulduz",
+   "chaqmoq"
+  ],
+  "theme": "osmon",
+  "difficulty": "oʻrtacha",
+  "source": "Tarbiyachi.uz — Topishmoqlar — https://tarbiyachi.uz/topishmoq-javoblari-bilan-bolala-uchun/"
+ },
+ {
+  "id": 260,
+  "riddle": "Oʻzi bir kichik narsa,\nKerak boʻlar har darsda,\nChizib qoʻysang notoʻgʻri,\nYoʻq qiladi bir pasda.",
+  "answer": "oʻchirgʻich",
+  "accepted": [
+   "oʻchirgʻich"
+  ],
+  "distractors": [
+   "qalam",
+   "chizgʻich",
+   "boʻr"
+  ],
+  "theme": "maktab",
+  "difficulty": "oson",
+  "source": "Irodabonu Avvalboyeva (toʻplovchi). Bolalar uchun topishmoqlar (Toshkent: Yurist-media markazi, 2018) — https://zakm.uz/media/books/Bolalar_uchun_topishmoqlar.pdf"
+ },
+ {
+  "id": 261,
+  "riddle": "Koptokka oʻxshar asli,\nJoylashgan dunyo rasmi.",
+  "answer": "globus",
+  "accepted": [
+   "globus"
+  ],
+  "distractors": [
+   "xarita",
+   "atlas",
+   "kompas"
+  ],
+  "theme": "maktab",
+  "difficulty": "oson",
+  "source": "Irodabonu Avvalboyeva (toʻplovchi). Bolalar uchun topishmoqlar (Toshkent: Yurist-media markazi, 2018) — https://zakm.uz/media/books/Bolalar_uchun_topishmoqlar.pdf"
+ },
+ {
+  "id": 262,
+  "riddle": "Qoshda bir,\nQoshiqda ikki.",
+  "answer": "q harfi",
+  "accepted": [
+   "q harfi",
+   "«q» harfi",
+   "q"
+  ],
+  "distractors": [
+   "o harfi",
+   "sh harfi",
+   "i harfi"
+  ],
+  "theme": "maktab",
+  "difficulty": "qiyin",
+  "source": "Irodabonu Avvalboyeva (toʻplovchi). Bolalar uchun topishmoqlar (Toshkent: Yurist-media markazi, 2018) — https://zakm.uz/media/books/Bolalar_uchun_topishmoqlar.pdf"
+ },
+ {
+  "id": 263,
+  "riddle": "Ogʻzini ochib yerga qaraydi,\nOgʻzidan oq koʻpik sochadi.",
+  "answer": "paxta",
+  "accepted": [
+   "paxta"
+  ],
+  "distractors": [
+   "kungaboqar",
+   "makkajoʻxori",
+   "bugʻdoy"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "oʻrtacha",
+  "source": "Bilimlar.uz — Topishmoqlar — https://bilimlar.uz/ekin-va-osimliklar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 264,
+  "riddle": "Taram sochli qiz toʻdasi,\nSuvda yotar kun-kechasi.\nSuvda yotib suvga tegmay\nOltmishida u sargʻaygay,\nSakson kunda saboqdadir,\nToʻqson kunda tovoqdadir.",
+  "answer": "guruch",
+  "accepted": [
+   "guruch",
+   "sholi"
+  ],
+  "distractors": [
+   "bugʻdoy",
+   "arpa",
+   "joʻxori"
+  ],
+  "theme": "oʻsimliklar",
+  "difficulty": "qiyin",
+  "source": "Bilimlar.uz — Topishmoqlar — https://bilimlar.uz/ekin-va-osimliklar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 265,
+  "riddle": "Osti sariq, usti sariq,\nShirin, totli, ichi tariq.",
+  "answer": "anjir",
+  "accepted": [
+   "anjir"
+  ],
+  "distractors": [
+   "oʻrik",
+   "behi",
+   "xurmo"
+  ],
+  "theme": "mevalar",
+  "difficulty": "oʻrtacha",
+  "source": "Bilimlar.uz — Topishmoqlar — https://bilimlar.uz/mevalar-haqida-eng-sara-topishmoqlar/"
+ },
+ {
+  "id": 266,
+  "riddle": "Bir tishi bor tishlaydi,\nTishlaganda kishnaydi.\nKishnab-kishnab ishlaydi,\nIshlab koʻnglin xushlaydi.",
+  "answer": "tikuv mashinasi",
+  "accepted": [
+   "tikuv mashinasi",
+   "tikish mashinasi"
+  ],
+  "distractors": [
+   "arra",
+   "qaychi",
+   "igna"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "qiyin",
+  "source": "Abituriyentlar.uz — Topishmoqlar — https://abituriyentlar.uz/topishmoqlar/qiziqarli-topishmoqlar-toplami/"
+ },
+ {
+  "id": 267,
+  "riddle": "Uzoqlarga uchsa ham,\nTalpinib qanot qoqmas.",
+  "answer": "samolyot",
+  "accepted": [
+   "samolyot",
+   "tayyora"
+  ],
+  "distractors": [
+   "poyezd",
+   "kema",
+   "avtobus"
+  ],
+  "theme": "texnika",
+  "difficulty": "oʻrtacha",
+  "source": "Abituriyentlar.uz — Topishmoqlar — https://abituriyentlar.uz/topishmoqlar/qiziqarli-topishmoqlar-toplami/"
+ },
+ {
+  "id": 268,
+  "riddle": "Koʻkda koʻrdim koʻprik,\nRangi yetti turlik.",
+  "answer": "kamalak",
+  "accepted": [
+   "kamalak"
+  ],
+  "distractors": [
+   "yulduz",
+   "chaqmoq",
+   "quyosh"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Abiturtest.uz — Fasllar va Tabiat haqida topishmoqlar — https://abiturtest.uz/topishmoqlar/fasllar-va-tabiat-haqida-topishmoqlar/"
+ },
+ {
+  "id": 269,
+  "riddle": "Bir tilik qovun shakli,\nKoʻk gumbazga yarashar.\nKunlar oʻtib toʻlishsa,\nHamma unga qarashar.",
+  "answer": "oy",
+  "accepted": [
+   "oy"
+  ],
+  "distractors": [
+   "quyosh",
+   "yulduz",
+   "bulut"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Abiturtest.uz — Fasllar va Tabiat haqida topishmoqlar — https://abiturtest.uz/topishmoqlar/fasllar-va-tabiat-haqida-topishmoqlar/"
+ },
+ {
+  "id": 270,
+  "riddle": "Sharqdan bosh koʻtarar,\nHar tong sogʻinar bizni.\nKoʻrmasak turolmaymiz,\nOlov yuzli qirmizni.",
+  "answer": "quyosh",
+  "accepted": [
+   "quyosh"
+  ],
+  "distractors": [
+   "oy",
+   "yulduz",
+   "shafaq"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Abiturtest.uz — Fasllar va Tabiat haqida topishmoqlar — https://abiturtest.uz/topishmoqlar/fasllar-va-tabiat-haqida-topishmoqlar/"
+ },
+ {
+  "id": 271,
+  "riddle": "Oʻrkach-oʻrkach oq tuya,\nBirdan kelib qoladi.\nBir lahza oʻtmasdanoq,\nKoʻkni qoplab oladi.",
+  "answer": "bulut",
+  "accepted": [
+   "bulut"
+  ],
+  "distractors": [
+   "tuman",
+   "tutun",
+   "qor"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Abiturtest.uz — Fasllar va Tabiat haqida topishmoqlar — https://abiturtest.uz/topishmoqlar/fasllar-va-tabiat-haqida-topishmoqlar/"
+ },
+ {
+  "id": 272,
+  "riddle": "Koʻkat, barglar yuziga\nTongda qoʻnar kumush xol.\nQuyoshda lov-lov yonib,\nYashay olmas bemalol.",
+  "answer": "shudring",
+  "accepted": [
+   "shudring"
+  ],
+  "distractors": [
+   "qirov",
+   "yomgʻir",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Abiturtest.uz — Fasllar va Tabiat haqida topishmoqlar — https://abiturtest.uz/topishmoqlar/fasllar-va-tabiat-haqida-topishmoqlar/"
+ },
+ {
+  "id": 273,
+  "riddle": "Yumshoq, lekin paxta emas,\nGʻirchillaydi, taxta emas.\nDaraxtlarni kiyintirar,\nOppoqqina, yaxtak emas.",
+  "answer": "qor",
+  "accepted": [
+   "qor"
+  ],
+  "distractors": [
+   "qirov",
+   "muz",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Abiturtest.uz — Fasllar va Tabiat haqida topishmoqlar — https://abiturtest.uz/topishmoqlar/fasllar-va-tabiat-haqida-topishmoqlar/"
+ },
+ {
+  "id": 274,
+  "riddle": "Bir tup katta terak,\nTubi bir, shoxi oʻn ikki,\nYaprogʻi uch yuz oltmish,\nYaprogʻining bir tomoni oq,\nIkkinchi tomoni qora.",
+  "answer": "yil",
+  "accepted": [
+   "yil"
+  ],
+  "distractors": [
+   "oy",
+   "hafta",
+   "fasl"
+  ],
+  "theme": "vaqt",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Tabiat hodisalari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/tabiat-hodisalari"
+ },
+ {
+  "id": 275,
+  "riddle": "Ikki rang menga yaqin,\nBiri qora, biri oq.\nBirida olsam orom,\nBirida ish qaynar mutloq.",
+  "answer": "tun va kun",
+  "accepted": [
+   "tun va kun",
+   "kun va tun",
+   "kecha va kunduz",
+   "kunduz va kecha"
+  ],
+  "distractors": [
+   "yoz va qish",
+   "oy va quyosh",
+   "bahor va kuz"
+  ],
+  "theme": "vaqt",
+  "difficulty": "oʻrtacha",
+  "source": "Abiturtest.uz — Fasllar va Tabiat haqida topishmoqlar — https://abiturtest.uz/topishmoqlar/fasllar-va-tabiat-haqida-topishmoqlar/"
+ },
+ {
+  "id": 276,
+  "riddle": "Palovning ostida,\nSuvning ustida.",
+  "answer": "moy",
+  "accepted": [
+   "moy",
+   "yogʻ",
+   "zigʻir moy"
+  ],
+  "distractors": [
+   "tuz",
+   "guruch",
+   "goʻsht"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Oziq-ovqatlar — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/oziq-ovqatlar"
+ },
+ {
+  "id": 277,
+  "riddle": "Yerga koʻmilmaydi,\nKosaga quyilmaydi,\nDunyoda hamma odam\nIchmay qoʻymaydi.",
+  "answer": "ona suti",
+  "accepted": [
+   "ona suti"
+  ],
+  "distractors": [
+   "qatiq",
+   "choy",
+   "ayron"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Odam va uning aʼzolari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/odam-va-uning-a-zolari"
+ },
+ {
+  "id": 278,
+  "riddle": "Oʻzi bitta,\nTuxumi toʻrtta,\nBolasi oʻn oltita.",
+  "answer": "doʻppi",
+  "accepted": [
+   "doʻppi"
+  ],
+  "distractors": [
+   "roʻmol",
+   "belbogʻ",
+   "chopon"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Kiyim-kechak, bezak va tikuvchilik asboblari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/kiyim-kechak-bezak-va-tikuvchilik-asboblari"
+ },
+ {
+  "id": 279,
+  "riddle": "Bir boyning oʻn qoʻyi bor,\nBiri bogʻliq, toʻqqizi yechiq.",
+  "answer": "uzuk",
+  "accepted": [
+   "uzuk"
+  ],
+  "distractors": [
+   "zirak",
+   "munchoq",
+   "qoʻlqop"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Kiyim-kechak, bezak va tikuvchilik asboblari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/kiyim-kechak-bezak-va-tikuvchilik-asboblari"
+ },
+ {
+  "id": 280,
+  "riddle": "Hammaga toʻn tikaman, oʻzim yalangʻoch.",
+  "answer": "igna",
+  "accepted": [
+   "igna"
+  ],
+  "distractors": [
+   "qaychi",
+   "ip",
+   "angishvona"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oʻrtacha",
+  "source": "sirlar.uz — Tikuvchilik asboblari haqida topishmoqlar — https://sirlar.uz/tikuvchilik-asboblari-haqida-topishmoqlar/"
+ },
+ {
+  "id": 281,
+  "riddle": "Kunduzi tayoqlashar,\nKechasi quchoqlashar.",
+  "answer": "kipriklar",
+  "accepted": [
+   "kipriklar",
+   "kiprik"
+  ],
+  "distractors": [
+   "qosh",
+   "lab",
+   "barmoq"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "sherlari.uz — Tana aʼzolariga oid topishmoqlar — https://sherlari.uz/tana-azolariga-oid-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 282,
+  "riddle": "Eshitadi, koʻrmaydi,\nKoʻradi, eshitmaydi.",
+  "answer": "quloq va koʻz",
+  "accepted": [
+   "quloq va koʻz",
+   "koʻz va quloq"
+  ],
+  "distractors": [
+   "burun va til",
+   "til va lab",
+   "qoʻl va oyoq"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Odam va uning aʼzolari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/odam-va-uning-a-zolari"
+ },
+ {
+  "id": 283,
+  "riddle": "Gʻaznadir, toʻlmas,\nBir kun boʻsh boʻlmas.\nBoʻsh qolsa, turmas,\nUsiz jon boʻlmas.",
+  "answer": "ogʻiz",
+  "accepted": [
+   "ogʻiz"
+  ],
+  "distractors": [
+   "qorin",
+   "tomoq",
+   "yurak"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Odam va uning aʼzolari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/odam-va-uning-a-zolari"
+ },
+ {
+  "id": 284,
+  "riddle": "Togʻdan tashladim, sinmadi,\nSuvga tashladim, sindi.",
+  "answer": "qogʻoz",
+  "accepted": [
+   "qogʻoz"
+  ],
+  "distractors": [
+   "tosh",
+   "shisha",
+   "yogʻoch"
+  ],
+  "theme": "maktab",
+  "difficulty": "oʻrtacha",
+  "source": "sirlar.uz — Kitob va yozuv haqida topishmoqlar — https://sirlar.uz/kitob-va-yozuv-haqida-topishmoqlar/"
+ },
+ {
+  "id": 285,
+  "riddle": "Yalt-yalt etadi,\nYamlab ketadi.",
+  "answer": "olov",
+  "accepted": [
+   "olov",
+   "oʻt"
+  ],
+  "distractors": [
+   "chiroq",
+   "tutun",
+   "kul"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Olov, tutun, chiroq — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/olov-tutun-chiroq"
+ },
+ {
+  "id": 286,
+  "riddle": "Changaroqdan uchib chiqadi,\nQarasa, koʻzni koʻr qiladi.",
+  "answer": "uchqun",
+  "accepted": [
+   "uchqun"
+  ],
+  "distractors": [
+   "tutun",
+   "kul",
+   "chaqmoq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Oʻzbek xalq topishmoqlari: Olov, tutun, chiroq — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/olov-tutun-chiroq"
+ },
+ {
+  "id": 287,
+  "riddle": "Qizil qiz yer ostida,\nSochlari yer ustida.",
+  "answer": "sabzi",
+  "accepted": [
+   "sabzi"
+  ],
+  "distractors": [
+   "lavlagi",
+   "kartoshka",
+   "sholgʻom"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oson",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Poliz ekinlari va sabzavot — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/poliz-ekinlari-va-sabzavot"
+ },
+ {
+  "id": 288,
+  "riddle": "Past-past boʻyi bor,\nYetti qavat toʻni bor.",
+  "answer": "piyoz",
+  "accepted": [
+   "piyoz"
+  ],
+  "distractors": [
+   "karam",
+   "sarimsoq",
+   "turp"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Poliz ekinlari va sabzavot — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/poliz-ekinlari-va-sabzavot"
+ },
+ {
+  "id": 289,
+  "riddle": "Roʻparada turibdi,\nYuzi dumaloq, loʻppi.\nBir qulogʻi bor, bir burni,\nBoshiga kiygan doʻppi.",
+  "answer": "choynak",
+  "accepted": [
+   "choynak"
+  ],
+  "distractors": [
+   "piyola",
+   "kosa",
+   "qozon"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Uy xoʻjalik asboblari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 290,
+  "riddle": "Yangi idish,\nTagi teshik.",
+  "answer": "elak",
+  "accepted": [
+   "elak",
+   "gʻalvir"
+  ],
+  "distractors": [
+   "chelak",
+   "kosa",
+   "tovoq"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Uy xoʻjalik asboblari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 291,
+  "riddle": "Eshik orqasida beli bogʻliq qul yotar.",
+  "answer": "supurgi",
+  "accepted": [
+   "supurgi"
+  ],
+  "distractors": [
+   "latta",
+   "chelak",
+   "savat"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Uy xoʻjalik asboblari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 292,
+  "riddle": "Boradi, boradi,\nTangaday joyni oladi.",
+  "answer": "hassa",
+  "accepted": [
+   "hassa",
+   "tayoq"
+  ],
+  "distractors": [
+   "supurgi",
+   "qamchi",
+   "arqon"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Uy xoʻjalik asboblari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-xo-jalik-asboblari"
+ },
+ {
+  "id": 293,
+  "riddle": "Olti koʻzli, suyakli,\nHamma uyga kerakli.",
+  "answer": "deraza romi",
+  "accepted": [
+   "deraza romi",
+   "deraza"
+  ],
+  "distractors": [
+   "eshik",
+   "devor",
+   "shift"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Uy-joy va unga tegishli jihozlar — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-joy-va-unga-tegishli-jihozlar"
+ },
+ {
+  "id": 294,
+  "riddle": "Bir shaharni bir qora hakka qoʻriqlaydi.",
+  "answer": "qulf",
+  "accepted": [
+   "qulf"
+  ],
+  "distractors": [
+   "kalit",
+   "zanjir",
+   "eshik"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Uy-joy va unga tegishli jihozlar — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-joy-va-unga-tegishli-jihozlar"
+ },
+ {
+  "id": 295,
+  "riddle": "Otasi bor, enasi bor,\nOʻn ikkita bolasi bor.",
+  "answer": "narvon",
+  "accepted": [
+   "narvon"
+  ],
+  "distractors": [
+   "eshik",
+   "kursi",
+   "panjara"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Uy-joy va unga tegishli jihozlar — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-joy-va-unga-tegishli-jihozlar"
+ },
+ {
+  "id": 296,
+  "riddle": "Oq tovoqda sariq qaychi.",
+  "answer": "soat",
+  "accepted": [
+   "soat"
+  ],
+  "distractors": [
+   "taqvim",
+   "tarozi",
+   "qoʻngʻiroq"
+  ],
+  "theme": "vaqt",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Uy-joy va unga tegishli jihozlar — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/uy-joy-va-unga-tegishli-jihozlar"
+ },
+ {
+  "id": 297,
+  "riddle": "Otdan baland,\nItdan past.",
+  "answer": "egar",
+  "accepted": [
+   "egar"
+  ],
+  "distractors": [
+   "jilov",
+   "qamchi",
+   "uzangi"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Ot asboblari va yoʻl — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/ot-asboblari-va-yo-l"
+ },
+ {
+  "id": 298,
+  "riddle": "Ogʻilda besh barmoq,\nIshi xas-choʻp toʻplamoq.",
+  "answer": "panshaxa",
+  "accepted": [
+   "panshaxa"
+  ],
+  "distractors": [
+   "ketmon",
+   "oʻroq",
+   "belkurak"
+  ],
+  "theme": "kasb-hunar",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Ot asboblari va yoʻl — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/ot-asboblari-va-yo-l"
+ },
+ {
+  "id": 299,
+  "riddle": "Qoʻyvorsam yuz quloch,\nYigʻib olsam bir quloch.",
+  "answer": "arqon",
+  "accepted": [
+   "arqon"
+  ],
+  "distractors": [
+   "zanjir",
+   "kamar",
+   "tasma"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "qiyin",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Ot asboblari va yoʻl — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/ot-asboblari-va-yo-l"
+ },
+ {
+  "id": 300,
+  "riddle": "Kunduzi yuradi, yuradi,\nOqshomi ikki oyogʻini\nOsmonga tiklab turadi.",
+  "answer": "arava",
+  "accepted": [
+   "arava"
+  ],
+  "distractors": [
+   "chana",
+   "zambil",
+   "omoch"
+  ],
+  "theme": "texnika",
+  "difficulty": "qiyin",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Ot asboblari va yoʻl — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/ot-asboblari-va-yo-l"
+ },
+ {
+  "id": 301,
+  "riddle": "Toʻrt aka-uka bir-biriga yetolmaydi.",
+  "answer": "arava gʻildiraklari",
+  "accepted": [
+   "arava gʻildiraklari",
+   "gʻildiraklar"
+  ],
+  "distractors": [
+   "boʻyinturuq",
+   "arava oʻqi",
+   "taqa"
+  ],
+  "theme": "texnika",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Ot asboblari va yoʻl — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/ot-asboblari-va-yo-l"
+ },
+ {
+  "id": 302,
+  "riddle": "Koʻk koʻylakka qoʻl yetmas.",
+  "answer": "osmon",
+  "accepted": [
+   "osmon"
+  ],
+  "distractors": [
+   "bulut",
+   "dengiz",
+   "kamalak"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Tabiat hodisalari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/tabiat-hodisalari"
+ },
+ {
+  "id": 303,
+  "riddle": "Oppoq sandiq ochildi,\nOlamga nur sochildi.",
+  "answer": "quyosh",
+  "accepted": [
+   "quyosh",
+   "oftob"
+  ],
+  "distractors": [
+   "oy",
+   "yulduz",
+   "chaqmoq"
+  ],
+  "theme": "osmon",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Tabiat hodisalari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/tabiat-hodisalari"
+ },
+ {
+  "id": 304,
+  "riddle": "Ogʻa-ini ming botir,\nKoʻm-koʻk gilamda yotir.",
+  "answer": "yulduzlar",
+  "accepted": [
+   "yulduzlar",
+   "yulduz"
+  ],
+  "distractors": [
+   "bulutlar",
+   "kamalak",
+   "oy"
+  ],
+  "theme": "osmon",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Tabiat hodisalari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/tabiat-hodisalari"
+ },
+ {
+  "id": 305,
+  "riddle": "Oppoq qushim qaqillar,\nQanotlari shaqillar.",
+  "answer": "sharshara",
+  "accepted": [
+   "sharshara",
+   "shalola"
+  ],
+  "distractors": [
+   "buloq",
+   "daryo",
+   "toʻlqin"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Tabiat hodisalari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/tabiat-hodisalari"
+ },
+ {
+  "id": 306,
+  "riddle": "Uchib kelar gʻoz kabi,\nOʻrin olar muz kabi.\nGʻijirlar saxtiyon kabi,\nAchchiq boʻlar, tuz kabi.",
+  "answer": "qor",
+  "accepted": [
+   "qor"
+  ],
+  "distractors": [
+   "yomgʻir",
+   "doʻl",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "qiyin",
+  "source": "Ziyouz.com — Oʻzbek xalq topishmoqlari: Tabiat hodisalari — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/tabiat-hodisalari"
+ },
+ {
+  "id": 307,
+  "riddle": "Ogʻil toʻla oq eshak,\nUstida koʻrpa-toʻshak.",
+  "answer": "tish",
+  "accepted": [
+   "tish",
+   "tishlar"
+  ],
+  "distractors": [
+   "til",
+   "lab",
+   "soch"
+  ],
+  "theme": "tana aʼzolari",
+  "difficulty": "oʻrtacha",
+  "source": "sherlari.uz — Tana aʼzolariga oid topishmoqlar — https://sherlari.uz/tana-azolariga-oid-topishmoqlar-javobi-bilan/"
+ },
+ {
+  "id": 308,
+  "riddle": "Yozda toycha,\nQishda xurjun.",
+  "answer": "velosiped",
+  "accepted": [
+   "velosiped"
+  ],
+  "distractors": [
+   "arava",
+   "chana",
+   "qayiq"
+  ],
+  "theme": "texnika",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Yangi topishmoqlar (Oʻzbek xalq topishmoqlari) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 309,
+  "riddle": "Toʻntarilgan koʻk qozonda\nOltin tanga qaynaydi.",
+  "answer": "yulduz",
+  "accepted": [
+   "yulduz",
+   "yulduzlar"
+  ],
+  "distractors": [
+   "oy",
+   "quyosh",
+   "chaqmoq"
+  ],
+  "theme": "osmon",
+  "difficulty": "oson",
+  "source": "Ziyouz — Yangi topishmoqlar (Oʻzbek xalq topishmoqlari) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 310,
+  "riddle": "Katta chelak teshildi,\nUndan koʻp suv toʻkildi.",
+  "answer": "yomgʻir",
+  "accepted": [
+   "yomgʻir"
+  ],
+  "distractors": [
+   "qor",
+   "doʻl",
+   "shudring"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oson",
+  "source": "Ziyouz — Yangi topishmoqlar (Oʻzbek xalq topishmoqlari) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 311,
+  "riddle": "Kiygan koʻylagi oʻziga foydasiz.",
+  "answer": "ipak qurti",
+  "accepted": [
+   "ipak qurti"
+  ],
+  "distractors": [
+   "oʻrgimchak",
+   "chumoli",
+   "chigirtka"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "qiyin",
+  "source": "Ziyouz — Yangi topishmoqlar (Oʻzbek xalq topishmoqlari) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 312,
+  "riddle": "Toʻrt yonida toʻrtta oy,\nBoshimga berar chiroy.",
+  "answer": "doʻppi",
+  "accepted": [
+   "doʻppi"
+  ],
+  "distractors": [
+   "salla",
+   "roʻmol",
+   "belbogʻ"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "oʻrtacha",
+  "source": "Ziyouz — Yangi topishmoqlar (Oʻzbek xalq topishmoqlari) — https://n.ziyouz.com/portal-haqida/xarita/uzbek-xalq-ogzaki-ijodi/uzbek-xalq-topishmoqlari/yangi-topishmoqlar"
+ },
+ {
+  "id": 313,
+  "riddle": "Ayiq yalaydi, ari talaydi.",
+  "answer": "asal",
+  "accepted": [
+   "asal"
+  ],
+  "distractors": [
+   "shakar",
+   "murabbo",
+   "qaymoq"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oson",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 314,
+  "riddle": "Juda qiziq, bossang issiq,\nkiyim-kechak boʻlar silliq.",
+  "answer": "dazmol",
+  "accepted": [
+   "dazmol"
+  ],
+  "distractors": [
+   "supurgi",
+   "sovun",
+   "igna"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 315,
+  "riddle": "Jajjigina u oʻzi,\nuzoqni koʻrar koʻzi.",
+  "answer": "durbin",
+  "accepted": [
+   "durbin"
+  ],
+  "distractors": [
+   "koʻzoynak",
+   "oyna",
+   "chiroq"
+  ],
+  "theme": "texnika",
+  "difficulty": "oʻrtacha",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 316,
+  "riddle": "Qora tanasi, sonsiz nayzasi.\nTipratikan emas — uning oshnasi.",
+  "answer": "jayra",
+  "accepted": [
+   "jayra"
+  ],
+  "distractors": [
+   "tipratikan",
+   "boʻrsiq",
+   "yumronqoziq"
+  ],
+  "theme": "hayvonlar",
+  "difficulty": "oʻrtacha",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 317,
+  "riddle": "Koʻzi shisha parchasidan,\nbobom boqar darchasidan.",
+  "answer": "koʻzoynak",
+  "accepted": [
+   "koʻzoynak"
+  ],
+  "distractors": [
+   "oyna",
+   "durbin",
+   "deraza"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oson",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 318,
+  "riddle": "Urib turar yuragi, vaqtida bor keragi.",
+  "answer": "soat",
+  "accepted": [
+   "soat"
+  ],
+  "distractors": [
+   "qoʻngʻiroq",
+   "nogʻora",
+   "taqvim"
+  ],
+  "theme": "vaqt",
+  "difficulty": "oson",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 319,
+  "riddle": "Qishda ishda, ishi boshda.\nUch faslda dam olishda.",
+  "answer": "telpak",
+  "accepted": [
+   "telpak"
+  ],
+  "distractors": [
+   "qoʻlqop",
+   "doʻppi",
+   "paypoq"
+  ],
+  "theme": "kiyim-kechak",
+  "difficulty": "oʻrtacha",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 320,
+  "riddle": "Qoʻyga bersam toʻyadi, qoʻlga bersam kuyadi.",
+  "answer": "oʻt",
+  "accepted": [
+   "oʻt"
+  ],
+  "distractors": [
+   "koʻmir",
+   "kul",
+   "suv"
+  ],
+  "theme": "tabiat",
+  "difficulty": "qiyin",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 321,
+  "riddle": "Jamlanar, damlanar, namlanar.\nQoʻlma-qoʻl aylanar.",
+  "answer": "choy",
+  "accepted": [
+   "choy"
+  ],
+  "distractors": [
+   "sut",
+   "qatiq",
+   "sharbat"
+  ],
+  "theme": "oziq-ovqat",
+  "difficulty": "oʻrtacha",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 322,
+  "riddle": "Bobosi koʻrpa soldi,\nGulbahor yigʻib oldi.",
+  "answer": "qor",
+  "accepted": [
+   "qor"
+  ],
+  "distractors": [
+   "yomgʻir",
+   "muz",
+   "tuman"
+  ],
+  "theme": "tabiat",
+  "difficulty": "oʻrtacha",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 323,
+  "riddle": "Bizlar, bizlar biz edik, qizil koʻylak qiz edik.\nBirin-ketin uzdilar, bitta ipga tizdilar.",
+  "answer": "qalampir",
+  "accepted": [
+   "qalampir",
+   "garmdori"
+  ],
+  "distractors": [
+   "pomidor",
+   "sabzi",
+   "piyoz"
+  ],
+  "theme": "sabzavotlar",
+  "difficulty": "qiyin",
+  "source": "sherlari.uz — Bolalar uchun qiziqarli oʻzbekcha topishmoqlar toʻplami — https://sherlari.uz/bolalar-uchun-qiziqarli-ozbekcha-topishmoqlar-toplami-javoblari-bilan/"
+ },
+ {
+  "id": 324,
+  "riddle": "Kichkina juvonmarg,\nTom boshidan oʻtin tashlaydi.",
+  "answer": "chumchuq",
+  "accepted": [
+   "chumchuq"
+  ],
+  "distractors": [
+   "qaldirgʻoch",
+   "kaptar",
+   "musicha"
+  ],
+  "theme": "qushlar",
+  "difficulty": "qiyin",
+  "source": "sherlari.uz — Parandalar va qushlar haqida topishmoqlar — https://sherlari.uz/parandalar-va-qushlar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 325,
+  "riddle": "Joni bor, qoni yoʻq,\nYer ostida soni yoʻq.",
+  "answer": "chumoli",
+  "accepted": [
+   "chumoli",
+   "chumolilar"
+  ],
+  "distractors": [
+   "chuvalchang",
+   "qoʻngʻiz",
+   "ari"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "qiyin",
+  "source": "Tapishmaqlar-Tapmacalar (Ziyouz.Com, Uzbekce-Latin) — Turuz folklor kutubxonasi — https://turuz.com/storage/Folklore/enigma/2012/037-Tapishmaqlar-Tapmacalar_(Ziyouz.Com)_(Uzbekce-Latin).pdf"
+ },
+ {
+  "id": 326,
+  "riddle": "Hurmati ziyoda,\nYurmaydi piyoda,\nNavbat kutib turadi,\nQoʻldan qoʻlga oʻtadi.",
+  "answer": "piyola",
+  "accepted": [
+   "piyola"
+  ],
+  "distractors": [
+   "choynak",
+   "kosa",
+   "lagan"
+  ],
+  "theme": "uy-roʻzgʻor",
+  "difficulty": "oʻrtacha",
+  "source": "bilimlar.uz — https://bilimlar.uz/bolalar-uchun-idish-tovoqlar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 327,
+  "riddle": "Gur-gur etar, uchar ketar,\nYurtdan yurtga odam eltar.",
+  "answer": "samolyot",
+  "accepted": [
+   "samolyot"
+  ],
+  "distractors": [
+   "kema",
+   "poyezd",
+   "vertolyot"
+  ],
+  "theme": "texnika",
+  "difficulty": "oson",
+  "source": "abituriyentlar.uz — https://abituriyentlar.uz/topishmoqlar/qiziqarli-topishmoqlar-toplami/"
+ },
+ {
+  "id": 328,
+  "riddle": "Erta turadi,\nJar chaqiradi.",
+  "answer": "xoʻroz",
+  "accepted": [
+   "xoʻroz"
+  ],
+  "distractors": [
+   "tovuq",
+   "gʻoz",
+   "oʻrdak"
+  ],
+  "theme": "qushlar",
+  "difficulty": "oson",
+  "source": "sherlari.uz — Parandalar va qushlar haqida topishmoqlar — https://sherlari.uz/parandalar-va-qushlar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 329,
+  "riddle": "Zuv-zuv borar,\nZuv-zuv kelar.\nDoston oʻqir,\nGʻalvir toʻqir.",
+  "answer": "ari",
+  "accepted": [
+   "ari",
+   "asalari"
+  ],
+  "distractors": [
+   "oʻrgimchak",
+   "pashsha",
+   "kapalak"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "oʻrtacha",
+  "source": "sirlar.uz — Hasharotlar haqida topishmoqlar — https://sirlar.uz/hasharotlar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 330,
+  "riddle": "Koʻk yeb, oltin oʻraydi.",
+  "answer": "ipak qurti",
+  "accepted": [
+   "ipak qurti",
+   "pilla qurti"
+  ],
+  "distractors": [
+   "ari",
+   "oʻrgimchak",
+   "qoʻngʻiz"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "qiyin",
+  "source": "sirlar.uz — Hasharotlar haqida topishmoqlar — https://sirlar.uz/hasharotlar-haqida-topishmoqlar/"
+ },
+ {
+  "id": 331,
+  "riddle": "Yoʻl ustida goʻja qaynar.",
+  "answer": "chumoli",
+  "accepted": [
+   "chumoli",
+   "chumolilar"
+  ],
+  "distractors": [
+   "ari",
+   "chigirtka",
+   "pashsha"
+  ],
+  "theme": "hasharotlar",
+  "difficulty": "qiyin",
+  "source": "sirlar.uz — Hasharotlar haqida topishmoqlar — https://sirlar.uz/hasharotlar-haqida-topishmoqlar/"
+ }
+]

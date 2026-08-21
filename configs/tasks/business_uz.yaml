@@ -1,0 +1,7 @@
+task: mmlu_pro_uz
+dataset: mmlu_pro_uz.json
+max_tokens: 1024
+seed: 42
+options:
+  shuffle_options: true
+  answer_only: true

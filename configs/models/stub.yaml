@@ -1,0 +1,8 @@
+# Pipeline smoke test. Answers "A" to everything, so its scores are noise by
+# construction — never publish a leaderboard containing this model.
+model: stub-model
+provider: stub
+name: Stub (pipeline test)
+organization: IdrockBench
+license: unknown
+concurrency: 8

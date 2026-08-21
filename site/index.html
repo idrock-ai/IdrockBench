@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idrock eval — O'zbek Tili LLM Benchmark</title>
+    <meta name="description" content="Benchmark for evaluating large language models on Uzbek: DTM exam questions, reasoning, and translation. Every score published with its confidence interval and sample size.">
+    <meta property="og:title" content="idrock eval — Uzbek LLM Benchmark">
+    <meta property="og:description" content="How large language models perform on Uzbek — with confidence intervals, sample sizes, and reproducible runs.">
+    <meta property="og:url" content="https://eval.idrock.uz">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://eval.idrock.uz/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://eval.idrock.uz">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="alternate" hreflang="uz" href="https://eval.idrock.uz/?lang=uz">
+    <link rel="alternate" hreflang="en" href="https://eval.idrock.uz/?lang=en">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logos">
+                <a href="https://idrock.uz" target="_blank" rel="noopener">
+                    <img src="idrock-logo.png" alt="idrock" class="nav-logo idrock-logo" width="108" height="32">
+                </a>
+                <span class="logo-divider"></span>
+                <a href="https://newuu.uz" target="_blank" rel="noopener">
+                    <img src="newuu-logo.png" alt="New Uzbekistan University" class="nav-logo newuu-logo" width="49" height="28">
+                </a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#leaderboard" class="nav-link" data-i18n="nav.leaderboard">Reyting</a>
+                <a href="#benchmarks" class="nav-link" data-i18n="nav.benchmarks">Benchmarklar</a>
+                <a href="#methodology" class="nav-link" data-i18n="nav.methodology">Metodologiya</a>
+                <a href="#submit" class="nav-link" data-i18n="nav.submit">Model yuborish</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about">Loyiha haqida</a>
+                <a href="https://github.com/idrock-ai/IdrockBench" target="_blank" rel="noopener" class="nav-link nav-link-external"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>GitHub</a>
+                <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+                    <button class="lang-btn" data-lang="uz" aria-pressed="true">UZ</button>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">idrock <span class="accent">eval</span></h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">O'zbek tili modellari uchun benchmark</p>
+            <p class="hero-description" data-i18n="hero.description">
+                Katta til modellarini o'zbek tilida baholash — DTM savollari, mantiqiy fikrlash
+                va tarjima bo'yicha. Har bir natija ishonch oralig'i va tanlanma hajmi bilan chop etiladi.
+            </p>
+            <div class="hero-ctas">
+                <a href="#leaderboard" class="btn btn-primary"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18 4h2a1 1 0 0 1 1 1v2a4 4 0 0 1-4 4h-.3A6 6 0 0 1 13 14.9V18h3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3v-3.1A6 6 0 0 1 7.3 11H7a4 4 0 0 1-4-4V5a1 1 0 0 1 1-1h2V3h12v1zM6 6H5v1a2 2 0 0 0 1 1.7V6zm12 0v2.7A2 2 0 0 0 19 7V6h-1z"/></svg><span data-i18n="hero.cta_leaderboard">Reytingni ko'rish</span></a>
+                <a href="https://github.com/idrock-ai/IdrockBench" target="_blank" rel="noopener" class="btn btn-secondary"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="leaderboard" id="leaderboard">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="lb.title">Reyting</h2>
+                <p class="section-subtitle" data-i18n="lb.subtitle">Har bir katakda ishonch oralig'i (95%) va baholangan savollar soni ko'rsatilgan</p>
+            </div>
+
+            <div class="leaderboard-meta" id="leaderboardMeta"></div>
+
+            <div class="leaderboard-controls">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+                        <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+                    </svg>
+                    <input type="text" id="searchInput" data-i18n-placeholder="lb.search"
+                           placeholder="Modellarni qidirish..." data-i18n-aria="lb.search" aria-label="Search models">
+                </div>
+                <label class="toggle">
+                    <input type="checkbox" id="openWeightsToggle">
+                    <span class="toggle-slider"></span>
+                    <span class="toggle-label" data-i18n="lb.open_source">Faqat ochiq vaznli</span>
+                </label>
+            </div>
+
+            <div class="table-container">
+                <table class="leaderboard-table" id="leaderboardTable">
+                    <thead id="leaderboardHead"></thead>
+                    <tbody id="leaderboardBody">
+                        <tr><td colspan="7" class="table-empty">…</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <noscript>
+                <p class="table-empty">This leaderboard needs JavaScript. The raw data is at
+                   <a href="results.json">results.json</a>.</p>
+            </noscript>
+            <p class="lb-count" id="leaderboardCount"></p>
+
+            <ul class="leaderboard-notes">
+                <li data-i18n="note.composite">«Umumiy» — har bir topshiriqning tasodifiy javob darajasiga nisbatan normallashtirilgan ballarning o'rtachasi. Faqat barcha topshiriqlarni bajargan modellar uchun ko'rsatiladi.</li>
+                <li data-i18n="note.provisional">◐ — savollarning 20% dan ortig'i baholanmadi; bu ko'rsatkich model sifatidan ko'ra javob formatini aks ettiradi.</li>
+                <li data-i18n="note.chance">⚠ — natija tasodifiy javob darajasida yoki undan past.</li>
+                <li><a href="results.json">results.json</a> · <a href="https://github.com/idrock-ai/IdrockBench/blob/main/docs/methodology.md" target="_blank" rel="noopener">methodology</a> · <a href="https://github.com/idrock-ai/IdrockBench/blob/main/docs/leaderboard-policy.md" target="_blank" rel="noopener">leaderboard policy</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="benchmarks-section" id="benchmarks">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="bench.title">Benchmarklar</h2>
+                <p class="section-subtitle" data-i18n="bench.subtitle">Uchta baholanadigan yo'nalish</p>
+            </div>
+            <div class="benchmarks-grid">
+                <div class="benchmark-card">
+                    <div class="benchmark-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div>
+                    <h3>DTM <span class="uz-label">Davlat Test Markazi</span></h3>
+                    <p class="benchmark-stat">989 savol · 4 variant · tasodifiy javob 25%</p>
+                    <p>O'zbekistonning 2019-yilgi oliy o'quv yurtiga kirish imtihonlari materiallaridan olingan test savollari: ona tili, tarix, matematika, fizika. O'zbek tilida yozilgan, tarjima emas. Javob variantlari har safar aralashtiriladi.</p>
+                </div>
+                <div class="benchmark-card">
+                    <div class="benchmark-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24A2.5 2.5 0 0 1 9.5 2z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24A2.5 2.5 0 0 0 14.5 2z"/></svg></div>
+                    <h3>Reasoning <span class="uz-label">Mantiqiy Fikrlash</span></h3>
+                    <p class="benchmark-stat">100 topshiriq · qisman ball · quyi chegara ~16%</p>
+                    <p>Mantiqiy jumboqlar, fazoviy fikrlash va «yolg'onchilar» masalalari. LiveBench uslubida qisman ball beriladi. LiveBench tomonidan iste'moldan chiqarilgan 100 topshiriq baholanmaydi.</p>
+                </div>
+                <div class="benchmark-card">
+                    <div class="benchmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h7M9 3v2c0 4.42-2.24 8-5 8"/><path d="M5 9c0 2.76 3.13 5 7 5"/><path d="m12 20 4.5-11L21 20M14.5 16h5"/></svg></div>
+                    <h3>Translation <span class="uz-label">Tarjima uz&#8596;ru&#8596;en</span></h3>
+                    <p class="benchmark-stat">800 juftlik · uz↔en, uz↔ru · chrF++</p>
+                    <p>FLORES-200 devtest to'plamidagi jumlalar. Korpus darajasidagi chrF++ va spBLEU, har bir yo'nalish alohida hisoblanadi. Matn baholashdan oldin o'zbek apostrofi bo'yicha normallashtiriladi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="methodology-section" id="methodology">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="nav.methodology">Metodologiya</h2>
+            </div>
+            <div class="methodology-grid">
+                <div class="method-item">
+                    <h3>Javob topilmasa — noto'g'ri emas</h3>
+                    <p>Agar javobni ajratib olish imkoni bo'lmasa, so'rov xato bilan tugasa yoki javob token chegarasiga urilsa, u savol maxrajdan chiqariladi va alohida ko'rsatkich sifatida chop etiladi. Ularni «0» deb hisoblash buzilgan tahlilchini kuchsiz modeldan ajratib bo'lmaydigan qiladi.</p>
+                </div>
+                <div class="method-item">
+                    <h3>To'g'ri o'zbek tili jazolanmaydi</h3>
+                    <p>O'zbek lotin yozuvida <code>oʻ</code> va <code>gʻ</code> harflari U+02BB bilan yoziladi, modellar esa ko'pincha oddiy apostrof qo'yadi. Barcha taqqoslashlar avval normallashtiriladi — aks holda bir xil to'g'ri javob apostrof turiga qarab turlicha baholanadi.</p>
+                </div>
+                <div class="method-item">
+                    <h3>Har bir natija qayta hisoblanadi</h3>
+                    <p>Har bir savol uchun so'rov, model javobi, ajratilgan javob va ball saqlanadi. Har bir yurgizish manifestida ma'lumotlar to'plami xeshi, kvantlash, harorat va harness kommiti bo'ladi.</p>
+                </div>
+                <div class="method-item">
+                    <h3>Turli to'plamlar o'rtachalanmaydi</h3>
+                    <p>Barcha topshiriqlarni bajarmagan modelga umumiy ball berilmaydi. Umumiy ball har bir topshiriqning tasodifiy javob darajasiga nisbatan normallashtirilgandan keyin hisoblanadi.</p>
+                </div>
+            </div>
+            <p class="methodology-link">
+                <a href="https://github.com/idrock-ai/IdrockBench/blob/main/docs/methodology.md" target="_blank" rel="noopener">To'liq metodologiya →</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="submit-section" id="submit">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="submit.title">Modelni baholashga yuborish</h2>
+                <p class="section-subtitle" data-i18n="submit.subtitle">Modelingizni idrock eval benchmarki bo'yicha baholashga taklif qiling.</p>
+            </div>
+
+            <form class="submit-form" id="submitForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="f_name"><span data-i18n="submit.field.name">Ismingiz</span> <span class="req">*</span></label>
+                        <input class="form-input" type="text" id="f_name" name="name" required maxlength="120" data-i18n-placeholder="submit.field.name_ph" placeholder="Alisher Karimov">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="f_email"><span data-i18n="submit.field.email">Email</span> <span class="req">*</span></label>
+                        <input class="form-input" type="email" id="f_email" name="email" required maxlength="160" placeholder="you@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="f_model"><span data-i18n="submit.field.model">Model nomi</span> <span class="req">*</span></label>
+                        <input class="form-input" type="text" id="f_model" name="model_name" required maxlength="120" placeholder="qwen3:32b">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="f_company" data-i18n="submit.field.company">Kompaniya</label>
+                        <input class="form-input" type="text" id="f_company" name="company" maxlength="120" placeholder="Alibaba">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="f_notes" data-i18n="submit.field.notes">Qo'shimcha izoh</label>
+                    <textarea class="form-textarea" id="f_notes" name="notes" rows="4" maxlength="1500" data-i18n-placeholder="submit.field.notes_ph" placeholder="Model haqida qo'shimcha ma'lumot, inference sozlamalari, va h.k."></textarea>
+                </div>
+
+                <!-- Consent is required before storing personal data, and is recorded server-side. -->
+                <div class="form-group form-consent">
+                    <label class="form-check">
+                        <input type="checkbox" id="f_consent" name="consent" required>
+                        <span data-i18n="submit.field.consent">Ariza ko'rib chiqilishi uchun ismim va email manzilim saqlanishiga roziman.</span>
+                        <span class="req">*</span>
+                    </label>
+                </div>
+
+                <div class="form-honeypot" aria-hidden="true">
+                    <label>Do not fill this field
+                        <input type="text" id="f_website" name="website" tabindex="-1" autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="submitBtn"><span data-i18n="submit.cta">Yuborish</span></button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </div>
+                <p class="form-note" data-i18n="submit.note">* bilan belgilangan maydonlar majburiy. Iltimos, maxfiy API kalitlarini bu yerda yubormang.</p>
+            </form>
+        </div>
+    </section>
+
+    <section class="partners" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="about.title">Loyiha haqida</h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">eval.idrock.uz — Yangi O'zbekiston Universiteti qoshidagi sun'iy intellekt laboratoriyasi idrock tomonidan ishlab chiqilgan</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <img src="idrock-logo.png" alt="idrock" class="partner-logo" loading="lazy" width="180" height="53">
+                    <h3>idrock</h3>
+                    <p data-i18n="about.idrock.desc">Markaziy Osiyoda ilg'or sun'iy intellekt yechimlarini yaratish va AI tadqiqotlarini rivojlantirishga yo'naltirilgan AI laboratoriyasi.</p>
+                    <a href="https://idrock.uz" target="_blank" rel="noopener" class="partner-link">idrock.uz</a>
+                </div>
+                <div class="partner-card">
+                    <img src="newuu-logo.png" alt="New Uzbekistan University" class="partner-logo newuu" loading="lazy" width="140" height="80">
+                    <h3 data-i18n="about.newuu.name">Yangi O'zbekiston Universiteti</h3>
+                    <p data-i18n="about.newuu.desc">Jahon darajasidagi tadqiqotlar, innovatsiyalar va O'zbekistondagi yangi avlod texnologiya iqtidorlarini tayyorlashga sodiq bo'lgan yetakchi oliy ta'lim muassasasi.</p>
+                    <a href="https://newuu.uz" target="_blank" rel="noopener" class="partner-link">newuu.uz</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logos">
+                    <img src="idrock-logo.png" alt="idrock" class="footer-logo" loading="lazy" width="108" height="32">
+                    <img src="newuu-logo.png" alt="New Uzbekistan University" class="footer-logo newuu" loading="lazy" width="49" height="28">
+                </div>
+                <div class="footer-links">
+                    <a href="#leaderboard" data-i18n="nav.leaderboard">Reyting</a>
+                    <a href="#methodology" data-i18n="nav.methodology">Metodologiya</a>
+                    <a href="#about" data-i18n="nav.about">Loyiha haqida</a>
+                    <a href="https://github.com/idrock-ai/IdrockBench" target="_blank" rel="noopener">GitHub</a>
+                    <a href="privacy.html" data-i18n="nav.privacy">Maxfiylik</a>
+                    <a href="mailto:idrock@newuu.uz" data-i18n="footer.contact">Bog'lanish</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>eval.idrock.uz</p>
+                    <p>&copy; 2026 idrock · MIT (code)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="submit.js"></script>
+</body>
+</html>

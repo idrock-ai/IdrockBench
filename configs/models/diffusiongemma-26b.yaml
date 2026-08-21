@@ -1,0 +1,43 @@
+# DiffusionGemma 26B-A4B — a DISCRETE DIFFUSION language model.
+#
+# This model does not run the published protocol, and the difference is not a
+# setting we chose. Every other model in the suite decodes greedily at
+# temperature 0.0. Denoising resolves tokens through a temperature schedule
+# (0.8 -> 0.4 over at most 48 steps) that is structural to the method: there is
+# no greedy mode to switch to. Its output is therefore stochastic where every
+# other row is deterministic, and it must not be ranked against them without
+# saying so. Reported in its own section with these parameters printed beside
+# the score.
+model: diffusiongemma-26b-a4b-it
+provider: openai
+base_url: http://127.0.0.1:8077/v1     # transformers shim, ~/dgserve/server.py
+name: DiffusionGemma 26B-A4B
+organization: Google
+license: apache-2.0
+weights_url: https://huggingface.co/google/diffusiongemma-26B-A4B-it
+params_b: 25.2                          # 3.8B active, 8 of 128 experts
+
+# bf16, as shipped. No quantisation.
+quantization: bf16
+
+# The request field is sent for protocol uniformity and IGNORED by the server —
+# see ~/dgserve/server.py. Recording 0.0 here without that note would claim a
+# decoding protocol the model never ran.
+temperature: 0.0
+
+# Not applicable: this model has no separate thinking channel to disable. It
+# frames every response as `<|channel>thought ... <channel|>ANSWER`, and the
+# answer lives inside that frame; the server strips the framing.
+reasoning: "default"
+
+# One at a time. transformers `generate()` is not safe to call concurrently on a
+# single model instance, so the server serialises with a lock. Raising this
+# would only queue requests behind that lock while inflating apparent latency.
+# It costs little: measured 0.6s per direct-answer item, so DTM's 2062 items
+# take ~21 minutes.
+concurrency: 1
+
+# The canvas is a fixed 256 tokens regardless of what is requested, so this is
+# a floor on what the model may use, not a ceiling the harness can enforce.
+# finish_reason comes from whether an EOS token appeared, not from the budget.
+timeout: 300

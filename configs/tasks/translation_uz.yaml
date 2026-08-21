@@ -1,0 +1,10 @@
+# Translation between Uzbek, Russian and English (FLORES-200 devtest).
+#
+# FLORES-200 is CC BY-SA 4.0 and gated upstream. See docs/data-cards/translation.md
+# before redistributing anything derived from it.
+task: translation
+dataset: translation_flores_devtest.json
+max_tokens: 1024
+options:
+  directions: [uz_en, en_uz, uz_ru, ru_uz]
+  eval_splits: [devtest]

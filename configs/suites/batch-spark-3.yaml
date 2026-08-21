@@ -1,0 +1,13 @@
+# Models assigned to spark-3, smallest first.
+name: batch-spark-3
+description: Run order for spark-3. Not a leaderboard suite — see core.yaml.
+tasks: [dtm, reasoning_uz, translation_uz]
+require_complete: true
+models:
+  - gemma4-26b
+  - qwen35-27b
+  - qwen36-27b
+  - qwen38-27b
+  - nemotron35-lightning-30b
+  - gemma4-31b
+  - qwen35-35b

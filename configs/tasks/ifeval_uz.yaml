@@ -1,0 +1,13 @@
+# IFEval-UZ — verifiable instruction following.
+#
+# Constraints whose kwargs are not yet localised into Uzbek are excluded and
+# counted; read `constraint_coverage` beside the score. Publishing the score
+# without the coverage overstates what was measured.
+task: ifeval_uz
+dataset: ifeval_uz.json
+max_tokens: 2048
+options:
+  score_recalibrated: true
+  # Measure on parallel uz-en text and set this before publishing: Uzbek is
+  # agglutinative, so an English word target is not the same instruction.
+  word_count_factor: 1.0

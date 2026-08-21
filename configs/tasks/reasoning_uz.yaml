@@ -1,0 +1,30 @@
+# UzReasoning — zebra puzzles, spatial reasoning, web of lies.
+task: reasoning
+dataset: reasoning_uz.json
+
+# Thinking is disabled here, and that is NOT the old harness's mistake.
+#
+# The old defect was telling a model "do not show your reasoning steps" on a
+# reasoning benchmark — suppressing the reasoning itself. This does the
+# opposite: with Ollama's `think` enabled, the model spends its whole budget in
+# the hidden `thinking` field and returns empty content. Measured on
+# gemma4:26b at 4096 tokens: 93% truncated, and 92 of those 93 returned an
+# empty string. Nothing was scored because nothing was said.
+#
+# With `think` off, the model reasons in `content` instead — visible, scoreable,
+# and auditable in the per-item JSONL. The reasoning still happens; it just
+# happens somewhere a scorer can read it.
+reasoning: "off"
+
+# Zebra puzzles need room. The one gemma4:26b item that did reason in content
+# still hit 4096, so the budget is doubled. This is the smallest task in the
+# suite (100 items), so the cost is affordable where it would not be on DTM.
+max_tokens: 8192
+
+# Concurrency and timeout are set HERE, not on the model, because they follow
+# generation length. At 16 concurrent 8192-token generations every request
+# exceeded the 300s default and qwen3.5:2b lost 26 of 100 items to read
+# timeouts — recorded as errors, not scores, but lost all the same. Long
+# generations want few in flight and a long ceiling.
+concurrency: 4
+timeout: 1200

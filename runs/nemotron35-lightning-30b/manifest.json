@@ -1,0 +1,234 @@
+{
+  "run_id": "nemotron35-lightning-30b",
+  "model": "Nemotron 3.5 Lightning 30B",
+  "provider": "ollama",
+  "model_revision": "",
+  "quantization": "Q4_K_M",
+  "organization": "NVIDIA",
+  "license": "nvidia-open-model",
+  "weights_url": "https://huggingface.co/nvidia",
+  "temperature": 0.0,
+  "top_p": null,
+  "seed": 0,
+  "max_tokens": {
+    "dtm": 1024,
+    "translation_uz": 1024
+  },
+  "reasoning": "off",
+  "chat_template": true,
+  "harness_version": "2.0.0",
+  "harness_git_sha": "unknown",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1029-nvidia-aarch64-with-glibc2.39",
+  "package_versions": {},
+  "started_at": "2026-08-21T00:27:51+00:00",
+  "finished_at": "2026-08-21T01:00:52+00:00",
+  "tasks": {
+    "dtm": {
+      "task_version": "2.1",
+      "dataset": "dtm_public.json",
+      "dataset_sha256": "6cca87ac3457631c0e33ac770cdb19f774f9c403b8fca2ac65001dc109b50eed",
+      "max_tokens": 1024,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 300,
+      "options": {
+        "shuffle_options": true,
+        "answer_only": true
+      },
+      "n_items": 2062,
+      "n_scored": 2055,
+      "metrics": {
+        "primary": 32.51,
+        "accuracy": 32.51,
+        "ci_low": 30.52,
+        "ci_high": 34.56,
+        "n": 2055
+      },
+      "diagnostics": {
+        "n_items": 2062,
+        "n_scored": 2055,
+        "unparsed_rate": 0.0034,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.9966,
+        "strategies": {
+          "option-label": 1776,
+          "line-tail": 179,
+          "bare-letter": 71,
+          "answer-cue": 29,
+          "no-match": 7
+        },
+        "chance_level": 0.25,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "subject": {
+          "fizika": {
+            "accuracy": 29.68,
+            "ci_low": 25.41,
+            "ci_high": 34.32,
+            "n": 401,
+            "n_items": 403,
+            "coverage": 0.995
+          },
+          "matematika": {
+            "accuracy": 35.04,
+            "ci_low": 31.65,
+            "ci_high": 38.59,
+            "n": 722,
+            "n_items": 727,
+            "coverage": 0.9931
+          },
+          "ona_tili": {
+            "accuracy": 27.66,
+            "ci_low": 23.61,
+            "ci_high": 32.11,
+            "n": 423,
+            "n_items": 423,
+            "coverage": 1.0
+          },
+          "tarix": {
+            "accuracy": 35.17,
+            "ci_low": 31.14,
+            "ci_high": 39.41,
+            "n": 509,
+            "n_items": 509,
+            "coverage": 1.0
+          }
+        }
+      }
+    },
+    "translation_uz": {
+      "task_version": "2.0",
+      "dataset": "translation_flores_devtest.json",
+      "dataset_sha256": "fba5fb626edbbd793b19c97b5f7c6e4ca336a548f5908eba4de123d1ceb5ca54",
+      "max_tokens": 1024,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 300,
+      "options": {
+        "directions": [
+          "uz_en",
+          "en_uz",
+          "uz_ru",
+          "ru_uz"
+        ],
+        "eval_splits": [
+          "devtest"
+        ]
+      },
+      "n_items": 800,
+      "n_scored": 800,
+      "metrics": {
+        "primary": 26.8,
+        "n_segments": 800,
+        "chrf2pp": 26.8,
+        "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+        "bleu": 5.05,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+        "spbleu": null,
+        "cyrillic_output_rate": 0.3312,
+        "normalization": "NFC; apostrophes folded to U+02BB",
+        "ci_low": 25.44,
+        "ci_high": 28.34,
+        "ci_method": "segment bootstrap, 500 resamples",
+        "n": 800,
+        "by_direction": {
+          "en_uz": {
+            "n_segments": 200,
+            "chrf2pp": 26.35,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 2.42,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.005,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "ru_uz": {
+            "n_segments": 200,
+            "chrf2pp": 16.1,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 1.16,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.4,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_en": {
+            "n_segments": 200,
+            "chrf2pp": 40.6,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 14.77,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_ru": {
+            "n_segments": 200,
+            "chrf2pp": 28.16,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 6.96,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.92,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          }
+        },
+        "chrf2pp_macro": 27.8
+      },
+      "diagnostics": {
+        "n_items": 800,
+        "n_scored": 800,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "last-line": 800
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {
+        "direction": {
+          "en_uz": {
+            "accuracy": 29.64,
+            "ci_low": 23.74,
+            "ci_high": 36.31,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "ru_uz": {
+            "accuracy": 19.2,
+            "ci_low": 14.34,
+            "ci_high": 25.22,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_en": {
+            "accuracy": 39.8,
+            "ci_low": 33.27,
+            "ci_high": 46.72,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_ru": {
+            "accuracy": 27.86,
+            "ci_low": 22.11,
+            "ci_high": 34.45,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          }
+        }
+      }
+    }
+  },
+  "notes": ""
+}

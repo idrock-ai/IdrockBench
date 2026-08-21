@@ -1,0 +1,63 @@
+[project]
+name = "idrockbench"
+version = "2.0.0"
+description = "Evaluation suite for Uzbek-language large language models"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "IDROCK AI Excellence Center, New Uzbekistan University", email = "idrock@newuu.uz" }]
+keywords = ["uzbek", "llm", "benchmark", "evaluation", "low-resource", "nlp"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Natural Language :: Uzbek",
+]
+
+dependencies = [
+    "pyyaml>=6.0",
+    "sacrebleu>=2.4",
+    "requests>=2.31",
+    # Required, not optional. IFEval's response_language constraint is excluded
+    # when no detector is present, so leaving this to chance means two people
+    # running the same command get different constraint coverage — and coverage
+    # is what decides whether the track is publishable at all.
+    "lingua-language-detector>=2.0",
+]
+
+[project.optional-dependencies]
+# Model backends. Install only what you evaluate against.
+openai = ["openai>=1.40"]
+anthropic = ["anthropic>=0.40"]
+google = ["google-genai>=1.0"]
+hub = ["datasets>=2.19"]
+all = [
+    "openai>=1.40", "anthropic>=0.40", "google-genai>=1.0", "datasets>=2.19",
+]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+idrockbench = "idrockbench.cli:main"
+
+[project.urls]
+Homepage = "https://eval.idrock.uz"
+Repository = "https://github.com/idrock-ai/IdrockBench"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/idrockbench"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = ["E501"]

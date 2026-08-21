@@ -1,0 +1,15 @@
+# The 1,000-item held-out DTM subset (989 after cleaning).
+#
+# Not in the published suite. Its value is the *gap* against the public set: a
+# model scoring far higher on public than on held-out items has likely seen the
+# public ones in training. Run both and publish the delta.
+#
+# Four answer keys in this set are disputed (ids 855, 856 and public qids 748,
+# 780) and await a subject teacher's confirmation. See docs/data-cards/dtm.md.
+task: dtm
+dataset: dtm_heldout.json
+max_tokens: 1024
+seed: 42
+options:
+  shuffle_options: true
+  answer_only: true

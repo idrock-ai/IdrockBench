@@ -1,0 +1,27 @@
+# DTM + translation only — the two tracks that separate models.
+#
+# Reasoning is excluded deliberately, not because it is unimportant but because
+# of what it costs against what it settles. Measured on the DGX Spark:
+#
+#     dtm            2062 items    387 items/hour
+#     translation     800 items    ~2 hours
+#     reasoning_uz    100 items    4.5 items/hour   ← 86x slower per item
+#
+# Reasoning consumes ~85% of the machine time for a 100-item track whose
+# confidence interval is about ±10 points — wide enough that Gemma 4 12B (46.1)
+# and Qwen3.5 9B (42.4) overlap and cannot be ranked against each other. DTM at
+# n=2062 separates models to within ~2 points.
+#
+# So this suite exists to get a complete model roster onto the board quickly.
+# Reasoning is then filled in per model as a separate campaign; the leaderboard
+# already withholds cells it does not have, so a partial row is honest rather
+# than broken.
+name: knowledge
+description: >
+  Knowledge and translation tracks, for a fast pass over many models. Rows
+  scored under this suite carry no reasoning cell and are reported as
+  incomplete on the core leaderboard until that cell is filled.
+tasks:
+  - dtm
+  - translation_uz
+require_complete: true

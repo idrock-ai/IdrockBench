@@ -1,0 +1,9 @@
+# Zarbulmasal — multiple choice over the SAME riddles.
+#
+# Run beside the free-text task, never instead of it. The gap between the two
+# separates a model that knows the answer from one that only recognises it, and
+# that gap is the reusable finding.
+task: zarbulmasal_mc
+dataset: zarbulmasal.json
+max_tokens: 256
+seed: 42

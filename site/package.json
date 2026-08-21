@@ -1,0 +1,9 @@
+{
+  "name": "eval-idrock-uz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "idrock eval — Uzbek LLM benchmark static site",
+  "scripts": {
+    "build": "node build.js"
+  }
+}

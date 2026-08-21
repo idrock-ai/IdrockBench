@@ -1,0 +1,18 @@
+# Nemotron 3.5 Lightning 30B
+model: nemotron-3.5-lightning:30b
+provider: ollama
+name: Nemotron 3.5 Lightning 30B
+organization: NVIDIA
+license: nvidia-open-model
+weights_url: https://huggingface.co/nvidia
+params_b: 30
+# Resolved from the Ollama daemon at run time and written into the manifest —
+# quantisation moves scores more than most model-to-model differences.
+quantization: ""
+
+# Every model in the published suite answers under the same protocol. Probed
+# per model with tools/probe_models.py; a model that cannot answer directly is
+# excluded rather than scored under different rules.
+reasoning: "off"
+
+concurrency: 4

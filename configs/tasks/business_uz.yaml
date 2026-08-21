@@ -1,0 +1,23 @@
+# Business knowledge in Uzbek — MMLU-Pro format, ten options.
+#
+# Renamed from `mmlu_pro_uz`, because that name was a claim the artifact could
+# not support. MMLU-Pro spans fourteen categories across STEM, humanities, law
+# and social sciences. Every one of these 174 items is category `business`, and
+# the source CSV never contained anything else — so publishing it as "MMLU-Pro"
+# advertised coverage that does not exist. It measures business knowledge, and
+# now says so.
+#
+# Two caveats to carry with any published number:
+#   * 174 items gives a ±7pp interval at best — too few for confident ranking.
+#   * Machine-translated with no human validation, so it inherits whatever the
+#     translator got wrong. See docs/data-cards/mmlu_pro_uz.md.
+#
+# To become a real MMLU-Pro-uz, the other thirteen categories need translating
+# and reviewing. That is a translation project, not a config change.
+task: mmlu_pro_uz
+dataset: mmlu_pro_uz.json
+max_tokens: 1024
+seed: 42
+options:
+  shuffle_options: true
+  answer_only: true

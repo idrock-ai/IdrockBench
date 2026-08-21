@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Secrets
+.env
+
+# Node (site)
+node_modules/
+site/dist/
+
+# Run outputs. Per-item JSONL is large but IS the scientific record: keep it
+# out of git and archive it alongside each published leaderboard version
+# (Zenodo, or an object store). Manifests are small and ARE tracked, so every
+# published number stays traceable from the repository alone.
+runs/*/*.jsonl
+!runs/**/manifest.json
+
+# NOTE: no `test_*` rule here. The previous repo ignored `test_*` at any depth,
+# so anyone adding tests committed nothing and every extraction bug shipped.
+
+# Tool caches
+.ruff_cache/
+
+# macOS
+.DS_Store

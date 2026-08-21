@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+
+      - name: Lint
+        run: ruff check src tests tools
+
+      # Golden regression tests. Each one pins a scoring bug that once changed
+      # a published number, so a reintroduced bug fails here rather than on the
+      # leaderboard.
+      - name: Tests
+        run: pytest -v
+
+      # Datasets must satisfy their task's invariants. A defect caught here
+      # cannot become a published number.
+      - name: Validate datasets
+        run: idrockbench validate
+
+      # Prove the run -> record -> aggregate -> report path works, with no API
+      # keys and no network.
+      - name: Pipeline smoke test
+        run: |
+          idrockbench run --model stub --suite all --limit 5 --run-id ci --no-resume
+          idrockbench report --suite all --output /tmp/results.json
+          python -c "
+          import json, sys
+          board = json.load(open('/tmp/results.json'))
+          assert board['models'], 'report produced no rows'
+          for m in board['models']:
+              for task, cell in m['scores'].items():
+                  assert cell['n'] is not None, f'{task}: no sample size'
+                  assert 'coverage' in cell, f'{task}: no coverage'
+          print('pipeline ok:', len(board['models']), 'model(s)')
+          "
+
+      # The datasets in data/ must be reproducible from the builder. If this
+      # diff is non-empty, someone hand-edited a dataset.
+      - name: Datasets are reproducible from the builder
+        run: |
+          python tools/build_datasets.py
+          git diff --exit-code -- data/ || {
+            echo "::error::data/ differs from tools/build_datasets.py output."
+            echo "Datasets are built, not hand-edited: change the builder and re-run."
+            exit 1
+          }

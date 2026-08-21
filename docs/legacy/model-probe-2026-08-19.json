@@ -1,0 +1,88 @@
+[
+  {
+    "config": "Alloma 8B",
+    "model": "kmamaroziqov/alloma-8b-q4",
+    "thinks": false,
+    "needs": 256,
+    "reasoning": "default",
+    "secs": 12.6,
+    "verdict": "answers directly"
+  },
+  {
+    "config": "DeepSeek-R1-Distill-Qwen 32B",
+    "model": "deepseek-r1:32b",
+    "thinks": true,
+    "needs": null,
+    "reasoning": "off",
+    "secs": 0,
+    "verdict": "no answer even at 4096 \u2014 exclude or investigate"
+  },
+  {
+    "config": "Gemma 4 26B",
+    "model": "gemma4:26b",
+    "thinks": true,
+    "needs": 256,
+    "reasoning": "off",
+    "secs": 2.7,
+    "verdict": "answers with think=false"
+  },
+  {
+    "config": "Gemma 4 E4B",
+    "model": "gemma4:e4b",
+    "thinks": true,
+    "needs": 256,
+    "reasoning": "off",
+    "secs": 23.8,
+    "verdict": "answers with think=false"
+  },
+  {
+    "config": "gpt-oss 20B",
+    "model": "gpt-oss:20b",
+    "thinks": true,
+    "needs": null,
+    "reasoning": "off",
+    "secs": 0,
+    "verdict": "no answer even at 4096 \u2014 exclude or investigate"
+  },
+  {
+    "config": "Llama 3.1 70B",
+    "model": "llama3.1:70b",
+    "thinks": false,
+    "needs": 256,
+    "reasoning": "default",
+    "secs": 25.6,
+    "verdict": "answers directly"
+  },
+  {
+    "config": "Llama 3.1 8B",
+    "model": "llama3.1:8b",
+    "thinks": false,
+    "needs": 256,
+    "reasoning": "default",
+    "secs": 17.1,
+    "verdict": "answers directly"
+  },
+  {
+    "config": "Mistral Small 3.2 24B",
+    "model": "mistral-small3.2:24b",
+    "verdict": "unreachable: HTTPError"
+  },
+  {
+    "config": "Qwen3.5 35B",
+    "model": "qwen3.5:35b",
+    "thinks": true,
+    "needs": 256,
+    "reasoning": "off",
+    "secs": 19.9,
+    "verdict": "answers with think=false"
+  },
+  {
+    "config": "Qwen3.5 9B",
+    "model": "qwen3.5:9b",
+    "thinks": true,
+    "needs": 256,
+    "reasoning": "off",
+    "secs": 18.3,
+    "verdict": "answers with think=false"
+  }
+]

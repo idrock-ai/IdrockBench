@@ -1,0 +1,8 @@
+# Zarbulmasal — free text. The model must NAME the answer.
+#
+# The harder of the two formats and the one that matters: it measures whether a
+# model holds Uzbek cultural knowledge, not whether it can pick it from a list.
+task: zarbulmasal
+dataset: zarbulmasal.json
+max_tokens: 256
+seed: 42

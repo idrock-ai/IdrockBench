@@ -1,0 +1,281 @@
+{
+  "run_id": "qwen3.5-27b-20260819T161458Z",
+  "model": "Qwen3.5 27B",
+  "provider": "ollama",
+  "model_revision": "",
+  "quantization": "Q4_K_M",
+  "organization": "Alibaba",
+  "license": "apache-2.0",
+  "weights_url": "https://huggingface.co/Qwen",
+  "temperature": 0.0,
+  "top_p": null,
+  "seed": 0,
+  "max_tokens": {
+    "dtm": 1024,
+    "reasoning_uz": 4096,
+    "translation_uz": 1024
+  },
+  "reasoning": "off",
+  "chat_template": true,
+  "harness_version": "2.0.0",
+  "harness_git_sha": "unknown",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1029-nvidia-aarch64-with-glibc2.39",
+  "package_versions": {},
+  "started_at": "2026-08-19T16:14:58+00:00",
+  "finished_at": "2026-08-20T03:53:22+00:00",
+  "tasks": {
+    "dtm": {
+      "task_version": "2.1",
+      "dataset": "dtm_public.json",
+      "dataset_sha256": "3b116873889877339dd294d08010547a82ec1c9032d5254d1d5b6eeb36a90707",
+      "max_tokens": 1024,
+      "reasoning": "off",
+      "options": {
+        "shuffle_options": true,
+        "answer_only": true
+      },
+      "n_items": 2062,
+      "n_scored": 2062,
+      "metrics": {
+        "primary": 52.42,
+        "accuracy": 52.42,
+        "ci_low": 50.27,
+        "ci_high": 54.57,
+        "n": 2062
+      },
+      "diagnostics": {
+        "n_items": 2062,
+        "n_scored": 2062,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "bare-letter": 2062
+        },
+        "chance_level": 0.25,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "subject": {
+          "fizika": {
+            "accuracy": 60.79,
+            "ci_low": 55.95,
+            "ci_high": 65.44,
+            "n": 403,
+            "n_items": 403,
+            "coverage": 1.0
+          },
+          "matematika": {
+            "accuracy": 51.72,
+            "ci_low": 48.09,
+            "ci_high": 55.33,
+            "n": 727,
+            "n_items": 727,
+            "coverage": 1.0
+          },
+          "ona_tili": {
+            "accuracy": 35.46,
+            "ci_low": 31.05,
+            "ci_high": 40.13,
+            "n": 423,
+            "n_items": 423,
+            "coverage": 1.0
+          },
+          "tarix": {
+            "accuracy": 60.9,
+            "ci_low": 56.6,
+            "ci_high": 65.05,
+            "n": 509,
+            "n_items": 509,
+            "coverage": 1.0
+          }
+        }
+      }
+    },
+    "reasoning_uz": {
+      "task_version": "2.0",
+      "dataset": "reasoning_uz.jsonl",
+      "dataset_sha256": "6d061236b05712a097d6121751ea4e000aa2140cbec7ed57e1065ffd3b9372f7",
+      "max_tokens": 4096,
+      "reasoning": "default",
+      "options": {
+        "include_retired": false
+      },
+      "n_items": 100,
+      "n_scored": 4,
+      "metrics": {
+        "primary": 100.0,
+        "accuracy": 100.0,
+        "ci_low": 51.01,
+        "ci_high": 100.0,
+        "n": 4
+      },
+      "diagnostics": {
+        "n_items": 100,
+        "n_scored": 4,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.96,
+        "refusal_rate": 0.0,
+        "coverage": 0.04,
+        "strategies": {
+          "<solution>": 3,
+          "bold": 1
+        },
+        "chance_level": 0.156,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "task": {
+          "spatial": {
+            "accuracy": 100.0,
+            "ci_low": 20.65,
+            "ci_high": 100.0,
+            "n": 1,
+            "n_items": 50,
+            "coverage": 0.02
+          },
+          "zebra_puzzle": {
+            "accuracy": 100.0,
+            "ci_low": 43.85,
+            "ci_high": 100.0,
+            "n": 3,
+            "n_items": 50,
+            "coverage": 0.06
+          }
+        }
+      }
+    },
+    "translation_uz": {
+      "task_version": "2.0",
+      "dataset": "translation_flores_devtest.json",
+      "dataset_sha256": "15238ac010fc9c6051b00d4663a6e30d5ed018d124f81810b3e2a40166fb0408",
+      "max_tokens": 1024,
+      "reasoning": "off",
+      "options": {
+        "directions": [
+          "uz_en",
+          "en_uz",
+          "uz_ru",
+          "ru_uz"
+        ],
+        "eval_splits": [
+          "devtest"
+        ]
+      },
+      "n_items": 800,
+      "n_scored": 800,
+      "metrics": {
+        "primary": 51.58,
+        "n_segments": 800,
+        "chrf2pp": 51.58,
+        "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+        "bleu": 21.06,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+        "spbleu": null,
+        "cyrillic_output_rate": 0.25,
+        "normalization": "NFC; apostrophes folded to U+02BB",
+        "ci_low": 50.75,
+        "ci_high": 52.32,
+        "ci_method": "segment bootstrap, 500 resamples",
+        "n": 800,
+        "by_direction": {
+          "en_uz": {
+            "n_segments": 200,
+            "chrf2pp": 51.17,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 15.63,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "ru_uz": {
+            "n_segments": 200,
+            "chrf2pp": 46.96,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 11.26,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_en": {
+            "n_segments": 200,
+            "chrf2pp": 59.36,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 32.12,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_ru": {
+            "n_segments": 200,
+            "chrf2pp": 48.82,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 21.19,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 1.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          }
+        },
+        "chrf2pp_macro": 51.58
+      },
+      "diagnostics": {
+        "n_items": 800,
+        "n_scored": 800,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "last-line": 800
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {
+        "direction": {
+          "en_uz": {
+            "accuracy": 50.73,
+            "ci_low": 43.85,
+            "ci_high": 57.58,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "ru_uz": {
+            "accuracy": 46.88,
+            "ci_low": 40.09,
+            "ci_high": 53.79,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_en": {
+            "accuracy": 59.23,
+            "ci_low": 52.3,
+            "ci_high": 65.8,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_ru": {
+            "accuracy": 48.85,
+            "ci_low": 42.01,
+            "ci_high": 55.74,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          }
+        }
+      }
+    }
+  },
+  "notes": ""
+}

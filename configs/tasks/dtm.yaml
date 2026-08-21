@@ -1,0 +1,32 @@
+# UzDTM — Uzbek university-entrance exam questions.
+#
+# Scored against the PUBLIC 2019 DTM release (2,062 items after cleaning), not
+# the 1,000-item held-out subset.
+#
+# The trade-off, stated plainly: a public question set can appear in a model's
+# training data, so a high score here is not proof of held-out capability. What
+# it buys is verifiability — anyone can download the same items, re-run the same
+# command and check the number, which is the property the old leaderboard most
+# lacked. The held-out set stays available as `dtm_heldout`, and the gap between
+# the two is itself the contamination signal worth publishing.
+task: dtm
+dataset: dtm_public.json
+
+# 1024, measured rather than guessed. A capable model answers the direct-answer
+# prompt in ~2 tokens, but small models ignore the instruction and explain
+# anyway. Truncation rate for qwen3.5:0.8b on 20 items: 256 -> 15%, 512 -> 10%,
+# 1024 -> 0%. Anything lower scores "could not finish" as "wrong", which is the
+# defect that put the old leaderboard's small models below their own chance
+# level. The cost falls only on models that actually use the budget.
+max_tokens: 1024
+seed: 42
+
+options:
+  # Seeded permutation, so answer position carries no signal.
+  shuffle_options: true
+  # Direct-answer protocol: a letter and nothing else. Stated in
+  # docs/methodology.md and applied identically to every model — a column where
+  # models answered under different protocols is not a comparison.
+  answer_only: true
+
+weight: 1.0

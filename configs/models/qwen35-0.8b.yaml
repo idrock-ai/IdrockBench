@@ -1,0 +1,23 @@
+# Qwen3.5 0.8B
+model: qwen3.5:0.8b
+provider: ollama
+base_url: http://127.0.0.1:11500   # user-space Ollama on the A100
+name: Qwen3.5 0.8B
+organization: Alibaba
+license: apache-2.0
+weights_url: https://huggingface.co/Qwen
+params_b: 0.8
+# Resolved from the Ollama daemon at run time and written into the manifest —
+# quantisation moves scores more than most model-to-model differences.
+quantization: ""
+
+# Every model in the published suite answers under the same protocol. Probed
+# per model with tools/probe_models.py; a model that cannot answer directly is
+# excluded rather than scored under different rules.
+reasoning: "off"
+
+# 16, not 4: on an A100 a model this size leaves the GPU ~60% idle at 4
+# concurrent requests. Small models also generate far more tokens per item
+# than large ones here — they ignore the direct-answer instruction and
+# write an essay first — so there is plenty of work to overlap.
+concurrency: 16

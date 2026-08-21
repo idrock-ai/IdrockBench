@@ -17,8 +17,8 @@ three tracks and exists only where all three were measured.
 | 3 | Qwen3.6 27B | 57.1 | 50.34 | 87.70 | 51.98 | 16.92 | 75.53 | apache-2.0 |
 | 4 | Gemma 4 26B | 42.6 | 48.54 | 52.00 | 53.32 | 12.69 | 60.73 | gemma |
 | 5 | Qwen3.5 35B | - | 47.77 | - | 50.37 | 6.95 | 61.63 | apache-2.0 |
-| 6 | Qwen3.8 27B | - | 45.88 | - | 51.01 | 10.57 | 64.35 | apache-2.0 |
-| 7 | DiffusionGemma 26B-A4B | - | 43.92 | 44.54 | 49.73 | - | - | apache-2.0 |
+| 6 | Qwen3.8 27B | 49.2 | 45.88 | 73.56 | 51.01 | 10.57 | 64.35 | apache-2.0 |
+| 7 | DiffusionGemma 26B-A4B | - | 43.92 | 44.54 | 49.73 | 11.11 | 60.73 | apache-2.0 |
 | 8 | Gemma 4 12B | 34.9 | 37.99 | 46.13 | 51.33 | 5.14 | 56.50 | gemma |
 | 9 | Qwen3.5 9B | 31.8 | 36.95 | 42.37 | 47.69 | 1.81 | 48.34 | apache-2.0 |
 | 10 | Gemma 4 E4B | 26.5 | 32.83 | 33.93 | 47.39 | 3.32 | 45.62 | gemma |
@@ -30,8 +30,8 @@ three tracks and exists only where all three were measured.
 
 `-` means not measured. `withheld` means the model answered too few items to score
 honestly, not that it scored zero. Coverage below 50% is never published. Qwen3.5
-27B is still withheld on reasoning at 4% coverage. Gemma 4 26B has since been
-re-run and scores 52.00 at full coverage. Qwen3.5 0.8B
+27B is still withheld on reasoning at 4% coverage. Gemma 4 26B and Qwen3.8 27B
+have since been re-run, scoring 52.00 at full coverage and 73.56 at 78%. Qwen3.5 0.8B
 and 2B have DTM and translation on disk but lost those entries from their run
 manifests. DiffusionGemma decodes differently from every other row, explained
 below. The remaining gaps are tracks that were not run.
@@ -52,6 +52,7 @@ The gap is the largest effect measured anywhere in this benchmark:
 |---|---:|---:|---:|
 | Gemma 4 31B | 25.68 | 76.44 | 50.8 |
 | Qwen3.6 27B | 16.92 | 75.53 | 58.6 |
+| DiffusionGemma 26B-A4B | 11.11 | 60.73 | 49.6 |
 | Qwen3.5 27B | 9.37 | 70.69 | 61.3 |
 | Gemma 4 12B | 5.14 | 56.50 | 51.4 |
 | Qwen3.5 4B | 0.30 | 38.97 | 38.7 |
@@ -70,6 +71,13 @@ translated benchmark measures what a model learned in English and kept through
 translation. A riddle has to be known in Uzbek or not at all, and on this
 evidence these models have shallow, recognition-only exposure to Uzbek folk
 material.
+
+Its riddle recall cell is computed on 297 of 331 items. A tenth of its
+free-text responses could not be extracted, against zero for every
+autoregressive model, which is a property of the channel-framed output rather
+than of the answers. Those items are excluded rather than scored zero, so the
+figure is not deflated by them, but it rests on a smaller sample than the rows
+around it.
 
 ## DiffusionGemma runs a different protocol
 

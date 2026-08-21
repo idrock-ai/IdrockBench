@@ -1,7 +1,7 @@
 {
   "suite": "core",
   "suiteDescription": "Tracks whose numbers are considered publishable. A task joins this suite only once its dataset validates clean and its scoring has golden tests.",
-  "generatedAt": "2026-08-21T14:15:26+00:00",
+  "generatedAt": "2026-08-21T19:12:37+00:00",
   "tasks": [
     {
       "id": "dtm",
@@ -98,6 +98,78 @@
       "tiedWith": []
     },
     {
+      "model": "Qwen3.8 27B",
+      "organization": "Alibaba",
+      "license": "apache-2.0",
+      "openWeights": true,
+      "weightsUrl": "https://huggingface.co/Qwen",
+      "quantization": "Q4_K_M",
+      "reasoning": {
+        "label": "no-think",
+        "byTask": {
+          "dtm": "off",
+          "reasoning_uz": "off",
+          "translation_uz": "off"
+        }
+      },
+      "composite": 49.17,
+      "complete": true,
+      "missing": [],
+      "withheld": {},
+      "scores": {
+        "dtm": {
+          "score": 45.88,
+          "ci_low": 43.74,
+          "ci_high": 48.03,
+          "n": 2062,
+          "n_items": 2062,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "2.1",
+          "dataset_sha256": "6cca87ac3457",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "reasoning_uz": {
+          "score": 73.56,
+          "ci_low": 62.83,
+          "ci_high": 82.07,
+          "n": 78,
+          "n_items": 100,
+          "coverage": 0.78,
+          "unparsed_rate": 0.0,
+          "chance": 15.6,
+          "task_version": "2.0",
+          "dataset_sha256": "8070ec68a5d9",
+          "provisional": true,
+          "at_or_below_chance": false
+        },
+        "translation_uz": {
+          "score": 51.01,
+          "ci_low": 49.9,
+          "ci_high": 52.02,
+          "n": 800,
+          "n_items": 800,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "fba5fb626edb",
+          "provisional": false,
+          "at_or_below_chance": false
+        }
+      },
+      "runId": "qwen38-27b",
+      "runDate": "2026-08-21",
+      "harnessVersion": "2.0.0",
+      "harnessCommit": "unknown",
+      "temperature": 0.0,
+      "provenance": "organiser-run",
+      "rank": 2,
+      "tiedWith": []
+    },
+    {
       "model": "Gemma 4 26B",
       "organization": "Google",
       "license": "gemma",
@@ -166,7 +238,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 2,
+      "rank": 3,
       "tiedWith": []
     },
     {
@@ -238,7 +310,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 3,
+      "rank": 4,
       "tiedWith": []
     },
     {
@@ -310,7 +382,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 4,
+      "rank": 5,
       "tiedWith": []
     },
     {
@@ -382,7 +454,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 5,
+      "rank": 6,
       "tiedWith": []
     },
     {
@@ -454,7 +526,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 6,
+      "rank": 7,
       "tiedWith": []
     },
     {
@@ -526,7 +598,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 7,
+      "rank": 8,
       "tiedWith": [
         "Gemma 4 E2B"
       ]
@@ -600,7 +672,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 8,
+      "rank": 9,
       "tiedWith": [
         "Qwen3.5 4B"
       ]
@@ -674,7 +746,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 9,
+      "rank": 10,
       "tiedWith": []
     },
     {
@@ -746,7 +818,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 10,
+      "rank": 11,
       "tiedWith": []
     },
     {
@@ -980,65 +1052,6 @@
         }
       },
       "runId": "qwen35-35b",
-      "runDate": "2026-08-21",
-      "harnessVersion": "2.0.0",
-      "harnessCommit": "unknown",
-      "temperature": 0.0,
-      "provenance": "organiser-run",
-      "rank": null
-    },
-    {
-      "model": "Qwen3.8 27B",
-      "organization": "Alibaba",
-      "license": "apache-2.0",
-      "openWeights": true,
-      "weightsUrl": "https://huggingface.co/Qwen",
-      "quantization": "Q4_K_M",
-      "reasoning": {
-        "label": "no-think",
-        "byTask": {
-          "dtm": "off",
-          "reasoning_uz": "off",
-          "translation_uz": "off"
-        }
-      },
-      "composite": null,
-      "complete": false,
-      "missing": [
-        "reasoning_uz"
-      ],
-      "withheld": {},
-      "scores": {
-        "dtm": {
-          "score": 45.88,
-          "ci_low": 43.74,
-          "ci_high": 48.03,
-          "n": 2062,
-          "n_items": 2062,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 25.0,
-          "task_version": "2.1",
-          "dataset_sha256": "6cca87ac3457",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "translation_uz": {
-          "score": 51.01,
-          "ci_low": 49.9,
-          "ci_high": 52.02,
-          "n": 800,
-          "n_items": 800,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "fba5fb626edb",
-          "provisional": false,
-          "at_or_below_chance": false
-        }
-      },
-      "runId": "qwen38-27b",
       "runDate": "2026-08-21",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",

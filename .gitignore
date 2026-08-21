@@ -32,3 +32,9 @@ runs/*/*.jsonl
 
 # macOS
 .DS_Store
+
+# Generated worklists. `tools/ifeval_worklist.py` derives this from
+# data/ifeval_uz.json in seconds, so committing it only guarantees a copy that
+# drifts from its source: the version tracked here was produced before the
+# apostrophe repair and disagreed with the dataset within a day.
+ifeval_todo.csv

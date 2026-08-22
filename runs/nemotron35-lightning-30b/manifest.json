@@ -12,6 +12,7 @@
   "seed": 0,
   "max_tokens": {
     "dtm": 1024,
+    "reasoning_uz": 8192,
     "translation_uz": 1024
   },
   "reasoning": "off",
@@ -19,10 +20,10 @@
   "harness_version": "2.0.0",
   "harness_git_sha": "unknown",
   "python_version": "3.12.3",
-  "platform": "Linux-6.17.0-1029-nvidia-aarch64-with-glibc2.39",
+  "platform": "Linux-6.17.0-1016-gcp-x86_64-with-glibc2.39",
   "package_versions": {},
-  "started_at": "2026-08-21T00:27:51+00:00",
-  "finished_at": "2026-08-21T01:00:52+00:00",
+  "started_at": "2026-08-21T20:54:46+00:00",
+  "finished_at": "2026-08-21T21:04:34+00:00",
   "tasks": {
     "dtm": {
       "task_version": "2.1",
@@ -95,6 +96,62 @@
             "ci_high": 39.41,
             "n": 509,
             "n_items": 509,
+            "coverage": 1.0
+          }
+        }
+      }
+    },
+    "reasoning_uz": {
+      "task_version": "2.0",
+      "dataset": "reasoning_uz.json",
+      "dataset_sha256": "8070ec68a5d921a06775498584a5bda92ffb773f60b0d41fb1c47d98ba3908d4",
+      "max_tokens": 8192,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 1200,
+      "options": {},
+      "n_items": 100,
+      "n_scored": 98,
+      "metrics": {
+        "primary": 11.61,
+        "accuracy": 11.61,
+        "ci_low": 6.67,
+        "ci_high": 19.44,
+        "n": 98
+      },
+      "diagnostics": {
+        "n_items": 100,
+        "n_scored": 98,
+        "unparsed_rate": 0.02,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.98,
+        "strategies": {
+          "<solution>": 50,
+          "bold": 44,
+          "last-line": 4,
+          "no-match": 2
+        },
+        "chance_level": 0.156,
+        "at_or_below_chance": true
+      },
+      "breakdown": {
+        "task": {
+          "spatial": {
+            "accuracy": 18.75,
+            "ci_low": 10.19,
+            "ci_high": 31.94,
+            "n": 48,
+            "n_items": 50,
+            "coverage": 0.96
+          },
+          "zebra_puzzle": {
+            "accuracy": 4.75,
+            "ci_low": 1.44,
+            "ci_high": 14.51,
+            "n": 50,
+            "n_items": 50,
             "coverage": 1.0
           }
         }

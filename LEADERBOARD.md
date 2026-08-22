@@ -18,7 +18,7 @@ three tracks and exists only where all three were measured.
 | 4 | Gemma 4 26B | 42.6 | 48.54 | 52.00 | 53.32 | 12.69 | 60.73 | gemma |
 | 5 | Qwen3.5 35B | 47.2 | 47.77 | 66.89 | 50.37 | 6.95 | 61.63 | apache-2.0 |
 | 6 | Qwen3.8 27B | 49.2 | 45.88 | 73.56 | 51.01 | 10.57 | 64.35 | apache-2.0 |
-| 7 | DiffusionGemma 26B-A4B | - | 43.92 | 44.54 | 49.73 | 11.11 | 60.73 | apache-2.0 |
+| 7 | DiffusionGemma 26B-A4B | 36.4 | 43.92 | 44.54 | 49.73 | 11.11 | 60.73 | apache-2.0 |
 | 8 | Gemma 4 12B | 34.9 | 37.99 | 46.13 | 51.33 | 5.14 | 56.50 | gemma |
 | 9 | Qwen3.5 9B | 31.8 | 36.95 | 42.37 | 47.69 | 1.81 | 48.34 | apache-2.0 |
 | 10 | Gemma 4 E4B | 26.5 | 32.83 | 33.93 | 47.39 | 3.32 | 45.62 | gemma |
@@ -37,6 +37,12 @@ Qwen3.5 27B, whose earlier 100.00 rested on 4 scored items and is now 73.78 on
 and 2B have DTM and translation on disk but lost those entries from their run
 manifests. DiffusionGemma decodes differently from every other row, explained
 below. The remaining gaps are tracks that were not run.
+
+DiffusionGemma's composite is computed the same way as the others, from the
+mean of its three replicates, and places it seventh. Read it as a measure of
+capability rather than a like-for-like ranking: it is the only row that decodes
+stochastically with thinking always on, so a place or two either way is not
+meaningful against the rows next to it.
 
 Rank is by DTM and is not a claim of overall superiority. Qwen3.6 27B has the
 highest composite but sits third on DTM, and the six rows without a composite are

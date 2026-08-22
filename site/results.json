@@ -1,7 +1,7 @@
 {
   "suite": "core",
   "suiteDescription": "Tracks whose numbers are considered publishable. A task joins this suite only once its dataset validates clean and its scoring has golden tests.",
-  "generatedAt": "2026-08-21T19:12:37+00:00",
+  "generatedAt": "2026-08-22T03:45:38+00:00",
   "tasks": [
     {
       "id": "dtm",
@@ -95,7 +95,155 @@
       "temperature": 0.0,
       "provenance": "organiser-run",
       "rank": 1,
+      "tiedWith": [
+        "Qwen3.5 27B"
+      ]
+    },
+    {
+      "model": "Gemma 4 31B",
+      "organization": "Google",
+      "license": "gemma",
+      "openWeights": true,
+      "weightsUrl": "https://huggingface.co/google",
+      "quantization": "Q4_K_M",
+      "reasoning": {
+        "label": "no-think",
+        "byTask": {
+          "dtm": "off",
+          "reasoning_uz": "off",
+          "translation_uz": "off"
+        }
+      },
+      "composite": 53.01,
+      "complete": true,
+      "missing": [],
+      "withheld": {},
+      "scores": {
+        "dtm": {
+          "score": 56.96,
+          "ci_low": 54.81,
+          "ci_high": 59.09,
+          "n": 2061,
+          "n_items": 2062,
+          "coverage": 0.9995,
+          "unparsed_rate": 0.0005,
+          "chance": 25.0,
+          "task_version": "2.1",
+          "dataset_sha256": "6cca87ac3457",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "reasoning_uz": {
+          "score": 67.8,
+          "ci_low": 58.08,
+          "ci_high": 76.19,
+          "n": 99,
+          "n_items": 100,
+          "coverage": 0.99,
+          "unparsed_rate": 0.0,
+          "chance": 15.6,
+          "task_version": "2.0",
+          "dataset_sha256": "8070ec68a5d9",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "translation_uz": {
+          "score": 54.57,
+          "ci_low": 53.64,
+          "ci_high": 55.44,
+          "n": 800,
+          "n_items": 800,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "fba5fb626edb",
+          "provisional": false,
+          "at_or_below_chance": false
+        }
+      },
+      "runId": "gemma4-31b",
+      "runDate": "2026-08-21",
+      "harnessVersion": "2.0.0",
+      "harnessCommit": "unknown",
+      "temperature": 0.0,
+      "provenance": "organiser-run",
+      "rank": 2,
       "tiedWith": []
+    },
+    {
+      "model": "Qwen3.5 27B",
+      "organization": "Alibaba",
+      "license": "apache-2.0",
+      "openWeights": true,
+      "weightsUrl": "https://huggingface.co/Qwen",
+      "quantization": "Q4_K_M",
+      "reasoning": {
+        "label": "no-think",
+        "byTask": {
+          "dtm": "off",
+          "reasoning_uz": "off",
+          "translation_uz": "off"
+        }
+      },
+      "composite": 52.36,
+      "complete": true,
+      "missing": [],
+      "withheld": {},
+      "scores": {
+        "dtm": {
+          "score": 52.42,
+          "ci_low": 50.27,
+          "ci_high": 54.57,
+          "n": 2062,
+          "n_items": 2062,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "2.1",
+          "dataset_sha256": "6cca87ac3457",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "reasoning_uz": {
+          "score": 73.78,
+          "ci_low": 63.35,
+          "ci_high": 82.08,
+          "n": 82,
+          "n_items": 100,
+          "coverage": 0.82,
+          "unparsed_rate": 0.0,
+          "chance": 15.6,
+          "task_version": "2.0",
+          "dataset_sha256": "8070ec68a5d9",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "translation_uz": {
+          "score": 51.58,
+          "ci_low": 50.75,
+          "ci_high": 52.32,
+          "n": 800,
+          "n_items": 800,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "fba5fb626edb",
+          "provisional": false,
+          "at_or_below_chance": false
+        }
+      },
+      "runId": "qwen3.5-27b-20260819T161458Z",
+      "runDate": "2026-08-21",
+      "harnessVersion": "2.0.0",
+      "harnessCommit": "unknown",
+      "temperature": 0.0,
+      "provenance": "organiser-run",
+      "rank": 3,
+      "tiedWith": [
+        "Qwen3.6 27B"
+      ]
     },
     {
       "model": "Qwen3.8 27B",
@@ -166,8 +314,84 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 2,
-      "tiedWith": []
+      "rank": 4,
+      "tiedWith": [
+        "Qwen3.5 35B"
+      ]
+    },
+    {
+      "model": "Qwen3.5 35B",
+      "organization": "Alibaba",
+      "license": "apache-2.0",
+      "openWeights": true,
+      "weightsUrl": "https://huggingface.co/Qwen",
+      "quantization": "Q4_K_M",
+      "reasoning": {
+        "label": "no-think",
+        "byTask": {
+          "dtm": "off",
+          "reasoning_uz": "off",
+          "translation_uz": "off"
+        }
+      },
+      "composite": 47.17,
+      "complete": true,
+      "missing": [],
+      "withheld": {},
+      "scores": {
+        "dtm": {
+          "score": 47.77,
+          "ci_low": 45.62,
+          "ci_high": 49.93,
+          "n": 2062,
+          "n_items": 2062,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "2.1",
+          "dataset_sha256": "6cca87ac3457",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "reasoning_uz": {
+          "score": 66.89,
+          "ci_low": 55.57,
+          "ci_high": 76.55,
+          "n": 74,
+          "n_items": 100,
+          "coverage": 0.74,
+          "unparsed_rate": 0.0,
+          "chance": 15.6,
+          "task_version": "2.0",
+          "dataset_sha256": "8070ec68a5d9",
+          "provisional": true,
+          "at_or_below_chance": false
+        },
+        "translation_uz": {
+          "score": 50.37,
+          "ci_low": 49.47,
+          "ci_high": 51.24,
+          "n": 800,
+          "n_items": 800,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "fba5fb626edb",
+          "provisional": false,
+          "at_or_below_chance": false
+        }
+      },
+      "runId": "qwen35-35b",
+      "runDate": "2026-08-21",
+      "harnessVersion": "2.0.0",
+      "harnessCommit": "unknown",
+      "temperature": 0.0,
+      "provenance": "organiser-run",
+      "rank": 5,
+      "tiedWith": [
+        "Qwen3.8 27B"
+      ]
     },
     {
       "model": "Gemma 4 26B",
@@ -238,7 +462,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 3,
+      "rank": 6,
       "tiedWith": []
     },
     {
@@ -310,7 +534,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 4,
+      "rank": 7,
       "tiedWith": []
     },
     {
@@ -382,7 +606,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 5,
+      "rank": 8,
       "tiedWith": []
     },
     {
@@ -454,7 +678,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 6,
+      "rank": 9,
       "tiedWith": []
     },
     {
@@ -526,7 +750,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 7,
+      "rank": 10,
       "tiedWith": []
     },
     {
@@ -598,7 +822,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 8,
+      "rank": 11,
       "tiedWith": [
         "Gemma 4 E2B"
       ]
@@ -672,10 +896,82 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 9,
+      "rank": 12,
       "tiedWith": [
         "Qwen3.5 4B"
       ]
+    },
+    {
+      "model": "Nemotron 3.5 Lightning 30B",
+      "organization": "NVIDIA",
+      "license": "nvidia-open-model",
+      "openWeights": true,
+      "weightsUrl": "https://huggingface.co/nvidia",
+      "quantization": "Q4_K_M",
+      "reasoning": {
+        "label": "no-think",
+        "byTask": {
+          "dtm": "off",
+          "reasoning_uz": "off",
+          "translation_uz": "off"
+        }
+      },
+      "composite": 12.27,
+      "complete": true,
+      "missing": [],
+      "withheld": {},
+      "scores": {
+        "dtm": {
+          "score": 32.51,
+          "ci_low": 30.52,
+          "ci_high": 34.56,
+          "n": 2055,
+          "n_items": 2062,
+          "coverage": 0.9966,
+          "unparsed_rate": 0.0034,
+          "chance": 25.0,
+          "task_version": "2.1",
+          "dataset_sha256": "6cca87ac3457",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "reasoning_uz": {
+          "score": 11.61,
+          "ci_low": 6.67,
+          "ci_high": 19.44,
+          "n": 98,
+          "n_items": 100,
+          "coverage": 0.98,
+          "unparsed_rate": 0.02,
+          "chance": 15.6,
+          "task_version": "2.0",
+          "dataset_sha256": "8070ec68a5d9",
+          "provisional": false,
+          "at_or_below_chance": true
+        },
+        "translation_uz": {
+          "score": 26.8,
+          "ci_low": 25.44,
+          "ci_high": 28.34,
+          "n": 800,
+          "n_items": 800,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "fba5fb626edb",
+          "provisional": false,
+          "at_or_below_chance": false
+        }
+      },
+      "runId": "nemotron35-lightning-30b",
+      "runDate": "2026-08-21",
+      "harnessVersion": "2.0.0",
+      "harnessCommit": "unknown",
+      "temperature": 0.0,
+      "provenance": "organiser-run",
+      "rank": 13,
+      "tiedWith": []
     },
     {
       "model": "Qwen3.5 2B",
@@ -746,7 +1042,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 10,
+      "rank": 14,
       "tiedWith": []
     },
     {
@@ -818,246 +1114,8 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 11,
+      "rank": 15,
       "tiedWith": []
-    },
-    {
-      "model": "Gemma 4 31B",
-      "organization": "Google",
-      "license": "gemma",
-      "openWeights": true,
-      "weightsUrl": "https://huggingface.co/google",
-      "quantization": "Q4_K_M",
-      "reasoning": {
-        "label": "no-think",
-        "byTask": {
-          "dtm": "off",
-          "reasoning_uz": "off",
-          "translation_uz": "off"
-        }
-      },
-      "composite": null,
-      "complete": false,
-      "missing": [
-        "reasoning_uz"
-      ],
-      "withheld": {},
-      "scores": {
-        "dtm": {
-          "score": 56.96,
-          "ci_low": 54.81,
-          "ci_high": 59.09,
-          "n": 2061,
-          "n_items": 2062,
-          "coverage": 0.9995,
-          "unparsed_rate": 0.0005,
-          "chance": 25.0,
-          "task_version": "2.1",
-          "dataset_sha256": "6cca87ac3457",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "translation_uz": {
-          "score": 54.57,
-          "ci_low": 53.64,
-          "ci_high": 55.44,
-          "n": 800,
-          "n_items": 800,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "fba5fb626edb",
-          "provisional": false,
-          "at_or_below_chance": false
-        }
-      },
-      "runId": "gemma4-31b",
-      "runDate": "2026-08-21",
-      "harnessVersion": "2.0.0",
-      "harnessCommit": "unknown",
-      "temperature": 0.0,
-      "provenance": "organiser-run",
-      "rank": null
-    },
-    {
-      "model": "Nemotron 3.5 Lightning 30B",
-      "organization": "NVIDIA",
-      "license": "nvidia-open-model",
-      "openWeights": true,
-      "weightsUrl": "https://huggingface.co/nvidia",
-      "quantization": "Q4_K_M",
-      "reasoning": {
-        "label": "no-think",
-        "byTask": {
-          "dtm": "off",
-          "reasoning_uz": "off",
-          "translation_uz": "off"
-        }
-      },
-      "composite": null,
-      "complete": false,
-      "missing": [
-        "reasoning_uz"
-      ],
-      "withheld": {},
-      "scores": {
-        "dtm": {
-          "score": 32.51,
-          "ci_low": 30.52,
-          "ci_high": 34.56,
-          "n": 2055,
-          "n_items": 2062,
-          "coverage": 0.9966,
-          "unparsed_rate": 0.0034,
-          "chance": 25.0,
-          "task_version": "2.1",
-          "dataset_sha256": "6cca87ac3457",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "translation_uz": {
-          "score": 26.8,
-          "ci_low": 25.44,
-          "ci_high": 28.34,
-          "n": 800,
-          "n_items": 800,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "fba5fb626edb",
-          "provisional": false,
-          "at_or_below_chance": false
-        }
-      },
-      "runId": "nemotron35-lightning-30b",
-      "runDate": "2026-08-21",
-      "harnessVersion": "2.0.0",
-      "harnessCommit": "unknown",
-      "temperature": 0.0,
-      "provenance": "organiser-run",
-      "rank": null
-    },
-    {
-      "model": "Qwen3.5 27B",
-      "organization": "Alibaba",
-      "license": "apache-2.0",
-      "openWeights": true,
-      "weightsUrl": "https://huggingface.co/Qwen",
-      "quantization": "Q4_K_M",
-      "reasoning": {
-        "label": "mixed",
-        "byTask": {
-          "dtm": "off",
-          "reasoning_uz": "default",
-          "translation_uz": "off"
-        }
-      },
-      "composite": null,
-      "complete": false,
-      "missing": [
-        "reasoning_uz"
-      ],
-      "withheld": {
-        "reasoning_uz": 0.04
-      },
-      "scores": {
-        "dtm": {
-          "score": 52.42,
-          "ci_low": 50.27,
-          "ci_high": 54.57,
-          "n": 2062,
-          "n_items": 2062,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 25.0,
-          "task_version": "2.1",
-          "dataset_sha256": "3b1168738898",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "translation_uz": {
-          "score": 51.58,
-          "ci_low": 50.75,
-          "ci_high": 52.32,
-          "n": 800,
-          "n_items": 800,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "15238ac010fc",
-          "provisional": false,
-          "at_or_below_chance": false
-        }
-      },
-      "runId": "qwen3.5-27b-20260819T161458Z",
-      "runDate": "2026-08-20",
-      "harnessVersion": "2.0.0",
-      "harnessCommit": "unknown",
-      "temperature": 0.0,
-      "provenance": "organiser-run",
-      "rank": null
-    },
-    {
-      "model": "Qwen3.5 35B",
-      "organization": "Alibaba",
-      "license": "apache-2.0",
-      "openWeights": true,
-      "weightsUrl": "https://huggingface.co/Qwen",
-      "quantization": "Q4_K_M",
-      "reasoning": {
-        "label": "no-think",
-        "byTask": {
-          "dtm": "off",
-          "reasoning_uz": "off",
-          "translation_uz": "off"
-        }
-      },
-      "composite": null,
-      "complete": false,
-      "missing": [
-        "reasoning_uz"
-      ],
-      "withheld": {},
-      "scores": {
-        "dtm": {
-          "score": 47.77,
-          "ci_low": 45.62,
-          "ci_high": 49.93,
-          "n": 2062,
-          "n_items": 2062,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 25.0,
-          "task_version": "2.1",
-          "dataset_sha256": "6cca87ac3457",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "translation_uz": {
-          "score": 50.37,
-          "ci_low": 49.47,
-          "ci_high": 51.24,
-          "n": 800,
-          "n_items": 800,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "fba5fb626edb",
-          "provisional": false,
-          "at_or_below_chance": false
-        }
-      },
-      "runId": "qwen35-35b",
-      "runDate": "2026-08-21",
-      "harnessVersion": "2.0.0",
-      "harnessCommit": "unknown",
-      "temperature": 0.0,
-      "provenance": "organiser-run",
-      "rank": null
     }
   ]
 }

@@ -12,17 +12,17 @@ three tracks and exists only where all three were measured.
 
 | # | Model | Composite | DTM | Reasoning | Translation | Riddle (recall) | Riddle (choice) | Licence |
 |---:|---|---:|---:|---:|---:|---:|---:|---|
-| 1 | Gemma 4 31B | - | 56.96 | - | 54.57 | 25.68 | 76.44 | gemma |
-| 2 | Qwen3.5 27B | - | 52.42 | withheld | 51.58 | 9.37 | 70.69 | apache-2.0 |
+| 1 | Gemma 4 31B | 53.0 | 56.96 | 67.80 | 54.57 | 25.68 | 76.44 | gemma |
+| 2 | Qwen3.5 27B | 52.4 | 52.42 | 73.78 | 51.58 | 9.37 | 70.69 | apache-2.0 |
 | 3 | Qwen3.6 27B | 57.1 | 50.34 | 87.70 | 51.98 | 16.92 | 75.53 | apache-2.0 |
 | 4 | Gemma 4 26B | 42.6 | 48.54 | 52.00 | 53.32 | 12.69 | 60.73 | gemma |
-| 5 | Qwen3.5 35B | - | 47.77 | - | 50.37 | 6.95 | 61.63 | apache-2.0 |
+| 5 | Qwen3.5 35B | 47.2 | 47.77 | 66.89 | 50.37 | 6.95 | 61.63 | apache-2.0 |
 | 6 | Qwen3.8 27B | 49.2 | 45.88 | 73.56 | 51.01 | 10.57 | 64.35 | apache-2.0 |
 | 7 | DiffusionGemma 26B-A4B | - | 43.92 | 44.54 | 49.73 | 11.11 | 60.73 | apache-2.0 |
 | 8 | Gemma 4 12B | 34.9 | 37.99 | 46.13 | 51.33 | 5.14 | 56.50 | gemma |
 | 9 | Qwen3.5 9B | 31.8 | 36.95 | 42.37 | 47.69 | 1.81 | 48.34 | apache-2.0 |
 | 10 | Gemma 4 E4B | 26.5 | 32.83 | 33.93 | 47.39 | 3.32 | 45.62 | gemma |
-| 11 | Nemotron 3.5 Lightning 30B | - | 32.51 | - | 26.80 | 0.00 | 27.79 | nvidia-open-model |
+| 11 | Nemotron 3.5 Lightning 30B | 12.3 | 32.51 | 11.61 | 26.80 | 0.00 | 27.79 | nvidia-open-model |
 | 12 | Qwen3.5 4B | 21.3 | 32.20 | 26.29 | 41.66 | 0.30 | 38.97 | apache-2.0 |
 | 13 | Gemma 4 E2B | 15.6 | 29.53 | 14.15 | 40.89 | 0.00 | 36.86 | gemma |
 | 14 | Qwen3.5 0.8B | 5.4 | 25.86 | 1.42 | 14.92 | 0.00 | 25.69 | apache-2.0 |
@@ -30,8 +30,10 @@ three tracks and exists only where all three were measured.
 
 `-` means not measured. `withheld` means the model answered too few items to score
 honestly, not that it scored zero. Coverage below 50% is never published. Qwen3.5
-27B is still withheld on reasoning at 4% coverage. Gemma 4 26B and Qwen3.8 27B
-have since been re-run, scoring 52.00 at full coverage and 73.56 at 78%. Qwen3.5 0.8B
+Every model now has a reasoning cell. The six that were missing or withheld
+were re-run once the context and GPU placement were corrected, including
+Qwen3.5 27B, whose earlier 100.00 rested on 4 scored items and is now 73.78 on
+82 of them. Qwen3.5 0.8B
 and 2B have DTM and translation on disk but lost those entries from their run
 manifests. DiffusionGemma decodes differently from every other row, explained
 below. The remaining gaps are tracks that were not run.

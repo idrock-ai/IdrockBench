@@ -12,6 +12,7 @@
   "seed": 0,
   "max_tokens": {
     "dtm": 1024,
+    "reasoning_uz": 8192,
     "translation_uz": 1024
   },
   "reasoning": "off",
@@ -19,10 +20,10 @@
   "harness_version": "2.0.0",
   "harness_git_sha": "unknown",
   "python_version": "3.12.3",
-  "platform": "Linux-6.17.0-1029-nvidia-aarch64-with-glibc2.39",
+  "platform": "Linux-6.17.0-1016-gcp-x86_64-with-glibc2.39",
   "package_versions": {},
-  "started_at": "2026-08-21T01:48:31+00:00",
-  "finished_at": "2026-08-21T02:09:33+00:00",
+  "started_at": "2026-08-21T19:44:16+00:00",
+  "finished_at": "2026-08-21T20:52:44+00:00",
   "tasks": {
     "dtm": {
       "task_version": "2.1",
@@ -92,6 +93,62 @@
             "n": 509,
             "n_items": 509,
             "coverage": 1.0
+          }
+        }
+      }
+    },
+    "reasoning_uz": {
+      "task_version": "2.0",
+      "dataset": "reasoning_uz.json",
+      "dataset_sha256": "8070ec68a5d921a06775498584a5bda92ffb773f60b0d41fb1c47d98ba3908d4",
+      "max_tokens": 8192,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 1200,
+      "options": {},
+      "n_items": 100,
+      "n_scored": 74,
+      "metrics": {
+        "primary": 66.89,
+        "accuracy": 66.89,
+        "ci_low": 55.57,
+        "ci_high": 76.55,
+        "n": 74
+      },
+      "diagnostics": {
+        "n_items": 100,
+        "n_scored": 74,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.14,
+        "error_rate": 0.12,
+        "refusal_rate": 0.0,
+        "coverage": 0.74,
+        "strategies": {
+          "bold": 48,
+          "<solution>": 24,
+          "no-match": 14,
+          "last-line": 2
+        },
+        "chance_level": 0.156,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "task": {
+          "spatial": {
+            "accuracy": 56.0,
+            "ci_low": 42.31,
+            "ci_high": 68.84,
+            "n": 50,
+            "n_items": 50,
+            "coverage": 1.0
+          },
+          "zebra_puzzle": {
+            "accuracy": 89.58,
+            "ci_low": 71.53,
+            "ci_high": 96.71,
+            "n": 24,
+            "n_items": 50,
+            "coverage": 0.48
           }
         }
       }

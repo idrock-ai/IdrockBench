@@ -55,20 +55,37 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
     """Rebuild the leaderboard from scratch and write it."""
     runs = load_runs(runs_dir)
 
-    # Most recent run per model wins, but only among runs that measured this
-    # suite. A run scoped to other tasks must not shadow one that measured these:
-    # pulling 28 `zarb-*` riddle runs into runs/ made every model on the core
-    # leaderboard read as incomplete, because those runs are newer and carry no
-    # dtm, reasoning or translation cells at all.
-    wanted = set(suite.tasks)
+    # A model's tracks are spread across several runs by design. The core suite
+    # is measured in one run, riddles in another, instruction following in a
+    # third, and a backfill adds a track months later. Selecting a single run per
+    # model therefore loses whatever the other runs measured: with the riddle
+    # runs present, picking the newest run left every model reading as having no
+    # DTM score at all, because those runs carry no DTM cell.
+    #
+    # So the merge is per task, not per run. Runs arrive newest first, so the
+    # first run that carries a task supplies it, and older measurements of the
+    # same task stay on disk as history.
+    all_tasks = list(dict.fromkeys([*suite.tasks, *suite.reported]))
+    wanted = set(all_tasks)
     latest: dict[str, dict] = {}
     for run in runs:
-        if not wanted & set((run.get("tasks") or {})):
+        entries = run.get("tasks") or {}
+        if not wanted & set(entries):
             continue
-        latest.setdefault(run.get("model", "unknown"), run)
+        model = run.get("model", "unknown")
+        merged = latest.get(model)
+        if merged is None:
+            # The newest run carrying any wanted task supplies the row metadata:
+            # licence, quantisation, harness commit and so on.
+            merged = dict(run)
+            merged["tasks"] = {}
+            latest[model] = merged
+        for name, entry in entries.items():
+            if name in wanted:
+                merged["tasks"].setdefault(name, entry)
 
     chance = {}
-    for name in suite.tasks:
+    for name in all_tasks:
         cfg = TaskConfig.load(name)
         chance[name] = get_task(cfg.task)().chance_level
 
@@ -76,7 +93,7 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
     for model, run in latest.items():
         scores: dict[str, Any] = {}
         withheld: list[tuple[str, float]] = []
-        for name in suite.tasks:
+        for name in all_tasks:
             entry = (run.get("tasks") or {}).get(name)
             if not entry or "metrics" not in entry:
                 continue
@@ -101,12 +118,13 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
                 "at_or_below_chance": bool(diag.get("at_or_below_chance")),
             }
 
-        complete = len(scores) == len(suite.tasks)
+        complete = all(t in scores for t in suite.tasks)
         composite = None
         if complete or not suite.require_complete:
             normalised = [
-                normalize_against_chance(s["score"], chance.get(t, 0.0))
-                for t, s in scores.items() if s["score"] is not None
+                normalize_against_chance(scores[t]["score"], chance.get(t, 0.0))
+                for t in suite.tasks
+                if t in scores and scores[t]["score"] is not None
             ]
             if normalised and (complete or not suite.require_complete):
                 composite = round(sum(normalised) / len(normalised), 2)
@@ -125,7 +143,7 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
             # measures, so it is published on the row rather than buried in the
             # manifest. Per task, because a suite can legitimately suppress
             # reasoning on a knowledge benchmark and require it on a reasoning one.
-            "reasoning": _reasoning_summary(run, suite.tasks),
+            "reasoning": _reasoning_summary(run, all_tasks),
             "composite": composite,
             "complete": complete,
             "missing": [t for t in suite.tasks if t not in scores],
@@ -155,7 +173,7 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
         "tasks": [
             {"id": t, "chance": round(chance.get(t, 0.0) * 100, 1),
              "version": get_task(TaskConfig.load(t).task)().version}
-            for t in suite.tasks
+            for t in all_tasks
         ],
         "notes": {
             **({"status": "No model has been evaluated on this suite yet. Results "

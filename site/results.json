@@ -1,7 +1,7 @@
 {
   "suite": "core",
   "suiteDescription": "Tracks whose numbers are considered publishable. A task joins this suite only once its dataset validates clean and its scoring has golden tests.",
-  "generatedAt": "2026-08-22T03:45:38+00:00",
+  "generatedAt": "2026-08-23T04:51:05+00:00",
   "tasks": [
     {
       "id": "dtm",
@@ -17,6 +17,21 @@
       "id": "translation_uz",
       "chance": 0.0,
       "version": "2.0"
+    },
+    {
+      "id": "ifeval_uz",
+      "chance": 0.0,
+      "version": "2.0"
+    },
+    {
+      "id": "zarbulmasal",
+      "chance": 0.0,
+      "version": "1.0"
+    },
+    {
+      "id": "zarbulmasal_mc",
+      "chance": 25.0,
+      "version": "1.0"
     }
   ],
   "notes": {
@@ -37,10 +52,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 57.07,
+      "composite": 52.32,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -86,18 +104,58 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 73.48,
+          "ci_low": 69.19,
+          "ci_high": 77.37,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 16.92,
+          "ci_low": 13.26,
+          "ci_high": 21.33,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 75.53,
+          "ci_low": 70.62,
+          "ci_high": 79.85,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "qwen3.6-27b-20260820T035322Z",
-      "runDate": "2026-08-20",
+      "runId": "ife-qwen36-27b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
       "rank": 1,
-      "tiedWith": [
-        "Qwen3.5 27B"
-      ]
+      "tiedWith": []
     },
     {
       "model": "Gemma 4 31B",
@@ -111,10 +169,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 53.01,
+      "composite": 52.04,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -160,10 +221,52 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 75.51,
+          "ci_low": 71.3,
+          "ci_high": 79.27,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 25.68,
+          "ci_low": 21.27,
+          "ci_high": 30.65,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 76.44,
+          "ci_low": 71.58,
+          "ci_high": 80.69,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "gemma4-31b",
-      "runDate": "2026-08-21",
+      "runId": "ife-gemma4-31b",
+      "runDate": "2026-08-23",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
@@ -183,10 +286,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 52.36,
+      "composite": 48.48,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -232,18 +338,58 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 75.96,
+          "ci_low": 71.77,
+          "ci_high": 79.69,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 9.37,
+          "ci_low": 6.68,
+          "ci_high": 12.99,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 70.69,
+          "ci_low": 65.58,
+          "ci_high": 75.34,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "qwen3.5-27b-20260819T161458Z",
-      "runDate": "2026-08-21",
+      "runId": "ife-qwen35-27b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
       "rank": 3,
-      "tiedWith": [
-        "Qwen3.6 27B"
-      ]
+      "tiedWith": []
     },
     {
       "model": "Qwen3.8 27B",
@@ -257,10 +403,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 49.17,
+      "composite": 45.69,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -306,10 +455,52 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 70.34,
+          "ci_low": 65.93,
+          "ci_high": 74.39,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 10.57,
+          "ci_low": 7.7,
+          "ci_high": 14.35,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 64.35,
+          "ci_low": 59.05,
+          "ci_high": 69.32,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "qwen38-27b",
-      "runDate": "2026-08-21",
+      "runId": "ife-qwen38-27b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
@@ -331,10 +522,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 47.17,
+      "composite": 42.72,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -380,10 +574,52 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 65.17,
+          "ci_low": 60.63,
+          "ci_high": 69.45,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 6.95,
+          "ci_low": 4.67,
+          "ci_high": 10.21,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 61.63,
+          "ci_low": 56.29,
+          "ci_high": 66.71,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "qwen35-35b",
-      "runDate": "2026-08-21",
+      "runId": "ife-qwen35-35b",
+      "runDate": "2026-08-23",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
@@ -405,10 +641,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 42.61,
+      "composite": 42.22,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -454,87 +693,57 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 70.56,
+          "ci_low": 66.17,
+          "ci_high": 74.61,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 12.69,
+          "ci_low": 9.53,
+          "ci_high": 16.71,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 60.73,
+          "ci_low": 55.37,
+          "ci_high": 65.83,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "gemma-4-26b-20260819T145922Z",
-      "runDate": "2026-08-21",
+      "runId": "ife-gemma4-26b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
       "rank": 6,
-      "tiedWith": []
-    },
-    {
-      "model": "DiffusionGemma 26B-A4B",
-      "organization": "Google",
-      "license": "apache-2.0",
-      "openWeights": true,
-      "weightsUrl": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-      "quantization": "bf16",
-      "reasoning": {
-        "label": "mixed",
-        "byTask": {
-          "dtm": "default",
-          "reasoning_uz": "off",
-          "translation_uz": "default"
-        }
-      },
-      "composite": 37.04,
-      "complete": true,
-      "missing": [],
-      "withheld": {},
-      "scores": {
-        "dtm": {
-          "score": 44.4,
-          "ci_low": 42.26,
-          "ci_high": 46.55,
-          "n": 2061,
-          "n_items": 2062,
-          "coverage": 0.9995,
-          "unparsed_rate": 0.0005,
-          "chance": 25.0,
-          "task_version": "2.1",
-          "dataset_sha256": "6cca87ac3457",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "reasoning_uz": {
-          "score": 45.62,
-          "ci_low": 36.21,
-          "ci_high": 55.37,
-          "n": 100,
-          "n_items": 100,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 15.6,
-          "task_version": "2.0",
-          "dataset_sha256": "8070ec68a5d9",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "translation_uz": {
-          "score": 49.68,
-          "ci_low": 48.87,
-          "ci_high": 50.51,
-          "n": 800,
-          "n_items": 800,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "fba5fb626edb",
-          "provisional": false,
-          "at_or_below_chance": false
-        }
-      },
-      "runId": "diffusiongemma-26b-r3",
-      "runDate": "2026-08-21",
-      "harnessVersion": "2.0.0",
-      "harnessCommit": "unknown",
-      "temperature": 0.0,
-      "provenance": "organiser-run",
-      "rank": 7,
       "tiedWith": []
     },
     {
@@ -549,10 +758,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 34.94,
+      "composite": 35.33,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -598,15 +810,57 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 66.67,
+          "ci_low": 62.16,
+          "ci_high": 70.89,
+          "n": 534,
+          "n_items": 535,
+          "coverage": 0.9981,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 5.14,
+          "ci_low": 3.23,
+          "ci_high": 8.07,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 56.5,
+          "ci_low": 51.11,
+          "ci_high": 61.73,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "gemma4-12b",
-      "runDate": "2026-08-20",
+      "runId": "ife-gemma4-12b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 8,
+      "rank": 7,
       "tiedWith": []
     },
     {
@@ -621,10 +875,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 31.78,
+      "composite": 30.67,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -670,15 +927,57 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 56.18,
+          "ci_low": 51.54,
+          "ci_high": 60.72,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 1.81,
+          "ci_low": 0.83,
+          "ci_high": 3.9,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 48.34,
+          "ci_low": 43.0,
+          "ci_high": 53.71,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "qwen35-9b",
-      "runDate": "2026-08-20",
+      "runId": "ife-qwen35-9b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 9,
+      "rank": 8,
       "tiedWith": []
     },
     {
@@ -693,10 +992,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 26.52,
+      "composite": 29.47,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -742,15 +1044,57 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 64.49,
+          "ci_low": 59.94,
+          "ci_high": 68.8,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 3.32,
+          "ci_low": 1.87,
+          "ci_high": 5.85,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 45.62,
+          "ci_low": 40.33,
+          "ci_high": 51.0,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "gemma4-e4b",
-      "runDate": "2026-08-19",
+      "runId": "ife-gemma4-e4b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 10,
+      "rank": 9,
       "tiedWith": []
     },
     {
@@ -765,10 +1109,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 21.31,
+      "composite": 22.37,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -814,15 +1161,57 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 47.64,
+          "ci_low": 43.04,
+          "ci_high": 52.28,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 0.3,
+          "ci_low": 0.05,
+          "ci_high": 1.69,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 38.97,
+          "ci_low": 33.87,
+          "ci_high": 44.32,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "qwen35-4b",
-      "runDate": "2026-08-19",
+      "runId": "ife-qwen35-4b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 11,
+      "rank": 10,
       "tiedWith": [
         "Gemma 4 E2B"
       ]
@@ -839,10 +1228,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 15.64,
+      "composite": 19.95,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -888,90 +1280,60 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
-        }
-      },
-      "runId": "gemma4-e2b",
-      "runDate": "2026-08-19",
-      "harnessVersion": "2.0.0",
-      "harnessCommit": "unknown",
-      "temperature": 0.0,
-      "provenance": "organiser-run",
-      "rank": 12,
-      "tiedWith": [
-        "Qwen3.5 4B"
-      ]
-    },
-    {
-      "model": "Nemotron 3.5 Lightning 30B",
-      "organization": "NVIDIA",
-      "license": "nvidia-open-model",
-      "openWeights": true,
-      "weightsUrl": "https://huggingface.co/nvidia",
-      "quantization": "Q4_K_M",
-      "reasoning": {
-        "label": "no-think",
-        "byTask": {
-          "dtm": "off",
-          "reasoning_uz": "off",
-          "translation_uz": "off"
-        }
-      },
-      "composite": 12.27,
-      "complete": true,
-      "missing": [],
-      "withheld": {},
-      "scores": {
-        "dtm": {
-          "score": 32.51,
-          "ci_low": 30.52,
-          "ci_high": 34.56,
-          "n": 2055,
-          "n_items": 2062,
-          "coverage": 0.9966,
-          "unparsed_rate": 0.0034,
-          "chance": 25.0,
-          "task_version": "2.1",
-          "dataset_sha256": "6cca87ac3457",
-          "provisional": false,
-          "at_or_below_chance": false
         },
-        "reasoning_uz": {
-          "score": 11.61,
-          "ci_low": 6.67,
-          "ci_high": 19.44,
-          "n": 98,
-          "n_items": 100,
-          "coverage": 0.98,
-          "unparsed_rate": 0.02,
-          "chance": 15.6,
-          "task_version": "2.0",
-          "dataset_sha256": "8070ec68a5d9",
-          "provisional": false,
-          "at_or_below_chance": true
-        },
-        "translation_uz": {
-          "score": 26.8,
-          "ci_low": 25.44,
-          "ci_high": 28.34,
-          "n": 800,
-          "n_items": 800,
+        "ifeval_uz": {
+          "score": 52.81,
+          "ci_low": 48.17,
+          "ci_high": 57.4,
+          "n": 535,
+          "n_items": 535,
           "coverage": 1.0,
           "unparsed_rate": 0.0,
           "chance": 0.0,
           "task_version": "2.0",
-          "dataset_sha256": "fba5fb626edb",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 1.15,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 36.86,
+          "ci_low": 31.84,
+          "ci_high": 42.18,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
           "provisional": false,
           "at_or_below_chance": false
         }
       },
-      "runId": "nemotron35-lightning-30b",
-      "runDate": "2026-08-21",
+      "runId": "ife-gemma4-e2b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 13,
-      "tiedWith": []
+      "rank": 11,
+      "tiedWith": [
+        "Qwen3.5 4B"
+      ]
     },
     {
       "model": "Qwen3.5 2B",
@@ -985,10 +1347,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 10.38,
+      "composite": 13.19,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -1034,15 +1399,174 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 34.83,
+          "ci_low": 30.55,
+          "ci_high": 39.37,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 1.15,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 21.75,
+          "ci_low": 17.65,
+          "ci_high": 26.51,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": true
         }
       },
-      "runId": "qwen35-2b",
-      "runDate": "2026-08-20",
+      "runId": "ife-qwen35-2b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 14,
+      "rank": 12,
+      "tiedWith": []
+    },
+    {
+      "model": "Nemotron 3.5 Lightning 30B",
+      "organization": "NVIDIA",
+      "license": "nvidia-open-model",
+      "openWeights": true,
+      "weightsUrl": "https://huggingface.co/nvidia",
+      "quantization": "Q4_K_M",
+      "reasoning": {
+        "label": "no-think",
+        "byTask": {
+          "dtm": "off",
+          "reasoning_uz": "off",
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
+        }
+      },
+      "composite": 12.94,
+      "complete": true,
+      "missing": [],
+      "withheld": {},
+      "scores": {
+        "dtm": {
+          "score": 32.51,
+          "ci_low": 30.52,
+          "ci_high": 34.56,
+          "n": 2055,
+          "n_items": 2062,
+          "coverage": 0.9966,
+          "unparsed_rate": 0.0034,
+          "chance": 25.0,
+          "task_version": "2.1",
+          "dataset_sha256": "6cca87ac3457",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "reasoning_uz": {
+          "score": 11.61,
+          "ci_low": 6.67,
+          "ci_high": 19.44,
+          "n": 98,
+          "n_items": 100,
+          "coverage": 0.98,
+          "unparsed_rate": 0.02,
+          "chance": 15.6,
+          "task_version": "2.0",
+          "dataset_sha256": "8070ec68a5d9",
+          "provisional": false,
+          "at_or_below_chance": true
+        },
+        "translation_uz": {
+          "score": 26.8,
+          "ci_low": 25.44,
+          "ci_high": 28.34,
+          "n": 800,
+          "n_items": 800,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "fba5fb626edb",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 27.87,
+          "ci_low": 23.9,
+          "ci_high": 32.21,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 1.15,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 27.79,
+          "ci_low": 23.24,
+          "ci_high": 32.85,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        }
+      },
+      "runId": "ife-nemotron35-lightning-30b",
+      "runDate": "2026-08-22",
+      "harnessVersion": "2.0.0",
+      "harnessCommit": "unknown",
+      "temperature": 0.0,
+      "provenance": "organiser-run",
+      "rank": 13,
       "tiedWith": []
     },
     {
@@ -1057,10 +1581,13 @@
         "byTask": {
           "dtm": "off",
           "reasoning_uz": "off",
-          "translation_uz": "off"
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
         }
       },
-      "composite": 5.36,
+      "composite": 9.15,
       "complete": true,
       "missing": [],
       "withheld": {},
@@ -1106,16 +1633,162 @@
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
           "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 29.66,
+          "ci_low": 25.61,
+          "ci_high": 34.07,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 1.15,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 25.69,
+          "ci_low": 21.25,
+          "ci_high": 30.69,
+          "n": 327,
+          "n_items": 331,
+          "coverage": 0.9879,
+          "unparsed_rate": 0.003,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
         }
       },
-      "runId": "qwen35-0.8b",
-      "runDate": "2026-08-20",
+      "runId": "ife-qwen35-0.8b",
+      "runDate": "2026-08-22",
       "harnessVersion": "2.0.0",
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 15,
+      "rank": 14,
       "tiedWith": []
+    },
+    {
+      "model": "DiffusionGemma 26B-A4B",
+      "organization": "Google",
+      "license": "apache-2.0",
+      "openWeights": true,
+      "weightsUrl": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+      "quantization": "bf16",
+      "reasoning": {
+        "label": "mixed",
+        "byTask": {
+          "dtm": "default",
+          "reasoning_uz": "off",
+          "translation_uz": "default",
+          "ifeval_uz": "default",
+          "zarbulmasal": "default",
+          "zarbulmasal_mc": "default"
+        }
+      },
+      "composite": null,
+      "complete": false,
+      "missing": [
+        "ifeval_uz"
+      ],
+      "withheld": {},
+      "scores": {
+        "dtm": {
+          "score": 44.4,
+          "ci_low": 42.26,
+          "ci_high": 46.55,
+          "n": 2061,
+          "n_items": 2062,
+          "coverage": 0.9995,
+          "unparsed_rate": 0.0005,
+          "chance": 25.0,
+          "task_version": "2.1",
+          "dataset_sha256": "6cca87ac3457",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "reasoning_uz": {
+          "score": 45.62,
+          "ci_low": 36.21,
+          "ci_high": 55.37,
+          "n": 100,
+          "n_items": 100,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 15.6,
+          "task_version": "2.0",
+          "dataset_sha256": "8070ec68a5d9",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "translation_uz": {
+          "score": 49.68,
+          "ci_low": 48.87,
+          "ci_high": 50.51,
+          "n": 800,
+          "n_items": 800,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "fba5fb626edb",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 11.11,
+          "ci_low": 8.02,
+          "ci_high": 15.19,
+          "n": 297,
+          "n_items": 331,
+          "coverage": 0.8973,
+          "unparsed_rate": 0.1027,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 60.73,
+          "ci_low": 55.37,
+          "ci_high": 65.83,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        }
+      },
+      "runId": "zarb-mc-diffusiongemma-26b",
+      "runDate": "2026-08-21",
+      "harnessVersion": "2.0.0",
+      "harnessCommit": "unknown",
+      "temperature": 0.0,
+      "provenance": "organiser-run",
+      "rank": null
     }
   ]
 }

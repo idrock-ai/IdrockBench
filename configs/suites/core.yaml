@@ -7,4 +7,14 @@ tasks:
   - dtm
   - reasoning_uz
   - translation_uz
+  - ifeval_uz
+  - zarbulmasal
 require_complete: true
+
+# Published beside the others, but kept out of the composite. The multiple
+# choice riddles are the same 331 items as the free-text ones, so counting both
+# would give riddles a third of the composite where every other subject gets a
+# fifth. The pair is worth publishing because the gap between them is the
+# result, not because both belong in an average.
+reported:
+  - zarbulmasal_mc

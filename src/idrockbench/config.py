@@ -128,6 +128,11 @@ class SuiteConfig:
     #: Averaging over whatever subset a model happens to have makes two rows
     #: incomparable while presenting them as a ranking.
     require_complete: bool = True
+    #: Published on the leaderboard but excluded from the composite. For a track
+    #: that measures the same items a composited one already covers: the riddle
+    #: set is scored both as free recall and as multiple choice, and counting
+    #: both would give riddles double the weight of every other subject.
+    reported: list[str] = field(default_factory=list)
 
     @classmethod
     def load(cls, name: str) -> SuiteConfig:

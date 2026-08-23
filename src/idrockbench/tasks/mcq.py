@@ -13,7 +13,7 @@ from typing import Any
 
 from ..core import Item
 from ..extraction import CHOICE_LETTERS, Extraction, extract_choice
-from ..text.normalize import normalize, normalize_display
+from ..text.normalize import normalize_display
 from .base import Task
 
 

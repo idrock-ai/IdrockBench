@@ -49,13 +49,10 @@ jobs:
           print('pipeline ok:', len(board['models']), 'model(s)')
           "
 
-      # The datasets in data/ must be reproducible from the builder. If this
-      # diff is non-empty, someone hand-edited a dataset.
-      - name: Datasets are reproducible from the builder
-        run: |
-          python tools/build_datasets.py
-          git diff --exit-code -- data/ || {
-            echo "::error::data/ differs from tools/build_datasets.py output."
-            echo "Datasets are built, not hand-edited: change the builder and re-run."
-            exit 1
-          }
+      # Datasets used to be checked by rebuilding them from tools/build_datasets.py
+      # and diffing. That builder and the raw sources under data/sources/ were
+      # deleted once the datasets were final, so the files in data/ are now the
+      # record rather than an output. Integrity is pinned by content hash in
+      # tests/test_datasets.py instead, which the pytest step above already runs:
+      # an accidental edit fails, a deliberate one updates the hash in the same
+      # commit and is visible in review.

@@ -7,10 +7,14 @@ requires-python = ">=3.11"
 license = { file = "LICENSE" }
 authors = [{ name = "IDROCK AI Excellence Center, New Uzbekistan University", email = "idrock@newuu.uz" }]
 keywords = ["uzbek", "llm", "benchmark", "evaluation", "low-resource", "nlp"]
+# PyPI only accepts classifiers from its own list, and that list has no entry
+# for Uzbek, so the language belongs in keywords instead. Declaring
+# "Natural Language :: Uzbek" made hatchling reject the metadata and the package
+# uninstallable, which failed every CI run at the install step. The keywords
+# field above already carries it.
 classifiers = [
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
-    "Natural Language :: Uzbek",
 ]
 
 dependencies = [

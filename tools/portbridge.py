@@ -14,6 +14,7 @@ results.
 
 from __future__ import annotations
 
+import contextlib
 import socket
 import sys
 import threading
@@ -30,10 +31,8 @@ def pipe(a: socket.socket, b: socket.socket) -> None:
         pass
     finally:
         for s in (a, b):
-            try:
+            with contextlib.suppress(OSError):
                 s.shutdown(socket.SHUT_RDWR)
-            except OSError:
-                pass
             s.close()
 
 

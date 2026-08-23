@@ -13,7 +13,7 @@ from ..core import Item, ItemResult
 from ..extraction import Extraction, extract_last_line
 from ..metrics.translation import bootstrap_ci, corpus_scores, sentence_chrf
 from ..registry import register_task
-from ..text.normalize import normalize, normalize_display
+from ..text.normalize import normalize
 from .base import Task
 
 LANGUAGE_NAMES = {

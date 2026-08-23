@@ -106,7 +106,7 @@ def repair_foreign(text: str) -> tuple[str, int]:
 
 
 def canonicalise(text: str) -> tuple[str, int]:
-    """Put every remaining apostrophe on the right codepoint for its position.
+    r"""Put every remaining apostrophe on the right codepoint for its position.
 
     The DTM source used ASCII throughout — ``O'zbekiston``, ``bo'lgan``,
     ``ma'lumot`` — so the file mixes ASCII with U+02BB for the same digraph.
@@ -116,7 +116,7 @@ def canonicalise(text: str) -> tuple[str, int]:
     out = normalize_display(text)
     if out == text:
         return text, 0
-    changed = sum(1 for a, b in zip(text, out) if a != b) or 1
+    changed = sum(1 for a, b in zip(text, out, strict=False) if a != b) or 1
     return out, changed
 
 

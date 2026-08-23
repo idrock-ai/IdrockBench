@@ -151,7 +151,7 @@ def test_response_language_scores_without_localised_kwargs():
     """The kwarg is an ISO 639-1 code — `hi` means Hindi whatever language the
     prompt is written in. Requiring an Uzbek "translation" of it excluded 31
     constraints that needed no translation at all."""
-    from idrockbench.tasks._ifeval_checkers import Disposition, REGISTRY
+    from idrockbench.tasks._ifeval_checkers import REGISTRY, Disposition
 
     checker = REGISTRY["language:response_language"]
     assert checker.disposition is not Disposition.NEEDS_LOCALE
@@ -183,7 +183,7 @@ def test_ifeval_coverage_does_not_regress():
     """Coverage is the number that decides whether the track is publishable, so
     a change that quietly excludes more constraints must fail here."""
     from idrockbench.data.loader import load
-    from idrockbench.tasks._ifeval_checkers import Disposition, REGISTRY
+    from idrockbench.tasks._ifeval_checkers import REGISTRY, Disposition
 
     rows = load("ifeval_uz.json").rows
     total = scored = 0
@@ -204,3 +204,43 @@ def test_ifeval_coverage_does_not_regress():
     # moving on its own would mean rows appeared or vanished unnoticed.
     assert total == 822
     assert scored / total >= 0.736, f"coverage regressed to {scored / total:.1%}"
+
+
+#: Every dataset, by content hash. The sources these were built from were
+#: deleted once the datasets were final, so `tools/build_datasets.py` can no
+#: longer regenerate them and the files themselves are now the record.
+#:
+#: That makes an accidental edit unrecoverable, which is what this guards. A
+#: deliberate change updates the hash here in the same commit and shows up in
+#: review as a dataset change rather than as a silently different number.
+DATASET_SHA256 = {
+    "dtm_public.json": "6cca87ac3457631c0e33ac770cdb19f774f9c403b8fca2ac65001dc109b50eed",
+    "dtm_heldout.json": "840e5d6c7b3ce449af13517ee103c7fdd8aa023c7908beecb6f392e83d879323",
+    "ifeval_uz.json": "e3d301f09160074fd9a8b081188a5b9b85783643535aa8b779f6e488bd9b6d6a",
+    "mmlu_pro_uz.json": "8c51586df66150244f97a5a2726f2645a1eeaf255343a6ebd8a92f462303fdf1",
+    "reasoning_uz.json": "8070ec68a5d921a06775498584a5bda92ffb773f60b0d41fb1c47d98ba3908d4",
+    "translation_flores_devtest.json":
+        "fba5fb626edbbd793b19c97b5f7c6e4ca336a548f5908eba4de123d1ceb5ca54",
+    "zarbulmasal.json": "dc5cdb83b8b04adf26ac2343e4bc292b6be94a06a50cd9185349da773910a0a5",
+}
+
+
+@pytest.mark.parametrize("name", sorted(DATASET_SHA256))
+def test_dataset_content_is_pinned(name):
+    """A published score cites the hash of the data it was measured on. If a
+    dataset changes without that hash changing in the same commit, every
+    manifest in runs/ now cites a file that no longer exists."""
+    from idrockbench.data.loader import load
+
+    assert load(name).sha256 == DATASET_SHA256[name], (
+        f"{name} changed. If deliberate, update DATASET_SHA256 and re-score the "
+        f"affected runs so their manifests match."
+    )
+
+
+def test_every_task_dataset_is_pinned():
+    """A new dataset must be added to the map above rather than escaping it."""
+    from idrockbench.config import TaskConfig, list_configs
+
+    used = {TaskConfig.load(n).dataset for n in list_configs("tasks")}
+    assert used <= set(DATASET_SHA256), f"unpinned: {sorted(used - set(DATASET_SHA256))}"

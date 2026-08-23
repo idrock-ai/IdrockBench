@@ -180,3 +180,127 @@ class TestThinCellsAreWithheld:
         assert "reasoning_uz" not in row["scores"], "7%-coverage cell must be withheld"
         assert row["withheld"]["reasoning_uz"] == 0.07
         assert row["composite"] is None, "an incomplete row gets no composite"
+
+
+def test_markdown_and_site_cannot_disagree(tmp_path):
+    """The two published views come from one object, so a number cannot appear
+    differently in each. They did: the markdown table was maintained by hand
+    while results.json was generated, and when the suite widened from three
+    tracks to five the site recomputed its composites while the markdown kept
+    the old ones."""
+    import json
+
+    from idrockbench.config import SuiteConfig
+    from idrockbench.report import build_leaderboard, render_markdown
+
+    run = tmp_path / "runs" / "m"
+    run.mkdir(parents=True)
+    (run / "manifest.json").write_text(json.dumps({
+        "run_id": "m", "model": "M", "license": "apache-2.0", "tasks": {
+            "dtm": {"metrics": {"primary": 48.5, "ci_low": 46.4, "ci_high": 50.7},
+                    "diagnostics": {"coverage": 1.0}, "n_scored": 2060, "n_items": 2062},
+            "translation_uz": {"metrics": {"primary": 51.0, "ci_low": 50.1, "ci_high": 51.9},
+                               "diagnostics": {"coverage": 1.0}, "n_scored": 800,
+                               "n_items": 800},
+        },
+    }))
+    suite = SuiteConfig(name="t", tasks=["dtm", "translation_uz"])
+    board = build_leaderboard(tmp_path / "runs", suite, tmp_path / "out.json")
+    table = render_markdown(board)
+
+    row = board["models"][0]
+    assert f"{row['composite']:.1f}" in table, "composite differs between the two views"
+    for task, cell in row["scores"].items():
+        assert f"{cell['score']:.2f}" in table, f"{task} differs between the two views"
+
+
+def test_markdown_keeps_the_prose_around_the_table(tmp_path):
+    """The commentary explains what the numbers mean and is written by a person.
+    Regenerating the table must not delete it."""
+    import json
+
+    from idrockbench.config import SuiteConfig
+    from idrockbench.report import build_leaderboard, write_markdown
+
+    run = tmp_path / "runs" / "m"
+    run.mkdir(parents=True)
+    (run / "manifest.json").write_text(json.dumps({
+        "run_id": "m", "model": "M", "license": "mit", "tasks": {
+            "dtm": {"metrics": {"primary": 40.0, "ci_low": 38.0, "ci_high": 42.0},
+                    "diagnostics": {"coverage": 1.0}, "n_scored": 100, "n_items": 100},
+        },
+    }))
+    doc = tmp_path / "LEADERBOARD.md"
+    doc.write_text("# Leaderboard\n\nPreamble.\n\n| # | Model | Composite | DTM | Licence |\n"
+                   "|---:|---|---:|---:|---|\n| 1 | old | 1.0 | 1.00 | x |\n\n"
+                   "## Why this matters\n\nKeep me.\n", encoding="utf-8")
+
+    board = build_leaderboard(tmp_path / "runs", SuiteConfig(name="t", tasks=["dtm"]),
+                              tmp_path / "out.json")
+    write_markdown(board, doc)
+    text = doc.read_text(encoding="utf-8")
+
+    assert "Preamble." in text and "Keep me." in text
+    assert "## Why this matters" in text
+    assert "| 1 | old |" not in text, "the stale table survived"
+    assert "40.00" in text
+
+
+def test_replicates_are_averaged_not_overwritten(tmp_path):
+    """A stochastic model is run several times because one pass is a draw, not a
+    value. Publishing whichever pass ran last reports a sample as a measurement:
+    DiffusionGemma's last DTM pass scored 44.40 where the mean of three is
+    43.92."""
+    import json
+
+    from idrockbench.config import SuiteConfig
+    from idrockbench.report import build_leaderboard
+
+    runs = tmp_path / "runs"
+    for i, score in enumerate([43.45, 43.91, 44.40], start=1):
+        d = runs / f"m-r{i}"
+        d.mkdir(parents=True)
+        (d / "manifest.json").write_text(json.dumps({
+            "run_id": f"m-r{i}", "model": "M", "license": "apache-2.0",
+            "finished_at": f"2026-08-2{i}T00:00:00+00:00",
+            "tasks": {"dtm": {
+                "metrics": {"primary": score, "ci_low": score - 2, "ci_high": score + 2},
+                "diagnostics": {"coverage": 1.0}, "n_scored": 2062, "n_items": 2062,
+                "task_version": "2.1", "dataset_sha256": "abc123",
+            }},
+        }))
+    board = build_leaderboard(runs, SuiteConfig(name="t", tasks=["dtm"]),
+                              tmp_path / "out.json")
+    cell = board["models"][0]["scores"]["dtm"]
+    assert cell["score"] == 43.92, "published figure is not the mean of the passes"
+    assert cell["replicates"] == 3
+    assert cell["replicate_range"] == [43.45, 44.4]
+
+
+def test_a_rerun_on_different_data_supersedes_rather_than_averages(tmp_path):
+    """Re-measuring after a fix is not replication. Averaging a corrected run
+    with the broken one it replaced would carry the defect into the number."""
+    import json
+
+    from idrockbench.config import SuiteConfig
+    from idrockbench.report import build_leaderboard
+
+    runs = tmp_path / "runs"
+    for name, score, sha, when in [("old", 100.0, "old_sha", "2026-08-01T00:00:00+00:00"),
+                                   ("new", 73.78, "new_sha", "2026-08-22T00:00:00+00:00")]:
+        d = runs / f"m-{name}"
+        d.mkdir(parents=True)
+        (d / "manifest.json").write_text(json.dumps({
+            "run_id": f"m-{name}", "model": "M", "license": "apache-2.0",
+            "finished_at": when,
+            "tasks": {"dtm": {
+                "metrics": {"primary": score, "ci_low": score - 2, "ci_high": score + 2},
+                "diagnostics": {"coverage": 1.0}, "n_scored": 100, "n_items": 100,
+                "task_version": "2.1", "dataset_sha256": sha,
+            }},
+        }))
+    board = build_leaderboard(runs, SuiteConfig(name="t", tasks=["dtm"]),
+                              tmp_path / "out.json")
+    cell = board["models"][0]["scores"]["dtm"]
+    assert cell["score"] == 73.78, "the superseded run leaked into the score"
+    assert "replicates" not in cell

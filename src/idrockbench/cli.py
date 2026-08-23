@@ -23,7 +23,7 @@ from .config import ModelConfig, SuiteConfig, TaskConfig, list_configs
 from .core import RunManifest, git_sha
 from .data.loader import REPO_ROOT, load
 from .registry import available_providers, available_tasks, get_provider, get_task
-from .report import build_leaderboard, summarise_run
+from .report import build_leaderboard, summarise_run, write_markdown
 from .runner import evaluate_task, rescore_task
 
 RUNS_DIR = REPO_ROOT / "runs"
@@ -290,7 +290,11 @@ def cmd_report(args: argparse.Namespace) -> int:
     suite = SuiteConfig.load(args.suite)
     out = Path(args.output) if args.output else REPO_ROOT / "site" / "results.json"
     board = build_leaderboard(RUNS_DIR, suite, out)
-    print(f"{len(board['models'])} model(s) -> {out}")
+    # The markdown table and the site read the same object. Assembling either by
+    # hand is how they came to show different composites for the same models.
+    md = Path(args.markdown) if args.markdown else REPO_ROOT / "LEADERBOARD.md"
+    write_markdown(board, md)
+    print(f"{len(board['models'])} model(s) -> {out} and {md.name}")
     for row in board["models"]:
         composite = row.get("composite")
         label = f"{composite:.1f}" if composite is not None else "  — (incomplete)"
@@ -340,7 +344,8 @@ def main(argv: list[str] | None = None) -> int:
 
     p = sub.add_parser("report", help="build the leaderboard from runs/")
     p.add_argument("--suite", default="core")
-    p.add_argument("--output")
+    p.add_argument("--output", help="results.json path (default site/results.json)")
+    p.add_argument("--markdown", help="markdown table path (default LEADERBOARD.md)")
     p.set_defaults(fn=cmd_report)
 
     p = sub.add_parser("show", help="summarise one run")

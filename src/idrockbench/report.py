@@ -51,6 +51,42 @@ def load_runs(runs_dir: Path) -> list[dict[str, Any]]:
     return runs
 
 
+def _aggregate(entries: list[dict[str, Any]]) -> dict[str, Any]:
+    """Combine repeated measurements of one task into a single cell.
+
+    Runs arrive newest first. A model measured once returns that measurement
+    unchanged, and a model re-measured after a fix returns the newest, because
+    the later run supersedes the earlier one.
+
+    Repeated runs over the *same* dataset and task version are something else:
+    replicates. A model that decodes stochastically gives a different answer each
+    pass, so one pass is a draw rather than a value, and the published figure is
+    the mean of the passes with their observed range beside it. Publishing
+    whichever pass happened to run last would report a sample as if it were a
+    measurement, which for DiffusionGemma meant 44.40 on DTM where the mean of
+    three passes is 43.92.
+    """
+    newest = entries[0]
+    key = (newest.get("dataset_sha256"), newest.get("task_version"))
+    same = [e for e in entries
+            if (e.get("dataset_sha256"), e.get("task_version")) == key
+            and (e.get("metrics") or {}).get("primary") is not None]
+    if len(same) < 2:
+        return newest
+
+    cell = dict(newest)
+    cell["metrics"] = dict(newest.get("metrics") or {})
+    scores = [e["metrics"]["primary"] for e in same]
+    cell["metrics"]["primary"] = round(sum(scores) / len(scores), 2)
+    for bound in ("ci_low", "ci_high"):
+        vals = [(e.get("metrics") or {}).get(bound) for e in same]
+        if all(v is not None for v in vals):
+            cell["metrics"][bound] = round(sum(vals) / len(vals), 2)
+    cell["replicates"] = len(same)
+    cell["replicate_range"] = [round(min(scores), 2), round(max(scores), 2)]
+    return cell
+
+
 def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[str, Any]:
     """Rebuild the leaderboard from scratch and write it."""
     runs = load_runs(runs_dir)
@@ -82,7 +118,11 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
             latest[model] = merged
         for name, entry in entries.items():
             if name in wanted:
-                merged["tasks"].setdefault(name, entry)
+                merged.setdefault("_seen", {}).setdefault(name, []).append(entry)
+
+    for merged in latest.values():
+        merged["tasks"] = {name: _aggregate(entries)
+                           for name, entries in merged.pop("_seen", {}).items()}
 
     chance = {}
     for name in all_tasks:
@@ -117,6 +157,11 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
                 "provisional": coverage < COVERAGE_FLOOR,
                 "at_or_below_chance": bool(diag.get("at_or_below_chance")),
             }
+            # Present only where a model was measured more than once, so a
+            # reader can see the figure is a mean and how far the passes spread.
+            if entry.get("replicates"):
+                scores[name]["replicates"] = entry["replicates"]
+                scores[name]["replicate_range"] = entry["replicate_range"]
 
         complete = all(t in scores for t in suite.tasks)
         composite = None
@@ -281,3 +326,81 @@ def summarise_run(run_dir: Path) -> str:
         if d.get("at_or_below_chance"):
             lines.append(f"  {'':16s} ⚠ at or below the {d.get('chance_level', 0):.0%} chance level")
     return "\n".join(lines)
+
+
+#: Column headings for the markdown leaderboard. A task with no entry here still
+#: appears, under its task id, so adding a track cannot silently drop a column.
+TASK_LABELS = {
+    "dtm": "DTM",
+    "reasoning_uz": "Reasoning",
+    "translation_uz": "Translation",
+    "ifeval_uz": "Instructions",
+    "zarbulmasal": "Riddle (recall)",
+    "zarbulmasal_mc": "Riddle (choice)",
+    "business_uz": "Business",
+    "dtm_heldout": "DTM held out",
+}
+
+
+def render_markdown(board: dict[str, Any]) -> str:
+    """Render the leaderboard as markdown, from the same object the site reads.
+
+    Written because the two drifted. The markdown table was assembled by hand
+    while ``results.json`` was generated, so when the suite widened from three
+    tracks to five the site recomputed its composites and the markdown kept the
+    old ones: the same models, the same per-task cells, two different rankings.
+    A published table that disagrees with the published data is worse than
+    having only one of them.
+
+    Both now come from one ``build_leaderboard`` call, so they cannot disagree.
+    """
+    tasks = [t["id"] for t in board.get("tasks", [])]
+    labels = [TASK_LABELS.get(t, t) for t in tasks]
+
+    def cell(model: dict[str, Any], task: str) -> str:
+        score = (model.get("scores") or {}).get(task)
+        if score and score.get("score") is not None:
+            return f"{score['score']:.2f}"
+        return "withheld" if task in (model.get("withheld") or {}) else "-"
+
+    # Ordered by the first task in the suite, which is the flagship: it is the
+    # one measured for every model and the one with the tightest intervals.
+    # Composite would order on a number some rows do not have.
+    lead = tasks[0] if tasks else None
+
+    def sort_key(model: dict[str, Any]) -> float:
+        score = (model.get("scores") or {}).get(lead) if lead else None
+        return -(score or {}).get("score", -1)
+
+    rows = sorted(board.get("models", []), key=sort_key)
+
+    head = "| # | Model | Composite | " + " | ".join(labels) + " | Licence |"
+    rule = "|---:|---|---:|" + "---:|" * len(labels) + "---|"
+    out = [head, rule]
+    for i, m in enumerate(rows, 1):
+        composite = "-" if m.get("composite") is None else f"{m['composite']:.1f}"
+        cells = " | ".join(cell(m, t) for t in tasks)
+        out.append(f"| {i} | {m['model']} | {composite} | {cells} | "
+                   f"{m.get('license', '')} |")
+    return "\n".join(out)
+
+
+def write_markdown(board: dict[str, Any], path: Path) -> None:
+    """Replace the table in ``path``, leaving the surrounding prose alone.
+
+    The commentary around the table is written by a person and explains what the
+    numbers mean. Regenerating the whole file would delete it, so only the table
+    between the header row and the following blank line is replaced.
+    """
+    table = render_markdown(board)
+    if not path.exists():
+        path.write_text("# Leaderboard\n\n" + table + "\n", encoding="utf-8")
+        return
+    text = path.read_text(encoding="utf-8")
+    start = text.find("| # | Model |")
+    if start == -1:
+        path.write_text(text.rstrip() + "\n\n" + table + "\n", encoding="utf-8")
+        return
+    end = text.find("\n\n", start)
+    end = len(text) if end == -1 else end
+    path.write_text(text[:start] + table + text[end:], encoding="utf-8")

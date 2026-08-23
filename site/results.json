@@ -1,7 +1,7 @@
 {
   "suite": "core",
   "suiteDescription": "Tracks whose numbers are considered publishable. A task joins this suite only once its dataset validates clean and its scoring has golden tests.",
-  "generatedAt": "2026-08-23T04:51:05+00:00",
+  "generatedAt": "2026-08-23T05:03:34+00:00",
   "tasks": [
     {
       "id": "dtm",
@@ -1712,9 +1712,9 @@
       "withheld": {},
       "scores": {
         "dtm": {
-          "score": 44.4,
-          "ci_low": 42.26,
-          "ci_high": 46.55,
+          "score": 43.92,
+          "ci_low": 41.79,
+          "ci_high": 46.07,
           "n": 2061,
           "n_items": 2062,
           "coverage": 0.9995,
@@ -1723,12 +1723,17 @@
           "task_version": "2.1",
           "dataset_sha256": "6cca87ac3457",
           "provisional": false,
-          "at_or_below_chance": false
+          "at_or_below_chance": false,
+          "replicates": 3,
+          "replicate_range": [
+            43.45,
+            44.4
+          ]
         },
         "reasoning_uz": {
-          "score": 45.62,
-          "ci_low": 36.21,
-          "ci_high": 55.37,
+          "score": 44.54,
+          "ci_low": 35.18,
+          "ci_high": 54.31,
           "n": 100,
           "n_items": 100,
           "coverage": 1.0,
@@ -1737,12 +1742,17 @@
           "task_version": "2.0",
           "dataset_sha256": "8070ec68a5d9",
           "provisional": false,
-          "at_or_below_chance": false
+          "at_or_below_chance": false,
+          "replicates": 3,
+          "replicate_range": [
+            43.38,
+            45.62
+          ]
         },
         "translation_uz": {
-          "score": 49.68,
-          "ci_low": 48.87,
-          "ci_high": 50.51,
+          "score": 49.73,
+          "ci_low": 48.91,
+          "ci_high": 50.57,
           "n": 800,
           "n_items": 800,
           "coverage": 1.0,
@@ -1751,7 +1761,12 @@
           "task_version": "2.0",
           "dataset_sha256": "fba5fb626edb",
           "provisional": false,
-          "at_or_below_chance": false
+          "at_or_below_chance": false,
+          "replicates": 3,
+          "replicate_range": [
+            49.68,
+            49.8
+          ]
         },
         "zarbulmasal": {
           "score": 11.11,

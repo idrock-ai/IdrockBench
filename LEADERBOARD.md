@@ -12,21 +12,21 @@ three tracks and exists only where all three were measured.
 
 | # | Model | Composite | DTM | Reasoning | Translation | Instructions | Riddle (recall) | Riddle (choice) | Licence |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---|
-| 1 | Gemma 4 31B | 53.0 | 56.96 | 67.80 | 54.57 | 75.51 | 25.68 | 76.44 | gemma |
-| 2 | Qwen3.5 27B | 52.4 | 52.42 | 73.78 | 51.58 | 75.96 | 9.37 | 70.69 | apache-2.0 |
-| 3 | Qwen3.6 27B | 57.1 | 50.34 | 87.70 | 51.98 | 73.48 | 16.92 | 75.53 | apache-2.0 |
-| 4 | Gemma 4 26B | 42.6 | 48.54 | 52.00 | 53.32 | 70.56 | 12.69 | 60.73 | gemma |
-| 5 | Qwen3.5 35B | 47.2 | 47.77 | 66.89 | 50.37 | 65.17 | 6.95 | 61.63 | apache-2.0 |
-| 6 | Qwen3.8 27B | 49.2 | 45.88 | 73.56 | 51.01 | 70.34 | 10.57 | 64.35 | apache-2.0 |
-| 7 | DiffusionGemma 26B-A4B | 36.4 | 43.92 | 44.54 | 49.73 | - | 11.11 | 60.73 | apache-2.0 |
-| 8 | Gemma 4 12B | 34.9 | 37.99 | 46.13 | 51.33 | 66.67 | 5.14 | 56.50 | gemma |
-| 9 | Qwen3.5 9B | 31.8 | 36.95 | 42.37 | 47.69 | 56.18 | 1.81 | 48.34 | apache-2.0 |
-| 10 | Gemma 4 E4B | 26.5 | 32.83 | 33.93 | 47.39 | 64.49 | 3.32 | 45.62 | gemma |
-| 11 | Nemotron 3.5 Lightning 30B | 12.3 | 32.51 | 11.61 | 26.80 | 27.87 | 0.00 | 27.79 | nvidia-open-model |
-| 12 | Qwen3.5 4B | 21.3 | 32.20 | 26.29 | 41.66 | 47.64 | 0.30 | 38.97 | apache-2.0 |
-| 13 | Gemma 4 E2B | 15.6 | 29.53 | 14.15 | 40.89 | 52.81 | 0.00 | 36.86 | gemma |
-| 14 | Qwen3.5 0.8B | 5.4 | 25.86 | 1.42 | 14.92 | 29.66 | 0.00 | 25.69 | apache-2.0 |
-| 15 | Qwen3.5 2B | 10.4 | 25.80 | 7.88 | 30.07 | 34.83 | 0.00 | 21.75 | apache-2.0 |
+| 1 | Gemma 4 31B | 52.0 | 56.96 | 67.80 | 54.57 | 75.51 | 25.68 | 76.44 | gemma |
+| 2 | Qwen3.5 27B | 48.5 | 52.42 | 73.78 | 51.58 | 75.96 | 9.37 | 70.69 | apache-2.0 |
+| 3 | Qwen3.6 27B | 52.3 | 50.34 | 87.70 | 51.98 | 73.48 | 16.92 | 75.53 | apache-2.0 |
+| 4 | Gemma 4 26B | 42.2 | 48.54 | 52.00 | 53.32 | 70.56 | 12.69 | 60.73 | gemma |
+| 5 | Qwen3.5 35B | 42.7 | 47.77 | 66.89 | 50.37 | 65.17 | 6.95 | 61.63 | apache-2.0 |
+| 6 | Qwen3.8 27B | 45.7 | 45.88 | 73.56 | 51.01 | 70.34 | 10.57 | 64.35 | apache-2.0 |
+| 7 | DiffusionGemma 26B-A4B | - | 43.92 | 44.54 | 49.73 | - | 11.11 | 60.73 | apache-2.0 |
+| 8 | Gemma 4 12B | 35.3 | 37.99 | 46.13 | 51.33 | 66.67 | 5.14 | 56.50 | gemma |
+| 9 | Qwen3.5 9B | 30.7 | 36.95 | 42.37 | 47.69 | 56.18 | 1.81 | 48.34 | apache-2.0 |
+| 10 | Gemma 4 E4B | 29.5 | 32.83 | 33.93 | 47.39 | 64.49 | 3.32 | 45.62 | gemma |
+| 11 | Nemotron 3.5 Lightning 30B | 12.9 | 32.51 | 11.61 | 26.80 | 27.87 | 0.00 | 27.79 | nvidia-open-model |
+| 12 | Qwen3.5 4B | 22.4 | 32.20 | 26.29 | 41.66 | 47.64 | 0.30 | 38.97 | apache-2.0 |
+| 13 | Gemma 4 E2B | 19.9 | 29.53 | 14.15 | 40.89 | 52.81 | 0.00 | 36.86 | gemma |
+| 14 | Qwen3.5 0.8B | 9.2 | 25.86 | 1.42 | 14.92 | 29.66 | 0.00 | 25.69 | apache-2.0 |
+| 15 | Qwen3.5 2B | 13.2 | 25.80 | 7.88 | 30.07 | 34.83 | 0.00 | 21.75 | apache-2.0 |
 
 `-` means not measured. `withheld` means the model answered too few items to score
 honestly, not that it scored zero. Coverage below 50% is never published.
@@ -46,15 +46,14 @@ and 2B have DTM and translation on disk but lost those entries from their run
 manifests. DiffusionGemma decodes differently from every other row, explained
 below. The remaining gaps are tracks that were not run.
 
-DiffusionGemma's composite is computed the same way as the others, from the
-mean of its three replicates, and places it seventh. Read it as a measure of
-capability rather than a like-for-like ranking: it is the only row that decodes
-stochastically with thinking always on, so a place or two either way is not
-meaningful against the rows next to it.
+DiffusionGemma's three scored tracks are each the mean of three passes rather
+than a single run, because it decodes stochastically and one pass is a draw
+rather than a value. It has no composite while its instruction following run is
+outstanding.
 
-Rank is by DTM and is not a claim of overall superiority. Qwen3.6 27B has the
-highest composite but sits third on DTM, and the six rows without a composite are
-missing a track rather than failing it.
+Rank is by DTM, the flagship track, and is not a claim of overall superiority. A
+model can lead the composite without leading DTM, and a row without a composite
+is missing a track rather than failing it.
 
 ## Instructions transfer, knowledge does not
 
@@ -124,7 +123,7 @@ thinking is always on. Its figures are the mean of three independent replicates:
 
 Sampling noise is under one point on DTM and 0.12 on translation, well inside the
 item-sampling interval, so the mean is stable despite stochastic decoding. It
-activates 3.8B of 25.2B parameters per token and still places seventh.
+activates 3.8B of 25.2B parameters per token and still places mid-table.
 
 ## Tracks
 

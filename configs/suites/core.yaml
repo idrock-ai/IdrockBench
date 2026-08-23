@@ -6,4 +6,9 @@ tasks:
   - dtm
   - reasoning_uz
   - translation_uz
+  - ifeval_uz
+  - zarbulmasal
 require_complete: true
+
+reported:
+  - zarbulmasal_mc

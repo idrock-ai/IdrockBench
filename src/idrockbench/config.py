@@ -82,6 +82,7 @@ class SuiteConfig:
     tasks: list[str]
     description: str = ""
     require_complete: bool = True
+    reported: list[str] = field(default_factory=list)
 
     @classmethod
     def load(cls, name: str) -> SuiteConfig:

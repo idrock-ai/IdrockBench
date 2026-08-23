@@ -28,15 +28,25 @@ def load_runs(runs_dir: Path) -> list[dict[str, Any]]:
 def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[str, Any]:
     runs = load_runs(runs_dir)
 
-    wanted = set(suite.tasks)
+    all_tasks = list(dict.fromkeys([*suite.tasks, *suite.reported]))
+    wanted = set(all_tasks)
     latest: dict[str, dict] = {}
     for run in runs:
-        if not wanted & set((run.get("tasks") or {})):
+        entries = run.get("tasks") or {}
+        if not wanted & set(entries):
             continue
-        latest.setdefault(run.get("model", "unknown"), run)
+        model = run.get("model", "unknown")
+        merged = latest.get(model)
+        if merged is None:
+            merged = dict(run)
+            merged["tasks"] = {}
+            latest[model] = merged
+        for name, entry in entries.items():
+            if name in wanted:
+                merged["tasks"].setdefault(name, entry)
 
     chance = {}
-    for name in suite.tasks:
+    for name in all_tasks:
         cfg = TaskConfig.load(name)
         chance[name] = get_task(cfg.task)().chance_level
 
@@ -44,7 +54,7 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
     for model, run in latest.items():
         scores: dict[str, Any] = {}
         withheld: list[tuple[str, float]] = []
-        for name in suite.tasks:
+        for name in all_tasks:
             entry = (run.get("tasks") or {}).get(name)
             if not entry or "metrics" not in entry:
                 continue
@@ -68,12 +78,13 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
                 "at_or_below_chance": bool(diag.get("at_or_below_chance")),
             }
 
-        complete = len(scores) == len(suite.tasks)
+        complete = all(t in scores for t in suite.tasks)
         composite = None
         if complete or not suite.require_complete:
             normalised = [
-                normalize_against_chance(s["score"], chance.get(t, 0.0))
-                for t, s in scores.items() if s["score"] is not None
+                normalize_against_chance(scores[t]["score"], chance.get(t, 0.0))
+                for t in suite.tasks
+                if t in scores and scores[t]["score"] is not None
             ]
             if normalised and (complete or not suite.require_complete):
                 composite = round(sum(normalised) / len(normalised), 2)
@@ -88,7 +99,7 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
                            not in ("unknown", "proprietary", "closed", ""),
             "weightsUrl": run.get("weights_url", ""),
             "quantization": run.get("quantization", ""),
-            "reasoning": _reasoning_summary(run, suite.tasks),
+            "reasoning": _reasoning_summary(run, all_tasks),
             "composite": composite,
             "complete": complete,
             "missing": [t for t in suite.tasks if t not in scores],
@@ -116,7 +127,7 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
         "tasks": [
             {"id": t, "chance": round(chance.get(t, 0.0) * 100, 1),
              "version": get_task(TaskConfig.load(t).task)().version}
-            for t in suite.tasks
+            for t in all_tasks
         ],
         "notes": {
             **({"status": "No model has been evaluated on this suite yet. Results "

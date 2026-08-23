@@ -42,7 +42,7 @@ const TRANSLATIONS = {
         "nav.submit": "Model yuborish",
         "nav.about": "Loyiha haqida",
         "hero.subtitle": "O'zbek tili modellari uchun benchmark",
-        "hero.description": "Katta til modellarini o'zbek tilida baholash — DTM savollari, mantiqiy fikrlash va tarjima bo'yicha. Har bir natija ishonch oralig'i va tanlanma hajmi bilan chop etiladi.",
+        "hero.description": "Katta til modellarini o'zbek tilida baholash. Har bir natija ishonch oralig'i va tanlanma hajmi bilan chop etiladi.",
         "hero.cta_leaderboard": "Reytingni ko'rish",
         "lb.title": "Reyting",
         "lb.subtitle": "Har bir katakda ishonch oralig'i (95%) va baholangan savollar soni ko'rsatilgan",
@@ -52,7 +52,6 @@ const TRANSLATIONS = {
         "lb.suite": "To'plam",
         "lb.empty": "Natijalar yuklanmadi.",
         "lb.nomatch": "Qidiruvga mos model topilmadi.",
-        "lb.showing": "{total} ta modeldan {n} tasi ko'rinmoqda — ro'yxatni aylantiring",
         "lb.total": "Jami {total} ta model",
         "lb.unranked": "To'liq baholanmagan modellar",
         "lb.unranked_note": "Bu modellar to'plamdagi barcha topshiriqlarni bajarmagan, shuning uchun ularga umumiy ball berilmaydi.",
@@ -62,10 +61,10 @@ const TRANSLATIONS = {
         "th.organization": "Tashkilot",
         "th.overall": "Umumiy",
         "note.composite": "«Umumiy» — har bir topshiriqning tasodifiy javob darajasiga nisbatan normallashtirilgan ballarning o'rtachasi. Faqat barcha topshiriqlarni bajargan modellar uchun ko'rsatiladi.",
-        "note.provisional": "◐ — savollarning 20% dan ortig'i baholanmadi; bu ko'rsatkich model sifatidan ko'ra javob formatini aks ettiradi.",
+        "note.provisional": "◐ — savollarning 20% dan ortig'i baholanmadi.",
         "note.chance": "⚠ — natija tasodifiy javob darajasida yoki undan past.",
         "bench.title": "Benchmarklar",
-        "bench.subtitle": "Uchta baholanadigan yo'nalish",
+        "bench.subtitle": "Baholanadigan yo'nalishlar",
         "about.title": "Loyiha haqida",
         "about.subtitle": "eval.idrock.uz — Yangi O'zbekiston Universiteti qoshidagi sun'iy intellekt laboratoriyasi idrock tomonidan ishlab chiqilgan",
         "about.idrock.desc": "Markaziy Osiyoda ilg'or sun'iy intellekt yechimlarini yaratish va AI tadqiqotlarini rivojlantirishga yo'naltirilgan AI laboratoriyasi.",
@@ -97,7 +96,7 @@ const TRANSLATIONS = {
         "nav.submit": "Submit a Model",
         "nav.about": "About",
         "hero.subtitle": "A benchmark for Uzbek-language models",
-        "hero.description": "Evaluating large language models on Uzbek — national exam questions, reasoning, and translation. Every result is published with its confidence interval and sample size.",
+        "hero.description": "Evaluating large language models on Uzbek. Every result is published with its confidence interval and sample size.",
         "hero.cta_leaderboard": "View Leaderboard",
         "lb.title": "Leaderboard",
         "lb.subtitle": "Every cell shows a 95% confidence interval and the number of items scored",
@@ -107,7 +106,6 @@ const TRANSLATIONS = {
         "lb.suite": "Suite",
         "lb.empty": "Results could not be loaded.",
         "lb.nomatch": "No model matches that search.",
-        "lb.showing": "Showing {n} of {total} — scroll the table for the rest",
         "lb.total": "{total} models",
         "lb.unranked": "Models without a complete run",
         "lb.unranked_note": "These models did not complete every task in the suite, so no composite score is shown.",
@@ -117,10 +115,10 @@ const TRANSLATIONS = {
         "th.organization": "Organization",
         "th.overall": "Overall",
         "note.composite": "\"Overall\" is the mean of per-task scores normalised against each task's random baseline. Shown only for models with a complete run.",
-        "note.provisional": "◐ — more than 20% of items could not be scored; this number reflects response format as much as model quality.",
+        "note.provisional": "◐ — more than 20% of items could not be scored.",
         "note.chance": "⚠ — score is at or below the random baseline.",
         "bench.title": "Benchmarks",
-        "bench.subtitle": "Three evaluated tracks",
+        "bench.subtitle": "Evaluated tracks",
         "about.title": "About",
         "about.subtitle": "eval.idrock.uz is built by idrock, the AI lab at New Uzbekistan University",
         "about.idrock.desc": "An AI lab focused on building advanced AI solutions and advancing artificial intelligence research in Central Asia.",
@@ -294,9 +292,9 @@ function sizeScrollRegion(totalModels) {
 
     const countEl = document.getElementById("leaderboardCount");
     if (countEl) {
-        countEl.textContent = totalModels > VISIBLE_ROWS
-            ? t("lb.showing").replace("{n}", VISIBLE_ROWS).replace("{total}", totalModels)
-            : (totalModels ? t("lb.total").replace("{total}", totalModels) : "");
+        countEl.textContent = totalModels
+            ? t("lb.total").replace("{total}", totalModels)
+            : "";
     }
 }
 

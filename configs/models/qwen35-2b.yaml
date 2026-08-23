@@ -1,7 +1,7 @@
 # Qwen3.5 2B
 model: qwen3.5:2b
 provider: ollama
-base_url: http://127.0.0.1:11500   # user-space Ollama on the A100
+base_url: http://127.0.0.1:11502   # tuned bench daemon, see tools/bench_ollama.sh
 name: Qwen3.5 2B
 organization: Alibaba
 license: apache-2.0

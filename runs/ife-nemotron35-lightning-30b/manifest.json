@@ -1,0 +1,156 @@
+{
+  "run_id": "ife-nemotron35-lightning-30b",
+  "model": "Nemotron 3.5 Lightning 30B",
+  "provider": "ollama",
+  "model_revision": "",
+  "quantization": "Q4_K_M",
+  "organization": "NVIDIA",
+  "license": "nvidia-open-model",
+  "weights_url": "https://huggingface.co/nvidia",
+  "temperature": 0.0,
+  "top_p": null,
+  "seed": 0,
+  "max_tokens": {
+    "ifeval_uz": 2560
+  },
+  "reasoning": "off",
+  "chat_template": true,
+  "harness_version": "2.0.0",
+  "harness_git_sha": "unknown",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1016-gcp-x86_64-with-glibc2.39",
+  "package_versions": {},
+  "started_at": "2026-08-22T22:40:41+00:00",
+  "finished_at": "2026-08-22T23:10:16+00:00",
+  "tasks": {
+    "ifeval_uz": {
+      "task_version": "2.0",
+      "dataset": "ifeval_uz.json",
+      "dataset_sha256": "e3d301f09160074fd9a8b081188a5b9b85783643535aa8b779f6e488bd9b6d6a",
+      "max_tokens": 2560,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 300,
+      "options": {
+        "score_recalibrated": true,
+        "word_count_factor": 1.0
+      },
+      "n_items": 535,
+      "n_scored": 535,
+      "metrics": {
+        "primary": 27.87,
+        "prompt_strict": 27.87,
+        "ci_low": 23.9,
+        "ci_high": 32.21,
+        "prompt_loose": 34.61,
+        "inst_strict": 34.71,
+        "inst_loose": 41.82,
+        "n": 445,
+        "constraints_evaluated": 605,
+        "constraints_excluded": 217,
+        "constraint_coverage": 0.736,
+        "exclusion_reasons": {
+          "not-meaningful-in-uzbek": 120,
+          "kwargs-not-localised": 97
+        },
+        "by_instruction_type": {
+          "combination:repeat_prompt": {
+            "n": 41,
+            "strict": 0.0,
+            "loose": 0.0
+          },
+          "combination:two_responses": {
+            "n": 24,
+            "strict": 16.7,
+            "loose": 29.2
+          },
+          "detectable_content:number_placeholders": {
+            "n": 27,
+            "strict": 29.6,
+            "loose": 29.6
+          },
+          "detectable_content:postscript": {
+            "n": 26,
+            "strict": 57.7,
+            "loose": 57.7
+          },
+          "detectable_format:json_format": {
+            "n": 17,
+            "strict": 70.6,
+            "loose": 82.4
+          },
+          "detectable_format:number_bullet_lists": {
+            "n": 31,
+            "strict": 45.2,
+            "loose": 48.4
+          },
+          "detectable_format:number_highlighted_sections": {
+            "n": 48,
+            "strict": 77.1,
+            "loose": 77.1
+          },
+          "detectable_format:title": {
+            "n": 37,
+            "strict": 37.8,
+            "loose": 37.8
+          },
+          "keywords:existence": {
+            "n": 18,
+            "strict": 61.1,
+            "loose": 61.1
+          },
+          "language:response_language": {
+            "n": 31,
+            "strict": 25.8,
+            "loose": 29.0
+          },
+          "length_constraints:number_paragraphs": {
+            "n": 27,
+            "strict": 25.9,
+            "loose": 51.9
+          },
+          "length_constraints:number_sentences": {
+            "n": 52,
+            "strict": 38.5,
+            "loose": 46.2
+          },
+          "length_constraints:number_words": {
+            "n": 46,
+            "strict": 45.7,
+            "loose": 63.0
+          },
+          "punctuation:no_comma": {
+            "n": 65,
+            "strict": 24.6,
+            "loose": 33.8
+          },
+          "startend:end_checker": {
+            "n": 17,
+            "strict": 11.8,
+            "loose": 17.6
+          },
+          "startend:quotation": {
+            "n": 40,
+            "strict": 0.0,
+            "loose": 5.0
+          }
+        }
+      },
+      "diagnostics": {
+        "n_items": 535,
+        "n_scored": 535,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "response": 535
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {}
+    }
+  },
+  "notes": ""
+}

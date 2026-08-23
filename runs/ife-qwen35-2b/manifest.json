@@ -1,0 +1,156 @@
+{
+  "run_id": "ife-qwen35-2b",
+  "model": "Qwen3.5 2B",
+  "provider": "ollama",
+  "model_revision": "",
+  "quantization": "Q8_0",
+  "organization": "Alibaba",
+  "license": "apache-2.0",
+  "weights_url": "https://huggingface.co/Qwen",
+  "temperature": 0.0,
+  "top_p": null,
+  "seed": 0,
+  "max_tokens": {
+    "ifeval_uz": 2560
+  },
+  "reasoning": "off",
+  "chat_template": true,
+  "harness_version": "2.0.0",
+  "harness_git_sha": "unknown",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1016-gcp-x86_64-with-glibc2.39",
+  "package_versions": {},
+  "started_at": "2026-08-22T13:06:31+00:00",
+  "finished_at": "2026-08-22T13:56:49+00:00",
+  "tasks": {
+    "ifeval_uz": {
+      "task_version": "2.0",
+      "dataset": "ifeval_uz.json",
+      "dataset_sha256": "e3d301f09160074fd9a8b081188a5b9b85783643535aa8b779f6e488bd9b6d6a",
+      "max_tokens": 2560,
+      "reasoning": "off",
+      "concurrency": 16,
+      "timeout": 300,
+      "options": {
+        "score_recalibrated": true,
+        "word_count_factor": 1.0
+      },
+      "n_items": 535,
+      "n_scored": 535,
+      "metrics": {
+        "primary": 34.83,
+        "prompt_strict": 34.83,
+        "ci_low": 30.55,
+        "ci_high": 39.37,
+        "prompt_loose": 39.78,
+        "inst_strict": 42.15,
+        "inst_loose": 47.93,
+        "n": 445,
+        "constraints_evaluated": 605,
+        "constraints_excluded": 217,
+        "constraint_coverage": 0.736,
+        "exclusion_reasons": {
+          "not-meaningful-in-uzbek": 120,
+          "kwargs-not-localised": 97
+        },
+        "by_instruction_type": {
+          "combination:repeat_prompt": {
+            "n": 41,
+            "strict": 22.0,
+            "loose": 22.0
+          },
+          "combination:two_responses": {
+            "n": 24,
+            "strict": 25.0,
+            "loose": 33.3
+          },
+          "detectable_content:number_placeholders": {
+            "n": 27,
+            "strict": 33.3,
+            "loose": 33.3
+          },
+          "detectable_content:postscript": {
+            "n": 26,
+            "strict": 46.2,
+            "loose": 46.2
+          },
+          "detectable_format:json_format": {
+            "n": 17,
+            "strict": 64.7,
+            "loose": 70.6
+          },
+          "detectable_format:number_bullet_lists": {
+            "n": 31,
+            "strict": 35.5,
+            "loose": 41.9
+          },
+          "detectable_format:number_highlighted_sections": {
+            "n": 48,
+            "strict": 72.9,
+            "loose": 72.9
+          },
+          "detectable_format:title": {
+            "n": 37,
+            "strict": 75.7,
+            "loose": 75.7
+          },
+          "keywords:existence": {
+            "n": 18,
+            "strict": 83.3,
+            "loose": 83.3
+          },
+          "language:response_language": {
+            "n": 31,
+            "strict": 3.2,
+            "loose": 3.2
+          },
+          "length_constraints:number_paragraphs": {
+            "n": 27,
+            "strict": 63.0,
+            "loose": 96.3
+          },
+          "length_constraints:number_sentences": {
+            "n": 52,
+            "strict": 51.9,
+            "loose": 59.6
+          },
+          "length_constraints:number_words": {
+            "n": 46,
+            "strict": 63.0,
+            "loose": 67.4
+          },
+          "punctuation:no_comma": {
+            "n": 65,
+            "strict": 21.5,
+            "loose": 30.8
+          },
+          "startend:end_checker": {
+            "n": 17,
+            "strict": 29.4,
+            "loose": 52.9
+          },
+          "startend:quotation": {
+            "n": 40,
+            "strict": 2.5,
+            "loose": 5.0
+          }
+        }
+      },
+      "diagnostics": {
+        "n_items": 535,
+        "n_scored": 535,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "response": 535
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {}
+    }
+  },
+  "notes": ""
+}

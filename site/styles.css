@@ -492,7 +492,8 @@ img {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.875rem;
-    min-width: 800px;
+    min-width: 980px;
+    table-layout: fixed;
 }
 
 .leaderboard-table thead {
@@ -578,7 +579,7 @@ img {
 .rank-3 { color: var(--accent-bronze); }
 
 .col-model {
-    min-width: 180px;
+    width: 230px;
 }
 
 .model-name {
@@ -598,7 +599,6 @@ img {
 
 .col-score {
     text-align: center !important;
-    min-width: 88px;
 }
 
 .leaderboard-table thead .th-sort {
@@ -1111,8 +1111,7 @@ img {
         padding: 3px 6px;
     }
 
-    .col-model { min-width: 150px; }
-    .col-score { min-width: 76px; }
+    .col-model { width: 170px; }
 
     .benchmarks-grid,
     .partners-grid {

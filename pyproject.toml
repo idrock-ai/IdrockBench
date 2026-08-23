@@ -10,7 +10,6 @@ keywords = ["uzbek", "llm", "benchmark", "evaluation", "low-resource", "nlp"]
 classifiers = [
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
-    "Natural Language :: Uzbek",
 ]
 
 dependencies = [

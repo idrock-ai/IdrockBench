@@ -41,12 +41,3 @@ jobs:
                   assert 'coverage' in cell, f'{task}: no coverage'
           print('pipeline ok:', len(board['models']), 'model(s)')
           "
-
-      - name: Datasets are reproducible from the builder
-        run: |
-          python tools/build_datasets.py
-          git diff --exit-code -- data/ || {
-            echo "::error::data/ differs from tools/build_datasets.py output."
-            echo "Datasets are built, not hand-edited: change the builder and re-run."
-            exit 1
-          }

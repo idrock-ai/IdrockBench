@@ -5,7 +5,7 @@ from collections.abc import Sequence
 from typing import Any
 
 from ..registry import register_task
-from ..text.normalize import normalize, normalize_display
+from ..text.normalize import normalize_display
 from .mcq import MultipleChoiceTask
 
 

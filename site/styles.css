@@ -524,7 +524,13 @@ img {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.875rem;
-    min-width: 800px;
+    min-width: 980px;
+    /* Fixed rather than automatic. Automatic layout hands leftover width to
+       whichever column is already widest, which put a band of dead space
+       between a compact model cell and the first score. Fixed layout gives rank
+       and model a stated width and splits the remainder evenly across the seven
+       score columns, which is what the eye expects of a scoreboard. */
+    table-layout: fixed;
 }
 
 .leaderboard-table thead {
@@ -611,8 +617,13 @@ img {
 .rank-3 { color: var(--accent-bronze); }
 
 /* Model name */
+/* The table fills its container, and with automatic layout the slack lands in
+   whichever column has no stated width. That was this one, so a compact model
+   cell sat in a wide column with a gap of dead space before the first score.
+   Stating a width hands the slack to the score columns instead, where it spreads
+   evenly across all seven. */
 .col-model {
-    min-width: 180px;
+    width: 230px;
 }
 
 .model-name {
@@ -633,10 +644,11 @@ img {
 
 .model-sub .model-meta { margin: 0; }
 
-/* Score cells */
+/* Score cells. No width: under fixed layout the unstated columns share what is
+   left, so all seven come out equal without stating a number that would have to
+   change every time a track is added. */
 .col-score {
     text-align: center !important;
-    min-width: 88px;
 }
 
 /* Six tracks share this row, so a heading wraps onto a second line rather than
@@ -1176,8 +1188,7 @@ img {
         padding: 3px 6px;
     }
 
-    .col-model { min-width: 150px; }
-    .col-score { min-width: 76px; }
+    .col-model { width: 170px; }
 
     /* Cards */
     .benchmarks-grid,

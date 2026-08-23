@@ -25,12 +25,16 @@ const LANG_STORAGE_KEY = "idrock-eval-lang";
 
 // Display names per task id. A task present in results.json but missing here
 // still renders, using its id — the table follows the data, not this list.
+//: Column headings. Short, because six score columns share the table width, and
+//: wrapped onto two lines by the stylesheet rather than truncated.
 const TASK_LABELS = {
     dtm: { uz: "DTM", en: "DTM" },
     reasoning_uz: { uz: "Mantiqiy fikrlash", en: "Reasoning" },
     translation_uz: { uz: "Tarjima", en: "Translation" },
     ifeval_uz: { uz: "Ko'rsatmalar", en: "Instructions" },
-    business_uz: { uz: "Biznes bilimi", en: "Business knowledge" },
+    zarbulmasal: { uz: "Topishmoq erkin", en: "Riddle recall" },
+    zarbulmasal_mc: { uz: "Topishmoq tanlov", en: "Riddle choice" },
+    business_uz: { uz: "Biznes bilimi", en: "Business" },
 };
 
 const TRANSLATIONS = {
@@ -55,7 +59,7 @@ const TRANSLATIONS = {
         "lb.total": "Jami {total} ta model",
         "lb.unranked": "To'liq baholanmagan modellar",
         "lb.unranked_note": "Bu modellar to'plamdagi barcha topshiriqlarni bajarmagan, shuning uchun ularga umumiy ball berilmaydi.",
-        "lb.chance": "Tasodifiy javob darajasi",
+        "lb.chance": "tasodif",
         "th.rank": "O'rin",
         "th.model": "Model",
         "th.organization": "Tashkilot",
@@ -109,7 +113,7 @@ const TRANSLATIONS = {
         "lb.total": "{total} models",
         "lb.unranked": "Models without a complete run",
         "lb.unranked_note": "These models did not complete every task in the suite, so no composite score is shown.",
-        "lb.chance": "Random baseline",
+        "lb.chance": "chance",
         "th.rank": "Rank",
         "th.model": "Model",
         "th.organization": "Organization",
@@ -207,7 +211,7 @@ function renderHead() {
     const cols = BOARD.tasks
         .map((task) => {
             const chance = task.chance > 0
-                ? `<span class="th-chance">${t("lb.chance")}: ${task.chance}%</span>` : "";
+                ? `<span class="th-chance">${t("lb.chance")} ${task.chance}%</span>` : "";
             return `<th class="col-score" scope="col">
                         <button type="button" class="th-sort" data-sort="${esc(task.id)}">
                             ${esc(taskLabel(task.id))}<span class="sort-icon" aria-hidden="true"></span>
@@ -218,7 +222,6 @@ function renderHead() {
     dom.head.innerHTML = `<tr>
         <th class="col-rank" scope="col"><span data-i18n="th.rank">${t("th.rank")}</span></th>
         <th class="col-model" scope="col"><span data-i18n="th.model">${t("th.model")}</span></th>
-        <th class="col-org" scope="col"><span data-i18n="th.organization">${t("th.organization")}</span></th>
         <th class="col-score" scope="col">
             <button type="button" class="th-sort" data-sort="composite">
                 ${t("th.overall")}<span class="sort-icon" aria-hidden="true"></span>
@@ -299,8 +302,8 @@ function sizeScrollRegion(totalModels) {
 }
 
 function metaLine(model) {
-    const bits = [model.runDate, model.harnessCommit].filter(
-        (b) => b && b !== "unknown");
+    const bits = [model.organization, model.runDate, model.harnessCommit].filter(
+        (b) => b && b !== "unknown" && b !== "Unknown");
     return bits.length ? `<span class="model-meta">${esc(bits.join(" · "))}</span>` : "";
 }
 
@@ -326,10 +329,9 @@ function row(model) {
     return `<tr${model.composite == null ? ' class="row-unranked"' : ""}>
         <td class="col-rank">${rank}${tied}</td>
         <th class="col-model" scope="row">
-            <span class="model-name">${esc(model.model)}</span>${badge}${quant}${think}
-            ${metaLine(model)}
+            <span class="model-name">${esc(model.model)}</span>${badge}
+            <span class="model-sub">${quant}${think}${metaLine(model)}</span>
         </th>
-        <td class="col-org">${esc(model.organization)}</td>
         ${composite}
         ${BOARD.tasks.map((task) => cell(model.scores?.[task.id])).join("")}
     </tr>`;

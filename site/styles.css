@@ -620,14 +620,34 @@ img {
     color: var(--text-heading);
 }
 
-.col-org {
-    color: var(--text-secondary);
+/* Second line of the model cell: quantisation, reasoning mode, organisation and
+   date. Provenance rather than identity, so it sits under the name instead of
+   widening the column. */
+.model-sub {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.25rem;
 }
+
+.model-sub .model-meta { margin: 0; }
 
 /* Score cells */
 .col-score {
     text-align: center !important;
-    min-width: 100px;
+    min-width: 88px;
+}
+
+/* Six tracks share this row, so a heading wraps onto a second line rather than
+   forcing the table wider than the screen. The width is capped so the wrap
+   happens at the same place for every column and the header row stays even. */
+.leaderboard-table thead .th-sort {
+    display: inline-block;
+    max-width: 8.5em;
+    white-space: normal;
+    line-height: 1.2;
+    text-wrap: balance;
 }
 
 .score-cell {
@@ -1157,7 +1177,7 @@ img {
     }
 
     .col-model { min-width: 150px; }
-    .col-score { min-width: 80px; }
+    .col-score { min-width: 76px; }
 
     /* Cards */
     .benchmarks-grid,

@@ -1,0 +1,157 @@
+{
+  "run_id": "ife-gemma4-12b",
+  "model": "Gemma 4 12B",
+  "provider": "ollama",
+  "model_revision": "",
+  "quantization": "Q4_K_M",
+  "organization": "Google",
+  "license": "gemma",
+  "weights_url": "https://huggingface.co/google",
+  "temperature": 0.0,
+  "top_p": null,
+  "seed": 0,
+  "max_tokens": {
+    "ifeval_uz": 2560
+  },
+  "reasoning": "off",
+  "chat_template": true,
+  "harness_version": "2.0.0",
+  "harness_git_sha": "unknown",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1016-gcp-x86_64-with-glibc2.39",
+  "package_versions": {},
+  "started_at": "2026-08-22T10:08:02+00:00",
+  "finished_at": "2026-08-22T10:27:36+00:00",
+  "tasks": {
+    "ifeval_uz": {
+      "task_version": "2.0",
+      "dataset": "ifeval_uz.json",
+      "dataset_sha256": "e3d301f09160074fd9a8b081188a5b9b85783643535aa8b779f6e488bd9b6d6a",
+      "max_tokens": 2560,
+      "reasoning": "off",
+      "concurrency": 16,
+      "timeout": 300,
+      "options": {
+        "score_recalibrated": true,
+        "word_count_factor": 1.0
+      },
+      "n_items": 535,
+      "n_scored": 534,
+      "metrics": {
+        "primary": 66.67,
+        "prompt_strict": 66.67,
+        "ci_low": 62.16,
+        "ci_high": 70.89,
+        "prompt_loose": 72.07,
+        "inst_strict": 73.92,
+        "inst_loose": 78.57,
+        "n": 444,
+        "constraints_evaluated": 602,
+        "constraints_excluded": 217,
+        "constraint_coverage": 0.735,
+        "exclusion_reasons": {
+          "not-meaningful-in-uzbek": 120,
+          "kwargs-not-localised": 97
+        },
+        "by_instruction_type": {
+          "combination:repeat_prompt": {
+            "n": 41,
+            "strict": 0.0,
+            "loose": 0.0
+          },
+          "combination:two_responses": {
+            "n": 24,
+            "strict": 87.5,
+            "loose": 87.5
+          },
+          "detectable_content:number_placeholders": {
+            "n": 27,
+            "strict": 85.2,
+            "loose": 85.2
+          },
+          "detectable_content:postscript": {
+            "n": 26,
+            "strict": 100.0,
+            "loose": 100.0
+          },
+          "detectable_format:json_format": {
+            "n": 17,
+            "strict": 64.7,
+            "loose": 76.5
+          },
+          "detectable_format:number_bullet_lists": {
+            "n": 31,
+            "strict": 64.5,
+            "loose": 67.7
+          },
+          "detectable_format:number_highlighted_sections": {
+            "n": 48,
+            "strict": 95.8,
+            "loose": 95.8
+          },
+          "detectable_format:title": {
+            "n": 36,
+            "strict": 83.3,
+            "loose": 83.3
+          },
+          "keywords:existence": {
+            "n": 18,
+            "strict": 94.4,
+            "loose": 94.4
+          },
+          "language:response_language": {
+            "n": 31,
+            "strict": 83.9,
+            "loose": 83.9
+          },
+          "length_constraints:number_paragraphs": {
+            "n": 27,
+            "strict": 81.5,
+            "loose": 92.6
+          },
+          "length_constraints:number_sentences": {
+            "n": 51,
+            "strict": 64.7,
+            "loose": 72.5
+          },
+          "length_constraints:number_words": {
+            "n": 46,
+            "strict": 69.6,
+            "loose": 78.3
+          },
+          "punctuation:no_comma": {
+            "n": 64,
+            "strict": 78.1,
+            "loose": 89.1
+          },
+          "startend:end_checker": {
+            "n": 17,
+            "strict": 64.7,
+            "loose": 70.6
+          },
+          "startend:quotation": {
+            "n": 40,
+            "strict": 85.0,
+            "loose": 90.0
+          }
+        }
+      },
+      "diagnostics": {
+        "n_items": 535,
+        "n_scored": 534,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0019,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.9981,
+        "strategies": {
+          "response": 534,
+          "empty": 1
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {}
+    }
+  },
+  "notes": ""
+}

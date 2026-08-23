@@ -1,6 +1,6 @@
 model: gemma4:e4b
 provider: ollama
-base_url: http://127.0.0.1:11500
+base_url: http://127.0.0.1:11502
 name: Gemma 4 E4B
 organization: Google
 license: gemma

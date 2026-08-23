@@ -10,26 +10,34 @@ flagship track, because it is the one measured for almost every model and the on
 with the tightest intervals. Composite is the chance-normalised mean across all
 three tracks and exists only where all three were measured.
 
-| # | Model | Composite | DTM | Reasoning | Translation | Riddle (recall) | Riddle (choice) | Licence |
-|---:|---|---:|---:|---:|---:|---:|---:|---|
-| 1 | Gemma 4 31B | 53.0 | 56.96 | 67.80 | 54.57 | 25.68 | 76.44 | gemma |
-| 2 | Qwen3.5 27B | 52.4 | 52.42 | 73.78 | 51.58 | 9.37 | 70.69 | apache-2.0 |
-| 3 | Qwen3.6 27B | 57.1 | 50.34 | 87.70 | 51.98 | 16.92 | 75.53 | apache-2.0 |
-| 4 | Gemma 4 26B | 42.6 | 48.54 | 52.00 | 53.32 | 12.69 | 60.73 | gemma |
-| 5 | Qwen3.5 35B | 47.2 | 47.77 | 66.89 | 50.37 | 6.95 | 61.63 | apache-2.0 |
-| 6 | Qwen3.8 27B | 49.2 | 45.88 | 73.56 | 51.01 | 10.57 | 64.35 | apache-2.0 |
-| 7 | DiffusionGemma 26B-A4B | 36.4 | 43.92 | 44.54 | 49.73 | 11.11 | 60.73 | apache-2.0 |
-| 8 | Gemma 4 12B | 34.9 | 37.99 | 46.13 | 51.33 | 5.14 | 56.50 | gemma |
-| 9 | Qwen3.5 9B | 31.8 | 36.95 | 42.37 | 47.69 | 1.81 | 48.34 | apache-2.0 |
-| 10 | Gemma 4 E4B | 26.5 | 32.83 | 33.93 | 47.39 | 3.32 | 45.62 | gemma |
-| 11 | Nemotron 3.5 Lightning 30B | 12.3 | 32.51 | 11.61 | 26.80 | 0.00 | 27.79 | nvidia-open-model |
-| 12 | Qwen3.5 4B | 21.3 | 32.20 | 26.29 | 41.66 | 0.30 | 38.97 | apache-2.0 |
-| 13 | Gemma 4 E2B | 15.6 | 29.53 | 14.15 | 40.89 | 0.00 | 36.86 | gemma |
-| 14 | Qwen3.5 0.8B | 5.4 | 25.86 | 1.42 | 14.92 | 0.00 | 25.69 | apache-2.0 |
-| 15 | Qwen3.5 2B | 10.4 | 25.80 | 7.88 | 30.07 | 0.00 | 21.75 | apache-2.0 |
+| # | Model | Composite | DTM | Reasoning | Translation | Instructions | Riddle (recall) | Riddle (choice) | Licence |
+|---:|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 1 | Gemma 4 31B | 53.0 | 56.96 | 67.80 | 54.57 | 75.51 | 25.68 | 76.44 | gemma |
+| 2 | Qwen3.5 27B | 52.4 | 52.42 | 73.78 | 51.58 | 75.96 | 9.37 | 70.69 | apache-2.0 |
+| 3 | Qwen3.6 27B | 57.1 | 50.34 | 87.70 | 51.98 | 73.48 | 16.92 | 75.53 | apache-2.0 |
+| 4 | Gemma 4 26B | 42.6 | 48.54 | 52.00 | 53.32 | 70.56 | 12.69 | 60.73 | gemma |
+| 5 | Qwen3.5 35B | 47.2 | 47.77 | 66.89 | 50.37 | 65.17 | 6.95 | 61.63 | apache-2.0 |
+| 6 | Qwen3.8 27B | 49.2 | 45.88 | 73.56 | 51.01 | 70.34 | 10.57 | 64.35 | apache-2.0 |
+| 7 | DiffusionGemma 26B-A4B | 36.4 | 43.92 | 44.54 | 49.73 | - | 11.11 | 60.73 | apache-2.0 |
+| 8 | Gemma 4 12B | 34.9 | 37.99 | 46.13 | 51.33 | 66.67 | 5.14 | 56.50 | gemma |
+| 9 | Qwen3.5 9B | 31.8 | 36.95 | 42.37 | 47.69 | 56.18 | 1.81 | 48.34 | apache-2.0 |
+| 10 | Gemma 4 E4B | 26.5 | 32.83 | 33.93 | 47.39 | 64.49 | 3.32 | 45.62 | gemma |
+| 11 | Nemotron 3.5 Lightning 30B | 12.3 | 32.51 | 11.61 | 26.80 | 27.87 | 0.00 | 27.79 | nvidia-open-model |
+| 12 | Qwen3.5 4B | 21.3 | 32.20 | 26.29 | 41.66 | 47.64 | 0.30 | 38.97 | apache-2.0 |
+| 13 | Gemma 4 E2B | 15.6 | 29.53 | 14.15 | 40.89 | 52.81 | 0.00 | 36.86 | gemma |
+| 14 | Qwen3.5 0.8B | 5.4 | 25.86 | 1.42 | 14.92 | 29.66 | 0.00 | 25.69 | apache-2.0 |
+| 15 | Qwen3.5 2B | 10.4 | 25.80 | 7.88 | 30.07 | 34.83 | 0.00 | 21.75 | apache-2.0 |
 
 `-` means not measured. `withheld` means the model answered too few items to score
-honestly, not that it scored zero. Coverage below 50% is never published. Qwen3.5
+honestly, not that it scored zero. Coverage below 50% is never published.
+
+**Instructions** is IFEval prompt-level strict: the share of prompts where every
+constraint was satisfied. Three further official figures are recorded per run
+and omitted here for width. Every score is computed on the 605 constraints that
+can be checked, out of 822. The other 217 still carry English arguments against
+Uzbek prompts and are excluded rather than guessed at, identically for every
+model, so the column compares fairly even though it is not a full measure of the
+set. DiffusionGemma has no cell because it was not run on this track. Qwen3.5
 Every model now has a reasoning cell. The six that were missing or withheld
 were re-run once the context and GPU placement were corrected, including
 Qwen3.5 27B, whose earlier 100.00 rested on 4 scored items and is now 73.78 on
@@ -47,6 +55,20 @@ meaningful against the rows next to it.
 Rank is by DTM and is not a claim of overall superiority. Qwen3.6 27B has the
 highest composite but sits third on DTM, and the six rows without a composite are
 missing a track rather than failing it.
+
+## Instructions transfer, knowledge does not
+
+The instruction column runs 20 to 40 points above DTM for almost every model.
+Gemma 4 12B satisfies two-thirds of multi-constraint Uzbek prompts completely
+while scoring 37.99 on Uzbek exam knowledge and 5.14 on riddles. Format
+compliance is largely language-independent, so a model carries it into Uzbek
+from wherever it learned it. Knowledge and cultural grounding do not travel the
+same way.
+
+Two orderings differ from the rest of the table. Qwen3.5 27B leads instructions
+at 75.96 and Gemma 4 31B follows at 75.51, close enough to be a tie. Gemma 4 E4B
+at 64.49 beats Qwen3.5 9B at 56.18 on less than half the parameters, the widest
+family gap on any track here.
 
 ## Recognition is not recall
 

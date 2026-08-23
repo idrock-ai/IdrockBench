@@ -1,6 +1,6 @@
 model: qwen3.5:2b
 provider: ollama
-base_url: http://127.0.0.1:11500
+base_url: http://127.0.0.1:11502
 name: Qwen3.5 2B
 organization: Alibaba
 license: apache-2.0

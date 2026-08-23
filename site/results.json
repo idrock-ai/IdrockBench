@@ -1,7 +1,7 @@
 {
   "suite": "core",
   "suiteDescription": "Tracks whose numbers are considered publishable. A task joins this suite only once its dataset validates clean and its scoring has golden tests.",
-  "generatedAt": "2026-08-23T05:03:34+00:00",
+  "generatedAt": "2026-08-23T06:23:06+00:00",
   "tasks": [
     {
       "id": "dtm",
@@ -747,6 +747,138 @@
       "tiedWith": []
     },
     {
+      "model": "DiffusionGemma 26B-A4B",
+      "organization": "Google",
+      "license": "apache-2.0",
+      "openWeights": true,
+      "weightsUrl": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+      "quantization": "bf16",
+      "reasoning": {
+        "label": "mixed",
+        "byTask": {
+          "dtm": "default",
+          "reasoning_uz": "off",
+          "translation_uz": "default",
+          "ifeval_uz": "default",
+          "zarbulmasal": "default",
+          "zarbulmasal_mc": "default"
+        }
+      },
+      "composite": 36.75,
+      "complete": true,
+      "missing": [],
+      "withheld": {},
+      "scores": {
+        "dtm": {
+          "score": 43.92,
+          "ci_low": 41.79,
+          "ci_high": 46.07,
+          "n": 2061,
+          "n_items": 2062,
+          "coverage": 0.9995,
+          "unparsed_rate": 0.0005,
+          "chance": 25.0,
+          "task_version": "2.1",
+          "dataset_sha256": "6cca87ac3457",
+          "provisional": false,
+          "at_or_below_chance": false,
+          "replicates": 3,
+          "replicate_range": [
+            43.45,
+            44.4
+          ]
+        },
+        "reasoning_uz": {
+          "score": 44.54,
+          "ci_low": 35.18,
+          "ci_high": 54.31,
+          "n": 100,
+          "n_items": 100,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 15.6,
+          "task_version": "2.0",
+          "dataset_sha256": "8070ec68a5d9",
+          "provisional": false,
+          "at_or_below_chance": false,
+          "replicates": 3,
+          "replicate_range": [
+            43.38,
+            45.62
+          ]
+        },
+        "translation_uz": {
+          "score": 49.73,
+          "ci_low": 48.91,
+          "ci_high": 50.57,
+          "n": 800,
+          "n_items": 800,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "fba5fb626edb",
+          "provisional": false,
+          "at_or_below_chance": false,
+          "replicates": 3,
+          "replicate_range": [
+            49.68,
+            49.8
+          ]
+        },
+        "ifeval_uz": {
+          "score": 63.37,
+          "ci_low": 58.8,
+          "ci_high": 67.71,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 11.11,
+          "ci_low": 8.02,
+          "ci_high": 15.19,
+          "n": 297,
+          "n_items": 331,
+          "coverage": 0.8973,
+          "unparsed_rate": 0.1027,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 60.73,
+          "ci_low": 55.37,
+          "ci_high": 65.83,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        }
+      },
+      "runId": "ife-diffusiongemma-26b",
+      "runDate": "2026-08-23",
+      "harnessVersion": "2.0.0",
+      "harnessCommit": "unknown",
+      "temperature": 0.0,
+      "provenance": "organiser-run",
+      "rank": 7,
+      "tiedWith": []
+    },
+    {
       "model": "Gemma 4 12B",
       "organization": "Google",
       "license": "gemma",
@@ -860,7 +992,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 7,
+      "rank": 8,
       "tiedWith": []
     },
     {
@@ -977,7 +1109,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 8,
+      "rank": 9,
       "tiedWith": []
     },
     {
@@ -1094,7 +1226,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 9,
+      "rank": 10,
       "tiedWith": []
     },
     {
@@ -1211,7 +1343,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 10,
+      "rank": 11,
       "tiedWith": [
         "Gemma 4 E2B"
       ]
@@ -1330,7 +1462,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 11,
+      "rank": 12,
       "tiedWith": [
         "Qwen3.5 4B"
       ]
@@ -1449,7 +1581,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 12,
+      "rank": 13,
       "tiedWith": []
     },
     {
@@ -1566,7 +1698,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 13,
+      "rank": 14,
       "tiedWith": []
     },
     {
@@ -1683,127 +1815,8 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 14,
+      "rank": 15,
       "tiedWith": []
-    },
-    {
-      "model": "DiffusionGemma 26B-A4B",
-      "organization": "Google",
-      "license": "apache-2.0",
-      "openWeights": true,
-      "weightsUrl": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-      "quantization": "bf16",
-      "reasoning": {
-        "label": "mixed",
-        "byTask": {
-          "dtm": "default",
-          "reasoning_uz": "off",
-          "translation_uz": "default",
-          "ifeval_uz": "default",
-          "zarbulmasal": "default",
-          "zarbulmasal_mc": "default"
-        }
-      },
-      "composite": null,
-      "complete": false,
-      "missing": [
-        "ifeval_uz"
-      ],
-      "withheld": {},
-      "scores": {
-        "dtm": {
-          "score": 43.92,
-          "ci_low": 41.79,
-          "ci_high": 46.07,
-          "n": 2061,
-          "n_items": 2062,
-          "coverage": 0.9995,
-          "unparsed_rate": 0.0005,
-          "chance": 25.0,
-          "task_version": "2.1",
-          "dataset_sha256": "6cca87ac3457",
-          "provisional": false,
-          "at_or_below_chance": false,
-          "replicates": 3,
-          "replicate_range": [
-            43.45,
-            44.4
-          ]
-        },
-        "reasoning_uz": {
-          "score": 44.54,
-          "ci_low": 35.18,
-          "ci_high": 54.31,
-          "n": 100,
-          "n_items": 100,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 15.6,
-          "task_version": "2.0",
-          "dataset_sha256": "8070ec68a5d9",
-          "provisional": false,
-          "at_or_below_chance": false,
-          "replicates": 3,
-          "replicate_range": [
-            43.38,
-            45.62
-          ]
-        },
-        "translation_uz": {
-          "score": 49.73,
-          "ci_low": 48.91,
-          "ci_high": 50.57,
-          "n": 800,
-          "n_items": 800,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "fba5fb626edb",
-          "provisional": false,
-          "at_or_below_chance": false,
-          "replicates": 3,
-          "replicate_range": [
-            49.68,
-            49.8
-          ]
-        },
-        "zarbulmasal": {
-          "score": 11.11,
-          "ci_low": 8.02,
-          "ci_high": 15.19,
-          "n": 297,
-          "n_items": 331,
-          "coverage": 0.8973,
-          "unparsed_rate": 0.1027,
-          "chance": 0.0,
-          "task_version": "1.0",
-          "dataset_sha256": "dc5cdb83b8b0",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "zarbulmasal_mc": {
-          "score": 60.73,
-          "ci_low": 55.37,
-          "ci_high": 65.83,
-          "n": 331,
-          "n_items": 331,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 25.0,
-          "task_version": "1.0",
-          "dataset_sha256": "dc5cdb83b8b0",
-          "provisional": false,
-          "at_or_below_chance": false
-        }
-      },
-      "runId": "zarb-mc-diffusiongemma-26b",
-      "runDate": "2026-08-21",
-      "harnessVersion": "2.0.0",
-      "harnessCommit": "unknown",
-      "temperature": 0.0,
-      "provenance": "organiser-run",
-      "rank": null
     }
   ]
 }

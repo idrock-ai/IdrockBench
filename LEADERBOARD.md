@@ -18,7 +18,7 @@ three tracks and exists only where all three were measured.
 | 4 | Gemma 4 26B | 42.2 | 48.54 | 52.00 | 53.32 | 70.56 | 12.69 | 60.73 | gemma |
 | 5 | Qwen3.5 35B | 42.7 | 47.77 | 66.89 | 50.37 | 65.17 | 6.95 | 61.63 | apache-2.0 |
 | 6 | Qwen3.8 27B | 45.7 | 45.88 | 73.56 | 51.01 | 70.34 | 10.57 | 64.35 | apache-2.0 |
-| 7 | DiffusionGemma 26B-A4B | - | 43.92 | 44.54 | 49.73 | - | 11.11 | 60.73 | apache-2.0 |
+| 7 | DiffusionGemma 26B-A4B | 36.8 | 43.92 | 44.54 | 49.73 | 63.37 | 11.11 | 60.73 | apache-2.0 |
 | 8 | Gemma 4 12B | 35.3 | 37.99 | 46.13 | 51.33 | 66.67 | 5.14 | 56.50 | gemma |
 | 9 | Qwen3.5 9B | 30.7 | 36.95 | 42.37 | 47.69 | 56.18 | 1.81 | 48.34 | apache-2.0 |
 | 10 | Gemma 4 E4B | 29.5 | 32.83 | 33.93 | 47.39 | 64.49 | 3.32 | 45.62 | gemma |
@@ -28,28 +28,26 @@ three tracks and exists only where all three were measured.
 | 14 | Qwen3.5 0.8B | 9.2 | 25.86 | 1.42 | 14.92 | 29.66 | 0.00 | 25.69 | apache-2.0 |
 | 15 | Qwen3.5 2B | 13.2 | 25.80 | 7.88 | 30.07 | 34.83 | 0.00 | 21.75 | apache-2.0 |
 
-`-` means not measured. `withheld` means the model answered too few items to score
-honestly, not that it scored zero. Coverage below 50% is never published.
+Every model has been measured on every track. Nothing is missing and nothing is
+withheld.
 
 **Instructions** is IFEval prompt-level strict: the share of prompts where every
-constraint was satisfied. Three further official figures are recorded per run
-and omitted here for width. Every score is computed on the 605 constraints that
-can be checked, out of 822. The other 217 still carry English arguments against
-Uzbek prompts and are excluded rather than guessed at, identically for every
-model, so the column compares fairly even though it is not a full measure of the
-set. DiffusionGemma has no cell because it was not run on this track. Qwen3.5
-Every model now has a reasoning cell. The six that were missing or withheld
-were re-run once the context and GPU placement were corrected, including
-Qwen3.5 27B, whose earlier 100.00 rested on 4 scored items and is now 73.78 on
-82 of them. Qwen3.5 0.8B
-and 2B have DTM and translation on disk but lost those entries from their run
-manifests. DiffusionGemma decodes differently from every other row, explained
-below. The remaining gaps are tracks that were not run.
+constraint was satisfied. Three further official figures are recorded per run and
+omitted here for width. Every score is computed on the 605 constraints that can
+be checked, out of 822. The other 217 still carry English arguments against Uzbek
+prompts and are excluded rather than guessed at, identically for every model, so
+the column compares fairly even though it is not a full measure of the set.
 
-DiffusionGemma's three scored tracks are each the mean of three passes rather
-than a single run, because it decodes stochastically and one pass is a draw
-rather than a value. It has no composite while its instruction following run is
-outstanding.
+Six reasoning cells rest on fewer than 80% of the 100 items and are marked
+provisional on the site: Qwen3.6 27B on 64, Qwen3.5 4B on 68, Qwen3.5 2B on 73,
+Qwen3.5 35B on 74, Qwen3.5 9B on 77 and Qwen3.8 27B on 78. Most of the shortfall
+is request timeouts rather than the models, so those figures should be read as
+resting on a partial sample until the track is re-run with more headroom.
+
+DiffusionGemma's DTM, reasoning and translation figures are each the mean of
+three passes rather than a single run, because it decodes stochastically and one
+pass is a draw rather than a value. Its observed range is under one point on DTM
+and 0.12 on translation.
 
 Rank is by DTM, the flagship track, and is not a claim of overall superiority. A
 model can lead the composite without leading DTM, and a row without a composite

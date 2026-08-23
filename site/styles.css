@@ -586,13 +586,27 @@ img {
     color: var(--text-heading);
 }
 
-.col-org {
-    color: var(--text-secondary);
+.model-sub {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.25rem;
 }
+
+.model-sub .model-meta { margin: 0; }
 
 .col-score {
     text-align: center !important;
-    min-width: 100px;
+    min-width: 88px;
+}
+
+.leaderboard-table thead .th-sort {
+    display: inline-block;
+    max-width: 8.5em;
+    white-space: normal;
+    line-height: 1.2;
+    text-wrap: balance;
 }
 
 .score-cell {
@@ -1098,7 +1112,7 @@ img {
     }
 
     .col-model { min-width: 150px; }
-    .col-score { min-width: 80px; }
+    .col-score { min-width: 76px; }
 
     .benchmarks-grid,
     .partners-grid {

@@ -1,7 +1,7 @@
 {
   "suite": "core",
   "suiteDescription": "Tracks whose numbers are considered publishable. A task joins this suite only once its dataset validates clean and its scoring has golden tests.",
-  "generatedAt": "2026-08-25T09:21:52+00:00",
+  "generatedAt": "2026-08-25T09:43:53+00:00",
   "tasks": [
     {
       "id": "dtm",
@@ -1842,7 +1842,11 @@
         "reasoning_uz"
       ],
       "withheld": {
-        "reasoning_uz": 0.23
+        "reasoning_uz": {
+          "coverage": 0.23,
+          "n": 23,
+          "n_items": 100
+        }
       },
       "scores": {
         "dtm": {
@@ -1948,7 +1952,11 @@
         "reasoning_uz"
       ],
       "withheld": {
-        "reasoning_uz": 0.16
+        "reasoning_uz": {
+          "coverage": 0.16,
+          "n": 16,
+          "n_items": 100
+        }
       },
       "scores": {
         "dtm": {
@@ -2054,7 +2062,11 @@
         "reasoning_uz"
       ],
       "withheld": {
-        "reasoning_uz": 0.24
+        "reasoning_uz": {
+          "coverage": 0.24,
+          "n": 24,
+          "n_items": 100
+        }
       },
       "scores": {
         "dtm": {

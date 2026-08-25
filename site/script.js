@@ -66,6 +66,8 @@ const TRANSLATIONS = {
         "th.overall": "Umumiy",
         "note.composite": "«Umumiy» — har bir topshiriqning tasodifiy javob darajasiga nisbatan normallashtirilgan ballarning o'rtachasi. Faqat barcha topshiriqlarni bajargan modellar uchun ko'rsatiladi.",
         "note.provisional": "◐ — savollarning 20% dan ortig'i baholanmadi.",
+        "note.withheld": "◌ — savollarning yarmidan ko'pi baholanmadi, shuning uchun natija e'lon qilinmadi.",
+        "note.notrun": "Bu topshiriq bajarilmagan.",
         "note.chance": "⚠ — natija tasodifiy javob darajasida yoki undan past.",
         "bench.title": "Benchmarklar",
         "bench.subtitle": "Baholanadigan yo'nalishlar",
@@ -120,6 +122,8 @@ const TRANSLATIONS = {
         "th.overall": "Overall",
         "note.composite": "\"Overall\" is the mean of per-task scores normalised against each task's random baseline. Shown only for models with a complete run.",
         "note.provisional": "◐ — more than 20% of items could not be scored.",
+        "note.withheld": "◌ — fewer than half the items could be scored, so the result is withheld.",
+        "note.notrun": "This task was not run.",
         "note.chance": "⚠ — score is at or below the random baseline.",
         "bench.title": "Benchmarks",
         "bench.subtitle": "Evaluated tracks",
@@ -248,9 +252,20 @@ function scoreTint(entry) {
     };
 }
 
-function cell(entry) {
+function cell(entry, withheld) {
+    // A withheld cell is not an empty one. The task ran; too few of its answers
+    // could be scored to publish a number. Rendering both as "—" would tell the
+    // reader the model was never measured, which is a different claim.
+    if ((!entry || entry.score == null) && withheld) {
+        const n = withheld.n != null && withheld.n_items != null
+            ? `<span class="score-n">n=${withheld.n}/${withheld.n_items}</span>` : "";
+        return `<td class="col-score">
+            <span class="score-withheld" title="${esc(t("note.withheld"))}">◌</span>
+            ${n}
+        </td>`;
+    }
     if (!entry || entry.score == null) {
-        return `<td class="col-score"><span class="score-missing" title="not run">—</span></td>`;
+        return `<td class="col-score"><span class="score-missing" title="${esc(t("note.notrun"))}">—</span></td>`;
     }
     const flags = [];
     if (entry.at_or_below_chance) flags.push(`<span class="flag flag-chance" title="${esc(t("note.chance"))}">⚠</span>`);
@@ -333,7 +348,7 @@ function row(model) {
             <span class="model-sub">${quant}${think}${metaLine(model)}</span>
         </th>
         ${composite}
-        ${BOARD.tasks.map((task) => cell(model.scores?.[task.id])).join("")}
+        ${BOARD.tasks.map((task) => cell(model.scores?.[task.id], model.withheld?.[task.id])).join("")}
     </tr>`;
 }
 

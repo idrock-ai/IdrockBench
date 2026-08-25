@@ -1264,6 +1264,15 @@ img {
 }
 .leaderboard-table .score-missing { color: var(--text-muted); font-family: var(--font-mono); }
 
+.leaderboard-table .score-withheld {
+    display: block;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    line-height: 1.2;
+    cursor: help;
+}
+
 .flag { margin-left: 0.3em; font-size: 0.8em; cursor: help; }
 .flag-chance { color: #e0a34a; }
 .flag-provisional { color: var(--text-muted); }

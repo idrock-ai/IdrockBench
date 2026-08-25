@@ -95,7 +95,7 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
     rows: list[dict[str, Any]] = []
     for model, run in latest.items():
         scores: dict[str, Any] = {}
-        withheld: list[tuple[str, float]] = []
+        withheld: list[tuple[str, dict[str, Any]]] = []
         for name in all_tasks:
             entry = (run.get("tasks") or {}).get(name)
             if not entry or "metrics" not in entry:
@@ -103,7 +103,11 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
             metrics, diag = entry["metrics"], entry.get("diagnostics", {})
             coverage = diag.get("coverage", 1.0)
             if coverage < PUBLISH_FLOOR:
-                withheld.append((name, coverage))
+                withheld.append((name, {
+                    "coverage": round(coverage, 4),
+                    "n": entry.get("n_scored"),
+                    "n_items": entry.get("n_items"),
+                }))
                 continue
             scores[name] = {
                 "score": metrics.get("primary"),
@@ -148,7 +152,7 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
             "composite": composite,
             "complete": complete,
             "missing": [t for t in suite.tasks if t not in scores],
-            "withheld": {t: round(c, 4) for t, c in withheld},
+            "withheld": dict(withheld),
             "scores": scores,
             "runId": run.get("run_id"),
             "runDate": (run.get("finished_at") or run.get("started_at", ""))[:10],

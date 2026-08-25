@@ -1,37 +1,43 @@
 {
   "suite": "core",
   "suiteDescription": "Tracks whose numbers are considered publishable. A task joins this suite only once its dataset validates clean and its scoring has golden tests.",
-  "generatedAt": "2026-08-25T09:43:53+00:00",
+  "generatedAt": "2026-08-25T09:48:33+00:00",
   "tasks": [
     {
       "id": "dtm",
       "chance": 25.0,
-      "version": "2.1"
+      "version": "2.1",
+      "composited": true
     },
     {
       "id": "reasoning_uz",
       "chance": 15.6,
-      "version": "2.0"
+      "version": "2.0",
+      "composited": true
     },
     {
       "id": "translation_uz",
       "chance": 0.0,
-      "version": "2.0"
+      "version": "2.0",
+      "composited": true
     },
     {
       "id": "ifeval_uz",
       "chance": 0.0,
-      "version": "2.0"
+      "version": "2.0",
+      "composited": true
     },
     {
       "id": "zarbulmasal",
       "chance": 0.0,
-      "version": "1.0"
+      "version": "1.0",
+      "composited": true
     },
     {
       "id": "zarbulmasal_mc",
       "chance": 25.0,
-      "version": "1.0"
+      "version": "1.0",
+      "composited": false
     }
   ],
   "notes": {
@@ -1468,6 +1474,119 @@
       ]
     },
     {
+      "model": "Alloma 8B Instruct",
+      "organization": "uzlm",
+      "license": "llama3.1",
+      "openWeights": true,
+      "weightsUrl": "https://huggingface.co/uzlm/alloma-8B-Instruct",
+      "quantization": "F16",
+      "reasoning": {
+        "label": "no-think",
+        "byTask": {
+          "dtm": "off",
+          "reasoning_uz": "off",
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
+        }
+      },
+      "composite": 14.8,
+      "complete": false,
+      "missing": [
+        "reasoning_uz"
+      ],
+      "withheld": {
+        "reasoning_uz": {
+          "coverage": 0.24,
+          "n": 24,
+          "n_items": 100
+        }
+      },
+      "scores": {
+        "dtm": {
+          "score": 28.73,
+          "ci_low": 26.77,
+          "ci_high": 30.77,
+          "n": 1963,
+          "n_items": 2062,
+          "coverage": 0.952,
+          "unparsed_rate": 0.0369,
+          "chance": 25.0,
+          "task_version": "2.1",
+          "dataset_sha256": "6cca87ac3457",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "translation_uz": {
+          "score": 24.86,
+          "ci_low": 22.67,
+          "ci_high": 26.96,
+          "n": 798,
+          "n_items": 800,
+          "coverage": 0.9975,
+          "unparsed_rate": 0.0025,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "fba5fb626edb",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 27.86,
+          "ci_low": 23.7,
+          "ci_high": 32.44,
+          "n": 484,
+          "n_items": 535,
+          "coverage": 0.9047,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 1.51,
+          "ci_low": 0.65,
+          "ci_high": 3.49,
+          "n": 331,
+          "n_items": 331,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 34.56,
+          "ci_low": 29.61,
+          "ci_high": 39.86,
+          "n": 327,
+          "n_items": 331,
+          "coverage": 0.9879,
+          "unparsed_rate": 0.0121,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        }
+      },
+      "runId": "zarb-mc-alloma-8b",
+      "runDate": "2026-08-25",
+      "harnessVersion": "2.0.0",
+      "harnessCommit": "unknown",
+      "temperature": 0.0,
+      "provenance": "organiser-run",
+      "rank": 13,
+      "tiedWith": [
+        "Nemotron 3.5 Lightning 30B"
+      ]
+    },
+    {
       "model": "Qwen3.5 2B",
       "organization": "Alibaba",
       "license": "apache-2.0",
@@ -1581,7 +1700,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 13,
+      "rank": 14,
       "tiedWith": []
     },
     {
@@ -1698,7 +1817,120 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 14,
+      "rank": 15,
+      "tiedWith": [
+        "Alloma 8B Instruct"
+      ]
+    },
+    {
+      "model": "Alloma 3B Instruct",
+      "organization": "uzlm",
+      "license": "llama3.2",
+      "openWeights": true,
+      "weightsUrl": "https://huggingface.co/uzlm/alloma-3B-Instruct",
+      "quantization": "F16",
+      "reasoning": {
+        "label": "no-think",
+        "byTask": {
+          "dtm": "off",
+          "reasoning_uz": "off",
+          "translation_uz": "off",
+          "ifeval_uz": "off",
+          "zarbulmasal": "off",
+          "zarbulmasal_mc": "off"
+        }
+      },
+      "composite": 11.13,
+      "complete": false,
+      "missing": [
+        "reasoning_uz"
+      ],
+      "withheld": {
+        "reasoning_uz": {
+          "coverage": 0.16,
+          "n": 16,
+          "n_items": 100
+        }
+      },
+      "scores": {
+        "dtm": {
+          "score": 28.38,
+          "ci_low": 26.12,
+          "ci_high": 30.74,
+          "n": 1459,
+          "n_items": 2062,
+          "coverage": 0.7076,
+          "unparsed_rate": 0.211,
+          "chance": 25.0,
+          "task_version": "2.1",
+          "dataset_sha256": "6cca87ac3457",
+          "provisional": true,
+          "at_or_below_chance": false
+        },
+        "translation_uz": {
+          "score": 23.76,
+          "ci_low": 21.96,
+          "ci_high": 25.77,
+          "n": 784,
+          "n_items": 800,
+          "coverage": 0.98,
+          "unparsed_rate": 0.02,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "fba5fb626edb",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "ifeval_uz": {
+          "score": 15.96,
+          "ci_low": 12.85,
+          "ci_high": 19.65,
+          "n": 535,
+          "n_items": 535,
+          "coverage": 1.0,
+          "unparsed_rate": 0.0,
+          "chance": 0.0,
+          "task_version": "2.0",
+          "dataset_sha256": "e3d301f09160",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal": {
+          "score": 0.3,
+          "ci_low": 0.05,
+          "ci_high": 1.7,
+          "n": 330,
+          "n_items": 331,
+          "coverage": 0.997,
+          "unparsed_rate": 0.003,
+          "chance": 0.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        },
+        "zarbulmasal_mc": {
+          "score": 29.27,
+          "ci_low": 24.61,
+          "ci_high": 34.41,
+          "n": 328,
+          "n_items": 331,
+          "coverage": 0.9909,
+          "unparsed_rate": 0.0091,
+          "chance": 25.0,
+          "task_version": "1.0",
+          "dataset_sha256": "dc5cdb83b8b0",
+          "provisional": false,
+          "at_or_below_chance": false
+        }
+      },
+      "runId": "zarb-mc-alloma-3b",
+      "runDate": "2026-08-24",
+      "harnessVersion": "2.0.0",
+      "harnessCommit": "unknown",
+      "temperature": 0.0,
+      "provenance": "organiser-run",
+      "rank": 16,
       "tiedWith": []
     },
     {
@@ -1815,7 +2047,7 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": 15,
+      "rank": 17,
       "tiedWith": []
     },
     {
@@ -1836,7 +2068,7 @@
           "zarbulmasal_mc": "off"
         }
       },
-      "composite": null,
+      "composite": 7.62,
       "complete": false,
       "missing": [
         "reasoning_uz"
@@ -1926,227 +2158,8 @@
       "harnessCommit": "unknown",
       "temperature": 0.0,
       "provenance": "organiser-run",
-      "rank": null
-    },
-    {
-      "model": "Alloma 3B Instruct",
-      "organization": "uzlm",
-      "license": "llama3.2",
-      "openWeights": true,
-      "weightsUrl": "https://huggingface.co/uzlm/alloma-3B-Instruct",
-      "quantization": "F16",
-      "reasoning": {
-        "label": "no-think",
-        "byTask": {
-          "dtm": "off",
-          "reasoning_uz": "off",
-          "translation_uz": "off",
-          "ifeval_uz": "off",
-          "zarbulmasal": "off",
-          "zarbulmasal_mc": "off"
-        }
-      },
-      "composite": null,
-      "complete": false,
-      "missing": [
-        "reasoning_uz"
-      ],
-      "withheld": {
-        "reasoning_uz": {
-          "coverage": 0.16,
-          "n": 16,
-          "n_items": 100
-        }
-      },
-      "scores": {
-        "dtm": {
-          "score": 28.38,
-          "ci_low": 26.12,
-          "ci_high": 30.74,
-          "n": 1459,
-          "n_items": 2062,
-          "coverage": 0.7076,
-          "unparsed_rate": 0.211,
-          "chance": 25.0,
-          "task_version": "2.1",
-          "dataset_sha256": "6cca87ac3457",
-          "provisional": true,
-          "at_or_below_chance": false
-        },
-        "translation_uz": {
-          "score": 23.76,
-          "ci_low": 21.96,
-          "ci_high": 25.77,
-          "n": 784,
-          "n_items": 800,
-          "coverage": 0.98,
-          "unparsed_rate": 0.02,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "fba5fb626edb",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "ifeval_uz": {
-          "score": 15.96,
-          "ci_low": 12.85,
-          "ci_high": 19.65,
-          "n": 535,
-          "n_items": 535,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "e3d301f09160",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "zarbulmasal": {
-          "score": 0.3,
-          "ci_low": 0.05,
-          "ci_high": 1.7,
-          "n": 330,
-          "n_items": 331,
-          "coverage": 0.997,
-          "unparsed_rate": 0.003,
-          "chance": 0.0,
-          "task_version": "1.0",
-          "dataset_sha256": "dc5cdb83b8b0",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "zarbulmasal_mc": {
-          "score": 29.27,
-          "ci_low": 24.61,
-          "ci_high": 34.41,
-          "n": 328,
-          "n_items": 331,
-          "coverage": 0.9909,
-          "unparsed_rate": 0.0091,
-          "chance": 25.0,
-          "task_version": "1.0",
-          "dataset_sha256": "dc5cdb83b8b0",
-          "provisional": false,
-          "at_or_below_chance": false
-        }
-      },
-      "runId": "zarb-mc-alloma-3b",
-      "runDate": "2026-08-24",
-      "harnessVersion": "2.0.0",
-      "harnessCommit": "unknown",
-      "temperature": 0.0,
-      "provenance": "organiser-run",
-      "rank": null
-    },
-    {
-      "model": "Alloma 8B Instruct",
-      "organization": "uzlm",
-      "license": "llama3.1",
-      "openWeights": true,
-      "weightsUrl": "https://huggingface.co/uzlm/alloma-8B-Instruct",
-      "quantization": "F16",
-      "reasoning": {
-        "label": "no-think",
-        "byTask": {
-          "dtm": "off",
-          "reasoning_uz": "off",
-          "translation_uz": "off",
-          "ifeval_uz": "off",
-          "zarbulmasal": "off",
-          "zarbulmasal_mc": "off"
-        }
-      },
-      "composite": null,
-      "complete": false,
-      "missing": [
-        "reasoning_uz"
-      ],
-      "withheld": {
-        "reasoning_uz": {
-          "coverage": 0.24,
-          "n": 24,
-          "n_items": 100
-        }
-      },
-      "scores": {
-        "dtm": {
-          "score": 28.73,
-          "ci_low": 26.77,
-          "ci_high": 30.77,
-          "n": 1963,
-          "n_items": 2062,
-          "coverage": 0.952,
-          "unparsed_rate": 0.0369,
-          "chance": 25.0,
-          "task_version": "2.1",
-          "dataset_sha256": "6cca87ac3457",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "translation_uz": {
-          "score": 24.86,
-          "ci_low": 22.67,
-          "ci_high": 26.96,
-          "n": 798,
-          "n_items": 800,
-          "coverage": 0.9975,
-          "unparsed_rate": 0.0025,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "fba5fb626edb",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "ifeval_uz": {
-          "score": 27.86,
-          "ci_low": 23.7,
-          "ci_high": 32.44,
-          "n": 484,
-          "n_items": 535,
-          "coverage": 0.9047,
-          "unparsed_rate": 0.0,
-          "chance": 0.0,
-          "task_version": "2.0",
-          "dataset_sha256": "e3d301f09160",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "zarbulmasal": {
-          "score": 1.51,
-          "ci_low": 0.65,
-          "ci_high": 3.49,
-          "n": 331,
-          "n_items": 331,
-          "coverage": 1.0,
-          "unparsed_rate": 0.0,
-          "chance": 0.0,
-          "task_version": "1.0",
-          "dataset_sha256": "dc5cdb83b8b0",
-          "provisional": false,
-          "at_or_below_chance": false
-        },
-        "zarbulmasal_mc": {
-          "score": 34.56,
-          "ci_low": 29.61,
-          "ci_high": 39.86,
-          "n": 327,
-          "n_items": 331,
-          "coverage": 0.9879,
-          "unparsed_rate": 0.0121,
-          "chance": 25.0,
-          "task_version": "1.0",
-          "dataset_sha256": "dc5cdb83b8b0",
-          "provisional": false,
-          "at_or_below_chance": false
-        }
-      },
-      "runId": "zarb-mc-alloma-8b",
-      "runDate": "2026-08-25",
-      "harnessVersion": "2.0.0",
-      "harnessCommit": "unknown",
-      "temperature": 0.0,
-      "provenance": "organiser-run",
-      "rank": null
+      "rank": 18,
+      "tiedWith": []
     }
   ]
 }

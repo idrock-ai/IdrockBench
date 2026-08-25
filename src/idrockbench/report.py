@@ -175,7 +175,8 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
         "generatedAt": datetime.now(UTC).isoformat(timespec="seconds"),
         "tasks": [
             {"id": t, "chance": round(chance.get(t, 0.0) * 100, 1),
-             "version": get_task(TaskConfig.load(t).task)().version}
+             "version": get_task(TaskConfig.load(t).task)().version,
+             "composited": t in suite.tasks}
             for t in all_tasks
         ],
         "notes": {

@@ -8,7 +8,7 @@ tasks:
   - translation_uz
   - ifeval_uz
   - zarbulmasal
-require_complete: true
+require_complete: false
 
 reported:
   - zarbulmasal_mc

@@ -43,7 +43,8 @@ const TRANSLATIONS = {
         "th.model": "Model",
         "th.organization": "Tashkilot",
         "th.overall": "Umumiy",
-        "note.composite": "«Umumiy» — har bir topshiriqning tasodifiy javob darajasiga nisbatan normallashtirilgan ballarning o'rtachasi. Faqat barcha topshiriqlarni bajargan modellar uchun ko'rsatiladi.",
+        "note.composite": "«Umumiy» — har bir topshiriqning tasodifiy javob darajasiga nisbatan normallashtirilgan ballarning o'rtachasi.",
+        "note.partial": "* — umumiy ball {total} topshiriqdan {used} tasi bo'yicha hisoblangan, shuning uchun to'liq baholangan modellar bilan to'g'ridan-to'g'ri solishtirib bo'lmaydi.",
         "note.provisional": "◐ — savollarning 20% dan ortig'i baholanmadi.",
         "note.withheld": "◌ — savollarning yarmidan ko'pi baholanmadi, shuning uchun natija e'lon qilinmadi.",
         "note.notrun": "Bu topshiriq bajarilmagan.",
@@ -99,7 +100,8 @@ const TRANSLATIONS = {
         "th.model": "Model",
         "th.organization": "Organization",
         "th.overall": "Overall",
-        "note.composite": "\"Overall\" is the mean of per-task scores normalised against each task's random baseline. Shown only for models with a complete run.",
+        "note.composite": "\"Overall\" is the mean of per-task scores normalised against each task's random baseline.",
+        "note.partial": "* — this composite covers {used} of {total} tracks, so it is not directly comparable to a fully measured model.",
         "note.provisional": "◐ — more than 20% of items could not be scored.",
         "note.withheld": "◌ — fewer than half the items could be scored, so the result is withheld.",
         "note.notrun": "This task was not run.",
@@ -297,10 +299,14 @@ function row(model) {
         : `<span class="rank-cell">${model.rank}</span>`;
     const tied = model.tiedWith?.length
         ? `<span class="tie-note" title="${esc(model.tiedWith.join(", "))}">tied</span>` : "";
+    const nComposited = (BOARD.tasks || []).filter((x) => x.composited).length;
+    const nUsed = nComposited - (model.missing?.length || 0);
+    const partial = model.composite != null && !model.complete
+        ? `<span class="flag flag-partial" title="${esc(t("note.partial").replace("{used}", nUsed).replace("{total}", nComposited))}">*</span>`
+        : "";
     const composite = model.composite == null
         ? `<td class="col-score"><span class="score-missing" title="${esc(t("lb.unranked_note"))}">—</span></td>`
-        : `<td class="col-score"><span class="score-value score-composite">${model.composite.toFixed(1)}</span></td>`;
-    void 0;
+        : `<td class="col-score"><span class="score-value score-composite">${model.composite.toFixed(1)}${partial}</span></td>`;
 
     return `<tr${model.composite == null ? ' class="row-unranked"' : ""}>
         <td class="col-rank">${rank}${tied}</td>

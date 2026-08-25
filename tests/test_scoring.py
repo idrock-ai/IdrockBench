@@ -178,8 +178,50 @@ class TestThinCellsAreWithheld:
         row = board["models"][0]
         assert "dtm" in row["scores"]
         assert "reasoning_uz" not in row["scores"], "7%-coverage cell must be withheld"
-        assert row["withheld"]["reasoning_uz"] == 0.07
-        assert row["composite"] is None, "an incomplete row gets no composite"
+        # The counts travel with the coverage. A reader seeing a blank cell
+        # cannot otherwise tell "never run" from "run, and most answers were
+        # unscorable", and those say opposite things about a model.
+        assert row["withheld"]["reasoning_uz"] == {
+            "coverage": 0.07, "n": 7, "n_items": 100,
+        }
+        assert row["composite"] is None, (
+            "a suite requiring every track gives an incomplete row no composite"
+        )
+
+    def test_a_partial_composite_averages_what_was_measured(self, tmp_path):
+        """With require_complete off, a model missing a track is scored on the
+        tracks it has rather than dropped below models it outscores on both.
+        The withheld cell contributes nothing, and the row stays marked
+        incomplete so the composite is not read as covering the full suite."""
+        import json
+
+        from idrockbench.config import SuiteConfig
+        from idrockbench.report import build_leaderboard
+
+        run = tmp_path / "runs" / "m"
+        run.mkdir(parents=True)
+        (run / "manifest.json").write_text(json.dumps({
+            "run_id": "m", "model": "M", "license": "apache-2.0", "tasks": {
+                "dtm": {"metrics": {"primary": 48.5, "ci_low": 46.4, "ci_high": 50.7},
+                        "diagnostics": {"coverage": 1.0}, "n_scored": 2060,
+                        "n_items": 2062},
+                "reasoning_uz": {"metrics": {"primary": 85.7, "ci_low": 48.7,
+                                             "ci_high": 97.4},
+                                 "diagnostics": {"coverage": 0.07}, "n_scored": 7,
+                                 "n_items": 100},
+            },
+        }))
+        board = build_leaderboard(
+            tmp_path / "runs",
+            SuiteConfig(name="t", tasks=["dtm", "reasoning_uz"],
+                        require_complete=False),
+            tmp_path / "out.json",
+        )
+        row = board["models"][0]
+        assert row["composite"] is not None, "a measured track must still score"
+        assert "reasoning_uz" not in row["scores"], "the thin cell stays withheld"
+        assert row["complete"] is False, "the row must still read as incomplete"
+        assert row["missing"] == ["reasoning_uz"]
 
 
 def test_markdown_and_site_cannot_disagree(tmp_path):

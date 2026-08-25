@@ -1,0 +1,18 @@
+model: alloma-1b
+provider: ollama
+base_url: http://127.0.0.1:11503
+name: Alloma 1B Instruct
+organization: uzlm
+license: llama3.2
+weights_url: https://huggingface.co/uzlm/alloma-1B-Instruct
+params_b: 1.24
+
+quantization: ""
+
+reasoning: "off"
+
+concurrency: 4
+
+extra_body:
+  options:
+    num_ctx: 16384

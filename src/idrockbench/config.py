@@ -57,6 +57,7 @@ class ModelConfig:
     timeout: int = 300
     extra_body: dict[str, Any] = field(default_factory=dict)
     notes: str = ""
+    publish: bool = True
 
     def __post_init__(self) -> None:
         if not self.name:

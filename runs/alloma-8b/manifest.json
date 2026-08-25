@@ -1,0 +1,606 @@
+{
+  "run_id": "alloma-8b",
+  "model": "Alloma 8B Instruct",
+  "provider": "ollama",
+  "model_revision": "",
+  "quantization": "F16",
+  "organization": "uzlm",
+  "license": "llama3.1",
+  "weights_url": "https://huggingface.co/uzlm/alloma-8B-Instruct",
+  "temperature": 0.0,
+  "top_p": null,
+  "seed": 0,
+  "max_tokens": {
+    "dtm": 1024,
+    "reasoning_uz": 8192,
+    "translation_uz": 1024,
+    "ifeval_uz": 2560,
+    "zarbulmasal": 256
+  },
+  "reasoning": "off",
+  "chat_template": true,
+  "harness_version": "2.0.0",
+  "harness_git_sha": "unknown",
+  "python_version": "3.12.3",
+  "platform": "Linux-6.17.0-1029-nvidia-aarch64-with-glibc2.39",
+  "package_versions": {},
+  "started_at": "2026-08-24T21:33:36+00:00",
+  "finished_at": "2026-08-25T09:19:57+00:00",
+  "tasks": {
+    "dtm": {
+      "task_version": "2.1",
+      "dataset": "dtm_public.json",
+      "dataset_sha256": "6cca87ac3457631c0e33ac770cdb19f774f9c403b8fca2ac65001dc109b50eed",
+      "max_tokens": 1024,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 300,
+      "options": {
+        "shuffle_options": true,
+        "answer_only": true
+      },
+      "n_items": 2062,
+      "n_scored": 1963,
+      "metrics": {
+        "primary": 28.73,
+        "accuracy": 28.73,
+        "ci_low": 26.77,
+        "ci_high": 30.77,
+        "n": 1963
+      },
+      "diagnostics": {
+        "n_items": 2062,
+        "n_scored": 1963,
+        "unparsed_rate": 0.0369,
+        "truncated_rate": 0.0112,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.952,
+        "strategies": {
+          "option-label": 1171,
+          "bare-letter": 556,
+          "line-tail": 164,
+          "no-match": 99,
+          "answer-cue": 72
+        },
+        "chance_level": 0.25,
+        "at_or_below_chance": false
+      },
+      "breakdown": {
+        "subject": {
+          "fizika": {
+            "accuracy": 24.73,
+            "ci_low": 20.6,
+            "ci_high": 29.38,
+            "n": 368,
+            "n_items": 403,
+            "coverage": 0.9132
+          },
+          "matematika": {
+            "accuracy": 26.8,
+            "ci_low": 23.61,
+            "ci_high": 30.26,
+            "n": 679,
+            "n_items": 727,
+            "coverage": 0.934
+          },
+          "ona_tili": {
+            "accuracy": 28.06,
+            "ci_low": 23.96,
+            "ci_high": 32.55,
+            "n": 417,
+            "n_items": 423,
+            "coverage": 0.9858
+          },
+          "tarix": {
+            "accuracy": 34.87,
+            "ci_low": 30.82,
+            "ci_high": 39.15,
+            "n": 499,
+            "n_items": 509,
+            "coverage": 0.9804
+          }
+        }
+      }
+    },
+    "reasoning_uz": {
+      "task_version": "2.0",
+      "dataset": "reasoning_uz.json",
+      "dataset_sha256": "8070ec68a5d921a06775498584a5bda92ffb773f60b0d41fb1c47d98ba3908d4",
+      "max_tokens": 8192,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 1200,
+      "options": {},
+      "n_items": 100,
+      "n_scored": 24,
+      "metrics": {
+        "primary": 2.6,
+        "accuracy": 2.6,
+        "ci_low": 0.33,
+        "ci_high": 17.96,
+        "n": 24
+      },
+      "diagnostics": {
+        "n_items": 100,
+        "n_scored": 24,
+        "unparsed_rate": 0.75,
+        "truncated_rate": 0.01,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.24,
+        "strategies": {
+          "no-match": 76,
+          "<solution>": 14,
+          "bold": 8,
+          "last-line": 2
+        },
+        "chance_level": 0.156,
+        "at_or_below_chance": true
+      },
+      "breakdown": {
+        "task": {
+          "spatial": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 29.91,
+            "n": 9,
+            "n_items": 50,
+            "coverage": 0.18
+          },
+          "zebra_puzzle": {
+            "accuracy": 4.17,
+            "ci_low": 0.52,
+            "ci_high": 26.5,
+            "n": 15,
+            "n_items": 50,
+            "coverage": 0.3
+          }
+        }
+      }
+    },
+    "translation_uz": {
+      "task_version": "2.0",
+      "dataset": "translation_flores_devtest.json",
+      "dataset_sha256": "fba5fb626edbbd793b19c97b5f7c6e4ca336a548f5908eba4de123d1ceb5ca54",
+      "max_tokens": 1024,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 300,
+      "options": {
+        "directions": [
+          "uz_en",
+          "en_uz",
+          "uz_ru",
+          "ru_uz"
+        ],
+        "eval_splits": [
+          "devtest"
+        ]
+      },
+      "n_items": 800,
+      "n_scored": 798,
+      "metrics": {
+        "primary": 24.86,
+        "n_segments": 798,
+        "chrf2pp": 24.86,
+        "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+        "bleu": 8.42,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+        "spbleu": null,
+        "cyrillic_output_rate": 0.0,
+        "normalization": "NFC; apostrophes folded to U+02BB",
+        "ci_low": 22.67,
+        "ci_high": 26.96,
+        "ci_method": "segment bootstrap, 500 resamples",
+        "n": 798,
+        "by_direction": {
+          "en_uz": {
+            "n_segments": 200,
+            "chrf2pp": 47.29,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 14.23,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "ru_uz": {
+            "n_segments": 198,
+            "chrf2pp": 4.16,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 0.27,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_en": {
+            "n_segments": 200,
+            "chrf2pp": 53.76,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 26.29,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          },
+          "uz_ru": {
+            "n_segments": 200,
+            "chrf2pp": 1.89,
+            "chrf2pp_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0",
+            "bleu": 0.47,
+            "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+            "spbleu": null,
+            "cyrillic_output_rate": 0.0,
+            "normalization": "NFC; apostrophes folded to U+02BB"
+          }
+        },
+        "chrf2pp_macro": 26.77
+      },
+      "diagnostics": {
+        "n_items": 800,
+        "n_scored": 798,
+        "unparsed_rate": 0.0025,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 0.9975,
+        "strategies": {
+          "last-line": 800
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {
+        "direction": {
+          "en_uz": {
+            "accuracy": 47.05,
+            "ci_low": 40.26,
+            "ci_high": 53.96,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "ru_uz": {
+            "accuracy": 4.83,
+            "ci_low": 2.61,
+            "ci_high": 8.78,
+            "n": 198,
+            "n_items": 200,
+            "coverage": 0.99
+          },
+          "uz_en": {
+            "accuracy": 53.37,
+            "ci_low": 46.45,
+            "ci_high": 60.15,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          },
+          "uz_ru": {
+            "accuracy": 2.1,
+            "ci_low": 0.84,
+            "ci_high": 5.16,
+            "n": 200,
+            "n_items": 200,
+            "coverage": 1.0
+          }
+        }
+      }
+    },
+    "ifeval_uz": {
+      "task_version": "2.0",
+      "dataset": "ifeval_uz.json",
+      "dataset_sha256": "e3d301f09160074fd9a8b081188a5b9b85783643535aa8b779f6e488bd9b6d6a",
+      "max_tokens": 2560,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 300,
+      "options": {
+        "score_recalibrated": true,
+        "word_count_factor": 1.0
+      },
+      "n_items": 535,
+      "n_scored": 484,
+      "metrics": {
+        "primary": 27.86,
+        "prompt_strict": 27.86,
+        "ci_low": 23.7,
+        "ci_high": 32.44,
+        "prompt_loose": 30.35,
+        "inst_strict": 34.43,
+        "inst_loose": 37.55,
+        "n": 402,
+        "constraints_evaluated": 546,
+        "constraints_excluded": 195,
+        "constraint_coverage": 0.7368,
+        "exclusion_reasons": {
+          "not-meaningful-in-uzbek": 109,
+          "kwargs-not-localised": 86
+        },
+        "by_instruction_type": {
+          "combination:repeat_prompt": {
+            "n": 39,
+            "strict": 7.7,
+            "loose": 7.7
+          },
+          "combination:two_responses": {
+            "n": 19,
+            "strict": 21.1,
+            "loose": 26.3
+          },
+          "detectable_content:number_placeholders": {
+            "n": 21,
+            "strict": 23.8,
+            "loose": 23.8
+          },
+          "detectable_content:postscript": {
+            "n": 20,
+            "strict": 45.0,
+            "loose": 45.0
+          },
+          "detectable_format:json_format": {
+            "n": 17,
+            "strict": 23.5,
+            "loose": 23.5
+          },
+          "detectable_format:number_bullet_lists": {
+            "n": 29,
+            "strict": 10.3,
+            "loose": 10.3
+          },
+          "detectable_format:number_highlighted_sections": {
+            "n": 44,
+            "strict": 31.8,
+            "loose": 31.8
+          },
+          "detectable_format:title": {
+            "n": 35,
+            "strict": 77.1,
+            "loose": 77.1
+          },
+          "keywords:existence": {
+            "n": 17,
+            "strict": 47.1,
+            "loose": 47.1
+          },
+          "language:response_language": {
+            "n": 26,
+            "strict": 7.7,
+            "loose": 7.7
+          },
+          "length_constraints:number_paragraphs": {
+            "n": 25,
+            "strict": 28.0,
+            "loose": 52.0
+          },
+          "length_constraints:number_sentences": {
+            "n": 51,
+            "strict": 56.9,
+            "loose": 58.8
+          },
+          "length_constraints:number_words": {
+            "n": 39,
+            "strict": 48.7,
+            "loose": 53.8
+          },
+          "punctuation:no_comma": {
+            "n": 56,
+            "strict": 30.4,
+            "loose": 37.5
+          },
+          "startend:quotation": {
+            "n": 38,
+            "strict": 23.7,
+            "loose": 28.9
+          }
+        }
+      },
+      "diagnostics": {
+        "n_items": 535,
+        "n_scored": 484,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0953,
+        "refusal_rate": 0.0,
+        "coverage": 0.9047,
+        "strategies": {
+          "response": 484
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {}
+    },
+    "zarbulmasal": {
+      "task_version": "1.0",
+      "dataset": "zarbulmasal.json",
+      "dataset_sha256": "dc5cdb83b8b04adf26ac2343e4bc292b6be94a06a50cd9185349da773910a0a5",
+      "max_tokens": 256,
+      "reasoning": "off",
+      "concurrency": 4,
+      "timeout": 300,
+      "options": {},
+      "n_items": 331,
+      "n_scored": 331,
+      "metrics": {
+        "primary": 1.51,
+        "accuracy": 1.51,
+        "ci_low": 0.65,
+        "ci_high": 3.49,
+        "n": 331
+      },
+      "diagnostics": {
+        "n_items": 331,
+        "n_scored": 331,
+        "unparsed_rate": 0.0,
+        "truncated_rate": 0.0,
+        "error_rate": 0.0,
+        "refusal_rate": 0.0,
+        "coverage": 1.0,
+        "strategies": {
+          "last-line": 331
+        },
+        "chance_level": 0.0
+      },
+      "breakdown": {
+        "theme": {
+          "hasharotlar": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 24.25,
+            "n": 12,
+            "n_items": 12,
+            "coverage": 1.0
+          },
+          "hayvonlar": {
+            "accuracy": 6.25,
+            "ci_low": 1.73,
+            "ci_high": 20.15,
+            "n": 32,
+            "n_items": 32,
+            "coverage": 1.0
+          },
+          "kasb-hunar": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 20.39,
+            "n": 15,
+            "n_items": 15,
+            "coverage": 1.0
+          },
+          "kiyim-kechak": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 25.88,
+            "n": 11,
+            "n_items": 11,
+            "coverage": 1.0
+          },
+          "maktab": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 27.75,
+            "n": 10,
+            "n_items": 10,
+            "coverage": 1.0
+          },
+          "mevalar": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 22.81,
+            "n": 13,
+            "n_items": 13,
+            "coverage": 1.0
+          },
+          "osmon": {
+            "accuracy": 5.26,
+            "ci_low": 0.94,
+            "ci_high": 24.64,
+            "n": 19,
+            "n_items": 19,
+            "coverage": 1.0
+          },
+          "oziq-ovqat": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 21.53,
+            "n": 14,
+            "n_items": 14,
+            "coverage": 1.0
+          },
+          "oʻsimliklar": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 17.59,
+            "n": 18,
+            "n_items": 18,
+            "coverage": 1.0
+          },
+          "qushlar": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 22.81,
+            "n": 13,
+            "n_items": 13,
+            "coverage": 1.0
+          },
+          "sabzavotlar": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 16.11,
+            "n": 20,
+            "n_items": 20,
+            "coverage": 1.0
+          },
+          "tabiat": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 7.41,
+            "n": 48,
+            "n_items": 48,
+            "coverage": 1.0
+          },
+          "tana aʼzolari": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 14.87,
+            "n": 22,
+            "n_items": 22,
+            "coverage": 1.0
+          },
+          "texnika": {
+            "accuracy": 9.09,
+            "ci_low": 1.62,
+            "ci_high": 37.74,
+            "n": 11,
+            "n_items": 11,
+            "coverage": 1.0
+          },
+          "uy-roʻzgʻor": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 5.75,
+            "n": 63,
+            "n_items": 63,
+            "coverage": 1.0
+          },
+          "vaqt": {
+            "accuracy": 10.0,
+            "ci_low": 1.79,
+            "ci_high": 40.42,
+            "n": 10,
+            "n_items": 10,
+            "coverage": 1.0
+          }
+        },
+        "difficulty": {
+          "oson": {
+            "accuracy": 6.41,
+            "ci_low": 2.77,
+            "ci_high": 14.14,
+            "n": 78,
+            "n_items": 78,
+            "coverage": 1.0
+          },
+          "oʻrtacha": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 2.11,
+            "n": 178,
+            "n_items": 178,
+            "coverage": 1.0
+          },
+          "qiyin": {
+            "accuracy": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 4.87,
+            "n": 75,
+            "n_items": 75,
+            "coverage": 1.0
+          }
+        }
+      }
+    }
+  },
+  "notes": ""
+}

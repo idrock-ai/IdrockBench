@@ -5,7 +5,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from .config import SuiteConfig, TaskConfig
+from .config import ModelConfig, SuiteConfig, TaskConfig, list_configs
 from .metrics.accuracy import normalize_against_chance
 from .registry import get_task
 
@@ -47,8 +47,24 @@ def _aggregate(entries: list[dict[str, Any]]) -> dict[str, Any]:
     return cell
 
 
+def _unpublished_models() -> set[str]:
+    withheld = set()
+    for name in list_configs("models"):
+        try:
+            cfg = ModelConfig.load(name)
+        except Exception:  # noqa: BLE001
+            continue
+        if not cfg.publish:
+            withheld.add(cfg.name)
+    return withheld
+
+
 def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[str, Any]:
     runs = load_runs(runs_dir)
+
+    withheld_models = _unpublished_models()
+    if withheld_models:
+        runs = [r for r in runs if r.get("model") not in withheld_models]
 
     all_tasks = list(dict.fromkeys([*suite.tasks, *suite.reported]))
     wanted = set(all_tasks)

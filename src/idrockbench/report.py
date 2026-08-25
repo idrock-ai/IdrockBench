@@ -254,7 +254,12 @@ def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[
         "generatedAt": datetime.now(UTC).isoformat(timespec="seconds"),
         "tasks": [
             {"id": t, "chance": round(chance.get(t, 0.0) * 100, 1),
-             "version": get_task(TaskConfig.load(t).task)().version}
+             "version": get_task(TaskConfig.load(t).task)().version,
+             # Whether this track feeds the composite. Published-but-not-
+             # composited tracks exist (the multiple-choice riddles), so a
+             # reader counting columns would otherwise get the denominator
+             # wrong when a row's composite is built from a partial set.
+             "composited": t in suite.tasks}
             for t in all_tasks
         ],
         "notes": {

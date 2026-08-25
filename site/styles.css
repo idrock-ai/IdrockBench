@@ -1370,6 +1370,8 @@ img {
 .flag { margin-left: 0.3em; font-size: 0.8em; cursor: help; }
 .flag-chance { color: #e0a34a; }
 .flag-provisional { color: var(--text-muted); }
+/* Partial composite: averaged over fewer tracks than the suite defines. */
+.flag-partial { color: var(--text-muted); cursor: help; }
 
 .leaderboard-table .rank-cell { font-weight: 500; }
 .rank-unranked { color: var(--text-muted); }

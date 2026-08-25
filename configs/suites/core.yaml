@@ -9,7 +9,17 @@ tasks:
   - translation_uz
   - ifeval_uz
   - zarbulmasal
-require_complete: true
+# Average whatever tracks a model has, rather than withholding the composite
+# until every one is present. A model that scores on four of five tracks gets a
+# composite over those four.
+#
+# The trade this accepts: a composite over four tracks is not strictly the same
+# measurement as one over five, because the missing track is not missing at
+# random — it is usually the hardest one, so a partial composite tends to flatter
+# the model. That is why rows built from an incomplete set are marked as partial
+# on the leaderboard and the site, with the track count shown, instead of the
+# difference being silently averaged away.
+require_complete: false
 
 # Published beside the others, but kept out of the composite. The multiple
 # choice riddles are the same 331 items as the free-text ones, so counting both

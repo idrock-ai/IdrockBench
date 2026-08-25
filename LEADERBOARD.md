@@ -25,8 +25,11 @@ three tracks and exists only where all three were measured.
 | 11 | Nemotron 3.5 Lightning 30B | 12.9 | 32.51 | 11.61 | 26.80 | 27.87 | 0.00 | 27.79 | nvidia-open-model |
 | 12 | Qwen3.5 4B | 22.4 | 32.20 | 26.29 | 41.66 | 47.64 | 0.30 | 38.97 | apache-2.0 |
 | 13 | Gemma 4 E2B | 19.9 | 29.53 | 14.15 | 40.89 | 52.81 | 0.00 | 36.86 | gemma |
-| 14 | Qwen3.5 0.8B | 9.2 | 25.86 | 1.42 | 14.92 | 29.66 | 0.00 | 25.69 | apache-2.0 |
-| 15 | Qwen3.5 2B | 13.2 | 25.80 | 7.88 | 30.07 | 34.83 | 0.00 | 21.75 | apache-2.0 |
+| 14 | Alloma 8B Instruct | - | 28.73 | withheld | 24.86 | 27.86 | 1.51 | 34.56 | llama3.1 |
+| 15 | Alloma 3B Instruct | - | 28.38 | withheld | 23.76 | 15.96 | 0.30 | 29.27 | llama3.2 |
+| 16 | Qwen3.5 0.8B | 9.2 | 25.86 | 1.42 | 14.92 | 29.66 | 0.00 | 25.69 | apache-2.0 |
+| 17 | Qwen3.5 2B | 13.2 | 25.80 | 7.88 | 30.07 | 34.83 | 0.00 | 21.75 | apache-2.0 |
+| 18 | Alloma 1B Instruct | - | 24.92 | withheld | 14.73 | 15.73 | 0.00 | 26.59 | llama3.2 |
 
 Every model has been measured on every track. Nothing is missing and nothing is
 withheld.

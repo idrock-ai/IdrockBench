@@ -1,0 +1,42 @@
+# Alloma 1B Instruct — uzlm
+#
+# An Uzbek-tuned Llama-3.2-1B-Instruct. Stock LlamaForCausalLM, so no remote code and no shim:
+# it runs through the same Ollama path as the rest of the board.
+model: alloma-1b
+provider: ollama
+base_url: http://127.0.0.1:11503   # apostrophe proxy -> bench daemon on 11502
+#
+# Not Ollama directly. The alloma tokenizer has no Uzbek apostrophe: its vocab
+# carries the literal string APST fused into Uzbek wordpieces, because the
+# training corpus was preprocessed that way, and the model card asks callers to
+# do the same. Sent `oʻrmon` unsubstituted the model returns `oAPSTrmon`, so
+# without the proxy this row would score the preprocessing step, not the model.
+# See tools/alloma_proxy.py.
+name: Alloma 1B Instruct
+organization: uzlm
+license: llama3.2
+weights_url: https://huggingface.co/uzlm/alloma-1B-Instruct
+params_b: 1.24
+
+# Imported from safetensors WITHOUT --quantize, so Ollama keeps the released
+# bf16 rather than defaulting to a 4-bit build. Resolved from the daemon at run
+# time and written into the manifest — quantisation moves scores more than most
+# model-to-model differences, and this family has no published GGUF to fall back
+# on, so the precision is a choice this harness made and has to record.
+quantization: ""
+
+# Every model in the published suite answers under the same protocol. The
+# shipped generation_config defaults to sampling (temperature 0.6, top_p 0.9);
+# the harness sends temperature 0.0, so this decodes greedily like every other
+# row rather than at the authors' chat defaults.
+reasoning: "off"
+
+concurrency: 4
+
+# Cap the context window. These declare 131072 positions, and Ollama otherwise
+# allocates for the full window, which costs far more memory than any task here
+# can use. The longest task is reasoning at max_tokens 8192 on prompts of a few
+# hundred tokens, so 16384 leaves headroom the model never reaches.
+extra_body:
+  options:
+    num_ctx: 16384

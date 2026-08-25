@@ -94,6 +94,13 @@ class ModelConfig:
     timeout: int = 300
     extra_body: dict[str, Any] = field(default_factory=dict)
     notes: str = ""
+    #: Whether this model's scores may appear on the published leaderboard and
+    #: the site. False keeps a model fully measured and its runs intact while
+    #: withholding the numbers from publication — for a model evaluated under an
+    #: agreement that does not permit publishing, or one whose owner has not
+    #: released the results. It is a publication decision, not a data one:
+    #: nothing is deleted and `idrockbench show <run>` still reports the scores.
+    publish: bool = True
 
     def __post_init__(self) -> None:
         if not self.name:

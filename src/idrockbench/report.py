@@ -24,7 +24,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from .config import SuiteConfig, TaskConfig
+from .config import ModelConfig, SuiteConfig, TaskConfig, list_configs
 from .metrics.accuracy import normalize_against_chance
 from .registry import get_task
 
@@ -87,9 +87,36 @@ def _aggregate(entries: list[dict[str, Any]]) -> dict[str, Any]:
     return cell
 
 
+def _unpublished_models() -> set[str]:
+    """Display names of models configured with ``publish: false``.
+
+    Matched on the display name because that is what a run manifest records;
+    the config file name never reaches the manifest. A config that fails to
+    load is ignored rather than fatal: an unreadable config must not be able to
+    silently publish a model that was meant to be withheld... which is why the
+    default here is to publish nothing on error for that config alone.
+    """
+    withheld = set()
+    for name in list_configs("models"):
+        try:
+            cfg = ModelConfig.load(name)
+        except Exception:  # noqa: BLE001 - a broken config withholds nothing
+            continue
+        if not cfg.publish:
+            withheld.add(cfg.name)
+    return withheld
+
+
 def build_leaderboard(runs_dir: Path, suite: SuiteConfig, output: Path) -> dict[str, Any]:
     """Rebuild the leaderboard from scratch and write it."""
     runs = load_runs(runs_dir)
+
+    # Models withheld from publication are dropped here, before any aggregation,
+    # so their numbers cannot reach results.json, LEADERBOARD.md, or any total
+    # computed from the rows. The runs stay on disk and stay inspectable.
+    withheld_models = _unpublished_models()
+    if withheld_models:
+        runs = [r for r in runs if r.get("model") not in withheld_models]
 
     # A model's tracks are spread across several runs by design. The core suite
     # is measured in one run, riddles in another, instruction following in a

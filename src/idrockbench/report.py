@@ -278,7 +278,6 @@ TASK_LABELS = {
     "ifeval_uz": "Instructions",
     "zarbulmasal": "Riddle (recall)",
     "zarbulmasal_mc": "Riddle (choice)",
-    "business_uz": "Business",
     "dtm_heldout": "DTM held out",
 }
 

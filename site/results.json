@@ -1,7 +1,7 @@
 {
   "suite": "core",
   "suiteDescription": "Tracks whose numbers are considered publishable. A task joins this suite only once its dataset validates clean and its scoring has golden tests.",
-  "generatedAt": "2026-08-25T09:48:33+00:00",
+  "generatedAt": "2026-09-02T07:51:27+00:00",
   "tasks": [
     {
       "id": "dtm",

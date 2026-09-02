@@ -45,7 +45,6 @@ Models whose intervals overlap are tied, not ranked.
 | `reasoning_uz` | Zebra puzzles, spatial reasoning, web of lies | 100 | partial credit | ~16% |
 | `translation_uz` | uz↔en and uz↔ru translation (FLORES-200 devtest) | 800 pairs | chrF++ | 0% |
 | `ifeval_uz` | Verifiable instruction following | 541 | strict pass rate | 0% |
-| `mmlu_pro_uz` | Professional-level knowledge, ten options | 174 | accuracy | 10% |
 | `zarbulmasal` | Uzbek folk riddles and zarbulmasal - free text, the model must name the answer | 331 | exact match | 0% |
 | `zarbulmasal_mc` | The same riddles as four-way multiple choice - recognition rather than recall | 331 | accuracy | 25% |
 

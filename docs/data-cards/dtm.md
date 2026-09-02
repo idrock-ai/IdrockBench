@@ -47,7 +47,7 @@ What is required before submission to any data venue:
    modes with different fixes.
 
 No Turkic-language benchmark currently reports an agreement statistic. Doing so
-would place this dataset ahead of TUMLU, KazMMLU, TurkishMMLU and ArabicMMLU on
+would place this dataset ahead of TUMLU and its regional peers on
 validation rigour, and it is the cheapest credibility available.
 
 ## Repairs applied

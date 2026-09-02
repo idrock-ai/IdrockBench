@@ -36,7 +36,7 @@ for m in "${MODELS[@]}"; do
   echo
   echo "──────── $m ────────"
   # --suite core is the publishable set. Add --suite all to include the two
-  # tracks that are not publication-ready (mmlu_pro_uz, ifeval_uz).
+  # tracks that are not publication-ready (ifeval_uz).
   python3 -m idrockbench.cli run --model "$m" --suite core || {
     echo "  $m failed — continuing; re-run the script to retry just this model"
   }

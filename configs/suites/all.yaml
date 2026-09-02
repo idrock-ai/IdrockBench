@@ -1,5 +1,5 @@
 # Everything runnable, including tracks that are not publication-ready.
 name: all
 description: All implemented tasks. Not a publishable ranking.
-tasks: [dtm, business_uz, ifeval_uz, reasoning_uz, translation_uz]
+tasks: [dtm, ifeval_uz, reasoning_uz, translation_uz]
 require_complete: false

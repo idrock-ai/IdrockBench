@@ -34,7 +34,6 @@ const TASK_LABELS = {
     ifeval_uz: { uz: "Ko'rsatmalar", en: "Instructions" },
     zarbulmasal: { uz: "Topishmoq erkin", en: "Riddle recall" },
     zarbulmasal_mc: { uz: "Topishmoq tanlov", en: "Riddle choice" },
-    business_uz: { uz: "Biznes bilimi", en: "Business" },
 };
 
 const TRANSLATIONS = {

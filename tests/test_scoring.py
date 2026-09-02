@@ -6,27 +6,7 @@ from idrockbench.core import Item
 from idrockbench.metrics.accuracy import accuracy_with_ci, normalize_against_chance, wilson_interval
 from idrockbench.metrics.translation import corpus_scores
 from idrockbench.tasks.mcq import permute
-from idrockbench.tasks.mmlu_pro_uz import parse_options
 from idrockbench.tasks.reasoning_uz import ReasoningTask, normalize_yes_no, score_slots
-
-
-class TestOptionParsing:
-    def test_numpy_repr_with_short_options_keeps_all_ten(self):
-        # Splitting on \n collapsed this to 2 "options" because NumPy only
-        # line-wraps past ~75 chars, which put the gold answer outside the
-        # prompt for 147 of 200 items.
-        raw = ("['$50,200' '$45,100' '$60,400' '$56,300' '$58,800' '$54,400' "
-               "'$65,500'\n '$62,900' '$48,700' '$52,600']")
-        assert len(parse_options(raw)) == 10
-
-    def test_json_array(self):
-        assert parse_options('["a", "b"]') == ["a", "b"]
-
-    def test_real_list_passes_through(self):
-        assert parse_options(["a", "b"]) == ["a", "b"]
-
-    def test_empty(self):
-        assert parse_options("") == [] and parse_options(None) == []
 
 
 class TestOptionPermutation:

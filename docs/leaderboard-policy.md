@@ -39,7 +39,7 @@ Each task is normalised against its own random baseline before averaging:
 normalised = max(0, (raw − chance) / (1 − chance)) × 100
 ```
 
-Chance is 25% for DTM, 10% for a ten-option MMLU-Pro, 0% for generative tasks,
+Chance is 25% for DTM, 0% for generative tasks,
 about 15.6% for partial-credit reasoning. Raw averaging would treat a coin flip
 on one task as equal to real signal on another. Tasks are weighted equally, and
 any deviation is published as an explicit vector.

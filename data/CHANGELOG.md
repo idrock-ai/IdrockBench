@@ -14,10 +14,6 @@ change the builder and re-run, so every repair stays reviewable and reproducible
 - dtm_public: stripped inline 'A) ' labels from the options of 3 items (they would have rendered as 'A) A) ...' once the prompt adds letters)
 - dtm_public: removed 2 duplicate items
 - dtm_public: removed 2 items that also appear in the held-out set, restoring the disjointness the data descriptor claims
-- mmlu_pro_uz: options re-serialised as JSON arrays (the NumPy repr() collapsed most items to one or two garbled choices)
-- mmlu_pro_uz: quarantined 1 items with mismatched option counts
-- mmlu_pro_uz: quarantined 25 items with failed machine translation
-- mmlu_pro_uz: WARNING - every remaining item is category 'business'. This is not a multi-domain benchmark and must not be published under the MMLU-Pro name until it is broadened
 - ifeval_uz: derived 79 Uzbek kwargs mechanically (repeat-prompt targets, postscript markers, section splitters)
 - ifeval_uz: keyword, forbidden-word and end-phrase kwargs still need a human translator. Until then those constraints are excluded from scoring and counted in `constraints_excluded`
 - reasoning_uz: flagged 22 zebra items whose Uzbek gold is still the English string - an Uzbek answer can never match these
@@ -25,7 +21,6 @@ change the builder and re-run, so every repair stays reviewable and reproducible
 - translation: source and reference text normalised to the canonical Uzbek apostrophe, so a correct translation is no longer scored against a typo (worth ~66 BLEU on affected segments)
 - dtm: 11 items quarantined for human review, not scored
 - dtm_public: 2 items quarantined for human review, not scored
-- mmlu_pro_uz: 26 items quarantined for human review, not scored
 
 ## Quarantine
 

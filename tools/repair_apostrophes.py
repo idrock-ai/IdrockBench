@@ -66,7 +66,6 @@ FIELDS: dict[str, list[str]] = {
     "dtm_heldout.json": ["question", "option_A", "option_B", "option_C", "option_D",
                          "topic", "subject"],
     "ifeval_uz.json": ["prompt_uz", "kwargs_uz"],
-    "mmlu_pro_uz.json": ["question_uzb", "options_uzb"],
     "reasoning_uz.json": ["turns_in_uzbek", "ground_truth_uzbek"],
     "translation_flores_devtest.json": ["text_uz"],
 }

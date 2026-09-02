@@ -205,13 +205,3 @@ least 15 instances were evaluated.
 words than English for the same content, so an English `num_words` target is a
 different instruction. Measure the ratio on parallel text and set
 `options.word_count_factor` before publishing.
-
-## `mmlu_pro_uz` - professional knowledge
-
-**Not publication-ready.** All 174 surviving items are category `business`.
-Publishing this as "MMLU-Pro" claims coverage across STEM, humanities and
-social sciences that the artifact does not have.
-
-Ten options, chance 10%. Same prompting, permutation and extraction as `dtm`.
-26 items with failed machine translation are quarantined. See
-`data/quarantine/mmlu_pro_uz.json`.

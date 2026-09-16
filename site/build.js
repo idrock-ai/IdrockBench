@@ -9,14 +9,13 @@ const DIST = path.join(ROOT, "dist");
 
 const EXCLUDE = new Set([
     "build.js", "package.json", "package-lock.json", "README.md",
-    "supabase-setup.sql",
 ]);
 const ASSET_EXTS = new Set([
     ".html", ".css", ".js", ".json", ".png", ".jpg", ".jpeg", ".svg", ".ico",
     ".webp", ".gif", ".woff", ".woff2", ".ttf", ".txt", ".xml", ".webmanifest",
 ]);
 
-const HASHED = ["styles.css", "script.js", "submit.js", "results.json"];
+const HASHED = ["styles.css", "script.js", "results.json"];
 
 function hashFile(file) {
     return crypto.createHash("sha256")

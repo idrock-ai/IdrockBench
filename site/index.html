@@ -37,7 +37,6 @@
                 <a href="#leaderboard" class="nav-link" data-i18n="nav.leaderboard">Reyting</a>
                 <a href="#benchmarks" class="nav-link" data-i18n="nav.benchmarks">Benchmarklar</a>
                 <a href="#methodology" class="nav-link" data-i18n="nav.methodology">Metodologiya</a>
-                <a href="#submit" class="nav-link" data-i18n="nav.submit">Model yuborish</a>
                 <a href="#about" class="nav-link" data-i18n="nav.about">Loyiha haqida</a>
                 <a href="https://github.com/idrock-ai/IdrockBench" target="_blank" rel="noopener" class="nav-link nav-link-external"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>GitHub</a>
                 <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
@@ -187,63 +186,6 @@
         </div>
     </section>
 
-    <section class="submit-section" id="submit">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="submit.title">Modelni baholashga yuborish</h2>
-                <p class="section-subtitle" data-i18n="submit.subtitle">Modelingizni idrock eval benchmarki bo'yicha baholashga taklif qiling.</p>
-            </div>
-
-            <form class="submit-form" id="submitForm" novalidate>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label class="form-label" for="f_name"><span data-i18n="submit.field.name">Ismingiz</span> <span class="req">*</span></label>
-                        <input class="form-input" type="text" id="f_name" name="name" required maxlength="120" data-i18n-placeholder="submit.field.name_ph" placeholder="Alisher Karimov">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="f_email"><span data-i18n="submit.field.email">Email</span> <span class="req">*</span></label>
-                        <input class="form-input" type="email" id="f_email" name="email" required maxlength="160" placeholder="you@example.com">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label class="form-label" for="f_model"><span data-i18n="submit.field.model">Model nomi</span> <span class="req">*</span></label>
-                        <input class="form-input" type="text" id="f_model" name="model_name" required maxlength="120" placeholder="qwen3:32b">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="f_company" data-i18n="submit.field.company">Kompaniya</label>
-                        <input class="form-input" type="text" id="f_company" name="company" maxlength="120" placeholder="Alibaba">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="f_notes" data-i18n="submit.field.notes">Qo'shimcha izoh</label>
-                    <textarea class="form-textarea" id="f_notes" name="notes" rows="4" maxlength="1500" data-i18n-placeholder="submit.field.notes_ph" placeholder="Model haqida qo'shimcha ma'lumot, inference sozlamalari, va h.k."></textarea>
-                </div>
-
-                <!-- Consent is required before storing personal data, and is recorded server-side. -->
-                <div class="form-group form-consent">
-                    <label class="form-check">
-                        <input type="checkbox" id="f_consent" name="consent" required>
-                        <span data-i18n="submit.field.consent">Ariza ko'rib chiqilishi uchun ismim va email manzilim saqlanishiga roziman.</span>
-                        <span class="req">*</span>
-                    </label>
-                </div>
-
-                <div class="form-honeypot" aria-hidden="true">
-                    <label>Do not fill this field
-                        <input type="text" id="f_website" name="website" tabindex="-1" autocomplete="off">
-                    </label>
-                </div>
-
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary" id="submitBtn"><span data-i18n="submit.cta">Yuborish</span></button>
-                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-                </div>
-                <p class="form-note" data-i18n="submit.note">* bilan belgilangan maydonlar majburiy. Iltimos, maxfiy API kalitlarini bu yerda yubormang.</p>
-            </form>
-        </div>
-    </section>
-
     <section class="partners" id="about">
         <div class="container">
             <div class="section-header">
@@ -291,6 +233,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="submit.js"></script>
 </body>
 </html>

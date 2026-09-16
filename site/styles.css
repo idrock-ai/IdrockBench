@@ -782,139 +782,6 @@ img {
 }
 
 /* ============================================
-   Submit Model Section
-   ============================================ */
-.submit-section {
-    padding: var(--space-3xl) 0;
-}
-
-.submit-form {
-    max-width: 760px;
-    margin: 0 auto;
-    background: var(--bg-tertiary);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    padding: var(--space-2xl);
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-lg);
-}
-
-.form-group {
-    margin-bottom: var(--space-lg);
-}
-
-.form-label {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-    margin-bottom: var(--space-sm);
-}
-
-.form-label .req {
-    color: var(--accent-green);
-    margin-left: 2px;
-}
-
-.form-input,
-.form-select,
-.form-textarea {
-    width: 100%;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    padding: 11px 13px;
-    color: var(--text-primary);
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    transition: border-color var(--transition);
-    outline: none;
-}
-
-.form-textarea {
-    resize: vertical;
-    min-height: 92px;
-    line-height: 1.6;
-}
-
-.form-input:focus,
-.form-select:focus,
-.form-textarea:focus {
-    border-color: var(--accent-green);
-}
-
-.form-input::placeholder,
-.form-textarea::placeholder {
-    color: var(--text-muted);
-}
-
-.form-select {
-    appearance: none;
-    -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a8a8a4' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 13px center;
-    padding-right: 34px;
-    cursor: pointer;
-}
-
-.form-checkbox {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    cursor: pointer;
-    margin-bottom: var(--space-lg);
-}
-
-.form-checkbox input {
-    width: 16px;
-    height: 16px;
-    accent-color: var(--accent-green);
-    cursor: pointer;
-}
-
-.form-honeypot {
-    position: absolute;
-    left: -9999px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.form-actions {
-    display: flex;
-    align-items: center;
-    gap: var(--space-lg);
-    flex-wrap: wrap;
-}
-
-.form-status {
-    font-size: 0.9rem;
-    margin: 0;
-}
-
-.form-status-success {
-    color: var(--accent-green-light);
-}
-
-.form-status-error {
-    color: #ff6b6b;
-}
-
-.form-note {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-top: var(--space-lg);
-    line-height: 1.6;
-}
-
-/* ============================================
    About / Partners Section
    ============================================ */
 .partners {
@@ -1195,16 +1062,6 @@ img {
     .partners-grid {
         grid-template-columns: 1fr;
         gap: var(--space-md);
-    }
-
-    /* Submit form */
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
-    .submit-form {
-        padding: var(--space-lg);
     }
 
     .benchmark-card {
@@ -1511,19 +1368,6 @@ th[aria-sort="descending"] .sort-icon::before { content: "\2193"; opacity: 1; }
     letter-spacing: 0.02em;
 }
 
-/* Consent */
-.form-consent { margin-top: var(--space-sm); }
-.form-check {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6em;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    line-height: 1.5;
-    cursor: pointer;
-}
-.form-check input { margin-top: 0.25em; flex-shrink: 0; }
-
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -1591,7 +1435,6 @@ th[aria-sort="descending"] .sort-icon::before { content: "\2193"; opacity: 1; }
     color: var(--text-muted);
     pointer-events: none;
 }
-.search-box .form-input,
 .search-box input { padding-left: 36px; }
 
 /* Reasoning mode is part of what the score means, so it reads as a property of

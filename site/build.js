@@ -19,7 +19,6 @@ const DIST = path.join(ROOT, "dist");
 // Build tooling and docs, never shipped.
 const EXCLUDE = new Set([
     "build.js", "package.json", "package-lock.json", "README.md",
-    "supabase-setup.sql",
 ]);
 const ASSET_EXTS = new Set([
     ".html", ".css", ".js", ".json", ".png", ".jpg", ".jpeg", ".svg", ".ico",
@@ -27,7 +26,7 @@ const ASSET_EXTS = new Set([
 ]);
 
 // Assets fingerprinted in HTML. Add here when splitting a file.
-const HASHED = ["styles.css", "script.js", "submit.js", "results.json"];
+const HASHED = ["styles.css", "script.js", "results.json"];
 
 function hashFile(file) {
     return crypto.createHash("sha256")

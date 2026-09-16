@@ -34,21 +34,3 @@ Each cell shows the score, its 95% interval and its sample size. Two flags:
 
 Ranks are read from the file, never recomputed when a reader sorts a column.
 Models without a complete run are shown unranked, below the ranked rows.
-
-## Submission form
-
-`submit.js` posts to a Supabase Edge Function that stores the submission and
-sends a Telegram notification. The bot token stays a server-side secret.
-
-Setup: run [`supabase-setup.sql`](supabase-setup.sql), deploy
-[`supabase/functions/submit-model`](supabase/functions/submit-model/index.ts),
-then set the secrets:
-
-```bash
-supabase secrets set TELEGRAM_BOT_TOKEN=… TELEGRAM_CHAT_ID=… IP_HASH_SALT=…
-supabase functions deploy submit-model
-```
-
-The function requires explicit consent, records it with a timestamp, and rate
-limits to five submissions per hashed IP per hour. See
-[`privacy.html`](privacy.html).

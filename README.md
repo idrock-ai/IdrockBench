@@ -16,28 +16,9 @@ idrockbench report                                # rebuild the leaderboard
 
 ---
 
-## What makes a number here trustworthy
-
-**A parse failure is not a wrong answer.** Responses that cannot be scored are
-excluded from the denominator and reported in their own rate, never counted as
-zero.
-
-**Correct Uzbek is never penalised.** Uzbek writes `oʻ` and `gʻ` with U+02BB, a
-letter, but models often type an ASCII `'`, which is punctuation. Everything
-compares through [`text/normalize.py`](src/idrockbench/text/normalize.py) first.
-
-**A thin score is withheld.** Below 50% coverage the reason is published instead
-of the number.
-
-**Every score is reproducible.** Each run records the dataset hash, the settings
-and one row per item, so a scoring fix costs a re-score rather than a re-run.
-
-**Intervals, not point estimates.** Every cell carries a 95% interval and its n.
-Models whose intervals overlap are tied, not ranked.
-
----
-
 ## Tasks
+
+The baseline models are evaluated based on the following tasks:
 
 | Task | What it measures | Items | Metric | Chance |
 |---|---|---|---|---|

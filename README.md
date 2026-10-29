@@ -1,79 +1,74 @@
 # IdrockBench
 
-**An evaluation suite for Uzbek-language large language models.**
-Built by the [IDROCK AI Excellence Center](https://idrock.uz) at [New Uzbekistan University](https://newuu.uz).
+Evaluation harness and datasets for Uzbek-language LLMs, from the
+[IDROCK AI Excellence Center](https://idrock.uz) at
+[New Uzbekistan University](https://newuu.uz).
 
-Uzbek has around 35 million speakers and almost no serious LLM evaluation. IdrockBench measures what a model can actually do *in Uzbek* - school-subject knowledge from national exam material, logical reasoning, instruction following, and translation - and publishes every number with the interval, the sample size, and the run that produced it.
+It covers school-subject questions from the national entrance exam (DTM),
+logic puzzles, instruction following, translation, and Uzbek folk riddles.
+Results for the models we have run so far are in [LEADERBOARD.md](LEADERBOARD.md).
+
+## Quick start
 
 ```bash
 pip install -e ".[all]"
 
-idrockbench list                                  # what is available
-idrockbench validate                              # check the datasets
-idrockbench run --model gpt-4o --suite core       # evaluate a model
-idrockbench report                                # rebuild the leaderboard
+idrockbench list                                 # tasks, providers and model configs
+idrockbench validate                             # check the datasets
+idrockbench run --model qwen35-9b --limit 10     # first 10 items per task
+idrockbench run --model qwen35-9b --suite core   # full run
+idrockbench report                               # rebuild LEADERBOARD.md from runs/
 ```
 
----
-
-## What makes a number here trustworthy
-
-**A parse failure is not a wrong answer.** Responses that cannot be scored are
-excluded from the denominator and reported in their own rate, never counted as
-zero.
-
-**Correct Uzbek is never penalised.** Uzbek writes `oʻ` and `gʻ` with U+02BB, a
-letter, but models often type an ASCII `'`, which is punctuation. Everything
-compares through [`text/normalize.py`](src/idrockbench/text/normalize.py) first.
-
-**A thin score is withheld.** Below 50% coverage the reason is published instead
-of the number.
-
-**Every score is reproducible.** Each run records the dataset hash, the settings
-and one row per item, so a scoring fix costs a re-score rather than a re-run.
-
-**Intervals, not point estimates.** Every cell carries a 95% interval and its n.
-Models whose intervals overlap are tied, not ranked.
-
----
+`--model` is the name of a file in `configs/models/`. To add a model, write one
+YAML file: see [Benchmark a new model](docs/guides/adding-a-model.md).
 
 ## Tasks
 
 | Task | What it measures | Items | Metric | Chance |
 |---|---|---|---|---|
-| `dtm` | Uzbek school-subject knowledge from 2019 national entrance-exam material - ona tili, tarix, matematika, fizika | 2,062 public (989 held out) | accuracy | 25% |
+| `dtm` | School-subject knowledge from 2019 DTM entrance-exam material: ona tili, tarix, matematika, fizika | 2,062 public, 989 held out | accuracy | 25% |
 | `reasoning_uz` | Zebra puzzles, spatial reasoning, web of lies | 100 | partial credit | ~16% |
 | `translation_uz` | uz↔en and uz↔ru translation (FLORES-200 devtest) | 800 pairs | chrF++ | 0% |
 | `ifeval_uz` | Verifiable instruction following | 541 | strict pass rate | 0% |
-| `zarbulmasal` | Uzbek folk riddles and zarbulmasal - free text, the model must name the answer | 331 | exact match | 0% |
-| `zarbulmasal_mc` | The same riddles as four-way multiple choice - recognition rather than recall | 331 | accuracy | 25% |
+| `zarbulmasal` | Folk riddles and proverbs; the model writes the answer | 331 | exact match | 0% |
+| `zarbulmasal_mc` | The same riddles as four-option multiple choice | 331 | accuracy | 25% |
 
-`dtm` is the flagship: natively authored in Uzbek, not translated, and held out. It is the only track that measures Uzbek knowledge rather than a translated test of someone else's curriculum.
+The DTM and riddle items were written in Uzbek. `reasoning_uz` (LiveBench) and
+`ifeval_uz` (IFEval) are translated from English.
 
----
+## Scoring
 
-## Guides
+[docs/methodology.md](docs/methodology.md) describes how each task is prompted
+and scored. Three rules affect how the numbers read:
 
-- **[Benchmark a new model](docs/guides/adding-a-model.md)** - one YAML file
-- **[Add a dataset](docs/guides/adding-a-dataset.md)** - point a task at new data
-- **[Add a benchmark](docs/guides/adding-a-benchmark.md)** - five methods, worked example
-- **[Methodology](docs/methodology.md)** - how each task is prompted and scored
-- **[Leaderboard policy](docs/leaderboard-policy.md)** - what gets published, and what does not
-- **[Dataset cards](docs/data-cards/)** - provenance, licence and limitations per dataset
+- If no answer can be extracted from a response, the item is marked `unparsed`.
+  It is left out of the accuracy denominator and reported as `unparsed_rate`.
+- `oʻ` and `gʻ` are written with U+02BB. Responses and references go through
+  [`text/normalize.py`](src/idrockbench/text/normalize.py) first, so an ASCII
+  `'` in their place is not marked wrong.
+- Scores come with a 95% interval and n. If fewer than half the items of a task
+  could be scored, the cell shows "withheld" and the reason.
 
----
+## Runs
 
-## Data
+`idrockbench run` writes to `runs/<run-id>/`: a `manifest.json` with the model
+settings, dataset SHA-256 and metrics, and a JSONL file with one row per item.
+Manifests are committed; JSONL files are not. `idrockbench rescore runs/<run-id>`
+recomputes the metrics from stored responses without calling the model again,
+and `idrockbench show runs/<run-id>` prints a summary.
 
-Datasets in `data/` are **built, not hand-edited**:
+## Documentation
 
-```bash
-python tools/build_datasets.py
-```
+- [Benchmark a new model](docs/guides/adding-a-model.md)
+- [Add a dataset](docs/guides/adding-a-dataset.md)
+- [Add a benchmark](docs/guides/adding-a-benchmark.md)
+- [Methodology](docs/methodology.md)
+- [Leaderboard policy](docs/leaderboard-policy.md)
+- [Dataset cards](docs/data-cards/): source, licence and known problems for each dataset
 
-Every repair lives in that script and is described in `data/CHANGELOG.md`. Items that cannot be scored fairly - a missing answer key, two identical options, a failed translation - go to `data/quarantine/` with a reason rather than being guessed at or silently dropped. Several need a subject expert to confirm a key, after which they return to the benchmark.
-
----
+Changes to the datasets in `data/` are logged in
+[`data/CHANGELOG.md`](data/CHANGELOG.md).
 
 ## Citation
 
@@ -86,8 +81,12 @@ Every repair lives in that script and is described in `data/CHANGELOG.md`. Items
 }
 ```
 
-The underlying DTM dataset is published separately: [IEEE DataPort, DOI 10.21227/e4h4-kp42](https://ieee-dataport.org/documents/uzbek-multiple-choice-question-dataset-large-language-model-evaluation).
+The DTM dataset is also published on
+[IEEE DataPort, DOI 10.21227/e4h4-kp42](https://ieee-dataport.org/documents/uzbek-multiple-choice-question-dataset-large-language-model-evaluation).
 
 ## Licence
 
-Code is MIT. Datasets carry their own licences and constraints - see [`docs/data-cards/`](docs/data-cards/) before redistributing anything. The FLORES-derived translation set is CC BY-SA 4.0 and gated upstream. It cannot be relicensed.
+Code is MIT. Each dataset has its own licence; check
+[`docs/data-cards/`](docs/data-cards/) before redistributing. The translation
+set is derived from FLORES-200, which is CC BY-SA 4.0 and gated upstream, so it
+cannot be relicensed.

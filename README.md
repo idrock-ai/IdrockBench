@@ -20,10 +20,11 @@ idrockbench run --model qwen35-9b --suite core   # full run
 idrockbench report                               # rebuild LEADERBOARD.md from runs/
 ```
 
-`--model` is the name of a file in `configs/models/`. To add a model, write one
-YAML file: see [Benchmark a new model](docs/guides/adding-a-model.md).
+---
 
 ## Tasks
+
+The baseline models are evaluated based on the following tasks:
 
 | Task | What it measures | Items | Metric | Chance |
 |---|---|---|---|---|

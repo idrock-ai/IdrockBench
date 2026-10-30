@@ -14,7 +14,7 @@ build/
 node_modules/
 site/dist/
 
-runs/*/*.jsonl
+runs/**/*.jsonl
 !runs/**/manifest.json
 
 .ruff_cache/

@@ -16,11 +16,17 @@ PUBLISH_FLOOR = 0.50
 
 def load_runs(runs_dir: Path) -> list[dict[str, Any]]:
     runs = []
-    for manifest_path in sorted(runs_dir.glob("*/manifest.json")):
+    seen = set()
+    for manifest_path in sorted(runs_dir.rglob("manifest.json")):
         try:
-            runs.append(json.loads(manifest_path.read_text(encoding="utf-8")))
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError):
             continue
+        key = (manifest.get("model"), manifest.get("run_id"))
+        if key in seen:
+            continue
+        seen.add(key)
+        runs.append(manifest)
     runs.sort(key=lambda m: m.get("finished_at") or m.get("started_at") or "", reverse=True)
     return runs
 

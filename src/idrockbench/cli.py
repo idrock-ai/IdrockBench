@@ -3,9 +3,9 @@
     idrockbench list                          what is available
     idrockbench validate                      check every dataset
     idrockbench run --model llama3.1-8b-ollama --suite core
-    idrockbench rescore runs/<run_id>         recompute from stored responses
+    idrockbench rescore runs/<model>/<run_id> recompute from stored responses
     idrockbench report                        build the leaderboard
-    idrockbench show runs/<run_id>            summarise one run
+    idrockbench show runs/<model>/<run_id>    summarise one run
 """
 
 from __future__ import annotations
@@ -91,7 +91,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         task_names = SuiteConfig.load("core").tasks
 
     run_id = args.run_id or f"{_slug(model_cfg.name)}-{_utc_stamp()}"
-    run_dir = RUNS_DIR / run_id
+    run_dir = RUNS_DIR / Path(args.model).stem / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
     provider = get_provider(model_cfg.provider)(
